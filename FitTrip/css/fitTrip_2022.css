@@ -3,113 +3,151 @@
 /* CSS Document */
 
 #content {
-  margin: 100px auto 0;
+  margin: 100px 0 0;
+}
+
+#fit_content {
+  display: flex;
   width: 86vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  #content {
+    margin-top: 16px;
+  }
 }
 
 /*============== Banner ==============*/
 
+#banner {
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  text-shadow: 0 0 15px #1a1a1a;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#banner img {
+  height: inherit;
+}
+
+@media (max-width: 1400px) {
+  #banner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    height: 500px;
+  }
+}
+
+/*============== /Banner ==============*/
+
 /*============== AirTicket ==============*/
 
 #fit_AirTicket {
-  width: 735px;
-  height: 432px;
-  background: #fff;
-  border: solid 1px #dcdcdc;
-  padding: 10px;
-  margin: 0 15px 15px 0;
-  box-sizing: border-box;
-  float: left;
+  width: 50%;
+  margin: 10px;
 }
 
 
-.target-tabs {
-  text-align: center;
+.AirTicket-nav-tab {
+  position: relative;
+  width: 712px;
 }
 
-.tabs-wrapper ul.tab-nav {
+.AirTicket-tab {
   position: absolute;
-  margin: 0;
-  padding: 0;
-  right: 55px;
-  top: 11px;
-  z-index: 99;
+  top: 13px;
+  right: 20px;
+  z-index: 1;
+  display: flex;
 }
 
-.tabs-wrapper select.tab-nav {
-  display: none;
-}
-
-.tabs-wrapper ul.tab-nav li {
+.tabs-wrapper ul li {
   display: inline-block;
+  margin: 0 4px;
 }
 
-.tabs-wrapper ul.tab-nav li a {
+.tabs-wrapper ul li a {
   background: #e1e1e1;
   color: #464646;
   padding: 10px 20px;
   font-size: 18px;
 }
 
-.tabs-wrapper ul.tab-nav li.active a {
+.tabs-wrapper ul li.selected a {
   background: #e9746b;
   color: white;
   text-shadow: 0 0 1px #e9746b;
 }
 
-.tabs-wrapper .target-tabs {
-  background: #fff;
-  overflow: hidden;
+/* .iframe-container {
   position: relative;
-}
-
-.tabs-wrapper .target-tabs .tab-content {
-  display: none;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
-
-.tabs-wrapper .target-tabs .tab-content.active {
-  display: block;
-}
-
-.tab-content {
-  width: 100%;
-  margin: auto;
-}
-
-.iframe-container {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
+  overflow: visible;
+} */
 
 .iframe-container iframe {
-
-  position: absolute;
-
-  left: 0;
-
-  top: 0;
-
-  width: 100%;
-
-  height: 100%;
-
+  width: 712px;
+  height: 412px;
 }
 
-/* @media screen and (max-width: 400px) {
-
-  .tab-content {
-
-      width: 300px;
-
+@media (max-width: 768px) {
+  #fit_AirTicket {
+    width: 100%;
   }
 
-} */
+  .tabs-wrapper {
+    overflow-x: scroll;
+  }
+}
+
+/*============== /AirTicket ==============*/
+
+/*============== fit_slider ==============*/
+#fit_slider {
+  width: 50%;
+  margin: 10px;
+  max-width: 600px;
+}
+
+.ad {
+  display: block;
+  background-color: #8c001a;
+  color: #fff;
+  text-align: center;
+}
+
+.ad img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #fit_slider {
+    width: 100%;
+  }
+
+
+  .ad img {
+    width: 100%;
+  }
+}
+
+
+/*============== /fit_slider ==============*/
 
 /*============== fit_globalTravel ==============*/
 
@@ -118,6 +156,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 10px 0;
   padding: 10px;
   box-shadow: 0 0 5px #757575;
 }
@@ -127,19 +166,36 @@
   margin: 0 auto;
 }
 
+.globalTravel_title div {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
 .icon-size {
-  width: 30px;
+  width: 36px;
   margin: 0 auto;
+  padding: 5px 0;
 }
 
 .globalTravel_popular {}
 
-.globalTravel_line {}
+.globalTravel_line {
+  display: block;
+  background-color: #ff6501;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+}
 
-.globalTravel_go {}
+.globalTravel_go {
+  color: #ff6501;
+}
 
 .globalTravel_content {
-  width: 1300px;
+  display: flex;
+  width: 1360px;
+  margin: 0 auto;
 }
 
 .globalTravel_content ul {
@@ -147,6 +203,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
+  overflow-x: auto;
 }
 
 .globalTravel_content li {
@@ -160,7 +218,7 @@
 .glabalTravel_img {}
 
 .glabalTravel_img img {
-  width: 225px;
+  width: 250px;
   height: 170px;
   object-fit: cover;
   border-bottom: #8c001a 10px solid;
@@ -183,6 +241,19 @@
   padding-left: 3px;
   font-size: 1rem;
 }
+
+@media (max-width: 1400px) {
+  .globalTravel_content {
+    display: contents;
+  }
+
+  .globalTravel_content ul {
+    flex-wrap: nowrap;
+    justify-content: unset;
+  }
+}
+
+/*============== /fit_globalTravel ==============*/
 
 /*============== AsiaSelect ==============*/
 

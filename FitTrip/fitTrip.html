@@ -417,39 +417,45 @@
 
             <div id="content">
                 <!-----修改地區----->
-
+                <div id="banner">
+                    <div class="banner-title">自由行</div>
+                    <img src="../images/banner.jpg" alt="">
+                </div>
                 <div id="fit_content">
                     <div id="fit_AirTicket">
                         <div class="tabs-wrapper">
-                            <span class="AirTicket-nav-tab-hidden">
-                                <ul class="tab AirTicket-tab simple-tab" data-tab-name="tab2">
-                                    <li class="tablinksc">
-                                        <a href="#AirTicket">國際機票</a>
-                                    </li>
-                                    <li class="tablinksc">
-                                        <a href="#Packages">機+酒</a>
-                                    </li>
-                                    <li class="tablinksc">
-                                        <a href="#Train">歐洲鐵路</a>
-                                    </li>
-                                </ul>
-                            </span>
-                            <div class="target-tabs">
-                                <div id="AirTicket" class="tab-content">
-                                    <div class="iframe-container">
-                                        <iframe src="https://cs.sabretn.com.tw/artisan/index_artisan"
-                                            frameborder="0"></iframe>
+                            <div class="AirTicket-nav-tab">
+                                <span class="AirTicket-nav-tab-hidden">
+                                    <ul class="tab AirTicket-tab simple-tab" data-tab-name="tab1">
+                                        <li class="tablinkai">
+                                            <a href="#AirTicket">國際機票</a>
+                                        </li>
+                                        <li class="tablinkai">
+                                            <a href="#Packages">機+酒</a>
+                                        </li>
+                                        <li class="tablinkai">
+                                            <a href="#Train">歐洲鐵路</a>
+                                        </li>
+                                    </ul>
+                                </span>
+                                <div class="AirTicket-area">
+                                    <div id="AirTicket" style="display: block;" class="tabcontenta">
+                                        <div class="iframe-container">
+                                            <iframe src="https://cs.sabretn.com.tw/artisan/index_artisan"
+                                                frameborder="0"></iframe>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="Packages" class="tab-content">
-                                    <div class="iframe-container">
-                                        <iframe src="https://pkg.sabretn.com.tw/PKG/FNH/search3.jsp?modecode=artisan"
-                                            frameborder="0"></iframe>
+                                    <div id="Packages" style="display: block;" class="tabcontenta">
+                                        <div class="iframe-container">
+                                            <iframe
+                                                src="https://pkg.sabretn.com.tw/PKG/FNH/search3.jsp?modecode=artisan"
+                                                frameborder="0"></iframe>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="Train" class="tab-content">
-                                    <div class="iframe-container">
-                                        <iframe src="" frameborder="0"></iframe>
+                                    <div id="Train" style="display: block;" class="tabcontenta">
+                                        <div class="iframe-container">
+                                            <iframe src="" frameborder="0"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -463,7 +469,7 @@
                             <a href="https://www.artisan.com.tw/exh/ExhMini.aspx?area_no=32&no=134" target="_blank"
                                 class="ad">
                                 <img src="https://www.artisan.com.tw/Zupload/000429/002787/00035557.jpg" alt="">
-                                <div class="fit_slider_castle">EUROPAMUNDO</div>
+                                <span>EUROPAMUNDO</span>
                             </a>
                         </div>
                     </div>
@@ -475,8 +481,8 @@
                                 <img src="images/fitTrip-icon-02.svg" alt="">
                             </div>
                             <div class="globalTravel_popular">全球熱門城市</div>
-                            <span class="globalTravel_line">-</span>
-                            <div class="globalTravel_go">有位有防立即GO</div>
+                            <span class="globalTravel_line"></span>
+                            <div class="globalTravel_go">有位有房立即GO</div>
                         </div>
                         <div class="globalTravel_content">
                             <ul>
@@ -859,6 +865,7 @@
             <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
             <script src="/js/index_2022.js"></script>
+            <script src="./js/fitTrip_2022.js"></script>
     </form>
 </body>
 
