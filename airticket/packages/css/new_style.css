@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+body {
+    font-family: "微軟正黑體", Microsoft JhengHei !important
+}
+
+.search-box .selectmenu, .search-box .selecinput, .room-open select {
+    height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: table;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.ticket-people {
+    width: auto;
+}
+
+.ticket-people .search-box {
+    width: 137px;
+}
+
+.ticket-date {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.ticket-people .dropdown-toggle {
+    border: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px
+}
+
+.ret-dat {
+    width: 108px;
+}
+
+.ret-dat input {
+    width: 100%;
+}
+
+.ticket-plain {
+    display: flex;
+    width: 50%
+}
+
+.ticket-plain .search-box {
+    width: 125px
+}
+
+.search-plain {
+    width: 165px
+}
+
+.ticket-area {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.ticket-list {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.ticket-label {
+    margin: 0 5px;
+}
+
+.pop_romyear {
+    border-top: 3px solid #e65d53 !important;
+    position: absolute;
+    top: 243px;
+    z-index: 978;
+    padding: 0;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px #666;
+    width: 205px;
+    z-index: 10;
+    max-height: 105px;
+    left: 188px;
+    max-height: inherit
+}
+
+.icon_upn {
+    width: 31px;
+    height: 15px;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    top: -15px;
+    left: 45%;
+    background-image: url(../artisanImages/icon_upn2.png?sv=1)
+}
+
+.btn_inclose {
+    cursor: pointer;
+    float: right;
+    background-color: #d8d8d8;
+    color: #FFF;
+    width: 25px;
+    height: 25px;
+    border-radius: 99em;
+    text-align: center;
+    line-height: 23px;
+    padding: 0;
+    font-size: 12px;
+    position: absolute;
+    right: -12px;
+    top: -13px;
+    border: 2px solid #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 3px #d2d2d2;
+    text-align: center
+}
+
+.pop_indtab {
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    padding: 5px 10px 0 10px
+}
+
+.pop_leftti {
+    color: black;
+    float: left;
+    margin-top: 5px;
+    line-height: normal;
+    position: relative;
+    font-weight: 600;
+    max-width: 50%
+}
+
+.pop_leftti .f12 {
+    font-size: 12px;
+    color: #777778;
+    padding-left: 4px
+}
+
+.pop_rightcon {
+    float: right;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 5px
+}
+
+.pop_rightcon button {
+    font-size: 20px
+}
+
+.pop_rightcon button {
+    float: left;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 28px;
+    line-height: 20px;
+    height: 24px;
+    color: #fff;
+    font-weight: 600;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    font-weight: 600
+}
+
+.pop_rightcon button span {
+    font-weight: 600;
+    font-family: sans-serif
+}
+
+.pop_shownum {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    width: 36px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #000;
+    max-width: 46px;
+    padding: 0
+}
+
+.pop_losnum {
+    background-color: #ccc
+}
+
+.pop_losnum:hover, .pop_losnum:active {
+    background-color: #848484
+}
+
+.pop_addnum {
+    background-color: #e65d53
+}
+
+.pop_addnum:hover, .pop_addnum:active {
+    background-color: #c74b42
+}
+
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+    display: inline-block;
+    width: 100%;
+    margin: 3px 0 0 0
+}
+
+.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:active {
+    background: #edc3c5;
+    color: #fff
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
+    color: #fff;
+    background-color: #d8584f;
+    border-color: #d8584f
+}
+
+.datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active:active.focus, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover {
+    color: #fff;
+    background-color: #d4564d;
+    border-color: #d4564d
+}
+
+.other-foom {
+    width: 100%;
+    float: left;
+    padding: 7px 10px;
+    margin: 5px auto 10px auto
+}
+
+.ticket-room {
+    width: 128%;
+}
+
+.ticket-airline {
+    width: 50%;
+}
+
+.ticket-airline .search-box {
+    width: 100px;
+}
+
+.room-open {
+    width: 55%;
+    display: inline-block
+}
+
+.pkg-room .ticket-people {
+    display: flex;
+    align-items: center;
+    width: 95%
+}
+
+.pkg-room .ticket-people:first-of-type .search-box {
+    position: inherit;
+    width: 180px
+}
+
+.room-open select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    color: #777778;
+    border: 0
+}
+
+.arrow {
+    font-size: 2rem;
+}
+
+.search-box .selectmenu:focus, .search-box .selecinput:focus, .room-open select:focus, .ticket-people .dropdown-toggle:focus {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+select, input {
+    text-decoration: none !important
+}
+
+.pkg-room .ret-dat {
+    margin-right: 0;
+    width: 180px
+}
+
+
+.room-open .ticket-date .ret-dat {
+    display: flex;
+    width: 100%
+}
+
+.btnsmall {
+    max-width: 20%;
+    float: right !important
+}
+
+/* [type="radio"]:checked+label:after, [type="radio"]:not(:checked)+label:after, [type="checkbox"]:checked+label:after, [type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    width: 9px;
+    height: 9px
+} */
+
+.baby_year {
+    float: right;
+    -moz-border-radius: 2px;
+    background-color: #fff;
+    border: solid 2px #dbdbdb;
+    position: relative;
+    border-radius: 20px;
+    line-height: 25px;
+    color: #1e1e1e;
+    padding: 0 10px
+}
+
+.baby_year select {
+    height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: table;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    padding: 0;
+    height: 25px;
+    line-height: 25px;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: underline;
+    padding: 0 5px;
+    outline: 0;
+    color: #777778;
+    font-family: "微軟正黑體", Microsoft JhengHei
+}
+
+.mbsc-mobiscroll.mbsc-range .mbsc-range-btn-t .mbsc-range-btn-sel .mbsc-range-btn {
+    background: #ffada7
+}
+
+.mbsc-mobiscroll.mbsc-range .mbsc-cal-table .mbsc-cal-day-sel .mbsc-cal-day-i {
+    background: #feeae9
+}
+
+.mbsc-mobiscroll.mbsc-range .mbsc-cal-table .mbsc-cal-day-hl .mbsc-cal-day-i {
+    background: #e65d53
+}
+
+.mbsc-mobiscroll .mbsc-fr-btn0:after, .mbsc-mobiscroll .mbsc-fr-btn1:after {
+    color: #666
+}
+
+.ui-menu .ui-menu-item {
+    width: 100%;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-family: 微軟正黑體;
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0
+}
+
+.ui-menu .ui-menu-item:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0
+}
+
+.ui-widget-content a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px
+}
+
+.ui-widget-content a:hover {
+    background-color: #2196f3;
+    color: #fff;
+    border-radius: 0
+}

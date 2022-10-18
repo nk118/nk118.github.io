@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "敺株�迤暺��", Microsoft JhengHei;
+    color: #1e1e1e;
+}
+
+/* 
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f38e8e;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after,
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+} */
+
+[type="radio"]:checked,
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:not(:checked),
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    line-height: 18px;
+    display: inline-block;
+}
+
+[type="radio"]:not(:checked)+label,
+[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    line-height: 18px;
+    display: inline-block;
+}
+
+[type="radio"]:checked+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    border: solid #727272;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: all 0.4s ease-in-out;
+}
+
+
+[type="radio"]:not(:checked)+label:before,
+[type="checkbox"]:not(:checked)+label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    border: solid #727272;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg);
+    transition: all 0.4s ease-in-out;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+
+#AirTicket {
+    display: table;
+    width: 712px;
+    height: 412px;
+    border: solid 1px #f38e8e;
+    background: #fff;
+    padding: 10px;
+}
+
+#AirTicket hr {
+    border: dotted 1px #bfbfbf;
+    margin: 5px 0 10px;
+}
+
+#AirTicket h1 {
+    width: 260px;
+    color: #e9746b;
+    font-weight: normal;
+    font-size: 33px;
+    padding: 0 5px;
+    border-bottom: solid 8px #e9746b;
+    margin-bottom: 20px;
+}
+
+#AirTicket h1 span {
+    font-size: 18px;
+    font-family: Century Gothic, Arial;
+}
+
+.ticket-content {
+    width: 100%;
+    padding: 10px;
+}
+
+.ticket-list {
+    width: 100%;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.ticket-area {
+    width: 63%;
+}
+
+.ticket-area img,
+.ticket-date img,
+.ticket-people img,
+.ticket-plain img {
+    margin: 0 5px;
+    height: 29px;
+}
+
+.ticket-label {
+    font-size: 1.5rem;
+}
+
+.ticket-date {
+    width: 37%;
+}
+
+.ticket-people {
+    width: 20%;
+}
+
+.ticket-plain {
+    width: 52%;
+}
+
+.search-plain {
+    width: 27%;
+    padding: 7px 10px;
+}
+
+.search-box {
+    background-color: #fff;
+    border: solid 2px #d1d1d1;
+    width: 180px;
+    margin: 0 5px;
+    position: relative;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #1e1e1e;
+    padding: 0 10px;
+}
+
+.search-box .selectmenu,
+.search-box .selecinput {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: underline;
+    padding: 0 5px;
+    outline: none;
+    color: #777778;
+    font-family: "敺株�迤暺��", Microsoft JhengHei;
+}
+
+.ticket-list .note {
+    width: 70%;
+    float: left;
+    font-size: 13px;
+    color: #e5464d;
+    font-weight: bold;
+}
+
+.ticket-list button[type=submit] {
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    outline: 0;
+    border-radius: 10px;
+    background-color: #e65d53;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+}
+
+.ticket-list button[type=submit]:after {
+    content: url(../artisanImages/Ticon05.png);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.ticket-list button[type=submit]:hover {
+    background-color: #c74b42;
+}

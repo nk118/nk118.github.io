@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+#fit_content {
+    width: 1400px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#fit_AirTicket {
+    width: 735px;
+    height: 432px;
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+    margin: 0 15px 15px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+/* === tabs === */
+
+.animated {
+    -webkit-animation-duration: 100ms;
+    animation-duration: 100ms;
+}
+
+.tabs-wrapper {
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+    position: relative;
+}
+
+.target-tabs {
+    text-align: center;
+}
+
+.tabs-wrapper ul.tab-nav {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 55px;
+    top: 11px;
+    z-index: 99;
+}
+
+.tabs-wrapper select.tab-nav {
+    display: none;
+}
+
+.tabs-wrapper ul.tab-nav li {
+    display: inline-block;
+}
+
+.tabs-wrapper ul.tab-nav li a {
+    background: #e1e1e1;
+    color: #464646;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.tabs-wrapper ul.tab-nav li.active a {
+    background: #e9746b;
+    color: white;
+    text-shadow: 0 0 1px #e9746b;
+}
+
+.tabs-wrapper .target-tabs {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.tabs-wrapper .target-tabs .tab-content {
+    display: none;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.tabs-wrapper .target-tabs .tab-content.active {
+    display: block;
+}
+
+
+/* === /tabs === */
+
+#fit_slider {
+    width: 650px;
+    height: 432px;
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.fit_slider_banner {
+    width: 100%;
+    height: 416px;
+    position: relative;
+}
+
+#fit_luxetravel {
+    width: 100%;
+    height: 136px;
+    float: left;
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#fit_asiatravel {
+    width: 100%;
+    height: auto;
+    float: left;
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    padding: 10px 10px 5px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#fit_asiatravel li {
+    overflow: hidden;
+}
+
+#fit_asiatravel i {
+    padding-right: 5px;
+    color: #dcdcdc;
+}
+
+
+#fit_asiatravel li a img {
+    display: block;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+#fit_asiatravel li a:hover img {
+    transform: scale(1.1);
+}
+
+.asiatravel_pic {
+    overflow: hidden;
+}
+
+#fit_asiatravel h1 {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    margin: 0 24px 2px 20px;
+    transition: .4s;
+}
+
+#fit_asiatravel h1:hover i {
+    transition: .4s;
+}
+
+#fit_asiatravel h1:hover,
+#fit_asiatravel h1:hover i {
+    color: #e65d53;
+}
+
+#fit_asiatravel h2 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+}
+
+.fit_luxetravel_title {
+    width: 218px;
+    height: 116px;
+    float: left;
+    background: url(https://www.artisan.com.tw/images/fit_travel_title.jpg) right center no-repeat;
+}
+
+.fit_asiatravel_title {
+    width: 218px;
+    height: 168px;
+    float: left;
+    background: url(https://www.artisan.com.tw/Zupload/002411/002426/00033055.jpg) center center no-repeat;
+}
+
+
+#fit_luxetravel li,
+#fit_asiatravel li {
+    width: 218px;
+    height: auto;
+    float: left;
+    margin-left: 14px;
+}
+
+
+#fit_road {
+    width: 100%;
+    height: 398px;
+    float: left;
+    background: #fff;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.fit_road_tool {
+    width: 563px;
+    height: auto;
+    float: left;
+    margin-right: 12px;
+}
+
+.fit_road_title {
+    width: 100%;
+    height: 164px;
+    margin-bottom: 12px;
+    background: url(https://www.artisan.com.tw/images/fit_RoadTrip.jpg) no-repeat;
+}
+
+.fit_road_tool ul {
+    width: 100%;
+}
+
+.fit_road_tool li {
+    width: 180px;
+    float: left;
+    margin-right: 11px;
+    overflow: hidden;
+}
+
+.fit_road_tool li:last-of-type {
+    margin-right: 0;
+}
+
+.fit_road_tool li a img {
+    display: block;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.fit_road_tool li a:hover img {
+    transform: scale(1.1);
+}
+
+#fit_road_banner {
+    width: 802px;
+    height: 376px;
+    float: left;
+}
+
+.fit_banner {
+    width: 100%;
+    height: 376px;
+    position: relative;
+}

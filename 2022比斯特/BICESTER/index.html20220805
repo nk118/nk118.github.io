@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:description" content="The Bicester Collection 比斯特系列" />
+  <meta property="og:title" content="巨匠旅遊-The Bicester Collection 比斯特系列" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.artisan.com.tw/2019_events/BicesterOutlet/">
+  <meta property="og:site_name" content="巨匠旅遊-The Bicester Collection 比斯特系列/">
+  <meta property=og:type content="website" />
+  <meta name="format-detection" content="telephone=no">
+  <title>The Bicester Collection 比斯特系列</title>
+  <meta name="description" content="The Bicester Collection 比斯特系列">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- google_font -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(window).on('load', function() {
+      var $win = $(window),
+        $ad = $('#abgne_float_ad').css('opacity', 0).show(),
+        _width = $ad.width(),
+        _height = $ad.height(),
+        _diffY = 50,
+        _diffX = 30, //距離右及下方邊距
+        _moveSpeed = 800, // 移動的速度
+        currentNavNo = 0;
+
+      $ad.css({
+        top: $(document).height(),
+        left: $win.width() - _width - _diffX,
+        opacity: 1
+      });
+
+      $win.bind('scroll resize', function() {
+        var $this = $(this);
+
+        $ad.stop().animate({
+          top: $this.scrollTop() + $this.height() - _height - _diffY,
+          left: $this.scrollLeft() + $this.width() - _width - _diffX
+        }, _moveSpeed);
+      }).scroll();
+
+      //整頁捲動-------?被點
+      $('#abgne_float_ad').click(function() {
+        $('html,body').animate({
+          scrollTop: 0
+        }, 500);
+      });
+      $(window).resize(function() {});
+      //aos
+      AOS.init({
+        once: true,
+      });
+      var $bannerv = $('<source src="video/1920x818-bv_220719.mp4" type="video/mp4">')
+      $('video').append($bannerv);
+    });
+
+    function MM_preloadImages() { //v3.0
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
+      }
+    }
+
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr;
+      for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x;
+      if (!d) d = document;
+      if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document;
+        n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n];
+      for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n);
+      return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0,
+        x, a = MM_swapImage.arguments;
+      document.MM_sr = new Array;
+      for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) {
+          document.MM_sr[j++] = x;
+          if (!x.oSrc) x.oSrc = x.src;
+          x.src = a[i + 2];
+        }
+    }
+  </script>
+</head>
+
+<body onLoad="MM_preloadImages('images/VIP_Link_gif.gif')">
+  <!-- SCROLLTOP -->
+  <div id="top-bar" style="bottom: 0px;">
+    <div>
+      <div id="abgne_float_ad" style="position: absolute; opacity: 1; top: 2768px; left: 1512px; z-index: 999;">
+        <a href="#top" class="go top">
+          <img src="./images/top.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="banner_wrap">
+    <div class="fullscreen-bg">
+      <video loop muted autoplay class="fullscreen-bg__video">
+                <!-- <source src="video/banner_small.mp4" type="video/mp4"> -->
+      </video>
+      <div class="logo_wrap">
+        <a href="https://www.bicestervillage.com/en/campaign/source/hong-kong-taiwan?gclid=EAIaIQobChMI7pnaqdOD4wIVAnZgCh2WGQy-EAAYAiAAEgIF8PD_BwE" target="_blank"> <img src="images/b_logo.png" alt="比斯特logo"></a>
+        <a href="https://www.artisan.com.tw/" target="_blank"><img src="images/g_logo.png" alt="巨匠logo"></a>
+      </div>
+    </div>
+  </div>
+  <div class="title" data-aos="fade-up" data-aos-duration="700">
+    <h3>全歐最大精品購物村集團</h3>
+    <h1>比斯特系列</h1>
+    <p>The Bicester Collection</p>
+    <p>倫敦/巴黎/都柏林/法蘭克福/布魯塞爾/米蘭/巴塞隆納/慕尼黑/馬德里/蘇州/上海</p>
+  </div>
+  <div class="contant_wrap" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-200">
+    <div class="contant_bg">
+      <div class="map_wrap">
+        <div class="map_box_w">
+          <h2>在歐洲和中國探索一流的奢華購物體驗</h2>
+          <p>歡迎來到 The Bicester Collection (比斯特系列) —— 旗下11家獨一無二的購物目的地為您的旅程帶來精彩非凡的體驗。這些精品購物村距離世界上最具活力的熱門城市僅一小時左右的路程，匯集國際知名品牌，為您提供美輪美奐的精品以及 4 折甚至更低的優惠，超值特惠非同尋常。賓客服務熱情周到，餐飲口味獨具特色。
+          </p>
+          <h3>歐洲</h3>
+          <p><span>倫敦</span>．比斯特購物村 / <span>巴黎</span>．河谷購物村</p>
+          <p><span>都柏林</span>．可爾代爾購物村 / <span>法蘭克福</span>．威爾特海姆購物村</p>
+          <p><span>布魯塞爾</span>．馬斯梅克林購物村 / <span>米蘭</span>．菲登扎購物村</p>
+          <p><span>巴賽隆納</span>．羅卡購物村 / <span>慕尼黑</span>．因戈爾施塔特購物村</p>
+          <p><span>馬德里</span>．拉斯喀扎斯購物村</p>
+          <h3>中國</h3>
+          <p><span>蘇州</span>．奕歐來蘇州購物村</p>
+          <p><span>上海</span>．奕歐來上海購物村</p>
+        </div>
+      </div>
+      <div class="village_wrap">
+        <!--1英國倫敦 比斯特購物村 -->
+        <div class="village_box london">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_london_big_m.jpg">
+              <img src="./images/village_london_big.jpg" alt="倫敦大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/london_tittle_logo.png" alt="倫敦購物村商標">
+              </div>
+              <div class="title_content">
+                <p>英國 - 倫敦</p>
+                <h2 class="h2_bicester">比斯特購物村</h2>
+                <!-- <span class="sub_title">Bicester Village Outlet</span> -->
+              </div>
+            </div>
+            <p>洋溢著典型英倫風情的比斯特村擁有專屬火車站，從牛津市抵達僅需十分鐘車程，而從倫敦馬里波恩出發也只需要四十六分鐘即可抵達。這裡被譽為擁有全世界上最美觀的購物街道，被花卉大師Nikki ibbles打造的美景讓您賞心悅目。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_london_small1.jpg" alt="倫敦小圖1">
+              <img src="./images/village_london_small2.jpg" alt="倫敦小圖2">
+              <img src="./images/village_london_small3.jpg" alt="倫敦小圖3">
+            </div>
+            <div class="recommend_box">
+              <div>
+                <a href="https://www.bicestervillage.com/eVIP-ArtisanTour">
+                  <picture>
+                    <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                    <img src="./images/VIP_Link_01.png" name="VIPbicester" onMouseOver="MM_swapImage('VIPbicester','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2法國巴黎 河谷購物村 -->
+        <div class="village_box paris">
+          <div class="village_img" data-aos="fade-left" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_paris_big_m.jpg">
+              <img src="./images/village_paris_big.jpg" alt="巴黎大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/paris_tittle_logo.png" alt="巴黎購物村商標">
+              </div>
+              <div class="title_content">
+                <p>法國 - 巴黎</p>
+                <h2 class="h2_paris">巴黎河谷購物村</h2>
+              </div>
+            </div>
+            <p>巴黎河谷購物村僅距離時尚之都四十分鐘車程，緊鄰巴黎迪斯尼樂園。購物村也靠近著著名的香檳產區，這裡充斥著無與倫比的浪漫氣息與文藝風情。鋪滿鵝卵石的街道，漂亮的精品店，遮陽蓬和燈籠，購物村洋溢著巴黎格調的同時也體現了法蘭西小鎮的內斂風格。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_paris_small1.jpg" alt="巴黎小圖1">
+              <img src="./images/village_paris_small2.jpg" alt="巴黎小圖2">
+              <img src="./images/village_paris_small3.jpg" alt="巴黎小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.lavalleevillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPparis" onMouseOver="MM_swapImage('VIPparis','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 3義大利米蘭 菲登扎購物村 -->
+        <div class="village_box italy">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_italy_big_m.jpg">
+              <img src="./images/village_italy_big.jpg" alt="義大利大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/fidenza_title_logo.png" alt="菲登扎購物村商標">
+              </div>
+              <div class="title_content">
+                <p>義大利 - 米蘭</p>
+                <h2 class="h2_fidenza">菲登扎購物村</h2>
+              </div>
+            </div>
+            <p>菲登扎購物村位於義大利人口最多的地區中心-艾米利亞羅馬涅。該村靠近著名的藝術和美食中心帕爾馬，購物村的建築靈感來自該地區豐富的文化遺產，尤其以歌劇作曲家朱塞佩·威爾第的故鄉而聞名，從他的歌劇精選中融入了對戲劇舞臺佈景的啓發式詮釋。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_italy_small1.jpg" alt="義大利小圖1">
+              <img src="./images/village_italy_small2.jpg" alt="義大利小圖2">
+              <img src="./images/village_italy_small3.jpg" alt="義大利小圖3">
+            </div>
+            <!-- <h3 data-aos="zoom-out-down" data-aos-duration="700">行程推薦</h3> -->
+            <div class="recommend_box">
+              <a href="https://www.fidenzavillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPfidenza" onMouseOver="MM_swapImage('VIPfidenza','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 4愛爾蘭都柏林 可爾代爾購物村 -->
+        <div class="village_box dublin">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_dublin_big_m.jpg">
+              <img src="./images/village_dublin_big.jpg" alt="都柏林大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/dublin_tittle_logo.png" alt="都柏林購物村商標">
+              </div>
+              <div class="title_content">
+                <p>愛爾蘭 - 都柏林</p>
+                <h2 class="h2_kildare">可爾代爾購物村</h2>
+              </div>
+            </div>
+            <p>距離都柏林一小時車程的可爾代爾購物村位於愛爾蘭賽馬產業的核心地帶，為您提供安逸的購物及休閒環境。購物村內集合了一百多家精品店，做為一個愛爾蘭文化的堡壘，這裡既覆蓋了愛爾蘭風情又包括了國際大牌格調。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_dublin_small1.jpg" alt="都柏林小圖1">
+              <img src="./images/village_dublin_small2.jpg" alt="都柏林小圖2">
+              <img src="./images/village_dublin_small3.jpg" alt="都柏林小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.kildarevillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPkildare" onMouseOver="MM_swapImage('VIPkildare','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--5德國慕尼黑 因戈爾施塔特購物村 -->
+        <div class="village_box munich">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_munich_big_m.jpg">
+              <img src="./images/village_munich_big.jpg" alt="慕尼黑大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_big_logo">
+                <img src="./images/munich_tittle_logo.png" alt="慕尼黑購物村商標">
+              </div>
+              <div class="title_content">
+                <p>德國 - 慕尼黑</p>
+                <h2 class="h2_ingolstadt">因戈爾施塔特購物村</h2>
+              </div>
+            </div>
+            <p>深受本地歷史薰陶的因戈爾施塔特購物村距離慕尼黑僅不到一小時車程，這裡匯集了眾多國際及德國本地時尚和生活品牌。充滿手繪裝飾細節的購物村建築及公共空間，交織著藝術氣息與工業文化，這在整個歐洲來說也堪稱別具一格。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_munich_small1.jpg" alt="慕尼黑小圖1">
+              <img src="./images/village_munich_small2.jpg" alt="慕尼黑小圖2">
+              <img src="./images/village_munich_small3.jpg" alt="慕尼黑小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.ingolstadtvillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPingolstadt" onMouseOver="MM_swapImage('VIPingolstadt','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 6德國法蘭克福 威爾特海姆 -->
+        <div class="village_box frankfurt">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_frankfurt_big_m.jpg">
+              <img src="./images/village_frankfurt_big.jpg" alt="法蘭克福大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/frankfurt_tittle_logo.png" alt="法蘭克福購物村商標">
+              </div>
+              <div class="title_content">
+                <p>德國 - 法蘭克福</p>
+                <h2 class="h2_Wertheim">威爾特海姆購物村</h2>
+              </div>
+            </div>
+            <p>威爾特海姆購物村距離法蘭克福僅五十分鐘車程，這裡坐落於風景如畫的葡萄酒產區陶伯谷，周圍遍布巴伐利亞古堡。嵌入了砲塔和中世紀盾牌元素的購物村建築風格體現了當地童話歷史的同時，展示著一百一十多家德國本地及國際大牌精品店。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_frankfurt_small1.jpg" alt="法蘭克福小圖1">
+              <img src="./images/village_frankfurt_small2.jpg" alt="法蘭克福小圖2">
+              <img src="./images/village_frankfurt_small3.jpg" alt="法蘭克福小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.wertheimvillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPwertheim" onMouseOver="MM_swapImage('VIPwertheim','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 7西班牙巴塞隆納 羅卡購物村 -->
+        <div class="village_box barcelona">
+          <div class="village_img" data-aos="fade-left" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_barcelona_big_m.jpg">
+              <img src="./images/village_barcelona_big.jpg" alt="巴塞隆納大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/barcelona_tittle_logo.png" alt="巴塞隆納購物村商標">
+              </div>
+              <div class="title_content">
+                <p>西班牙 - 巴塞隆納</p>
+                <h2 class="h2_La_Roca">羅卡購物村</h2>
+              </div>
+            </div>
+            <p>巴塞隆納羅卡購物村僅距離市中心十分鐘車程，座落在通往布拉瓦海岸的公路上。高迪的影響貫穿著整個購物村的建築風格，這裡同時也吸收了濃郁的地中海式風情。從林蔭廣場，噴泉，長椅到色彩繽紛的馬塞克磁磚，到處可以體驗到傳統加泰羅尼亞的審美。這裡還包括伊比利亞火腿之內的各種當地特色美食。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_barcelona_small1.jpg" alt="巴塞隆納小圖1">
+              <img src="./images/village_barcelona_small2.jpg" alt="巴塞隆納小圖2">
+              <img src="./images/village_barcelona_small3.jpg" alt="巴塞隆納小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.larocavillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIProca" onMouseOver="MM_swapImage('VIProca','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 8西班牙馬德里 拉斯咯扎斯購物村 -->
+        <div class="village_box madrid">
+          <div class="village_img" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_madrid_big_m.jpg">
+              <img src="./images/village_madrid_big.jpg" alt="馬德里大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_logo">
+                <img src="./images/las_rozas_title_logo.png" alt="拉斯咯扎斯購物村商標">
+              </div>
+              <div class="title_content">
+                <p>西班牙 - 馬德里</p>
+                <h2 class="h2_Las_Rozas">拉斯咯扎斯購物村</h2>
+              </div>
+            </div>
+            <p>拉斯咯扎斯購物村及其姊妹村羅卡購物村提供西班牙唯一的高檔奢侈品選擇。拉斯咯扎斯購物村是在西班牙推出的第二個購物村。其建築旨在喚起國際建築風格的拼貼畫，100多家精品店位於開放的步行街上。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_madrid_small1.jpg" alt="馬德里小圖1">
+              <img src="./images/village_madrid_small2.jpg" alt="馬德里小圖2">
+              <img src="./images/village_madrid_small3.jpg" alt="馬德里小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.lasrozasvillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPlasrozas" onMouseOver="MM_swapImage('VIPlasrozas','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 9比利時布魯塞爾 馬斯梅克林購物村 -->
+        <div class="village_box brussels">
+          <div class="village_img" data-aos="fade-left" data-aos-duration="1000">
+            <picture>
+              <source media="(max-width: 1300px)" srcset="./images/village_brussels_big_m.jpg">
+              <img src="./images/village_brussels_big.jpg" alt="布魯塞爾大圖">
+            </picture>
+          </div>
+          <div class="village_word">
+            <div class="title_box">
+              <div class="shop_big_logo">
+                <img src="./images/brussels_tittle_logo.png" alt="布魯塞爾購物村商標" class="speical_big">
+              </div>
+              <div class="title_content">
+                <p>比利時 - 布魯塞爾</p>
+                <h2 class="h2_Maasmechelen">馬斯梅克林購物村</h2>
+              </div>
+            </div>
+            <p>位於泛歐洲地帶的馬斯梅克林購物村緊鄰安特衛普，距離布魯塞爾僅一小時路程，同時還毗鄰比利時、德國及荷蘭的交界處。精巧的石板街道上匯聚了一百多家時尚生活品牌精品店，每個角落都洋溢著比利時式的熱情。
+            </p>
+            <div class="small_img_box">
+              <img src="./images/village_brussels_small1.jpg" alt="布魯塞爾小圖1">
+              <img src="./images/village_brussels_small2.jpg" alt="布魯塞爾小圖2">
+              <img src="./images/village_brussels_small3.jpg" alt="布魯塞爾小圖3">
+            </div>
+            <div class="recommend_box">
+              <a href="https://www.maasmechelenvillage.com/eVIP-ArtisanTour">
+                <picture>
+                  <source media="(max-width: 680px)" srcset="./images/VIP_Link_m.jpg">
+                  <img src="./images/VIP_Link_01.png" name="VIPmaasmechelen" onMouseOver="MM_swapImage('VIPmaasmechelen','','images/VIP_Link_gif.gif',1)" onMouseOut="MM_swapImgRestore()">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="foot_wrap">
+          <div class="footer_left">
+            <p>凱旋旅行社(股份)有限公司(交觀綜字第2133號)</p>
+            <p>巨匠旅遊 / 新視界假期 / 典藏旅遊</p>
+            <p>經營業務範圍：綜合旅行社經營業務範圍</p>
+            <p>代表人：項國棟 ｜ 聯絡人：劉恪宏</p>
+            <p>法律顧問：信和國際法律事務所 梁堯清律師</p>
+            <p>E-MAIL：<span style="font-size: 11px; font-family: Verdana;"><a
+                                href="mailto:artisantour@artisan.com.tw">ARTISANTOUR@ARTISAN.COM.TW</a></span>
+            </p>
+          </div>
+          <div class="footer_right">
+            <div class="contact_box_warp">
+              <div class="contact_box">
+                <p>台北&nbsp;&nbsp; <span>TEL:02-2507-5000</span></p>
+                <p>FAX:02-2504-6199</p>
+              </div>
+              <div class="contact_box">
+                <p>桃園&nbsp;&nbsp;<span>TEL:03-3561-755</span></p>
+                <p>FAX:03-3561-970</p>
+              </div>
+              <div class="contact_box">
+                <p>新竹&nbsp;&nbsp;<span>TEL:03-5283-088</span></p>
+                <p>FAX:03-5283-389</p>
+              </div>
+              <div class="contact_box">
+                <p>台中&nbsp;&nbsp;<span>TEL:04-2255-0229</span></p>
+                <p>FAX:04-2255-1169</p>
+              </div>
+              <div class="contact_box">
+                <p>員林&nbsp;&nbsp;<span>TEL:04-8365-288</span></p>
+                <p>FAX:04-8365-399</p>
+              </div>
+              <div class="contact_box">
+                <p>台南&nbsp;&nbsp;<span>TEL:06-222-6627</span></p>
+                <p>FAX:06-222-6731</p>
+              </div>
+              <div class="contact_box">
+                <p>高雄&nbsp;&nbsp;<span>TEL:07-2419-872</span></p>
+                <p>FAX:07-2154-690</p>
+              </div>
+              <div id="line_link" class="contact_box">
+                <p>
+                  <a href="http://line.me/ti/p/%40rgm1660e" target="_blank"><img src="./images/20_QRcode.png" alt="line QR code" class="QR-code" style="width: 80px;"></a>
+                  <span class="QR-txt">→點我加入LINE@好友，
+                    <br> 不定期享好康優惠!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- footer -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+﻿@charset "UTF-8";
+
+/* CSS Document */
+
+#content {
+  margin: 100px auto 0;
+  width: 86vw;
+}
+
+/*============== Banner ==============*/
+
+/*============== AirTicket ==============*/
+
+#fit_AirTicket {
+  width: 735px;
+  height: 432px;
+  background: #fff;
+  border: solid 1px #dcdcdc;
+  padding: 10px;
+  margin: 0 15px 15px 0;
+  box-sizing: border-box;
+  float: left;
+}
+
+
+.target-tabs {
+  text-align: center;
+}
+
+.tabs-wrapper ul.tab-nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 55px;
+  top: 11px;
+  z-index: 99;
+}
+
+.tabs-wrapper select.tab-nav {
+  display: none;
+}
+
+.tabs-wrapper ul.tab-nav li {
+  display: inline-block;
+}
+
+.tabs-wrapper ul.tab-nav li a {
+  background: #e1e1e1;
+  color: #464646;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.tabs-wrapper ul.tab-nav li.active a {
+  background: #e9746b;
+  color: white;
+  text-shadow: 0 0 1px #e9746b;
+}
+
+.tabs-wrapper .target-tabs {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabs-wrapper .target-tabs .tab-content {
+  display: none;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.tabs-wrapper .target-tabs .tab-content.active {
+  display: block;
+}
+
+.tab-content {
+  width: 100%;
+  margin: auto;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+/* @media screen and (max-width: 400px) {
+
+  .tab-content {
+
+      width: 300px;
+
+  }
+
+} */
+
+/*============== fit_globalTravel ==============*/
+
+.fit_globalTravel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 5px #757575;
+}
+
+.globalTravel_title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-size {
+  width: 30px;
+  margin: 0 auto;
+}
+
+.globalTravel_popular {}
+
+.globalTravel_line {}
+
+.globalTravel_go {}
+
+.globalTravel_content {
+  width: 1300px;
+}
+
+.globalTravel_content ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.globalTravel_content li {
+  margin: 10px;
+}
+
+.globalTravel_content li a {
+  position: relative;
+}
+
+.glabalTravel_img {}
+
+.glabalTravel_img img {
+  width: 225px;
+  height: 170px;
+  object-fit: cover;
+  border-bottom: #8c001a 10px solid;
+}
+
+.globalTravel_top10 {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.globalTravel_price {
+  font-size: 0.5rem;
+  padding: 5px;
+}
+
+.price {
+  padding-left: 3px;
+  font-size: 1rem;
+}
+
+/*============== AsiaSelect ==============*/
+
+#AsiaSelect {
+  padding: 20px 0;
+}
+
+.AsiaSelect-nav-tab {
+  z-index: 9;
+  position: relative;
+}
+
+.AsiaSelect-nav-tab-hidden {
+  overflow-x: auto;
+}
+
+@media (max-width: 576px) {
+  .AsiaSelect-nav-tab-hidden {
+    width: 90%;
+  }
+}
+
+.AsiaSelect-tab {
+  list-style: none;
+  padding: 0;
+  margin-top: -60px;
+  margin-left: 130px;
+}
+
+.AsiaSelect-tab li {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.AsiaSelect-tab li::after {
+  position: absolute;
+  content: "";
+  top: 34px;
+  left: 0;
+  width: 100%;
+  border-bottom: #8c001a 5px solid;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+
+.AsiaSelect-tab li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+  color: #757575;
+  transition: 0.4s;
+}
+
+.AsiaSelect-tab li.selected a,
+.AsiaSelect-tab li a:hover {
+  color: #8c001a;
+  font-family: "Noto Sans TC";
+}
+
+.AsiaSelect-tab li.selected a::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 100.5%;
+  border-bottom: 5px solid #8c001a;
+}
+
+.AsiaSelect-tab li:hover::after,
+.AsiaSelect-tab li.active::after {
+  content: "";
+  transform: scaleX(1);
+}
+
+
+/* 以上是border動畫 */
+
+.AsiaSelect-nav-tab>div>div {
+  display: none;
+}
+
+.AsiaSelect-nav-tab>div>div.active {
+  display: block;
+  position: relative;
+}
+
+.AsiaSelect-area {
+  margin-top: 50px;
+}
+
+.AsiaSelect-hidden {
+  overflow-x: auto;
+}
+
+.AsiaSelect-tool {
+  display: flex;
+  /*    flex-wrap: wrap;*/
+}
+
+@media (max-width: 1000px) {
+  #AsiaSelect .main-title {
+    border: none;
+  }
+
+  .AsiaSelect-tool {
+    min-width: 1000px;
+    overflow: auto;
+  }
+
+  .AsiaSelect-nav-tab-hidden {
+    display: block;
+    height: 39px;
+    border-bottom: 1px solid #757575;
+    margin-bottom: 30px;
+  }
+
+  .AsiaSelect-nav-tab ul {
+    margin: 0;
+  }
+}
+
+figure.AsiaSelect-box {
+  /*
+    width: 32%;
+    margin: 0 2% 10px 0;
+*/
+  width: calc((100% - 40px) / 3);
+  margin: 0 20px 10px 0;
+  line-height: 0;
+  overflow: hidden;
+  /*    border: solid 1px #8c001a;*/
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+figure.AsiaSelect-box:last-of-type {
+  margin-right: 0;
+}
+
+figure.AsiaSelect-box img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+figure.AsiaSelect-box:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+figure.AsiaSelect-box figcaption {
+  background: linear-gradient(transparent 5%, rgba(30, 29, 24, 0.9) 75%);
+  padding: 7px 15px;
+  position: absolute;
+  font-size: 0.875rem;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+figure.AsiaSelect-box p {
+  color: #fff;
+  padding: 0px;
+  margin: 0;
+  line-height: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+figure.AsiaSelect-box a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+/*==============  ==============*/
+
+
+
+/*==============  ==============*/

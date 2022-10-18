@@ -1,0 +1,296 @@
+﻿ /* CSS FOR DEMO ONLY */
+ 
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+ html,
+ body {
+   overflow: hidden;
+   font-family: Arial, sans-serif;
+ }
+ 
+ main.main-content {
+   position: relative;
+   z-index: 10;
+ }
+ 
+ .animated {
+   -webkit-animation-duration: 3s;
+   animation-duration: 3s;
+   -webkit-animation-delay: 500ms;
+   animation-delay: 500ms;
+ }
+ 
+ .animate-out {
+   -webkit-animation-delay: 0ms;
+   animation-delay: 0ms;
+ }
+ 
+ .owl-item {
+   display: table;
+ }
+ 
+ .owl-carousel .item {
+   position: relative;
+   height: 100vh;
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+ }
+ 
+ .owl-carousel .item .image-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-position: center;
+   z-index: 1;
+   image-rendering: optimizeQuality;
+ }
+ 
+ .owl-carousel .item .image-container .img-scale {
+   object-fit: cover;
+   height: 100%;
+ }
+ /* .img-scale {
+   animation: img-scale 20s 0.5s infinite ease-in-out forwards alternate;
+ }
+ 
+ @keyframes img-scale {
+   from {
+     transform: scale(1);
+   }
+   to {
+     transform: scale(1.2);
+   }
+ } */
+ 
+ .owl-carousel .item .slide-content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   color: #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .owl-carousel .item .caption .title {
+   margin: 0 auto 20px;
+   max-width: 1000px;
+   font-weight: 400;
+   font-size: 35px;
+   font-family: "Noto Sans CJK TC", sans-serif;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   text-shadow: #979797 0 0 4px;
+ }
+ 
+ .owl-carousel .item .caption hr {
+   box-shadow: #979797 0 0 4px;
+   border: #fff 1px solid;
+ }
+ 
+ .owl-carousel .item .caption .text p {
+   margin: 20px auto;
+   max-width: 1000px;
+   font-size: 22px;
+   font-family: "Noto Sans CJK TC", sans-serif;
+   line-height: 1.4;
+   letter-spacing: 0.35em;
+   text-shadow: #949494 0 0 4px;
+ }
+ 
+ .owl-theme .owl-nav [class*='owl-'] {
+   background: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+   height: 50px;
+   width: 50px;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .owl-theme .owl-nav [class*='owl-']:hover {
+   background: none;
+ }
+ 
+ .owl-nav .owl-prev {
+   /* margin: -33px 0 0; */
+   position: absolute;
+   top: 50%;
+   left: 30px;
+   cursor: pointer;
+   z-index: 3;
+   transition: left 0.2s ease;
+ }
+
+ .owl-nav .owl-prev:hover{
+   left: 15px;
+ }
+ 
+ .owl-nav .owl-prev img,
+ .owl-nav .owl-next img {
+   height: 30px;
+ }
+ 
+ .owl-nav .owl-next {
+   /* margin: -33px 0 0; */
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   cursor: pointer;
+   z-index: 3;
+   transition: right 0.2s ease;
+ }
+
+ .owl-nav .owl-next:hover{
+   right: 15px;
+ }
+ 
+ .owl-dots {
+   position: absolute;
+   bottom: 35px;
+   text-align: center;
+   width: 100%;
+   height: 12px;
+   cursor: default;
+   z-index: 2;
+ }
+ 
+ .owl-dots .owl-dot {
+   display: inline-block;
+   padding: 15px 5px;
+   position: relative;
+   width: 46px;
+   height: 32px;
+   cursor: pointer;
+ }
+ 
+ .owl-theme .owl-dots .owl-dot span {
+   display: block;
+   position: absolute;
+   top: 15px;
+   left: 0;
+   right: 0;
+   width: 36px;
+   height: 3px;
+   transition: background 0.2s ease;
+ }
+ 
+ .owl-theme .owl-dots .owl-dot:hover span {
+   background-color: #fff;
+ }
+ 
+ .owl-theme .owl-dots .owl-dot.active span {
+   background-color: #fff;
+ }
+ /* start Scroll Down Indicator */
+ 
+ .mouse-warp {
+   position: absolute;
+   bottom: 100px;
+   width: 28px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   z-index: 99;
+ }
+ 
+ .mouse {
+   width: 30px;
+   height: 55px;
+   border: 2px solid #fff;
+   border-radius: 20px;
+ }
+ /* PopularCountry的錨點位置 */
+ 
+ #pc {
+   height: 0;
+   width: 0;
+   position: absolute;
+   bottom: 100px;
+ }
+ 
+ @media (max-width:576px) {
+   /* #pc {
+     bottom: 70px;
+   } */
+   .owl-carousel .item .caption {
+     width: 55%;
+   }
+ }
+ /* PopularCountry的錨點位置 */
+ 
+ .scroll {
+   width: 9px;
+   height: 9px;
+   border-radius: 50%;
+   background: #fff;
+   position: relative;
+   left: 9px;
+   animation: scrolls 1.3s ease-out infinite;
+ }
+ 
+ @keyframes scrolls {
+   0% {
+     top: 8px;
+     opacity: 0;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   5% {
+     top: 8px;
+     opacity: 0.8;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   10% {
+     top: 8px;
+     opacity: 1;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   15% {
+     top: 8px;
+     opacity: 1;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   20% {
+     top: 8px;
+     opacity: 1;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   30% {
+     top: 15px;
+     opacity: 1;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+   100% {
+     top: 30px;
+     opacity: 0;
+     -webkit-transform: scaleY(1) scaleX(1);
+   }
+ }
+ /* End Scroll Down Indicator */
+ 
+ @media (max-width:576px) {
+   .mouse-warp {
+     display: none;
+   }
+ }
+ 
+ @media (max-width:375px) {
+   .owl-carousel .item .caption .title {
+     font-size: 32px;
+   }
+   .owl-carousel .item .caption .text p {
+     font-size: 18px;
+   }
+ }

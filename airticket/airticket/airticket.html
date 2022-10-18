@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86812711-1', 'auto');
+        ga('create', 'UA-4020146-31', 'auto', { 'name': 'ECTracker' });
+        ga('send', 'pageview');
+        ga('ECTracker.send', 'pageview');
+
+    </script>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="凱旋旅行社(巨匠旅遊)-國際機票">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="有位有價機票搜尋系統" />
+    <meta property="og:site_name" content="有位有價機票搜尋系統" />
+    <title>巨匠旅遊 -國際機票</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/AirTicket.css">
+    <link rel="stylesheet" href="css/AirTicket_style.css">
+</head>
+
+<body onload="tripTypeChange();">
+
+    <style type="text/css">
+        .dropdown-menu {
+            margin: -15% 0 0 0;
+        }
+
+        .datepicker-dropdown:before {
+            content: none;
+        }
+
+        .datepicker-dropdown:after {
+            content: none;
+        }
+    </style>
+
+    <div id="AirTicket">
+        <h1>國際機票 <span>AIR TICKET</span></h1>
+        <form action="/artisan/search/" method="post" id="searchForm" target="_new">
+            <div class="ticket-content">
+                <div class="ticket-list">
+                    <div class="ticket-area">
+                        <img src="artisanImages/Ticon01.png" alt="">
+                        <span class="ticket-label">出發地</span>
+                        <div class="search-box">
+                            <input id="depCityName" name="depCityName" type="hidden" required>
+                            <select id="depCity" name="depCity" class="selectmenu">
+                                <!-- <option value="">請選擇台灣出發機場</option> -->
+                                <option value="TPE">台灣桃園國際機場(TPE),台灣</option>
+                                <option value="TSA">台北松山機場(TSA),台灣</option>
+                                <option value="RMQ">台中清泉崗機場(RMQ),台灣</option>
+                                <option value="TNN">台南機場(TNN),台灣</option>
+                                <option value="KHH">高雄國際機場(KHH),台灣</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ticket-area">
+                        <span class="ticket-label">目的地</span>
+                        <div class="search-box">
+                            <input id="arrCityName" name="arrCityName" type="text"
+                                class="form-control search-airport fose ui-autocomplete-input selectmenu"
+                                placeholder="請輸入機場/城市中英文或代碼" autocomplete="off" required="" aria-required="true">
+                            <input id="arrCity" name="arrCity" type="hidden" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket-list">
+                    <div class="ticket-date">
+                        <img src="artisanImages/Ticon02.png" alt="">
+                        <span class="ticket-label">出發日期</span>
+                        <div class="search-box">
+                            <!-- <input type="date" class="selecinput" id="deptDate" name="deptDate" min="2022-10-03" max="2023-09-25" required> -->
+                            <input type="text" value="出發日期" class="selecinput" id="deptDate" name="deptDate"
+                                data-provide="datepicker" placeholder="yyyy-mm-dd" data-date-format="yyyy-mm-dd"
+                                data-date-start-date="+3d" data-date-end-date="+1y" data-date-today-btn="true"
+                                data-date-today-highlight="true" required>
+                        </div>
+                    </div>
+                    <div class="ticket-date return">
+                        <span class="ticket-label">出發日期</span>
+                        <div class="search-box">
+                            <input type="text" value="回程日期" class="selecinput" id="retDate" name="retDate"
+                                data-provide="datepicker" placeholder="yyyy-mm-dd" data-date-format="yyyy-mm-dd"
+                                data-date-start-date="+3d" data-date-end-date="+1y" data-date-today-btn="true"
+                                data-date-today-highlight="true" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-list">
+                    <div class="ticket-people">
+                        <img src="artisanImages/Ticon03.png" alt="">
+                        <div class="search-box dropdown newgot pc_pen">
+                            <button class="form-control dropdown-toggle text-left" type="button" id="menu1"
+                                data-toggle="dropdown"><span id="showPax">1位成人</span></button>
+                            <ul class="dropdown-menu  pop_romyear" role="menu" aria-labelledby="menu1">
+                                <div class="icon_upn"></div>
+                                <div class="col-md-12 poprom pop_indtab scrollbar">
+                                    <form id="fake"></form>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="" class="pop_leftti"> 大人 <span class="f12">12+</span></label>
+                                            <div class="pop_rightcon">
+                                                <button type="button" aria-label="減少成人數" class="pop_losnum"
+                                                    onclick="setpeople_no('ADT','-1');"><span
+                                                        class="icon_less"></span>－</button>
+                                                <div class="pop_shownum" id="ADTShow">1</div>
+                                                <button aria-label="增加成人數" type="button" class="pop_addnum"
+                                                    onclick="setpeople_no('ADT','1');"> <span
+                                                        class="icon_add"></span>＋</button>
+                                            </div>
+                                        </div>
+                                        <!--小孩-->
+                                        <div class="form-group">
+                                            <label for="" class="pop_leftti"> 兒童<span class="f12">2-12</span> </label>
+                                            <div class="pop_rightcon">
+                                                <button type="button" aria-label="減少兒童數" class="pop_losnum"
+                                                    id="les_child" onclick="setpeople_no('CNN','-1');"><span
+                                                        class="icon_less"></span>－</button>
+                                                <div class="pop_shownum" id="CNNShow">0</div>
+                                                <button aria-label="增加兒童數" type="button" class="pop_addnum"
+                                                    id="add_child" onclick="setpeople_no('CNN','1');"> <span
+                                                        class="icon_add"></span>＋</button>
+                                            </div>
+                                        </div>
+                                        <!--小孩_結束-->
+                                        <!--<button type="button" class="btn btn_check  visible-xs" onclick="">確 認</button>-->
+                                    </form>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ticket-plain">
+                        <img src="artisanImages/Ticon04.png" alt="">
+                        <div class="search-box">
+                            <input type="text" atocomplete="off" placeholder="航空公司偏好" name="airline" id="airline"
+                                class="form-control ui-autocomplete-input selectmenu" aria-required="true">
+                            <input type="hidden" class="form-control" id="airlineCode" name="airlineCode">
+                        </div>
+
+                        <div class="search-box" style="width: 100px">
+                            <select class="selectmenu" id="classOfService" name="classOfService">
+                                <option value="Y">經濟艙</option>
+                                <option value="S">豪華經濟艙</option>
+                                <option value="C">商務艙</option>
+                                <!--  <option value="J">豪華商務艙</option> -->
+                                <option value="F">頭等艙</option>
+                                <!-- <option value="P">豪華頭等艙</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket-list">
+                    <p class="note">「請注意：班機起飛前12小時內系統可能無法啟動自動開票作業，訂位紀錄也可能被自動取消之風險，建議保留出發前一個工作天以上的作業時間」</p>
+                    <button type="submit" class="ticket-btn" onclick="submitSearchForm()">搜尋航班</button>
+                </div>
+
+                <input type="hidden" value="" id="depArea" name="depArea">
+                <input type="hidden" value="" id="depCountry" name="depCountry">
+                <input type="hidden" value="" id="arrArea" name="arrArea">
+                <input type="hidden" value="" id="arrCountry" name="arrCountry">
+                <input type="hidden" value="" id="dep2Area" name="dep2Area">
+                <input type="hidden" value="" id="dep2Country" name="dep2Country">
+                <input type="hidden" value="" id="arr2Area" name="arr2Area">
+                <input type="hidden" value="" id="arr2Country" name="arr2Country">
+                <!--<input type="hidden" value="100ITINS" id="retCount" name="retCount">-->
+                <input type="hidden" value="50ITINS" id="retCount" name="retCount">
+                <input type="hidden" value="1" id="paxTypeADT" name="paxTypeADT">
+                <input type="hidden" value="0" id="paxTypeCNN" name="paxTypeCNN">
+                <input type="hidden" value="0" id="paxTypeINF" name="paxTypeINF">
+                <input type="hidden" value="0" id="paxTypeSTU" name="paxTypeSTU">
+                <input type="hidden" value="0" id="paxTypeLBR" name="paxTypeLBR">
+                <input type="hidden" name="stopCount" id="stopCount" value="2">
+                <input type="hidden" name="retTime" id="retTime" value="00002359">
+                <input type="hidden" name="deptTime" id="deptTime" value="00002359">
+
+            </div>
+        </form>
+    </div>
+
+
+    <script src="/scripts/jquery.min.js?sv=1"></script>
+    <script src="/scripts/bootstrap.min.js?sv=1"></script>
+    <!--top-->
+    <script src="/scripts/jquery-ui_NOdatepicker_min.js?sv=1"></script>
+    <script src="/scripts/bootstrap-datepicker.min.js?sv=1"></script>
+    <script src="/scripts/bootstrap-datepicker.zh-TW.min.js?sv=1"></script>
+    <script src="/scripts/bootstrap-typeahead.min.js?sv=1"></script>
+    <script src="/scripts/jquery.validate.min.js?sv=1"></script>
+    <script src="/scripts/messages_zh_TW.min.js?sv=1"></script>
+
+    <script type="text/javascript" src="js/includedContent.js?sv=1"></script>
+
+
+
+
+    <style>
+        .ui-autocomplete {
+            max-height: 400px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+        }
+
+        /* IE 6 doesn't support max-height
+	 * we use height instead, but this forces the menu to always be this tall
+	 */
+        * html .ui-autocomplete {
+            height: 400px;
+        }
+    </style>
+
+    <script>
+        $(".fose").on("click", function () {
+            $(this).select();
+        });
+
+        $("#classOfService").change(function () {
+            if ($('#paxTypeSTU').val() > 0) {
+                $("#theSelect option[value=Y]").siblings().Attr('disabled');
+            }
+        });
+        function tripTypeChange() {
+            var triptype = $('input[name=trip]:checked').val();
+            if (triptype == 'OneWay') {
+                $('.return').hide()
+                $('.openjaw').hide()
+            } else if (triptype == 'Return') {
+                $('.return').show()
+                $('.openjaw').hide()
+            } else if (triptype == 'OpenJaw') {
+                $('.return').show()
+                $('.openjaw').show()
+            }
+        }
+
+        function setStopCount(obj) {
+            if ($(obj).prop("checked")) {
+                $('#stopCount').val('0');
+            } else {
+                $('#stopCount').val('2');
+            }
+        }
+
+        var maxcnn = 3;
+        function setpeople_no(type, act) {
+            var num = parseInt(act);
+            var adult = parseInt($('#paxTypeADT').val());
+            var child = parseInt($('#paxTypeCNN').val());
+            var studen = parseInt($('#paxTypeSTU').val());
+            var lbr = parseInt($('#paxTypeLBR').val());
+
+            if (type == "ADT") {
+                studen = 0;
+                lbr = 0;
+                if (adult + num > 0 && adult + num < 7) {
+                    adult = num + adult;
+                }
+                maxcnn = adult * 3;
+                if (6 - adult < maxcnn) {
+                    maxcnn = 6 - adult;
+                }
+                if (child < maxcnn) {
+                    //
+                } else {
+                    child = maxcnn;
+                }
+            } else if (type == "CNN") {
+                studen = 0;
+                lbr = 0;
+                if (child + num >= 0 && child + num <= maxcnn) {
+                    if (child == 0 && adult == 0) adult = 1;
+                    child = num + child;
+                }
+            } else if (type == "STU") {
+                if (studen + num > 0 && studen + num < 7) {
+                    studen = num + studen;
+                    adult = 0;
+                    child = 0;
+                    lbr = 0;
+                }
+            } else if (type == "LBR") {
+                if (lbr + num > 0 && lbr + num < 7) {
+                    lbr = num + lbr;
+                    adult = 0;
+                    child = 0;
+                    studen = 0;
+                }
+            }
+            $("#paxTypeADT").val(adult);
+            $("#paxTypeCNN").val(child);
+            $("#paxTypeSTU").val(studen);
+            $("#paxTypeLBR").val(lbr);
+            $("#ADTShow").html(adult);
+            $("#CNNShow").html(child);
+            $("#STUShow").html(studen);
+            $("#LBRShow").html(lbr);
+            var str = "";
+            if (adult != 0) { str += adult + "位成人"; }
+            if (child != 0) { str += "," + child + "位小孩"; }
+            if (studen != 0) { str += studen + "位學生"; }
+            if (lbr != 0) { str += lbr + "位外勞"; }
+            $("#showPax").html(str);
+            if (studen == 1 && num == 1) $('#warning').show();
+            if (studen > 0) {
+                $('#classOfService').val('Y');
+            }
+        }
+
+        function submitSearchForm() {
+            var triptype = $('input[name=trip]:checked').val();
+            if ($('#depCityName').val() != '' && $('#depCity').val() == '') {
+                alert("請選擇出發地");
+                return false;
+            }
+            if ($('#arrCityName').val() != '' && $('#arrCity').val() == '') {
+                alert("請選擇目的地");
+                return false;
+            }
+            if (triptype == 'OpenJaw') {
+                if ($('#arr2CityName').val() != '' && $('#arr2City').val() == '') {
+                    alert("請選擇回程目的地");
+                    return false;
+                }
+                if ($('#dep2CityName').val() != '' && $('#dep2City').val() == '') {
+                    alert("請選擇回程出發地");
+                    return false;
+                }
+            }
+
+            if ($.trim($('#airline').val()).length == 0) {
+                $('#airlineCode').val('');
+            }
+            if ($.trim($('#depCity').val()).length == 0) {
+                $('#depCityName').val('');
+            }
+            if ($.trim($('#arr2City').val()).length == 0) {
+                $('#arr2CityName').val('');
+            }
+            if ($.trim($('#arrCityName').val()).length == 0) {
+                $('#arrCity').val('');
+            }
+            if ($.trim($('#dep2CityName').val()).length == 0) {
+                $('#dep2City').val('');
+            }
+
+            var actionVariable = 'depcity=' + $('#depCity').val() +
+                '&arrcity=' + $('#arrCity').val() +
+                '&triptype=' + triptype;
+            if ($.trim($('#dep2City').val()).length != 0) {
+                actionVariable += '&dep2city=' + $('#dep2City').val();
+            }
+            if ($.trim($('#arr2City').val()).length != 0) {
+                actionVariable += '&arr2city=' + $('#arr2City').val();
+            }
+            actionVariable += '&deptdate=' + $('#deptDate').val();
+            if ($.trim($('#retDate').val()).length != 0) {
+                actionVariable += '&retdate=' + $('#retDate').val();
+            }
+            if ($.trim($('#paxTypeADT').val()) != '0') {
+                actionVariable += '&paxADT=' + $('#paxTypeADT').val();
+            }
+            if ($.trim($('#paxTypeSTU').val()) != '0') {
+                actionVariable += '&paxSTU=' + $('#paxTypeSTU').val();
+            }
+            if ($.trim($('#paxTypeLBR').val()) != '0') {
+                actionVariable += '&paxLBR=' + $('#paxTypeLBR').val();
+            }
+            if ($.trim($('#paxTypeCNN').val()) != '0') {
+                actionVariable += '&paxCNN=' + $('#paxTypeCNN').val();
+            }
+            if ($.trim($('#classOfService').val()).length != 0) {
+                actionVariable += '&class=' + $('#classOfService').val();
+            }
+            if ($.trim($('#stopCount').val()).length != 0) {
+                actionVariable += '&stopcount=' + $('#stopCount').val();
+            }
+            if ($.trim($('#airlineCode').val()).length != 0) {
+                actionVariable += '&airline=' + $('#airlineCode').val();
+            }
+
+            $('#searchForm').attr('action', '/artisan/search/?' + actionVariable);
+            $('#searchForm').submit();
+        }
+
+        function submitQueryForm() {
+            $('#pnr').val($('#pnrr').val());
+            $('#lastname').val($('#lastnamee').val());
+            $('#firstname').val($('#firstnamee').val());
+            $('#queryForm').submit();
+        }
+
+        /*
+        $('#airline').typeahead({
+            onSelect: function(item) {
+                $('#airlineCode').val(item.value);
+            },
+            ajax: '/mode/menu/query/airline/'
+        });
+        */
+
+        $("#airline").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/mode/menu/query/airline/",
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    //delay: 500,
+                    dataType: "json",
+                    data: { query: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                value: item.name,
+                                code: item.id
+                            }
+                        }));
+                    },
+                    error: function (error) {
+                        //alert('error: ' + error);
+                    }
+                });
+            },
+            autoFocus: true,
+            minLength: 1,
+            search: function (event, ui) {
+                $("#airlineCode").val('');
+            },
+            select: function (event, ui) {
+                $("#airlineCode").val(ui.item.code);
+            },
+            close: function (event, ui) {
+                if ($("#airlineCode").val() == '') { $("#airline").val(''); }
+            },
+            open: function (result) {
+                if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                    $('.ui-autocomplete').off('menufocus hover mouseover');
+                }
+            }
+        });
+
+
+        $('#depCity').change(function () {
+            $('#depCityName').val($('#depCity').find(":selected").text());
+            $('#arrCityName').focus();
+        });
+        $('#arr2City').change(function () {
+            $('#arr2CityName').val($('#arr2City').find(":selected").text());
+        });
+        /*
+        $('#arrCityName').typeahead({    
+            onSelect: function(item) {
+                $('#arrCity').val(item.value);
+            },
+            ajax: '/mode/menu/query/airport/'
+        });
+        */
+        $("#arrCityName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/mode/menu/query/airport/",
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    //delay: 500,
+                    dataType: "json",
+                    data: { query: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                value: item.name,
+                                code: item.id
+                            }
+                        }));
+                    },
+                    error: function (error) {
+                        //alert('error: ' + error);
+                    }
+                });
+            },
+            autoFocus: true,
+            minLength: 2,
+            search: function (event, ui) {
+                $("#arrCity").val('');
+            },
+            select: function (event, ui) {
+                $("#arrCity").val(ui.item.code);
+            },
+            close: function (event, ui) {
+                if ($("#arrCity").val() == '') { $("#arrCityName").val(''); }
+                if ($('input[name=trip]:checked').val() == 'OpenJaw') {
+                    $('#dep2CityName').focus();
+                } else { $('#deptDate').focus(); }
+            },
+            open: function (result) {
+                if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                    $('.ui-autocomplete').off('menufocus hover mouseover');
+                }
+            }
+        });
+
+        /*
+        $('#dep2CityName').typeahead({    
+            onSelect: function(item) {
+                $('#dep2City').val(item.value);
+            },
+            ajax: '/mode/menu/query/airport/'
+        });
+        */
+        $("#dep2CityName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/mode/menu/query/airport/",
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    //delay: 500,
+                    dataType: "json",
+                    data: { query: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                value: item.name,
+                                code: item.id
+                            }
+                        }));
+                    },
+                    error: function (error) {
+                        //alert('error: ' + error);
+                    }
+                });
+            },
+            autoFocus: true,
+            minLength: 2,
+            search: function (event, ui) {
+                $("#dep2City").val('');
+            },
+            select: function (event, ui) {
+                $("#dep2City").val(ui.item.code);
+            },
+            close: function (event, ui) {
+                if ($("#dep2City").val() == '') { $("#dep2CityName").val(''); }
+                $('#arr2CityName').focus();
+            },
+            open: function (result) {
+                if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                    $('.ui-autocomplete').off('menufocus hover mouseover');
+                }
+            }
+        });
+
+        $('#deptDate').datepicker({ autoclose: true, language: "zh-TW" })
+            .on("changeDate", function (e) {
+                if ($('#retDate').datepicker('getDate') < e.date) {
+                    $('#retDate').datepicker('setDate', e.date)
+                }
+                $('#retDate').datepicker('setStartDate', e.date);
+                $('#retDate').focus();
+            });
+
+        $('#retDate').datepicker({
+            autoclose: true,
+            language: "zh-TW"
+        });
+
+
+        $('#paxTypeADT').change(function () {
+            var adt = $('#paxTypeADT').val();
+            var cnn = $('#paxTypeCNN').val();
+            var maxcnn = adt * 3;
+            if (6 - adt < maxcnn) {
+                maxcnn = 6 - adt;
+            }
+            $('#paxTypeCNN').empty();
+            for (i = 0; i <= maxcnn; i++) {
+                if (i != 0) { $('#paxTypeCNN').append('<option value="' + i + '">' + i + '小</option>'); }
+                else { $('#paxTypeCNN').append('<option value="' + i + '">小孩</option>'); }
+            }
+            if (cnn < maxcnn) {
+                $('#paxTypeCNN').val(cnn);
+            } else {
+                $('#paxTypeCNN').val(maxcnn);
+            }
+
+        });
+
+
+        $('#searchForm').validate();
+        $('#queryFormSub').validate();
+    </script>
+
+</body>
+
+</html>

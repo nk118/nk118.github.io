@@ -1,0 +1,272 @@
+
+
+/*============================ 會員註冊 ============================*/
+
+/*註冊填寫區塊*/
+.container h1{
+	font-size: 2.25rem;
+	color: #8c001a;
+	font-weight: bolder;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.titleLine{
+	color: #aaa;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.preface{
+	margin: 35px 0;
+}
+
+.preface h3{
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+.preface p{
+	letter-spacing: 1px;
+    line-height: 21px;
+    font-size: .9rem;
+}
+
+.memberSignUp_h2{
+	border-left: solid 5px #8c001a;
+    padding: 0 10px;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+}
+
+.info_tool{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.info_tool .info_block{
+	width: 48%;
+	position: relative;
+}
+
+.form_list {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_list .form_Tfield{
+	width: 49%;
+}
+
+.required:before {
+    content: "*";
+    font-size: 1rem;
+    margin: 0px 5px;
+}
+
+.formTitle {
+    font-size: 1rem;
+    width: 110px;
+    display: inline-block;
+}
+
+.formTitle_single{
+	font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    display: inline-block;
+    width: calc(100% - 120px);
+    height: 30px;
+    padding: 3px 12px;
+    font-size: .9rem;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #aaa;
+}
+
+.form-control_single{
+	display: inline-block;
+    height: 30px;
+    padding: 3px 12px;
+    font-size: .9rem;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #aaa;
+}
+
+.form_divide{
+	display: inline-block;
+}
+
+.formTitle_single span,
+.newsletter_notice{
+	font-size: .85rem;
+	color: #adadad;
+}
+
+.form_list_single{
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+input#add {
+    width: 20%;
+}
+
+input#postal {
+    width: 78.5%;
+}
+
+input#email,
+input#code,
+input#codeAgain {
+    width: 100%;
+}
+
+.locat_check{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.code_notice{
+	color: #8c100a;
+	font-weight: bolder;
+}
+
+.signUp_finish {
+    font-size: 1.2rem;
+    background-color: #8c001a;
+    padding: 8px 40px;
+    border-radius: 30px;
+    color: #FFF;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+.signUp_finish:hover{
+	background-color: #6b0014;
+}
+
+
+
+/*紅利積點*/
+.bonus_area{
+	background-color: #f4f3f3;
+	padding: 35px 0;
+	margin-bottom: 50px;
+	height: 300px; /*測試用假高*/
+}
+
+.bonus_h2 {
+    padding: 0 10px;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+
+/*熱門行程*/
+.MemberHot {
+    padding: 20px 0;
+    margin-bottom: 35px;
+}
+
+.MemberHot-box {
+    width: 100%;
+    position: relative;
+    margin: 0 0 10px 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.MemberHot-box_img{
+	background-color: #000000;
+}
+
+.MemberHot-box:hover img {
+    opacity: 0.6;
+}
+
+.MemberHot-box:hover p {
+    color: #8c100a;
+}
+
+.MemberHot-box img {
+    width: 100%;
+    transition: .5s;
+}
+
+.MemberHot-box p {
+    padding: 0px;
+    margin: 8px 0;
+    line-height: 21px;
+    font-size: .875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#MemberHot-owl-carousel .owl-nav {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translateY(-20px);
+    width: 100%;
+    margin: 0;
+}
+
+#MemberHot-owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: -5%;
+    font-size: 8rem;
+    line-height: 0;
+    color: #e5e5e5;
+}
+
+#MemberHot-owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: -5%;
+    font-size: 8rem;
+    line-height: 0;
+    color: #e5e5e5;
+}
+
+#MemberHot-owl-carousel .owl-nav .disabled {
+    opacity: 0;
+}
+
+#MemberHot-owl-carousel .owl-nav [class*=owl-]:hover,
+#MemberHot-owl-carousel .owl-nav [class*=owl-]:focus {
+    background: transparent;
+    outline: none;
+}
+
+#MemberHot-owl-carousel .owl-dots .owl-dot.active span,
+#MemberHot-owl-carousel .owl-dots .owl-dot:hover span {
+    background: #8c001a;
+}
+
+
+
+/*============================ 我的訂單 ============================*/
+
+
+
+/*============================ RWD ============================*/
+
+@media(max-width: 1400px){
+
+}

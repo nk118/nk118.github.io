@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>凱旋旅行社(巨匠旅遊)-國際機票</title>
+    <link rel="stylesheet" href="AirTicket.css">
+</head>
+
+<body>
+    <div id="AirTicket">
+        <div class="ticket-content">
+            <div class="ticket-label">
+                <input type="radio" name="ticket" id="ticket01" checked><label for="ticket01">來回</label>
+                <span>｜</span>
+                <input type="radio" name="ticket" id="ticket02"><label for="ticket02">單程</label>
+                <span>｜</span>
+                <input type="radio" name="ticket" id="ticket03"><label for="ticket03">不同進出點</label>
+            </div>
+            <div class="ticket-list">
+                <div class="ticket-area">
+                    <div class="ticket-area-title">出發地</div>
+                    <div class="search-box">
+                        <select class="selectmenu">
+                            <option selected="selected">台北國際桃園機場</option>
+                            <option>松山</option>
+                            <option>桃園</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="ticket-area">    
+                    <div class="ticket-area-title">目的地</div>
+                    <div class="search-box">
+                        <select class="selectmenu">
+                            <option selected="selected">請選擇目的地</option>
+                            <option>松山</option>
+                            <option>桃園</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ticket-list">
+                <div class="ticket-date">
+                    <div class="ticket-area-title">去程日期</div>
+                    <div class="search-box">
+                        <input value="出發日期" type="date" class="selecinput">
+                        <img src="images/calendar.svg">
+                    </div>
+                </div>
+                <div class="ticket-date">
+                    <div class="ticket-area-title">回程日期</div>
+                    <div class="search-box">
+                        <input value="回程日期" type="date" class="selecinput">
+                        <img src="images/calendar.svg">
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="ticket-list">
+                <div class="ticket-people">
+                    <div class="ticket-area-title">人數</div>
+                    <div class="search-box">
+                        <select class="selectmenu">
+                            <option selected="selected">一位成人</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ticket-plain">
+                    <div class="ticket-area-title">航空公司偏好</div>
+                    <div class="search-box">
+                        <input placeholder="請輸入關鍵詞" type="text" class="selecinput">
+                    </div>
+                </div>
+                <div class="ticket-airlineClass">
+                    <div class="ticket-area-title">艙等</div>
+                    <div class="search-box">
+                        <select class="selectmenu">
+                            <option selected="selected">經濟艙</option>
+                            <option>商務艙</option>
+                            <option>頭等艙</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-plain">
+                    <input type="checkbox" name="plain" id="plain" checked><label for="plain">只搜尋直飛航班</label>
+                </div>               
+            </div>
+            
+            
+            
+            <div class="ticket-list">
+                <p class="note">「請注意：班機起飛前12小時內系統可能無法啟動自動開票作業，訂位紀錄也可能被自動取消之風險，建議保留出發前一個工作天以上的作業時間」</p>
+                <button type="submit" class="ticket-btn">搜尋航班</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

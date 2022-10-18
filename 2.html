@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="baidu-site-verification" content="VtO3sJpoSM" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="js/jquery-1.10.1.min.js"></script>
+  <style type="text/css">
+    .active {
+      background: #faa;
+    }
+    
+    .tabs {
+      list-style: none;
+    }
+    
+    .tabs li {
+      float: left;
+      margin: 10px;
+    }
+    
+    .tab_container {
+      clear: both;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //默认的动作
+      $(".tab_content").hide(); //隐藏所有内容
+      $("ul.tabs li:first").addClass("active").show(); //第一个选项卡激活
+      $(".tab_content:first").show(); //第一个选项卡显示内容
+      //单击事件
+      $("ul.tabs li").click(function() {
+        $("ul.tabs li").removeClass("active"); //删除任何“active”类
+        $(this).addClass("active"); //“active”类添加到选定的选项卡
+        $(".tab_content").hide(); //隐藏所有选项卡的内容
+        var activeTab = $(this).find("a").attr("href"); //找到rel属性值来识别active tab+content
+        $(activeTab).fadeIn(); //active content淡入
+        return;
+      });
+
+
+      var tabId = window.location.hash; // 将看起来像“# h-02”
+      $(tabId).click(); // 在你绑定点击监听器
+    });
+  </script>
+</head>
+
+<body>
+  <ul class="tabs">
+    <li><a href="#tab1" id="1">Ex 1</a></li>
+    <li><a href="#tab2" id="2">Ex 2</a></li>
+    <li><a href="#tab3" id="3">Ex 3</a></li>
+    <li><a href="#tab4" id="4">Ex 4</a></li>
+  </ul>
+
+  <div class="tab_container">
+    <div id="tab1" class="tab_content">
+      <h2>Ex 1</h2>
+      <p>dlkfjdsla,dklsajf,dklajfkld.</p>
+    </div>
+    <div id="tab2" class="tab_content">
+      <h2>Ex 2</h2>
+      <p>daljfdjal,dlskajfdkls,dskalfjdska,dsalkfa.</p>
+    </div>
+    <div id="tab3" class="tab_content">
+      <h2>Ex 3</h2>
+      <p>jeafjlk,dslkajf,dsklajf,dslakj.</p>
+    </div>
+    <div id="tab4" class="tab_content">
+      <h2>Ex 4</h2>
+      <p>ajdlk,dskalj,dsaklj,welk,lk.</p>
+    </div>
+  </div>
+</body>
+
+</html>
