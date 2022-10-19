@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 #banner img {
@@ -68,9 +68,8 @@
 
 @media (max-width: 1400px) {
   #fit_content {
-    width: 90vw
+    width: 90vw;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -91,7 +90,6 @@
   max-width: 712px;
 }
 
-
 .AirTicket-nav-tab {
   position: relative;
   width: 712px;
@@ -99,26 +97,29 @@
 
 .AirTicket-tab {
   position: absolute;
-  top: 14px;
+  top: 1px;
   right: 20px;
   z-index: 1;
   display: flex;
 }
 
-.tabs-wrapper ul li {
+.tablinkai {
   display: inline-block;
   margin: 0 4px;
+  background: #e1e1e1;
+  padding: 10px 20px;
 }
 
-.tabs-wrapper ul li a {
-  background: #e1e1e1;
+.tablinkai a {
   color: #464646;
-  padding: 10px 20px;
   font-size: 18px;
 }
 
-.tabs-wrapper ul li.selected a {
+.tablinkai.selected {
   background: #e9746b;
+}
+
+.tablinkai.selected a {
   color: white;
   text-shadow: 0 0 1px #e9746b;
 }
@@ -163,17 +164,17 @@
 @media (max-width: 768px) {
   #fit_slider {
     width: 100%;
-  }
-
-  .ad {
     margin: 20px auto;
   }
+
+  /* .ad {
+    margin: 20px auto;
+  } */
 
   .ad img {
     width: 100%;
   }
 }
-
 
 /*============== /fit_slider ==============*/
 
@@ -193,7 +194,6 @@
 .globalTravel_title {
   text-align: center;
   padding-left: 20px;
-
 }
 
 .globalTravel_title div {
@@ -231,8 +231,9 @@
 
 .globalTravel_content ul {
   display: flex;
-  width: 1100px !important;
-  flex-direction: row;
+  width: 1070px;
+  height: 340px;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
@@ -263,7 +264,7 @@
 
 .globalTravel_img:hover img {
   transform: scale(1.1);
-  -webkit-filter: brightness(.5);
+  -webkit-filter: brightness(0.5);
 }
 
 .globalTravel_top10 {
@@ -333,7 +334,6 @@
 .main-title span {
   margin-left: 10px;
 }
-
 
 .packages-nav-tab-hidden {
   width: max-content;
@@ -408,7 +408,6 @@
   transform: scaleX(1);
 }
 
-
 /* 以上是border動畫 */
 
 .packages-tab span {
@@ -416,11 +415,11 @@
   color: #b8b8b8;
 }
 
-.packages-nav-tab>div>div {
+.packages-nav-tab > div > div {
   display: none;
 }
 
-.packages-nav-tab>div>div.active {
+.packages-nav-tab > div > div.active {
   display: block;
   position: relative;
 }
@@ -479,7 +478,7 @@ figure.packages-box img {
 
 figure.packages-box:hover img {
   transform: scale(1.1);
-  -webkit-filter: brightness(.5);
+  -webkit-filter: brightness(0.5);
 }
 
 figure.packages-box figcaption {
@@ -522,9 +521,6 @@ figure.packages-box a {
   z-index: 1;
 }
 
-
 /*============== /packages ==============*/
-
-
 
 /*==============  ==============*/
