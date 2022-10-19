@@ -1,29 +1,12 @@
 ﻿@charset "UTF-8";
 
 /* CSS Document */
-
-#content {
-  margin: 100px 0 0;
-}
-
-#fit_content {
-  display: flex;
-  width: 86vw;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-@media (max-width: 768px) {
-  #content {
-    margin-top: 16px;
-  }
-}
-
 /*============== Banner ==============*/
 
 #banner {
+  margin-top: 110px;
   position: relative;
+  text-align: center;
 }
 
 .banner-title {
@@ -44,23 +27,52 @@
 
 @media (max-width: 1400px) {
   #banner {
-    height: 500px;
+    height: 600px;
   }
 }
 
 @media (max-width: 768px) {
   #banner {
+    margin-top: unset;
     height: 500px;
   }
 }
 
 /*============== /Banner ==============*/
 
+/*============== content ==============*/
+#content {
+  margin: 30px 0 0;
+  font-family: "Noto Sans TC";
+}
+
+#fit_content {
+  display: flex;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1400px) {
+  #fit_content {
+    width: 90vw
+  }
+}
+
+@media (max-width: 768px) {
+  #content {
+    margin-top: 16px;
+  }
+}
+
+/*============== /content ==============*/
+
 /*============== AirTicket ==============*/
 
 #fit_AirTicket {
-  width: 50%;
-  margin: 10px;
+  max-width: 712px;
+  margin: 20px auto;
 }
 
 
@@ -71,7 +83,7 @@
 
 .AirTicket-tab {
   position: absolute;
-  top: 13px;
+  top: 14px;
   right: 20px;
   z-index: 1;
   display: flex;
@@ -95,11 +107,6 @@
   text-shadow: 0 0 1px #e9746b;
 }
 
-/* .iframe-container {
-  position: relative;
-  overflow: visible;
-} */
-
 .iframe-container iframe {
   width: 712px;
   height: 412px;
@@ -111,7 +118,7 @@
   }
 
   .tabs-wrapper {
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 }
 
@@ -119,9 +126,9 @@
 
 /*============== fit_slider ==============*/
 #fit_slider {
-  width: 50%;
-  margin: 10px;
-  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 592px;
 }
 
 .ad {
@@ -140,7 +147,6 @@
     width: 100%;
   }
 
-
   .ad img {
     width: 100%;
   }
@@ -156,7 +162,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px;
   box-shadow: 0 0 5px #757575;
 }
@@ -164,12 +170,12 @@
 .globalTravel_title {
   text-align: center;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .globalTravel_title div {
   padding: 10px 0;
-  font-size: 1.6rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .icon-size {
@@ -178,7 +184,9 @@
   padding: 5px 0;
 }
 
-.globalTravel_popular {}
+.globalTravel_popular {
+  font-size: 1.6rem;
+}
 
 .globalTravel_line {
   display: block;
@@ -190,11 +198,12 @@
 
 .globalTravel_go {
   color: #ff6501;
+  font-size: 1.4rem;
 }
 
 .globalTravel_content {
   display: flex;
-  width: 1360px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -218,8 +227,8 @@
 .glabalTravel_img {}
 
 .glabalTravel_img img {
-  width: 250px;
-  height: 170px;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
   border-bottom: #8c001a 10px solid;
 }
@@ -229,7 +238,7 @@
   bottom: 20px;
   left: 10px;
   color: #fff;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .globalTravel_price {
@@ -255,44 +264,70 @@
 
 /*============== /fit_globalTravel ==============*/
 
-/*============== AsiaSelect ==============*/
+/*============== packages ==============*/
 
-#AsiaSelect {
+#packages {
   padding: 20px 0;
+  margin: 20px auto;
 }
 
-.AsiaSelect-nav-tab {
-  z-index: 9;
-  position: relative;
+.packages-nav-tab {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.AsiaSelect-nav-tab-hidden {
+.main-title {
+  display: flex;
+  font-size: 1.7rem;
+  color: #494949;
+  width: max-content;
+  padding: 0 10px;
+}
+
+.icon-size2 {
+  width: 40px;
+}
+
+.icon-size2 img {
+  transform: rotateY(180deg);
+}
+
+.main-title span {
+  margin-left: 10px;
+}
+
+
+.packages-nav-tab-hidden {
+  width: max-content;
+  height: 46px;
+  align-self: center;
   overflow-x: auto;
+  margin-top: 5px;
 }
 
-@media (max-width: 576px) {
-  .AsiaSelect-nav-tab-hidden {
-    width: 90%;
+@media (max-width: 768px) {
+  .main-title {
+    margin: 20px auto;
   }
 }
 
-.AsiaSelect-tab {
+.packages-tab {
+  display: flex;
   list-style: none;
   padding: 0;
-  margin-top: -60px;
-  margin-left: 130px;
+  width: max-content;
 }
 
-.AsiaSelect-tab li {
+.packages-tab li {
   cursor: pointer;
   position: relative;
   display: inline-block;
   margin: 0 1rem;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
-.AsiaSelect-tab li::after {
+.packages-tab li::after {
   position: absolute;
   content: "";
   top: 34px;
@@ -303,7 +338,7 @@
   transition: 0.4s;
 }
 
-.AsiaSelect-tab li a {
+.packages-tab li a {
   position: relative;
   display: flex;
   width: 100%;
@@ -313,13 +348,13 @@
   transition: 0.4s;
 }
 
-.AsiaSelect-tab li.selected a,
-.AsiaSelect-tab li a:hover {
+.packages-tab li.selected a,
+.packages-tab li a:hover {
   color: #8c001a;
   font-family: "Noto Sans TC";
 }
 
-.AsiaSelect-tab li.selected a::after {
+.packages-tab li.selected a::after {
   content: "";
   position: absolute;
   top: 34px;
@@ -328,8 +363,8 @@
   border-bottom: 5px solid #8c001a;
 }
 
-.AsiaSelect-tab li:hover::after,
-.AsiaSelect-tab li.active::after {
+.packages-tab li:hover::after,
+.packages-tab li.active::after {
   content: "";
   transform: scaleX(1);
 }
@@ -337,95 +372,79 @@
 
 /* 以上是border動畫 */
 
-.AsiaSelect-nav-tab>div>div {
+.packages-nav-tab>div>div {
   display: none;
 }
 
-.AsiaSelect-nav-tab>div>div.active {
+.packages-nav-tab>div>div.active {
   display: block;
   position: relative;
 }
 
-.AsiaSelect-area {
-  margin-top: 50px;
+.packages-area {
+  margin-top: -7px;
+  padding-top: 20px;
+  border-top: #c1c1c1 1px solid;
+  overflow: auto;
 }
 
-.AsiaSelect-hidden {
+.packages-hidden {
   overflow-x: auto;
 }
 
-.AsiaSelect-tool {
+.packages-tool {
   display: flex;
   /*    flex-wrap: wrap;*/
 }
 
 @media (max-width: 1000px) {
-  #AsiaSelect .main-title {
+  #packages .main-title {
     border: none;
   }
 
-  .AsiaSelect-tool {
+  .packages-tool {
     min-width: 1000px;
     overflow: auto;
   }
-
-  .AsiaSelect-nav-tab-hidden {
-    display: block;
-    height: 39px;
-    border-bottom: 1px solid #757575;
-    margin-bottom: 30px;
-  }
-
-  .AsiaSelect-nav-tab ul {
-    margin: 0;
-  }
 }
 
-figure.AsiaSelect-box {
-  /*
-    width: 32%;
-    margin: 0 2% 10px 0;
-*/
+figure.packages-box {
   width: calc((100% - 40px) / 3);
-  margin: 0 20px 10px 0;
+  margin: 10px;
   line-height: 0;
   overflow: hidden;
-  /*    border: solid 1px #8c001a;*/
-  background: #000;
   color: #fff;
   position: relative;
+  box-shadow: 0 0 5px #757575;
 }
 
-figure.AsiaSelect-box:last-of-type {
+figure.packages-box:last-of-type {
   margin-right: 0;
 }
 
-figure.AsiaSelect-box img {
+figure.packages-box img {
   width: 100%;
   transition: 0.5s;
+  position: relative;
+  z-index: -1;
 }
 
-figure.AsiaSelect-box:hover img {
-  opacity: 0.6;
+figure.packages-box:hover img {
   transform: scale(1.1);
+  -webkit-filter: brightness(.5);
 }
 
-figure.AsiaSelect-box figcaption {
-  background: linear-gradient(transparent 5%, rgba(30, 29, 24, 0.9) 75%);
-  padding: 7px 15px;
-  position: absolute;
-  font-size: 0.875rem;
-  top: 60%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: flex-end;
+figure.packages-box figcaption {
+  background: #fff;
+  border: #aaaaaa 1px solid;
+  border-top: unset;
 }
 
-figure.AsiaSelect-box p {
-  color: #fff;
-  padding: 0px;
+figure.packages-box p {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 15px 20px 0;
   margin: 0;
   line-height: 21px;
   white-space: nowrap;
@@ -433,7 +452,20 @@ figure.AsiaSelect-box p {
   text-overflow: ellipsis;
 }
 
-figure.AsiaSelect-box a {
+figure.packages-box p.card-price {
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: end;
+  color: #df0000;
+}
+
+figure.packages-box p.card-price span {
+  color: #000;
+  font-size: 0.7rem;
+}
+
+figure.packages-box a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -443,7 +475,7 @@ figure.AsiaSelect-box a {
 }
 
 
-/*==============  ==============*/
+/*============== /packages ==============*/
 
 
 

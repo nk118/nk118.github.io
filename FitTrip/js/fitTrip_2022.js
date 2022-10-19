@@ -4,4 +4,10 @@ $(document).ready(function () {
     defaultSkin: true,
     fadeEffect: true,
   });
+
+  // packages
+  $(".packages-tab").simpleTab({
+    defaultSkin: true,
+    fadeEffect: true,
+  });
 });
