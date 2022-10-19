@@ -7,6 +7,8 @@
   margin-top: 110px;
   position: relative;
   text-align: center;
+  width: 100%;
+  height: 550px;
 }
 
 .banner-title {
@@ -22,7 +24,9 @@
 }
 
 #banner img {
+  width: inherit;
   height: inherit;
+  object-fit: none;
 }
 
 @media (max-width: 1400px) {
@@ -54,15 +58,28 @@
   flex-wrap: wrap;
 }
 
+.fit_content_wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
 @media (max-width: 1400px) {
   #fit_content {
     width: 90vw
   }
+
 }
 
 @media (max-width: 768px) {
   #content {
     margin-top: 16px;
+  }
+
+  .fit_content_wrap {
+    flex-wrap: wrap;
   }
 }
 
@@ -72,7 +89,6 @@
 
 #fit_AirTicket {
   max-width: 712px;
-  margin: 20px auto;
 }
 
 
@@ -112,12 +128,9 @@
   height: 412px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   #fit_AirTicket {
     width: 100%;
-  }
-
-  .tabs-wrapper {
     overflow-x: auto;
   }
 }
@@ -126,9 +139,8 @@
 
 /*============== fit_slider ==============*/
 #fit_slider {
-  width: 100%;
-  margin: 20px auto;
-  max-width: 592px;
+  width: 592px;
+  margin: 0 0 0 20px;
 }
 
 .ad {
@@ -142,9 +154,19 @@
   width: 100%;
 }
 
+.ad span {
+  display: block;
+  font-family: serif;
+  padding: 2px;
+}
+
 @media (max-width: 768px) {
   #fit_slider {
     width: 100%;
+  }
+
+  .ad {
+    margin: 20px auto;
   }
 
   .ad img {
@@ -161,16 +183,17 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
   margin: 20px 0;
   padding: 10px;
-  box-shadow: 0 0 5px #757575;
+  box-shadow: 0 0 5px #d4d4d4;
 }
 
 .globalTravel_title {
   text-align: center;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+
 }
 
 .globalTravel_title div {
@@ -203,12 +226,12 @@
 
 .globalTravel_content {
   display: flex;
-  width: 1100px;
   margin: 0 auto;
 }
 
 .globalTravel_content ul {
   display: flex;
+  width: 1100px !important;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -217,20 +240,30 @@
 }
 
 .globalTravel_content li {
-  margin: 10px;
+  margin: 7px;
 }
 
 .globalTravel_content li a {
   position: relative;
 }
 
-.glabalTravel_img {}
+.globalTravel_img {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-bottom: #8c001a 10px solid;
+}
 
-.glabalTravel_img img {
+.globalTravel_img img {
   width: 200px;
   height: 150px;
   object-fit: cover;
-  border-bottom: #8c001a 10px solid;
+  transition: 0.5s;
+}
+
+.globalTravel_img:hover img {
+  transform: scale(1.1);
+  -webkit-filter: brightness(.5);
 }
 
 .globalTravel_top10 {
@@ -243,7 +276,7 @@
 
 .globalTravel_price {
   font-size: 0.5rem;
-  padding: 5px;
+  padding: 5px 0 0;
 }
 
 .price {
@@ -257,7 +290,6 @@
   }
 
   .globalTravel_content ul {
-    flex-wrap: nowrap;
     justify-content: unset;
   }
 }
@@ -267,8 +299,14 @@
 /*============== packages ==============*/
 
 #packages {
+  width: 100%;
   padding: 20px 0;
   margin: 20px auto;
+}
+
+#packages .container {
+  width: 100%;
+  max-width: unset;
 }
 
 .packages-nav-tab {
@@ -281,7 +319,7 @@
   font-size: 1.7rem;
   color: #494949;
   width: max-content;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 
 .icon-size2 {
@@ -305,7 +343,7 @@
   margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 693px) {
   .main-title {
     margin: 20px auto;
   }
@@ -344,6 +382,7 @@
   width: 100%;
   text-decoration: none;
   font-family: "Noto Sans TC";
+  font-weight: 500;
   color: #757575;
   transition: 0.4s;
 }
@@ -371,6 +410,11 @@
 
 
 /* 以上是border動畫 */
+
+.packages-tab span {
+  padding-top: 1px;
+  color: #b8b8b8;
+}
 
 .packages-nav-tab>div>div {
   display: none;
@@ -415,7 +459,11 @@ figure.packages-box {
   overflow: hidden;
   color: #fff;
   position: relative;
-  box-shadow: 0 0 5px #757575;
+  box-shadow: 0 0 10px #d4d4d4;
+}
+
+figure.packages-box:first-of-type {
+  margin-left: 0;
 }
 
 figure.packages-box:last-of-type {

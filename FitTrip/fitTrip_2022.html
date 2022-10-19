@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -18,20 +18,206 @@
     <!-- flatpickr -->
     <link rel="stylesheet" href="/css/flatpickr.css" />
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/layout_2022.css" />
-    <link rel="stylesheet" type="text/css" href="css/fitTrip_2022.css" />
-    <link rel="stylesheet" type="text/css" href="css/memberArea.css" />
-    <link rel="stylesheet" type="text/css" href="css/memberLogin_style.css" />
-    <link href="css/flash.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/css/layout_2022.css" />
+    <link rel="stylesheet" type="text/css" href="/css/memberArea.css" />
+    <link rel="stylesheet" type="text/css" href="/css/memberLogin_style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css" />
     <script type="text/javascript" src="/js/main-1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fitTrip_2022.css" />
+
+    <!-- Yahoo 關鍵字廣告 -->
+    <script type="application/javascript">
+        (function (w, d, t, r, u) {
+            w[u] = w[u] || [];
+            w[u].push({
+                'projectId': '10000',
+                'properties': {
+                    'pixelId': '10072098'
+                }
+            });
+            var s = d.createElement(t);
+            s.src = r;
+            s.async = true;
+            s.onload = s.onreadystatechange = function () {
+                var y, rs = this.readyState,
+                    c = w[u];
+                if (rs && rs != "complete" && rs != "loaded") {
+                    return
+                }
+                try {
+                    y = YAHOO.ywa.I13N.fireBeacon;
+                    w[u] = [];
+                    w[u].push = function (p) {
+                        y([p])
+                    };
+                    y(c)
+                } catch (e) { }
+            };
+            var scr = d.getElementsByTagName(t)[0],
+                par = scr.parentNode;
+            par.insertBefore(s, scr)
+        })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");
+    </script>
+    <script>
+        (function (w, d, t, r, u) {
+            var f, n, i;
+            w[u] = w[u] || [], f = function () {
+                var o = {
+                    ti: "25034919"
+                };
+                o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+            }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+                var s = this.readyState;
+                s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+            }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+        })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <!-- End Yahoo 關鍵字廣告 -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 770077597 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-770077597"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-770077597');
+    </script>
+    <!-- End Global site tag (gtag.js) -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '222499921858853');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1"
+            src="https://www.facebook.com/tr?id=222499921858853&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '745798809194089');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=745798809194089&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Yahoo Code -->
+    <script
+        type="application/javascript">(function (w, d, t, r, u) { w[u] = w[u] || []; w[u].push({ 'projectId': '10000', 'properties': { 'pixelId': '10094316' } }); var s = d.createElement(t); s.src = r; s.async = true; s.onload = s.onreadystatechange = function () { var y, rs = this.readyState, c = w[u]; if (rs && rs != "complete" && rs != "loaded") { return } try { y = YAHOO.ywa.I13N.fireBeacon; w[u] = []; w[u].push = function (p) { y([p]) }; y(c) } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr) })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");</script>
+    <!-- End Yahoo Code -->
+
+    <!-- LINE Tag Base Code -->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: '64603059-bbc0-431b-950b-b4645e962010'
+        });
+        _lt('send', 'pv', ['64603059-bbc0-431b-950b-b4645e962010']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=64603059-bbc0-431b-950b-b4645e962010&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 684764926 -->
+    <scriptasync src="https://www.googletagmanager.com/gtag/js?id=AW-684764926">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'AW-684764926');
+        </script>
+
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WGXR6LC');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGXR6LC" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132434383-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-132434383-1');
+        </script>
+
+        <script>
+            (function (w, d, s, r, c, a, m) {
+                w[c] = w[c] || function () {
+                    (w[c].q = w[c].q || []).push(arguments)
+                }
+                a = d.createElement(s);
+                a.async = 1;
+                a.src = r + '&' + Math.random();
+                m = d.getElementsByTagName(s)[0];
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', '//www.techsolutions.com.tw/analytics.js?id=5e4f558baa4065e4&d=https://adbert.techsolutions.com.tw', 'atm');
+            atm('send', 'pageview');
+        </script>
 
 </head>
 
@@ -423,57 +609,59 @@
             <!-- /banner -->
 
             <div id="content">
-                <!-----  ----->
                 <div id="fit_content">
-                    <div id="fit_AirTicket">
-                        <div class="tabs-wrapper">
-                            <div class="AirTicket-nav-tab">
-                                <span class="AirTicket-nav-tab-hidden">
-                                    <ul class="tab AirTicket-tab simple-tab" data-tab-name="tab1">
-                                        <li class="tablinkai">
-                                            <a href="#AirTicket">國際機票</a>
-                                        </li>
-                                        <li class="tablinkai">
-                                            <a href="#Packages">機+酒</a>
-                                        </li>
-                                        <li class="tablinkai">
-                                            <a href="#Train">歐洲鐵路</a>
-                                        </li>
-                                    </ul>
-                                </span>
-                                <div class="AirTicket-area">
-                                    <div id="AirTicket" style="display: block;" class="tabcontenta">
-                                        <div class="iframe-container">
-                                            <iframe src="https://cs.sabretn.com.tw/artisan/index_artisan"
-                                                frameborder="0"></iframe>
+                <!-- fit_AirTicket -->
+                    <div class="fit_content_wrap">
+                        <div id="fit_AirTicket">
+                            <div class="tabs-wrapper">
+                                <div class="AirTicket-nav-tab">
+                                    <span class="AirTicket-nav-tab-hidden">
+                                        <ul class="tab AirTicket-tab simple-tab" data-tab-name="tab1">
+                                            <li class="tablinkai">
+                                                <a href="#AirTicket">國際機票</a>
+                                            </li>
+                                            <li class="tablinkai">
+                                                <a href="#Packages">機+酒</a>
+                                            </li>
+                                            <li class="tablinkai">
+                                                <a href="#Train">歐洲鐵路</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                    <div class="AirTicket-area">
+                                        <div id="AirTicket" style="display: block;" class="tabcontenta">
+                                            <div class="iframe-container">
+                                                <iframe src="https://cs.sabretn.com.tw/artisan/index_artisan"
+                                                    frameborder="0"></iframe>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="Packages" style="display: block;" class="tabcontenta">
-                                        <div class="iframe-container">
-                                            <iframe
-                                                src="https://pkg.sabretn.com.tw/PKG/FNH/search3.jsp?modecode=artisan"
-                                                frameborder="0"></iframe>
+                                        <div id="Packages" style="display: block;" class="tabcontenta">
+                                            <div class="iframe-container">
+                                                <iframe
+                                                    src="https://pkg.sabretn.com.tw/PKG/FNH/search3.jsp?modecode=artisan"
+                                                    frameborder="0"></iframe>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="Train" style="display: block;" class="tabcontenta">
-                                        <div class="iframe-container">
-                                            <iframe src="" frameborder="0"></iframe>
+                                        <div id="Train" style="display: block;" class="tabcontenta">
+                                            <div class="iframe-container">
+                                                <iframe src="" frameborder="0"></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- fit_slider -->
+                        <!-- fit_slider -->
 
-                    <div id="fit_slider">
-                        <div class="fit_slider_banner">
-                            <a href="https://www.artisan.com.tw/exh/ExhMini.aspx?area_no=32&no=134" target="_blank"
-                                class="ad">
-                                <img src="https://www.artisan.com.tw/Zupload/000429/002787/00035557.jpg" alt="">
-                                <span>EUROPAMUNDO</span>
-                            </a>
+                        <div id="fit_slider">
+                            <div class="fit_slider_banner">
+                                <a href="https://www.artisan.com.tw/exh/ExhMini.aspx?area_no=32&no=134" target="_blank"
+                                    class="ad">
+                                    <img src="https://www.artisan.com.tw/Zupload/000429/002787/00035557.jpg" alt="">
+                                    <span>EUROPAMUNDO</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -491,101 +679,101 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch01.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">首爾機加酒5日
-                                            <div class="globalTravel_price">$<span class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">首爾機加酒5日
+                                                <div class="globalTravel_price">$<span class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch02.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">曼谷機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">曼谷機加酒5日
+                                                <div class="globalTravel_price">$<span class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch03.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">新加坡機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">新加坡機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch04.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">東京機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">東京機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch05.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">大阪機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">大阪機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch06.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">洛杉磯機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">洛杉磯機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch07.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">溫哥華機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">溫哥華機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch08.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">雪梨機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">雪梨機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch09.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">巴黎機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">巴黎機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="glabalTravel_img">
+                                        <div class="globalTravel_img">
                                             <img src="images/test_PopularSearch10.jpg" alt="">
-                                        </div>
-                                        <div class="globalTravel_top10">倫敦機加酒5日 <div class="globalTravel_price">$<span
-                                                    class="price">30,000</span>起</div>
+                                            <div class="globalTravel_top10">倫敦機加酒5日 <div class="globalTravel_price">$<span
+                                                        class="price">30,000</span>起</div>
+                                            </div>
                                         </div>
                                     </a>
                                 </li>
@@ -606,9 +794,13 @@
                                 <div class="packages-nav-tab-hidden">
                                     <ul class="tab packages-tab simple-tab" data-tab-name="tab2">
                                         <li class="tablinksc"><a href='#Area0'>日韓</a></li>
+                                        <span>|</span>
                                         <li class="tablinksc"><a href='#Area1'>東南亞</a></li>
+                                        <span>|</span>
                                         <li class="tablinksc"><a href='#Area2'>海島</a></li>
+                                        <span>|</span>
                                         <li class="tablinksc"><a href='#Area3'>歐洲</a></li>
+                                        <span>|</span>
                                         <li class="tablinksc"><a href='#Area4'>美洲</a></li>
                                     </ul>
                                 </div>
@@ -1002,6 +1194,74 @@
 
             <script src="/js/index_2022.js"></script>
             <script src="./js/fitTrip_2022.js"></script>
+            <!-- 側邊浮動公告 -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $(window).load(function() {
+                        // adv left
+                        var $win2 = $(window),
+                            $ad2 = $('#abgne_float_ad2').css('opacity', 0).show(),
+                            _width2 = $ad2.width(),
+                            _height2 = $ad2.height(),
+                            _diffY2 = 80,
+                            _diffX2 = 20,
+                            _moveSpeed2 = 800;
+                        $ad2.css({
+                            top: _diffY2,
+                            right: _diffX2,
+                            opacity: 1
+                        });
+    
+                        $win2.bind('scroll resize', function() {
+                            var $this = $(this);
+    
+                            $ad2.stop().animate({
+                                top: $this.scrollTop() + $this.height() - _height2 - _diffY2,
+                                right: $this.scrollLeft() + _diffX2
+                            }, _moveSpeed2);
+                        }).scroll();
+                        $('#abgne_float_ad2 .abgne_close_ad').click(function() {
+                            $ad2.hide();
+                        });
+                    });
+                });
+    
+                // $(window).on('load', function() {
+                // $('.loading_mask').fadeOut(300);
+                //公告圖
+                // var nowDate = new Date();
+                //公告關閉時間
+                //月份從0開始
+                // var endDate = new Date(2021, 4, 13);
+                // if ((endDate - nowDate) > 0) {
+                // $('.billboard').fadeIn(500);
+                // $(".billboard_close,.billboard").on('click', function() {
+                // $('.billboard').fadeOut(500);
+                // });
+                // }
+                // });
+    
+                $(function() {
+                    setTimeout(function() {
+                        $(".billboard").fadeOut(500);
+                    }, 10000);
+                })
+    
+                $(".billboard_close,.billboard").on('click', function() {
+                    $('.billboard').fadeOut(500);
+                });
+            </script>
+            <!-- 側邊浮動公告 -->
+        
+    
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    
+        
+    
+        //]]>
+    </script>
     </form>
 </body>
 
