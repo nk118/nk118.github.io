@@ -26,7 +26,7 @@
 #banner img {
   width: inherit;
   height: inherit;
-  object-fit: none;
+  object-fit: cover;
 }
 
 @media (max-width: 1400px) {
@@ -146,12 +146,16 @@
 
 /*============== fit_slider ==============*/
 #fit_slider {
-  width: 592px;
+  width: 74%;
+  max-width: 592px;
   margin: 0 0 0 20px;
+  overflow: hidden;
 }
+
 
 .ad {
   display: block;
+  width: 100%;
   background-color: #8c001a;
   color: #fff;
   text-align: center;
@@ -172,14 +176,6 @@
     width: 100%;
     margin: 20px auto;
   }
-
-  /* .ad {
-    margin: 20px auto;
-  } */
-
-  .ad img {
-    width: 100%;
-  }
 }
 
 /*============== /fit_slider ==============*/
@@ -199,7 +195,6 @@
 
 .globalTravel_title {
   text-align: center;
-  padding-left: 20px;
 }
 
 .globalTravel_title div {
@@ -232,13 +227,12 @@
 
 .globalTravel_content {
   display: flex;
-  margin: 0 auto;
 }
 
 .globalTravel_content ul {
   display: flex;
   width: 1070px;
-  height: 340px;
+  height: 350px;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -421,11 +415,11 @@
   color: #b8b8b8;
 }
 
-.packages-nav-tab > div > div {
+.packages-nav-tab>div>div {
   display: none;
 }
 
-.packages-nav-tab > div > div.active {
+.packages-nav-tab>div>div.active {
   display: block;
   position: relative;
 }
