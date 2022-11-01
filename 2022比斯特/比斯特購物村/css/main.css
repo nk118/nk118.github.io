@@ -1,7 +1,10 @@
 ﻿body {
-  font-family: 'Microsoft JhengHei', "微軟正黑體";
+  font-family: 'Microsoft JhengHei', '微軟正黑體';
 }
 
+a {
+  text-decoration: none;
+}
 
 /* SCROLLTOP */
 
@@ -12,7 +15,6 @@
     margin-left: 80px;
   }
 }
-
 
 /* banner_video */
 
@@ -60,7 +62,7 @@
   margin: auto;
   width: 100%;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .logo_wrap a img {
@@ -76,16 +78,20 @@
   .banner_wrap {
     height: 75vh;
   }
+
   .logo_wrap a img {
     margin: 0;
     height: 40px;
   }
+
   .fullscreen-bg {
     background: url('../images/banner_m.jpg') center center / cover no-repeat;
   }
+
   .fullscreen-bg__video {
     display: none;
   }
+
   .fullscreen-bg img {
     height: 44px;
   }
@@ -97,9 +103,7 @@
   }
 }
 
-
 /* banner_video */
-
 
 /* tittle */
 
@@ -127,19 +131,19 @@
   font-family: 'Noto Serif TC', serif;
   font-weight: lighter;
   font-size: 4rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   /* text-shadow: 2px 2px 2px #2fe5cb; */
 }
 
 .title p {
-  margin: .8rem 0;
+  margin: 0.8rem 0;
   font-family: '微軟正黑體', serif;
   font-weight: 200;
 }
 
 .title p:nth-of-type(1) {
   font-size: 1.7rem;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
   font-family: '微軟正黑體', serif;
 }
 
@@ -147,24 +151,26 @@
   .title {
     top: 0;
   }
+
   .title h3 {
     font-size: 1.3rem;
   }
+
   .title h1 {
     font-size: 2.5rem;
   }
+
   .title p {
-    font-size: .7rem;
+    font-size: 0.7rem;
     padding: 0 15px;
   }
+
   .title p:nth-of-type(1) {
     font-size: 1.1rem;
   }
 }
 
-
 /* tittle */
-
 
 /* contant_map */
 
@@ -180,7 +186,7 @@
 .contant_bg {
   background-color: #fff;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 60px;
   /* margin-bottom: 40px; */
@@ -210,7 +216,7 @@
 }
 
 .map_box_w p {
-  margin: .8rem 0;
+  margin: 0.8rem 0;
   line-height: 27px;
 }
 
@@ -239,21 +245,20 @@
     background-position: right top;
     padding: 15px;
   }
+
   .map_box_w {
     margin-top: 70%;
     width: 100%;
   }
 }
 
-
 /* contant_map */
-
 
 /* contant_village */
 
 .village_wrap {
   padding-top: 60px;
-  max-width: 1400px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -264,6 +269,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .village_img {
@@ -292,7 +298,6 @@
 .title_box {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
   /* padding-left: 110px; */
 }
 
@@ -305,7 +310,6 @@
   /* margin-left: -15%; */
   font-size: 0;
 }
-
 
 /* .title_content {
   padding-left: -5%;
@@ -333,57 +337,105 @@
 }
 
 .h2_bicester::after {
-  content: " Bicester Village";
+  content: ' Bicester Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_paris::after {
-  content: " La Vallée Village";
+  content: ' La Vallée Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_fidenza::after {
-  content: " Fidenza Village";
+  content: ' Fidenza Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_kildare::after {
-  content: " Kildare Village";
+  content: ' Kildare Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_ingolstadt::after {
-  content: " Ingolstadt Village";
+  content: ' Ingolstadt Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_Wertheim::after {
-  content: " Wertheim Village";
+  content: ' Wertheim Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_La_Roca::after {
-  content: " La Roca Village";
+  content: ' La Roca Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_Las_Rozas::after {
-  content: " Las Rozas Village";
+  content: ' Las Rozas Village';
   color: #a2a09c;
   font-size: 20px;
 }
 
 .h2_Maasmechelen::after {
-  content: " Maasmechelen Village";
+  content: ' Maasmechelen Village';
   color: #a2a09c;
   font-size: 20px;
+}
+
+.itinerary {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.rec_box {
+  display: block;
+  padding: 7px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background-color: #033c6d;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rec_box .rec_word {
+  /* display: inline-block; */
+  color: #ffffff;
+}
+
+.itinerary_list {
+  margin-left: 18px;
+  width: 88%;
+}
+
+.itinerary_list a {
+  display: block;
+  padding-bottom: 6px;
+  width: 100%;
+  color: #0a0a0a;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.itinerary_list a:not(:first-child) {
+  padding-top: 6px;
+}
+
+.itinerary_list a:not(:last-child) {
+  border-bottom: 1px dashed #c9c9c9;
+}
+
+.itinerary_list a:hover {
+  color: #0053b9;
 }
 
 @media (max-width: 767px) {
@@ -393,19 +445,23 @@
     margin-top: 20px;
     /* padding-left: 110px; */
   }
+
   .shop_logo {
     text-align: center;
     font-size: 0;
     margin: 0;
   }
+
   .shop_big_logo {
     text-align: center;
     font-size: 0;
     margin: 0;
   }
+
   .title_content {
     margin: 0 -10%;
   }
+
   /* .title_content p {
     font-size: 0.6em;
   }
@@ -441,6 +497,8 @@
   } */
 }
 
+/*舊的字&圖排序*/
+/*
 .paris .village_word,
 .dublin .village_word,
 .frankfurt .village_word,
@@ -452,6 +510,23 @@
 .dublin .village_img,
 .frankfurt .village_img,
 .madrid .village_img {
+  order: 2;
+}
+
+*/
+
+/*改的字&圖排序*/
+.paris .village_word,
+.munich .village_word,
+.madrid .village_word,
+.brussels .village_word {
+  order: 1;
+}
+
+.paris .village_img,
+.munich .village_img,
+.madrid .village_img,
+.brussels .village_img {
   order: 2;
 }
 
@@ -475,6 +550,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .small_img_box img {
@@ -495,7 +571,7 @@
 }
 
 .village_word h3::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -507,7 +583,7 @@
 }
 
 .village_word h3::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -519,55 +595,79 @@
 }
 
 .recommend_box {
-  margin-top: 50px;
   text-align: center;
 }
 
-.recommend_box a picture img {
-  transition: 2s;
-}
-
-
-/* .recommend_box a {
+.recommend_box a {
   display: block;
-  width: 40vw;
-  height: 10vw;
-  border: 0px solid #cde0f1;
-  box-sizing: border-box;
-  transition: 0.5s;
+  width: 620px;
+  height: 191px;
+  margin: 0 auto;
+  background-image: url(../images/VIP_Link_01.png);
+  transition: .9s ease;
 }
 
 .recommend_box a:hover {
-  border: 1.5vw solid #cde0f1;
-} */
+  box-shadow: inset 0 0 0 18px #cde0f1;
+  background-image: url(../images/VIP_Link_03.png);
+}
+
+@media (max-width: 680px) {
+  .recommend_box {
+    height: 123px;
+  }
+
+  .recommend_box div {
+    height: 123px;
+  }
+
+  .recommend_box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: unset;
+  }
+
+  .recommend_box a:hover {
+    box-shadow: unset;
+    background-image: unset;
+  }
+}
 
 @media (max-width: 1365px) {
   .village_wrap {
     padding-top: 0;
   }
+
   .village_box {
     overflow-x: hidden;
   }
+
   .village_img {
     width: 100%;
   }
+
   .village_word {
     width: 100%;
     padding: 20px 35px 40px;
   }
+
   .village_word::before {
     position: static;
     display: flex;
     justify-content: center;
     margin-top: 0;
   }
+
   .village_word h2 {
     text-align: center;
   }
+
   .sub_title {
     display: block;
     text-align: center;
   }
+
   /* .shop_logo img {
     float: none;
     display: block;
@@ -581,6 +681,7 @@
   .village_word h3 {
     margin: 1.5em auto;
   }
+
   .paris .title_box,
   .brussels .title_box,
   .munich .title_box,
@@ -588,16 +689,22 @@
   .frankfurt .title_box {
     padding-left: 0;
   }
+
   .paris .village_word,
   .dublin .village_word,
   .frankfurt .village_word,
-  .madrid .village_word {
+  .madrid .village_word,
+  .munich .village_word,
+  .brussels .village_word {
     order: 2;
   }
+
   .paris .village_img,
   .dublin .village_img,
   .frankfurt .village_img,
-  .madrid .village_img {
+  .madrid .village_img,
+  .munich .village_img,
+  .brussels .village_img {
     order: 1;
   }
 }
@@ -606,14 +713,13 @@
   .small_img_box img {
     max-height: 100px;
   }
+
   .recommend_box img {
     width: 100%;
   }
 }
 
-
 /* contant_village */
-
 
 /*footer*/
 
@@ -745,6 +851,7 @@ footer a:hover {
     align-items: flex-start;
     width: 60%;
   }
+
   .contact_box p:nth-of-type(2) {
     padding-left: 34px;
   }
@@ -755,6 +862,5 @@ footer a:hover {
     padding-left: 0px;
   }
 }
-
 
 /* footer */
