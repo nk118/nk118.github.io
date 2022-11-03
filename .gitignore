@@ -4,4 +4,5 @@
 *.xlsx
 *.rar
 
+.vs/
 video
