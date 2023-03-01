@@ -1,0 +1,351 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*font-family: 'cwTeXHei','Noto Sans TC', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg.jpg) center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Microsoft JhengHei, "微軟正黑體";
+  letter-spacing: 0.05em;
+}
+
+#wrapper {
+  width: 100%;
+  background: #f6e3e3;
+  max-width: 1400px;
+  min-height: 2000px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+header {
+  line-height: 0;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.main-pic {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9;
+  -webkit-animation: opacity 2s ease-in, move 2s ease-in infinite;
+  animation: opacity 3s ease-in, move 3s ease-in infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: 8px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  75% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: 8px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  75% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+section:last-of-type {
+  margin-bottom: 50px;
+}
+
+.carnival-tool {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+section:nth-of-type(2) .carnival-tool {
+  display: -webkit-flex;
+  -webkit-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.carnival-pic {
+  display: flex;
+  align-self: center;
+  width: 55%;
+  margin-right: 2%;
+  padding-left: 2%;
+  float: left;
+  text-align: center;
+}
+
+.carnival-pic img {
+  max-width: 100%;
+  /*    width: 100%;*/
+  height: auto;
+}
+
+.carnival-txt {
+  width: 43%;
+  padding: 0 5%;
+  float: left;
+  text-align: center;
+}
+
+.carnival-txt figure {
+  width: 98%;
+  margin: 0 1% 20px;
+}
+
+.carnival-txt figure img {
+  max-width: 100%;
+}
+
+.carnival-txt figcaption {
+  background: #39d1b2;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.carnival-txt p {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.carnival-txt .ps {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carnival-txt .ps img {
+  max-width: 100%;
+}
+
+.recommendation {
+  width: 90%;
+  overflow: hidden;
+  margin: 20px 5% 70px;
+}
+
+.recommendation h3 {
+  margin: 30px 0;
+  padding: 15px 0;
+  border-bottom: dashed 2px #c6b279;
+}
+
+.recommendation h3 img {
+  max-width: 100%;
+}
+
+.list-tool {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.recommendation-tool {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommendation-tool a {
+  color: #000;
+}
+
+.recommendation .recommendation-pic {
+  width: 48%;
+  margin: 0 1% 10px;
+  float: left;
+}
+
+.recommendation .list {
+  width: 48%;
+  margin: 0 1% 20px;
+  float: left;
+}
+
+.recommendation .list a {
+  color: #000;
+  text-decoration: none;
+}
+
+.recommendation .list h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  line-height: 30px;
+  transition: 0.3s;
+}
+
+.recommendation h4:hover {
+  color: #af8c50;
+}
+
+.recommendation .list h5 {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.recommendation .list .date {
+  font-size: 24px;
+  font-family: "MElleHK";
+  line-height: 30px;
+}
+
+.recommendation .list .date:before {
+  content: "出發日期";
+  background: #af8c50;
+  color: #fff;
+  margin-right: 10px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+}
+
+footer {
+  color: #78500a;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+footer a {
+  color: #78500a;
+}
+
+footer a:hover {
+  color: #e274ad;
+}
+
+.footer_table {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 6% 0;
+  line-height: 24px;
+}
+
+.footer_left {
+  width: 30%;
+  float: left;
+}
+
+.footer_right {
+  width: 70%;
+  float: left;
+  text-align: right;
+}
+
+.footer_right table td {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .carnival-tool {
+    flex-direction: column-reverse;
+  }
+  .carnival-pic,
+  .carnival-txt {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  ul#menu {
+    width: 90%;
+    margin: 20px 5% 40px;
+  }
+  .recommendation .list {
+    width: 100%;
+    padding: 10px 0 30px;
+    margin-bottom: 10px;
+    border-bottom: dashed 2px #c6b279;
+  }
+  section:nth-of-type(2) .carnival-tool {
+    display: inherit;
+  }
+}
+
+@media (max-width: 500px) {
+  #wrapper {
+    padding-top: 50px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  .recommendation {
+    margin: 20px 5% 30px;
+  }
+  .footer_left {
+    margin-bottom: 20px;
+  }
+  .footer_right {
+    text-align: left;
+  }
+  .footer_left,
+  .footer_right {
+    width: 100%;
+    float: none;
+  }
+  .footer_right table td {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  /*============== go top ==============*/
+  .gotop img {
+    width: 70px;
+  }
+}

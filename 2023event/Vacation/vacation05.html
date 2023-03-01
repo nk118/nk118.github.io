@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="og:description" content="連假就匠飛" />
+    <meta property="og:title" content="巨匠旅遊-連假就匠飛" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.artisan.com.tw/2019_events/Vacation/">
+    <meta property="og:site_name" content="巨匠旅遊-連假就匠飛" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://www.artisan.com.tw/images/artisan.ico">
+
+    <title>巨匠旅遊-連假就匠飛-雙十</title>
+    <script type="text/javascript" src="https://www.artisan.com.tw/js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        $(window).load(function() {
+            var $win = $(window),
+                $ad = $('#abgne_float_ad').css('opacity', 0).show(),
+                _width = $ad.width(),
+                _height = $ad.height(),
+                _diffY = 300,
+                _diffX = 20, //距離右及下方邊距
+                _moveSpeed = 800, // 移動的速度
+                currentNavNo = 0;
+
+            $ad.css({
+                top: $(document).height(),
+                left: $win.width() - _width - _diffX,
+                opacity: 1
+            });
+
+            $win.bind('scroll resize', function() {
+                var $this = $(this);
+
+                $ad.stop().animate({
+                    top: $this.scrollTop() + $this.height() - _height - _diffY,
+                    left: $this.scrollLeft() + $this.width() - _width - _diffX
+                }, _moveSpeed);
+            }).scroll();
+
+            // 網頁go top
+            $("#gotop").click(function() {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+
+            //整頁捲動-------?被點
+            $('#menu li').click(function() {
+                //?被捲動
+                indexNo = $(this).index();
+                targetTop = $('section').eq(indexNo).position().top;
+                $('html,body').animate({
+                    scrollTop: targetTop
+                }, 500);
+            });
+
+
+            $('img[usemap]').rwdImageMaps();
+
+            $(window).resize(function() {});
+
+
+
+        });
+
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'wis_dataLayer', 'GTM-WXV8LX');
+
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- SCROLLTOP -->
+    <div id="top-bar" style="bottom: 0px;">
+        <div>
+            <div id="abgne_float_ad" style="position: absolute; opacity: 1; top: 2768px; left: 1512px; z-index: 999;">
+                <a href="#top" class="go top">
+                    <img src="images/top.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <b:if cond="data:blog.isMobile">
+        <b:else>
+            <div id="gotop">
+                <center><img src="images/top_icon.png"></center>
+            </div>
+        </b:else>
+    </b:if>
+    <div id="wrapper">
+        <header>
+            <img src="images/header_va05.jpg" alt="" usemap="#Map" border="0">
+            <map name="Map" id="Map">
+              <area shape="rect" coords="0,417,113,528" href="index.html" />
+            </map>
+        </header>
+
+        <div id="vacation-tool">
+            <ul id="menu">
+                <li>西/北歐<img src="images/area_title01.jpg" alt=""></li>
+                <li>東/南歐<img src="images/area_title02.jpg" alt=""></li>
+                <li>紐澳/南亞<img src="images/area_title03.jpg" alt=""></li>
+                <li>美加/海島<img src="images/area_title04.jpg" alt=""></li>
+                <li>古文明/大非洲<img src="images/area_title05.jpg" alt=""></li>
+                <li>遊輪/河輪<img src="images/area_title06.jpg" alt=""></li>
+                <li>中國/日本<img src="images/area_title07.jpg" alt=""></li>
+            </ul>
+
+            <div id="hot-star">
+                <div class="hot-star-title"></div>
+                <div class="hot-star-list"><a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200302000002&Date=2020/10/06&type=CI">極光冰島深度斯奈山半島+荷蘭體驗10天</a></div>
+                <div class="hot-star-date">10/6</div>
+                <div class="hot-star-price">118777</div>
+            </div>
+
+            <!-- 西/北歐 -->
+            <section class="area-section">
+                <h1><img src="images/area_h1.png" alt=""></h1>
+                <!-- 法國 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">法國</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191211000003&Date=2020/10/01&type=AF">
+                                <h3>【珍藏旅遊】法國幸福深度13天之旅</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200511000002&Date=2020/10/03&type=EK">
+                                <h3>【巨匠旅遊】跟著畫家的足跡 品味法國深度11天之旅</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200219000007&Date=2020/10/07&type=EK">
+                                <h3>【巨匠旅遊】庇裡牛斯山～南法.安道爾.巴薩隆納深度11天</h3>
+                                <div class="area-list-date">10/7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200318000001&Date=2020/10/09&type=BR">
+                                <h3>【巨匠旅遊】Bonjour 慢遊北法 皇家城堡10天醉人之旅</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 瑞士 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">瑞士</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190923000001&Date=2020/10/01&type=SQ">
+                                <h3>【巨匠旅遊春夏版】瑞士五大名峰、三大觀景列車深度12天</h3>
+                                <div class="area-list-date">10/1.2.5.6.7.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200115000002&Date=2020/10/01&type=TG">
+                                <h3>【新視界假期春夏版】體驗超值 瑞士三大名峰 三大火車深度10天</h3>
+                                <div class="area-list-date">10/1</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 義.瑞.法 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">義瑞法</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191209000002&Date=2020/10/01&type=SQ">
+                                <h3>【巨匠旅遊】浪漫成雙深度法瑞義 卡布里 阿瑪菲12天之旅</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200212000011&Date=2020/10/01&type=SQ">
+                                <h3>【新視界假期-經典版】義瑞法十一天（羅浮宮、雙河遊船)</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 瑞.義 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">瑞義</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200215000002&Date=2020/10/01&type=SQ">
+                                <h3>【新視界假期】瑞士。義大利《海誓山盟》經典十一天之旅</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 英愛 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">英愛</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200312000005&Date=2020/10/06&type=KL">
+                                <h3>《巨匠旅遊｜天涯海角》蒼穹島秘境 ※蘇格蘭+愛爾蘭※ 深度12天(限量版)</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200227000003&Date=2020/10/10&type=CI">
+                                <h3>《巨匠旅遊｜英倫縮影》英國『火車愛丁堡』巨石陣、泰晤士河遊船 9天</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191018000001&Date=2020/10/09&type=CX">
+                                <h3>《巨匠旅遊》高地鐵道(三火車)、貴族傳統、米其林二星 五星飯店 英國12天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191211000008&Date=2020/10/08&type=BR">
+                                <h3>【珍藏旅遊】歐洲之星 雙遊船 五大博物館 米其林2+1星饗宴 食在英法10天</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200213000004&Date=2020/10/06&type=EK">
+                                <h3>【新視界假期】高地鐵道、貴族傳統 三一學院 健力士啤酒 英國、愛爾蘭13天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 德瑞 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">德瑞</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191210000006&Date=2020/10/01&type=CI">
+                                <h3>【巨匠旅遊】德瑞小王子雙火車 10天</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191105000004&Date=2020/10/05&type=CI">
+                                <h3>【珍藏旅遊春夏版】珍藏德瑞山中秘境13天之旅</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191202000001&Date=2020/10/11&type=CI">
+                                <h3>【新視界假期】精選雙國五大名峰、絕美雙遊船、德瑞十日</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200103000001&Date=2020/10/03&type=CI">
+                                <h3>【新視界假期】德瑞古堡、雪朗峰-女王密令、雙列車10天</h3>
+                                <div class="area-list-date">10/3.10.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 德國 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">德國</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                       <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191107000003&Date=2020/10/03&type=CI">
+                                <h3>【新視界假期】北德風華 蒸汽火車 ICE小城故事十天</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191120000002&Date=2020/10/03&type=CI">
+                                <h3>【新視界假期】尋訪路德維希城堡＊浪漫萊茵山水＊楚格峰國王湖ICE列車十天</h3>
+                                <div class="area-list-date">10/3.10.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191107000002&Date=2020/10/05&type=CX">
+                                <h3>【新視界假期】德國易北萊茵＊高速列車＊浪漫童話城堡＊國王湖全覽十三天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 德義奧 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">德義奧</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                       <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200212000002&Date=2020/10/06&type=SQ">
+                                <h3>「德」心所欲，「義」同「奧」遊 阿爾卑斯山的魔界傳奇 精選12天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 荷比盧 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">荷比盧</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191125000003&Date=2020/10/02&type=CI">
+                                <h3>【巨匠旅遊】德哈爾城堡＊運河風車坊＊經典海尼根 輕賞悠遊 繽紛荷比盧十日</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191129000002&Date=2020/10/02&type=CI">
+                                <h3>【珍藏旅遊夏季版】精緻荷比盧＊臻愛法蘭德斯藝術漫遊12天</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 荷比多國 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">荷比多國</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191205000002&Date=2020/10/09&type=CI">
+                                <h3>【巨匠旅遊】爭奇鬥艷繽紛 荷蘭.比利時.北法12天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200227000002&Date=2020/10/09&type=CI">
+                                <h3>【新視界假期】荷比精彩 雙國輕旅行8天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191125000005&Date=2020/10/09&type=CI">
+                                <h3>【新視界假期】超值荷比法10天 ＊3遊船雙宮＊鐵塔登頂＊巴黎3晚連泊</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 北歐 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">北歐</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200325000006&Date=2020/10/01&type=TG">
+                                <h3>【新視界假期】極光冰島．攝影雙寵．天空之鏡．教會山．火山口湖．輕遊挪威10日</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200219000008&Date=2020/10/06&type=QR">
+                                <h3>【新視界假期】芬蘭好秋遊船．北冰洋漂浮．帝王蟹．玻璃屋．賞極光8天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200221000001&Date=2020/10/06&type=CI">
+                                <h3>【新視界假期】極光冰島深度斯奈山半島+倫敦體驗10天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200302000002&Date=2020/10/06&type=CI">
+                                <h3>【新視界假期】極光冰島深度斯奈山半島+荷蘭體驗10天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191016000002&Date=2020/10/11&type=SQ">
+                                <h3>【新視界假期】經典超值．北歐四國．挪威三峽灣12日</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 東/南歐 -->
+            <section class="area-section">
+                <h1><img src="images/area_h2.png" alt=""></h1>
+                <!-- 俄羅斯 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">俄羅斯</div>
+                    </div>
+                    <div class="area-list-link-tool ">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200219000003&Date=2020/10/11&type=KE">
+                                <h3>【巨匠旅遊】Magic Russia 彩色童畫 繽紛俄羅斯10天</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200219000006&Date=2020/10/11&type=KE">
+                                <h3>【珍藏旅遊】Golden Russia 鎏金歲月 璀璨俄羅斯10天</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 俄波波 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">俄波波</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181030000001&Date=2020/10/05&type=LH">
+                                <h3>【巨匠旅遊】巧遊五國 俄羅斯‧波蘭‧波羅的海三小國 拉赫馬國家公園13天</h3>
+                                <div class="area-list-date">10/5.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000005&Date=2020/10/05&type=LH">
+                                <h3>【巨匠旅遊】嗷遊波波 波蘭‧波羅的海三小國 扭扭屋 13天</h3>
+                                <div class="area-list-date">10/5.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191106000001&Date=2020/10/05&type=SU">
+                                <h3>【巨匠旅遊】琥珀之路 俄羅斯‧金環‧波羅的海三小國13天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 奧捷匈 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">奧捷匈</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190225000006&Date=2020/10/06&type=SQ">
+                                <h3>【新視界假期】中世紀風情 小東歐12天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190307000003&Date=2020/10/05&type=CI">
+                                <h3>【巨匠旅遊】醉心奧捷斯匈 4晚五星 雙遊船、溫泉、紅頂商人 12天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000002&Date=2020/10/06&type=SQ">
+                                <h3>【新視界假期】藍色多瑙河 奧‧捷‧匈12天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 奧捷 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">奧捷</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191017000003&Date=2020/10/01&type=CI">
+                                <h3>【巨匠旅遊】金色夢幻 奧地利、捷克 10天</h3>
+                                <div class="area-list-date">10/1.4</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181115000012&Date=2020/10/11&type=CI">
+                                <h3>【新視界假期】FUN遊 奧地利 捷克 10天</h3>
+                                <div class="area-list-date">10/8.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191017000004&Date=2020/10/06&type=CI">
+                                <h3>【新視界假期】寵愛奧捷~三晚五星、米其林推薦餐、古典音樂會10天</h3>
+                                <div class="area-list-date">10/6.7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 奧地利 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">奧地利</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190826000001&Date=2020/10/05&type=CI">
+                                <h3>【巨匠旅遊】聽～精靈在歌唱．完美樂章 奧地利 山岳、冰河、湖區、溫泉、音樂12天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 克斯蒙 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">克斯蒙</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191209000003&Date=2020/10/09&type=LH">
+                                <h3>【巨匠旅遊】一島一飯店 亞德里亞海之島嶼遇見愛~克‧斯‧蒙 13天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191127000009&Date=2020/10/02&type=LH">
+                                <h3>【巨匠旅遊】前進蛻變巴爾幹 五國 13天 阿．馬．保．羅．塞</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191129000004&Date=2020/10/10&type=QR">
+                                <h3>【巨匠旅遊】秘境探索~克．斯．波．蒙 三國家公園．跳島 15天</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200302000004&Date=2020/10/06&type=BR">
+                                <h3>【新視界假期】克．斯 雙國饗宴 三國家公園 10天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200212000007&Date=2020/10/11&type=EK">
+                                <h3>【新視界假期】克．斯．波．蒙 雙國家公園 12天</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190724000005&Date=2020/10/05&type=CI">
+                                <h3>【新視界假期】克羅埃西亞．斯洛文尼亞．匈牙利 三國饗宴12天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 匈斯波 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">匈斯波</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181204000004&Date=2020/10/05&type=CI">
+                                <h3>【巨匠旅遊】壯麗瑰寶 斯拉夫山河 波蘭．斯洛伐克．匈牙利 12天</h3>
+                                <div class="area-list-date">10/5</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200305000006&Date=2020/10/06&type=BR">
+                                <h3>【巨匠旅遊】斯洛伐克．匈牙利 雙享泡 10天</h3>
+                                <div class="area-list-date">10/6.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 義大利 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">義大利</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191115000004&Date=2020/10/06&type=CI">
+                                <h3> 【新視界假期】相約義大利 傾聽山與海的對話10天之旅</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                       <!--  <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181105000005&Date=2019/10/08&type=TG">
+                                <h3>《義覽無遺》義大利 卡不里 阿瑪菲海岸 童話蘑菇村13天</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191021000004&Date=2020/10/01&type=SQ">
+                                <h3>【巨匠旅遊】義大利 卡不里島 阿瑪菲海岸十一天 (333專案)</h3>
+                                <div class="area-list-date">10/1.4.8.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200220000005&Date=2020/10/01&type=EK">
+                                <h3>【巨匠旅遊】義起去旅行 義大利 卡不里 阿瑪菲海岸12天</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200213000002&Date=2020/10/04&type=EK">
+                                <h3>【珍藏旅遊】【義七風發】三島奇緣 義大利全覽 大城小鎮 童話蘑菇村14天</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191118000003&Date=2020/10/04&type=CI">
+                                <h3>【珍藏旅遊】義大利14天 ～看見天空之城的美麗，與阿瑪菲海岸浪漫相約</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                        <!-- <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200206000003&Date=2020/10/06&type=EK">
+                                <h3>【新視界假期】一心一義 義大利十天(歐洲初體驗－超值團)</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000001&Date=2020/10/06&type=CX">
+                                <h3>【新視界假期】義鳴驚人 義大利十天(歐洲初體驗－超值團)</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 希臘 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">希臘</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181115000013&Date=2020/10/02&type=SQ">
+                                <h3>SQ 《新視界假期》 遇見藍與白 希臘愛琴海雙島 天空之城10天</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200218000002&Date=2020/10/01&type=QR">
+                                <h3>希臘愛情海雙島 女神洞穴 杜哈11天</h3>
+                                <div class="area-list-date">10/1</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181109000003&Date=2020/10/02&type=EK">
+                                <h3>希臘愛琴海三島 秘境札金索斯 天空之城 米其林二星 全覽13天</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191122000003&Date=2020/10/02&type=EK">
+                                <h3>浪漫經典希臘三島vs奢華杜拜13日</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 葡萄牙 -->
+                <!-- <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">葡萄牙</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.luxetravel.com.tw/TripIntroduction.aspx?TripNo=T20180917000007&Date=2019/10/29&type=EK">
+                                <h3>典藏 葡萄牙 阿爾加維海岸13天</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 西班牙 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">西班牙</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181123000008&Date=2020/10/07&type=CX">
+                                <h3>【新視界假期】西班牙幻想曲~天空之城 童話彩屋 地中海 洞穴旅館11天</h3>
+                                <div class="area-list-date">10/7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 西葡 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">西葡</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191125000007&Date=2020/10/05&type=CX">
+                                <h3>【巨匠旅遊】五星方舟 西葡 英屬直布羅陀13天</h3>
+                                <div class="area-list-date">10/5.7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191121000002&Date=2020/10/07&type=CX">
+                                <h3>【新視界假期】迪亞哥 遇見 哥倫布 ~ 西葡帝國崛起 13天</h3>
+                                <div class="area-list-date">10/7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 紐澳/南亞 -->
+            <section class="area-section">
+                <h1><img src="images/area_h3.png" alt=""></h1>
+                <!-- 紐西蘭 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">紐西蘭</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                       <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200225000002&Date=2020/10/02&type=SQ">
+                                <h3>【巨匠旅遊】紐西蘭 庫克山隱士雙皇后花舞曲-新航東岸經典南北島10天</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190909000005&Date=2020/10/02&type=SQ">
+                                <h3>【新視界假期】新航*超高CP值*探索純淨紐西蘭景觀八號-珍愛南北島10日</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200225000003&Date=2020/10/02&type=SQ">
+                                <h3>【巨匠旅遊】紐西蘭庫克山隱士冰河峽灣極地-新航珍藏南島１０天</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 澳洲 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">澳洲</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190218000002&Date=2020/10/02&type=CX">
+                                <h3>【巨匠旅遊】非凡西澳秘境探奇8日-波浪岩、粉紅湖、尖峰石陣、捉龍蝦(3晚五星)</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190520000004&Date=2020/10/08&type=CI">
+                                <h3>【巨匠旅遊】完美花漾 墨爾本醇金７日-絕美大洋路、經典巷弄文化</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190521000001&Date=2020/10/02&type=CI">
+                                <h3>【巨匠旅遊】完美風情 黃金海岸 五星海豚島7日(螃蟹船、可倫賓、百萬遊艇)</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191107000001&Date=2020/10/02&type=CI">
+                                <h3>【巨匠旅遊】完美風華 五星雪梨７天(饗美食、送夜遊、1晚五星、送小費)</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190226000006&Date=2020/10/05&type=CI">
+                                <h3>【新視界假期】完美風華 東澳雪梨６天-入內歌劇院、親近無尾熊、藍山纜車</h3>
+                                <div class="area-list-date">10/5.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200115000005&Date=2020/10/02&type=CX">
+                                <h3>國泰萬象★完美花漾 東澳墨爾本大洋路醇金8日</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200224000001&Date=2020/10/01&type=CX">
+                                <h3>【巨匠旅遊】美好東澳三城全覽９日(螢火蟲夜遊、黃金五星飯店、廚師帽美食)</h3>
+                                <div class="area-list-date">10/1.3</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180115000006&Date=2020/10/08&type=CI">
+                                <h3>【新視界假期】完美雙都 醇饗雪墨８日-品醇香氛美酒、親近可愛無尾熊</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20170905000012">
+                                <h3>【新視界假期】東澳三城無雙 嚮宴美食、雙享夜遊-優質全覽９日</h3>
+                                <div class="area-list-date">10/1.3.6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200310000007&Date=2020/10/08&type=CI">
+                                <h3>【巨匠旅遊】驚艷塔斯馬尼亞 &遇上墨爾本8日-華航直轉、夢幻酒杯灣</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 南亞 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">南亞</div>
+                    </div>
+                    <div class="area-list-link-tool">
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200215000007&Date=2020/10/04&type=KA">
+                                <h3>【巨匠旅遊】喜馬拉雅山林國度-不丹錫金大吉嶺１３天</h3>
+                                <div class="area-list-date">10/4</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180306000003&Date=2020/10/09&type=KA">
+                                <h3>【巨匠旅遊】尼泊爾神仙故鄉九天-加德滿都古都、奇旺國家公園、波卡拉(兩內陸段)</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190816000002&Date=2020/10/09&type=KA">
+                                <h3>【巨匠旅遊】喜馬拉雅山中傳奇 尼泊爾+幸福國度 不丹 雙寶經典10日</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180306000005&Date=2020/10/09&type=KA">
+                                <h3>【新視界假期】尼泊爾神仙故鄉九天(促銷中/一段國內線)</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180105000009&Date=2020/10/09&type=CX">
+                                <h3>【巨匠旅遊】北印度喀什米爾山中秘境策馬健行10天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200309000003&Date=2020/10/09&type=CX">
+                                <h3>【巨匠旅遊】北印度喀什米爾策馬健行拉達克班公錯15天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191205000004&Date=2020/10/01&type=AI">
+                                <h3>【巨匠旅遊】印度印象 孟買恆河性廟金三角 穿越古與今10天</h3>
+                                <div class="area-list-date">10/1</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190806000002&Date=2020/10/04&type=CI">
+                                <h3>【巨匠旅遊】印度恆河日出、黃金三角五星王宮饗宴8天</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180117000007&Date=2020/10/04&type=CI">
+                                <h3>【新視界假期】不思議印度五星皇金三角泰姬水舞8天-華航直飛</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200117000006&Date=2020/10/01&type=SQ">
+                                <h3>【巨匠旅遊】五星珍珠 斯里蘭卡 高山火車生態世遺 九天</h3>
+                                <div class="area-list-date">10/1.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200117000005&Date=2020/10/01&type=SQ">
+                                <h3>【新視界假期】斯里蘭卡南亞珍珠之戀雅拉九天</h3>
+                                <div class="area-list-date">10/1.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 美加/海島 -->
+            <section class="area-section">
+                <h1><img src="images/area_h4.png" alt=""></h1>
+                <!-- 美洲 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">美洲</div>
+                    </div>
+                       <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000008&Date=2020/10/02&type=AC">
+                                <h3>【巨匠旅遊】加拿大『洛磯全覽．擁抱雙堡』１０天</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000010&Date=2020/10/07&type=AC">
+                                <h3>【巨匠旅遊】加拿大全覽『洛磯城堡．遊船品瀑』１３天【2018年金質旅遊獎】</h3>
+                                <div class="area-list-date">10/7.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191216000004&Date=2020/10/01&type=AC">
+                                <h3>【珍藏旅遊】洛磯夢境『ＲＭＲ頂級觀景列車』１０天</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191003000008&Date=2020/10/01&type=AC">
+                                <h3>【珍藏旅遊】楓彩加東『傾心動魄．楓起雲湧』１１天</h3>
+                                <div class="area-list-date">10/1.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000012&Date=2020/10/09&type=CI">
+                                <h3>【新視界假期】加拿大『洛磯冰川．維多利亞』１０天</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191101000013&Date=2020/10/03&type=CX">
+                                <h3>【新視界假期】粹戀美加東『經典名城．聖安妮峽谷．尼加拉瀑布』１３天</h3>
+                                <div class="area-list-date">10/3.6.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190408000001&Date=2020/10/10&type=BR">
+                                <h3>《南美洲》四國精選『夢境啟航．一生一次的徹底撼動』１７天</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190618000010&Date=2020/10/03&type=LA">
+                                <h3>《印加幻境》秘魯『馬丘比丘．彩虹奇景．亞馬遜雨林』１５天</h3>
+                                <div class="area-list-date">10/3</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200312000007&Date=2020/10/01&type=BR">
+                                <h3>《圓夢印加》秘魯『馬丘比丘．的的喀喀．飛越安地斯』１１天</h3>
+                                <div class="area-list-date">10/1.8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190905000008&Date=2020/10/09&type=CI">
+                                <h3>《新視界假期》秘魯『印加古都．馬丘比丘』１０天（納斯卡）</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200224000004&Date=2020/10/02&type=CI">
+                                <h3>《新視界假期》秘魯『印加古都．馬丘比丘』１０天（彩虹山）</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 古文明/大非洲 -->
+            <section class="area-section">
+                <h1><img src="images/area_h5.png" alt=""></h1>
+                <!-- 古文明 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">古文明</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <!-- 土耳其 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20191127000007">
+                                <h3>【2020夏季】QR 新視界假期 蕃轉小東土卡帕多奇亞10天</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20191126000001">
+                                <h3>【2020夏季】SQ 巨匠旅遊 黑海 大東土耳其 雙飛12天</h3>
+                                <div class="area-list-date">10/1.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20191211000001">
+                                <h3>【2020夏季】SQ 珍藏旅遊 戀戀阿瑪西亞 黑海傳奇 璀璨鄂圖曼雙飛12天</h3>
+                                <div class="area-list-date">10/1.2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20191101000007">
+                                <h3>【2020夏季】SQ 新視界假期 蕃轉土耳其、特洛伊12天</h3>
+                                <div class="area-list-date">10/1.2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190702000001&Date=2020/10/10&type=QR">
+                                <h3>【年度回饋團】QR 新視界假期 蕃轉土耳其特洛伊10天</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190628000007&Date=2020/10/01&type=SQ">
+                                <h3>【年度回饋團】SQ 新視界假期~蕃轉土耳其夏綠蕃紅花12天</h3>
+                                <div class="area-list-date">10/1</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- 杜拜 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190515000006&Date=2020/10/07&type=CX">
+                                <h3>【新視界假期】杜拜 圓夢專案 七星帆船 7天</h3>
+                                <div class="area-list-date">10/7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- 以約 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191122000005&Date=2020/10/06&type=CX">
+                                <h3>【2020夏季】神秘古文明聖地 約旦以色列 玫瑰城 死海漂浮12天</h3>
+                                <div class="area-list-date">10/6.7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181205000006&Date=2020/10/02&type=CX">
+                                <h3>【2020夏季】新視界假期 約旦以色列 星空下奇幻月亮谷 沙漠旅館星空屋10天</h3>
+                                <div class="area-list-date">10/2.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 大非洲 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle circle-top">大非洲</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200224000002&Date=2020/10/01&type=MS">
+                                <h3>MS 新視界假期~年度回饋團~埃及古文明漫遊尼羅河10天</h3>
+                                <div class="area-list-date">10/1</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191119000001&Date=2020/10/08&type=QR">
+                                <h3>【巨匠旅遊】納米比亞．孤獨星球．世界最老沙漠．傲然寂寥的荒漠生機．10日</h3>
+                                <div class="area-list-date">10/8</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191120000006&Date=2020/10/01&type=CX">
+                                <h3>【紫薇花季．新視界假期】南非．開普半島酒香巡禮．太陽城．彼蘭斯堡10天</h3>
+                                <div class="area-list-date">10/1.9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191114000001&Date=2020/10/02&type=SQ">
+                                <h3>【極致紫葳花】南非．紫葳花城．花園大道．太陽城皇宮．克魯格12天</h3>
+                                <div class="area-list-date">10/2.4.7.9.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 遊輪/河輪 -->
+            <section class="area-section">
+                <h1><img src="images/area_h6.png" alt=""></h1>
+                <!-- 遊輪 -->
+                <div class="area-list-tool area-list-tool2">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">遊輪</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191106000003&Date=2020/10/02&type=CX">
+                                <h3>【新視界假期】歌詩達翡翠號『地中海仙境～馬約卡島』１１天</h3>
+                                <div class="area-list-date">10/2</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 中國/日本 -->
+            <section class="area-section">
+                <h1><img src="images/area_h7.png" alt=""></h1>
+                <!-- 中國 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">中國</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <!-- 青藏 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191227000003&Date=2020/10/04&type=CA">
+                                <h3>西藏青藏鐵路.山南.珠峰大本營.青海貴德地質14日(東藏林芝.前後藏)</h3>
+                                <div class="area-list-date">10/4.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191008000004&Date=2020/10/06&type=CA">
+                                <h3>神秘西藏布達拉宮+青藏鐵路12日(藏東林芝.前藏.後藏)</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- 長江三峽 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20191022000002&Date=2020/10/03&type=CA">
+                                <h3>長江三峽探索號上水贈SPA、神農溪綿竹峽、美食川劇變臉8日</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <!-- 華東 -->
+                        <!-- <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181029000007&Date=2019/10/12&type=MU">
+                                <h3> 黃山、九華山登双山看雙秀、畫裡宏村、南屏古民居8日</h3>
+                                <div class="area-list-date">10/12</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                        
+                        <!-- 華南 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190618000014&Date=2020/10/10&type=MU">
+                                <h3>江西特惠夜船遊贛江燈光秀、篁嶺古村、鄱陽湖、龍虎山、靈山福地8日</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20180803000003&Date=2020/10/07&type=CZ">
+                                <h3>桂林三江侗族程陽八寨、龍脊梯田古壯寨三秀6日</h3>
+                                <div class="area-list-date">10/7</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20170301000003&Date=2020/10/10&type=CZ">
+                                <h3>桂林雙秀世界之冠龍脊梯田、少數民族壯瑤探訪5日</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <!-- 華北 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20170905000008&Date=2020/10/09&type=CA">
+                                <h3>京津論壇APEC日出東方凱賓斯基、大董烤鴨、慕田峪長城、悅榕莊 5日</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190402000001&Date=2020/10/11&type=BR">
+                                <h3>京津冀全覽天津之眼摩天輪、秦皇島山海關、承德避暑山莊、慕田峪8日</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20170206000004&Date=2020/10/10&type=CA">
+                                <h3>京冀大道承德避暑山莊、清東陵、古北水鎮司馬台長城6日</h3>
+                                <div class="area-list-date">10/10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190911000011&Date=2020/10/09&type=CA">
+                                <h3>玩匠北京八達嶺長城、頤和園、三輪車遊胡同、海底撈火鍋5日</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <!-- 東北 -->
+                       <!--  <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190215000004&Date=2019/10/11&type=B7">
+                                <h3>東北五星長白山西坡天池、二晚萬達度假村凱悅酒店、雙高鐵滿漢全席8日</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+
+                        <!-- 華西 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200215000001&Date=2020/10/03&type=KA">
+                                <h3>九寨溝.黃龍.紅原草原.蓮寶葉則.畢棚溝.峨眉山.樂山大佛10日</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200212000004&Date=2020/10/03&type=CA">
+                                <h3>稻城亞丁(二進).四姑娘山.丹巴墨石公園.攝影天堂新都橋單飛８日</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190510000001&Date=2020/10/01&type=CA">
+                                <h3>稻城亞丁(二進）.康定木格措.攝影天堂新都橋８日</h3>
+                                <div class="area-list-date">10/1.6.8.</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181024000002&Date=2020/10/03&type=KA">
+                                <h3>稻城亞丁(二進)海螺溝.四姑娘山.康定木格措.丹巴墨石公園.攝影天堂新都橋11日</h3>
+                                <div class="area-list-date">10/3.10</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181129000002&Date=2020/10/04&type=CI">
+                                <h3>稻城亞丁.四姑娘山.丹巴墨石公園.攝影天堂新都橋８日</h3>
+                                <div class="area-list-date">10/4.6.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <!-- 華中 -->
+                        <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20181106000004&Date=2020/10/09&type=BR">
+                                <h3>河南老子全真派聖地老君山、絕壁長廊萬仙山、大峽谷雲台山8日</h3>
+                                <div class="area-list-date">10/9</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200108000002&Date=2020/10/11&type=BR">
+                                <h3>河南醉美雲峰畫廊觀太行、山西皇城相府千年鐵魂秀8日</h3>
+                                <div class="area-list-date">10/11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        
+                        <!-- 邊疆 -->
+                        <!-- <div class="area-list-link">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190117000003&Date=2019/10/13&type=BR">
+                                <h3>內蒙古小杜拜、睡臥沙漠七星湖觀星、越野車深入大紅山、烏蘭烏素草原8日</h3>
+                                <div class="area-list-date">10/13</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 日本 -->
+                <div class="area-list-tool">
+                    <div class="area-list-circle-tool">
+                        <div class="area-list-circle">日本</div>
+                    </div>
+                    <div class="area-list-link-tool">
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20190416000009&Date=2020/10/06&type=JL">
+                                <h3>【日本假期】花現北海道～知床祕境遊船‧禮文+利尻夢幻雙島‧稚內7天</h3>
+                                <div class="area-list-date">10/6</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                        <div class="area-list-link no-bottom">
+                            <a href="https://www.artisan.com.tw/TripIntroduction.aspx?TripNo=T20200319000005&Date=2020/10/04&type=CX">
+                                <h3>海之京都山陰山陽秘境之旅~天橋立・島根・鳥取・廣島・倉敷７天</h3>
+                                <div class="area-list-date">10/4.5.11</div>
+                                <span class="area-list-more">READ MORE+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+         </div>
+    </div>
+
+    <footer>
+        <div class="footer_table">
+            <div class="footer_left">
+                凱旋旅行社(股份)有限公司(交觀綜字第2133號)
+                <br> 珍藏旅遊、巨匠旅遊、新視界假期
+                <br> 經營業務範圍：綜合旅行社經營業務範圍
+                <br> 代表人：項國棟　　聯絡人：劉恪宏
+                <br> 法律顧問：信和國際法律事務所 梁堯清律師
+                <br> E-MAIL：<span style="font-size: 11px; font-family: Verdana;"><a href="mailto:artisantour@artisan.com.tw">ARTISANTOUR@ARTISAN.COM.TW</a></span>
+            </div>
+            <div class="footer_right">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>台北　<span style="font-size: 11px; font-family: Verdana;">TEL:02-2507-5000<br>　　　FAX:02-2504-6199</span></td>
+                                <td>桃園　<span style="font-size: 11px; font-family: Verdana;">TEL:03-3561-755<br>　　　FAX:03-3561-970</span></td>
+                                <td>新竹　<span style="font-size: 11px; font-family: Verdana;">TEL:03-5283-088<br>　　　FAX:03-5283-389</span></td>
+                            </tr>
+                            <tr>
+                                <td>台中　<span style="font-size: 11px; font-family: Verdana;">TEL:04-2255-0229<br>　　　FAX:04-2255-1169</span></td>
+                                <td>員林　<span style="font-size: 11px; font-family: Verdana;">TEL:04‐8365-288<br>　　　FAX:04‐8365-399</span></td>
+                                <td>台南　<span style="font-size: 11px; font-family: Verdana;">TEL:06-222-6627<br>　　　FAX:06-222-6731</span></td>
+                            </tr>
+                            <tr>
+                                <td>高雄　<span style="font-size: 11px; font-family: Verdana;">TEL:07-2419-872<br>　　　FAX:07-2154-690</span></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXV8LX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

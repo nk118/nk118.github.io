@@ -1,0 +1,930 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    font-family: 'Microsoft JhengHei';
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: initial;
+}
+#wrapper {
+    margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+}
+
+/*---  header  ---*/
+
+header {
+    width: 100%;
+    position: relative;
+    border-bottom: solid 35px #a93c24;
+    overflow: hidden;
+}
+.dress-triangle {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.dress-triangle img {
+    position: absolute;
+    height: 50px;
+}
+header .dress-triangle img:nth-of-type(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%) rotate(-180deg);
+}
+header .dress-triangle img:nth-of-type(2) {
+    top: 50%;
+    right: -8px;
+    transform: translate(0, -50%) rotate(-90deg);
+}
+header .dress-triangle img:nth-of-type(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+header .dress-triangle img:nth-of-type(4) {
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%) rotate(90deg);
+}
+.header-banner {
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+}
+.logo {
+    position: absolute;
+    opacity: 0;
+}
+.logo-japan {
+    top: 20px;
+    left: 20px;
+}
+.logo-main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-animation {
+    opacity: 1;
+    animation: fadeIn;
+    animation-duration: 0.8s;
+    max-width: 50%;
+}
+.head-season {
+    opacity: 0;
+    width: calc(100% / 4);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.head-season.spring {
+    background-image: url(../images/season01.jpg);
+}
+.head-season.summer {
+    background-image: url(../images/season02.jpg);
+}
+.head-season.autumn {
+    background-image: url(../images/season03.jpg);
+}
+.head-season.winter {
+    background-image: url(../images/season04.jpg);
+}
+.head-season-fadeInDown {
+    opacity: 1;
+    animation: fadeInDown;
+    animation-duration: 1.2s;
+}
+.head-season-fadeInUp {
+    opacity: 1;
+    animation: fadeInUp;
+    animation-duration: 1.2s;
+}
+
+/*---  nav  ---*/
+
+nav {
+    width: 100%;
+    /* line-height: 0; */
+}
+.owl-carousel {
+    position: relative;
+    /* line-height: 0; */
+}
+.nav-banner .owl-carousel .owl-stage {
+    line-height: 0;
+}
+.nav-season {
+    width: 100%;
+    height: calc(100vh - 35px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-season.spring {
+    background-image: url(../images/season05.jpg);
+}
+.nav-season.summer {
+    background-image: url(../images/season06.jpg);
+}
+.nav-season.autumn {
+    background-image: url(../images/season07.jpg);
+}
+.nav-season.winter {
+    background-image: url(../images/season08.jpg);
+}
+.nav-banner .owl-dots {
+    position: absolute;
+    background-color: rgba(169, 60, 36, 0.5);
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.nav-banner .owl-dots .owl-dot {
+    display: flex;
+    flex-direction: column;
+    color: #b03d22;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    min-height: 120px;
+    margin: 20px 2%;
+}
+
+.nav-banner .owl-dots .owl-dot::before {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.nav-banner .owl-dots .owl-dot::after {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(1)::before {
+    content: '春';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(1)::after {
+    content: 'Spring';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(2)::before {
+    content: '夏';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(2)::after {
+    content: 'Summer';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(3)::before {
+    content: '秋';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(3)::after {
+    content: 'Autumn';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(4)::before {
+    content: '冬';
+}
+.nav-banner .owl-dots .owl-dot:nth-of-type(4)::after {
+    content: 'Winter';
+}
+.nav-banner .owl-dots .owl-dot:hover,
+.nav-banner .owl-dots .owl-dot.active {
+    background-color: #b03d22;
+}
+.nav-banner .owl-dots .owl-dot:hover::before,
+.nav-banner .owl-dots .owl-dot:hover::after,
+.nav-banner .owl-dots .owl-dot.active::before,
+.nav-banner .owl-dots .owl-dot.active::after {
+    color: #fff;
+}
+.nav-season {
+    display: inline-flex;
+    align-items: flex-end;
+}
+.nav-title {
+    position: relative;
+    background-color: #b03d22;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: -15px;
+    line-height: normal;
+}
+.nav-content-area {
+    padding: 25px 80px 25px 15px;
+    background: -moz-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.7) 1%,
+        rgba(255, 255, 255, 0.7) 78%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.7) 1%,
+        rgba(255, 255, 255, 0.7) 78%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.7) 1%,
+        rgba(255, 255, 255, 0.7) 78%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.nav-content-area a {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #4f4e4e;
+    line-height: normal;
+}
+.nav-content-area .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 21.7px;
+    border-color: transparent transparent transparent #4f4e4e;
+    margin: 10px;
+}
+
+/* menu */
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #595656;
+    overflow: hidden;
+    margin-top: -1px;
+}
+#menu li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    padding: 10px;
+    margin: 20px 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+#menu li:hover {
+    background-color: #b03d22;
+}
+#menu li span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* section */
+section {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 35px);
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: #a93c24 solid 35px;
+    overflow: hidden;
+}
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+section::before {
+    content: '';
+    background-image: url(../images/dress01.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    max-height: 163px;
+}
+/* map */
+
+.map-section .dress-triangle img:nth-of-type(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%) rotate(-180deg);
+}
+.map-section .dress-triangle img:nth-of-type(2) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.logo-map {
+    filter: invert(50%);
+    -webkit-filter: invert(50%);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 385px;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.map img {
+    width: 70%;
+}
+.map-small {
+    justify-content: flex-end;
+}
+.map-small img {
+    width: auto;
+    padding: 1% 10%;
+}
+.map-introduction {
+    padding: 1% 10%;
+}
+.map-introduction-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #b03d22;
+    border-bottom: solid 5px #b03d22;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.map-introduction-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 5px;
+    color: #b03d22;
+}
+
+/* area */
+
+.area {
+    margin: 20px 0;
+    border-top: solid 15px #a93c24;
+}
+/* .area::before {
+    top: -35px;
+} */
+.area::after {
+    content: '';
+    background-image: url(../images/dress02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    max-height: 95px;
+}
+.area-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 100px 0;
+}
+.area-container:first-of-type {
+    flex-grow: 40;
+    flex-shrink: 1;
+    flex-basis: 537px;
+}
+.area-container:last-of-type {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+}
+svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-height: 65px;
+    max-width: 65px;
+}
+.svg-first {
+    left: -6px;
+    transform: rotate(90deg);
+}
+.svg-second {
+    right: -6px;
+    transform: rotate(-90deg);
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border: solid 1px #585858;
+    border-radius: 0 80px 0 0;
+    padding: 10px 50px;
+    height: max-content;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 1.5%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 280px;
+    max-width: 340px;
+}
+
+.card-img {
+    line-height: 0;
+}
+
+.Aomori-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #885832;
+}
+.Aomori-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #885832;
+}
+.Aomori-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #885832;
+}
+
+.Iwate-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #2d495e;
+}
+.Iwate-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #2d495e;
+}
+.Iwate-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #2d495e;
+}
+
+.Miyagi-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #8a2f40;
+}
+.Miyagi-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #8a2f40;
+}
+.Miyagi-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #8a2f40;
+}
+
+.Fukushima-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #bf1b34;
+}
+.Fukushima-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #bf1b34;
+}
+.Fukushima-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #bf1b34;
+}
+
+.Yamagata-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #828b5e;
+}
+.Yamagata-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #828b5e;
+}
+.Yamagata-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #828b5e;
+}
+
+.Akita-section .card:nth-of-type(1) .card-img {
+    box-shadow: -15px -15px 0px -9px #fff, -15px -15px 0px -6px #f6643b;
+}
+.Akita-section .card:nth-of-type(2) .card-img {
+    box-shadow: 15px -15px 0px -9px #fff, 15px -15px 0px -6px #f6643b;
+}
+.Akita-section .card:nth-of-type(3) .card-img {
+    box-shadow: 15px 15px 0px -9px #fff, 15px 15px 0px -6px #f6643b;
+}
+
+.card-img img {
+    width: 100%;
+    border-top: solid 6px;
+    border-bottom: solid 6px;
+}
+.Aomori-section .card-img img {
+    border-color: #885832;
+}
+.Iwate-section .card-img img {
+    border-color: #2d495e;
+}
+.Miyagi-section .card-img img {
+    border-color: #8a2f40;
+}
+.Fukushima-section .card-img img {
+    border-color: #bf1b34;
+}
+.Yamagata-section .card-img img {
+    border-color: #828b5e;
+}
+.Akita-section .card-img img {
+    border-color: #f6643b;
+}
+.card-content {
+    height: 100%;
+    margin-top: 30px;
+    border: solid 1px #b03d22;
+    position: relative;
+}
+.card-content::before {
+    content: '';
+    background-image: url(../images/dress03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+}
+.card-content::after {
+    content: '';
+    background-image: url(../images/dress04.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+}
+.card-content-title {
+    color: #fff;
+    background-color: rgba(154, 152, 152, 0.5);
+    position: relative;
+    height: max-content;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.card-content-title::before {
+    content: '';
+    background-color: #b03d22;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+}
+.title-en {
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.card-content-text {
+    font-size: 14px;
+    padding: 15px 15px 80px;
+    letter-spacing: 2px;
+    line-height: 1.4rem;
+}
+.Aomori-section .card-content-text {
+    color: #885832;
+}
+.Iwate-section .card-content-text {
+    color: #2d495e;
+}
+.Miyagi-section .card-content-text {
+    color: #8a2f40;
+}
+.Fukushima-section .card-content-text {
+    color: #bf1b34;
+}
+.Yamagata-section .card-content-text {
+    color: #828b5e;
+}
+.Akita-section .card-content-text {
+    color: #f6643b;
+}
+.area-introduction {
+    position: relative;
+    color: #fff;
+    padding: 40px 30px 80px;
+    font-weight: bold;
+    overflow-x: clip;
+}
+.Aomori-section .area-introduction {
+    background-color: #895734;
+}
+.Iwate-section .area-introduction {
+    background-color: #2d495e;
+}
+.Miyagi-section .area-introduction {
+    background-color: #8a2f40;
+}
+.Fukushima-section .area-introduction {
+    background-color: #bf1b34;
+}
+.Yamagata-section .area-introduction {
+    background-color: #828b5e;
+}
+.Akita-section .area-introduction {
+    background-color: #f6643b;
+}
+.area-map {
+    position: absolute;
+    top: -27%;
+    right: 8%;
+}
+.area-map img {
+    max-height: 160px;
+}
+.area-introduction-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+.area-introduction-title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 110%;
+    position: absolute;
+    bottom: -15px;
+    background-color: #fff;
+}
+.area-introduction-title .title-en {
+    font-size: 2.5rem;
+}
+.area-introduction-text {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    line-height: 2rem;
+    padding-top: 15px;
+}
+/* footer */
+
+footer {
+    color: #fff;
+    background: #b03d22;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    margin: 0 auto;
+    word-break: break-all;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #ece7a1;
+}
+
+.footer-link {
+    background: #1f4165;
+    padding: 10px;
+}
+
+.footer-line {
+    width: 4px;
+    height: 210px;
+    background: #fffbcc;
+    margin: 10px 5%;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 35px 20px;
+    white-space: nowrap;
+}
+
+.contact-box p span {
+    letter-spacing: 0.2rem;
+}
+
+.foot-wrap {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.footer-left h4 {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.footer-left p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.footer-left .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6.5px 0 6.5px 6px;
+    border-color: transparent transparent transparent #fffbcc;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-right {
+    display: flex;
+    font-size: 0.8rem;
+    max-width: 50%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+@media (max-width: 1280px) {
+    .card {
+        flex-basis: 220px;
+    }
+    .card-content-title {
+        font-size: 1.5rem;
+    }
+    .title-en {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .area {
+        flex-direction: column-reverse;
+        padding: 150px 0;
+    }
+    .area-container {
+        padding-bottom: 0;
+    }
+    .cards {
+        border: none;
+    }
+}
+@media (max-width: 768px) {
+    .header-banner {
+        flex-direction: column;
+    }
+    .head-season {
+        width: 100%;
+        height: calc(85vh / 4);
+        background-position-y: 38%;
+    }
+    .head-season-fadeInDown {
+        animation: fadeInLeft;
+        animation-duration: 1.2s;
+    }
+    .head-season-fadeInUp {
+        animation: fadeInRight;
+        animation-duration: 1.2s;
+    }
+    .nav-banner .owl-dots .owl-dot {
+        max-width: 60px;
+        min-height: 60px;
+    }
+    .nav-banner .owl-dots .owl-dot::before {
+        font-size: 1.2rem;
+    }
+    .nav-banner .owl-dots .owl-dot::after {
+        font-size: 0.8rem;
+    }
+    .nav-title {
+        font-size: 1.2rem;
+    }
+    .nav-content-area a {
+        font-size: 1.3rem;
+    }
+    .logo-japan,
+    .logo-map {
+        width: 20%;
+    }
+    #menu {
+        flex-wrap: wrap;
+    }
+    section::before {
+        max-height: 100px;
+    }
+    .map-container {
+        padding: 0;
+    }
+    .map-big {
+        margin-top: 100px;
+    }
+    .map-small {
+        padding: 0;
+        justify-content: right;
+        margin-bottom: -60px;
+    }
+    .map-small img {
+        margin-right: 10%;
+        padding: 0;
+        width: 30%;
+    }
+    .map-introduction-title {
+        font-size: 3rem;
+    }
+    .map-introduction {
+        margin-bottom: 100px;
+    }
+    .svg-first {
+        top: -6px;
+        left: 50%;
+        transform: rotate(180deg) translate(50%, 0);
+    }
+    .svg-second {
+        display: none;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*============== footer ==============*/
+    footer {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {
+    /*============== footer ==============*/
+    .foot-wrap {
+        width: 80%;
+        flex-direction: column;
+        padding: 10% 0 5%;
+    }
+    .footer-left {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .footer-line {
+        display: none;
+    }
+    .footer-right {
+        margin: 10px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-box-warp {
+        flex-direction: column;
+        align-items: start;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0 0 20px;
+    }
+    .contact-box p span {
+        letter-spacing: 0.15rem;
+    }
+    .contact-box p:nth-of-type(2):before {
+        content: '　　 ';
+        margin-right: 6px;
+    }
+    /*============== go top ==============*/
+    .gotop img {
+        width: 70px;
+    }
+}

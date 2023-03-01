@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="og:description" content="連假就匠飛" />
+        <meta property="og:title" content="巨匠旅遊-連假就匠飛" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://www.artisan.com.tw/2023_events/Vacation/"
+        />
+        <meta property="og:site_name" content="巨匠旅遊-連假就匠飛" />
+        <meta name="format-detection" content="telephone=no" />
+        <link
+            rel="shortcut icon"
+            href="https://www.artisan.com.tw/images/artisan.ico"
+        />
+
+        <title>巨匠旅遊-連假就匠飛-二二八</title>
+        <script
+            type="text/javascript"
+            src="https://www.artisan.com.tw/js/jquery-1.12.4.min.js"
+        ></script>
+        <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script>
+            $(window).load(function () {
+                var $win = $(window),
+                    $ad = $('#abgne_float_ad').css('opacity', 0).show(),
+                    _width = $ad.width(),
+                    _height = $ad.height(),
+                    _diffY = 300,
+                    _diffX = 20, //距離右及下方邊距
+                    _moveSpeed = 800, // 移動的速度
+                    currentNavNo = 0;
+
+                $ad.css({
+                    top: $(document).height(),
+                    left: $win.width() - _width - _diffX,
+                    opacity: 1,
+                });
+
+                $win.bind('scroll resize', function () {
+                    var $this = $(this);
+
+                    $ad.stop().animate(
+                        {
+                            top:
+                                $this.scrollTop() +
+                                $this.height() -
+                                _height -
+                                _diffY,
+                            left:
+                                $this.scrollLeft() +
+                                $this.width() -
+                                _width -
+                                _diffX,
+                        },
+                        _moveSpeed
+                    );
+                }).scroll();
+
+                // 網頁go top
+                $('#gotop').click(function () {
+                    $('html,body').animate(
+                        {
+                            scrollTop: 0,
+                        },
+                        500
+                    );
+                });
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 300) {
+                        $('#gotop').fadeIn('fast');
+                    } else {
+                        $('#gotop').stop().fadeOut('fast');
+                    }
+                });
+
+                //整頁捲動-------?被點
+                $('#menu li').click(function () {
+                    //?被捲動
+                    indexNo = $(this).index();
+                    targetTop = $('section').eq(indexNo).position().top;
+                    $('html,body').animate(
+                        {
+                            scrollTop: targetTop,
+                        },
+                        500
+                    );
+                });
+
+                $('img[usemap]').rwdImageMaps();
+
+                $(window).resize(function () {});
+            });
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'wis_dataLayer', 'GTM-WXV8LX');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+
+    <body>
+        <!-- SCROLLTOP -->
+        <div id="top-bar" style="bottom: 0px">
+            <div>
+                <div
+                    id="abgne_float_ad"
+                    style="
+                        position: absolute;
+                        opacity: 1;
+                        top: 2768px;
+                        left: 1512px;
+                        z-index: 999;
+                    "
+                >
+                    <a href="#top" class="go top">
+                        <img src="images/top.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="gotop">
+            <center><img src="images/top_icon.png" /></center>
+        </div>
+        <div id="wrapper">
+            <header>
+                <img
+                    src="images/header_va01.jpg"
+                    alt=""
+                    usemap="#Map"
+                    border="0"
+                />
+                <map name="Map" id="Map">
+                    <area
+                        shape="rect"
+                        coords="0,417,113,528"
+                        href="index.html"
+                    />
+                </map>
+            </header>
+
+            <div id="vacation-tool">
+                <ul id="menu">
+                    <li>西/北歐<img src="images/area_title01.jpg" alt="" /></li>
+                    <li>東/南歐<img src="images/area_title02.jpg" alt="" /></li>
+                    <li>
+                        紐澳/南亞<img src="images/area_title03.jpg" alt="" />
+                    </li>
+                    <li>
+                        美加/海島<img src="images/area_title04.jpg" alt="" />
+                    </li>
+                    <li>
+                        古文明/大非洲<img
+                            src="images/area_title05.jpg"
+                            alt=""
+                        />
+                    </li>
+                    <li>
+                        遊輪/河輪<img src="images/area_title06.jpg" alt="" />
+                    </li>
+                    <li>
+                        中國/日本<img src="images/area_title07.jpg" alt="" />
+                    </li>
+                    <li>
+                        台灣/東南亞<img src="images/area_title08.jpg" alt="" />
+                    </li>
+                </ul>
+                <!-- 西/北歐 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h1.png" alt="" /></h1>
+                    <!-- 德.瑞 -->
+                    <div class="area-list-tool">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">德.瑞</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220830000001"
+                                >
+                                    <h3>
+                                        德國．瑞士 童話小王子 少女峰 新天鵝堡
+                                        10天
+                                    </h3>
+                                    <div class="area-list-date">2/24</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 東/南歐 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h2.png" alt="" /></h1>
+                    <!-- 奧捷 -->
+                    <div class="area-list-tool area-list-tool2">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">奧捷</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220815000002"
+                                >
+                                    <h3>金色夢幻 奧地利･捷克10天</h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220929000002"
+                                >
+                                    <h3>安心遊 奧地利 捷克 10天</h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 紐澳/南亞 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h3.png" alt="" /></h1>
+                    <!-- 紐西蘭 -->
+                    <div class="area-list-tool">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle circle-top">
+                                紐西蘭
+                            </div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220923000005"
+                                >
+                                    <h3>
+                                        紐航直飛『探索純淨紐西蘭壯麗峽灣．優美南北島』８天（長段國內線）
+                                    </h3>
+                                    <div class="area-list-date">2/23.25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220922000003"
+                                >
+                                    <h3>
+                                        紐西蘭『首都渡輪．海洋號火車．珍饌哈比村．包羅萬象南北島』１３天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 澳洲 -->
+                    <div class="area-list-tool">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">澳洲</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20190122000003"
+                                >
+                                    <h3>完美風華『美食饗宴．五星雪梨』７天</h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221214000001"
+                                >
+                                    <h3>
+                                        完美花漾『企鵝島．絕美大洋路．醇金墨爾本』７天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221213000006"
+                                >
+                                    <h3>
+                                        【新視界假期】完美風華『雪梨三寶．親近無尾熊．藍山國家公園』６天
+                                    </h3>
+                                    <div class="area-list-date">2/26</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221220000003"
+                                >
+                                    <h3>
+                                        美好東澳～三城全覽『螢火蟲夜遊．廚師帽美食．黃金五星飯店』９天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 美加/海島 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h4.png" alt="" /></h1>
+                    <!-- 美洲 -->
+                    <div class="area-list-tool area-list-tool2">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">美洲</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221024000001"
+                                >
+                                    <h3>
+                                        《天空之鏡》秘魯＋玻利維亞『馬丘比丘．烏尤尼逐星夜遊』１６天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 海島 -->
+                    <div class="area-list-tool area-list-tool2">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">海島</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20211124000002"
+                                >
+                                    <h3>
+                                        【玩瘋帛琉】愛在老爺濃情密意、無毒水母湖、雙龍雙蟹海鮮餐5天
+                                    </h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 古文明/大非洲 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h5.png" alt="" /></h1>
+                    <!-- 古文明 -->
+                    <div class="area-list-tool">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle circle-top">
+                                古文明
+                            </div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221123000002"
+                                >
+                                    <h3>
+                                        土耳其航空 璀璨鄂圖曼雙飛 土耳其11天
+                                    </h3>
+                                    <div class="area-list-date">2/26</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221006000003"
+                                >
+                                    <h3>
+                                        約旦以色列 星空下奇幻月亮谷
+                                        沙漠旅館星空屋10天
+                                    </h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221201000003"
+                                >
+                                    <h3>經典杜拜 七星帆船之旅 七日CX</h3>
+                                    <div class="area-list-date">2/26</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 遊輪/河輪 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h6.png" alt="" /></h1>
+                    <!-- 遊輪 -->
+                    <div class="area-list-tool area-list-tool2">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">遊輪</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220624000001"
+                                >
+                                    <h3>
+                                        歌詩達翡翠號『地中海仙境～航向西西里．馬約卡島』１１天
+                                    </h3>
+                                    <div class="area-list-date">2/24</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221208000008"
+                                >
+                                    <h3>
+                                        皇家公主遊輪『暢遊美墨三城～舊金山．聖地牙哥』９天
+                                    </h3>
+                                    <div class="area-list-date">2/24</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 中國/日本 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h7.png" alt="" /></h1>
+                    <!-- 日本 -->
+                    <div class="area-list-tool">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">日本</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221206000003"
+                                >
+                                    <h3>
+                                        ＵＰＯＰＯＹ愛努世界．夢幻賞燈隧道．浪漫遊小樽．冬戀北海道賞雪雙溫泉５天
+                                    </h3>
+                                    <div class="area-list-date">2/27</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221023000001"
+                                >
+                                    <h3>
+                                        【JAL
+                                        PAK】東北藏王樹冰奇景Ｘ八甲田山樹冰纜車‧百選五星豪宿‧冬之章８天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221230000001"
+                                >
+                                    <h3>
+                                        璀璨藏王樹冰．食饌山形牛．驛站城鎮大內宿．冬採雪莓
+                                        東北５天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221228000004"
+                                >
+                                    <h3>
+                                        【新潟包機】藏王樹冰．童話合掌屋．銀山溫泉聖地．浪漫雪溫泉５天
+                                    </h3>
+                                    <div class="area-list-date">2/24</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221123000005"
+                                >
+                                    <h3>
+                                        伊豆海岸浪漫列車．嬉遊箱根陸海空．大室山眺富士．奇幻迪士尼５天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20200818000001"
+                                >
+                                    <h3>
+                                        河津櫻花祭典．伊豆海岸浪漫列車．富士山合掌屋．關東早櫻尋梅５天
+                                    </h3>
+                                    <div class="area-list-date">2/23</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20200407000003"
+                                >
+                                    <h3>
+                                        精選櫪木三景．悠勝地輕井澤．世界三大奇景．關東輕鬆玩雙溫泉５天
+                                    </h3>
+                                    <div class="area-list-date">2/26</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221202000002"
+                                >
+                                    <h3>
+                                        富士見絕景．療癒合掌村．典雅御極漫５天
+                                    </h3>
+                                    <div class="area-list-date">2/26</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221201000004"
+                                >
+                                    <h3>
+                                        神話之鄉出雲大社・堀川遊覽船・米其林足立美術館・關西山陰仙境５天
+                                    </h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221121000001"
+                                >
+                                    <h3>
+                                        京都美山合掌村・天空之城竹田城・海之京都天橋立・京都秘境深度遊５天
+                                    </h3>
+                                    <div class="area-list-date">2/27</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221209000001"
+                                >
+                                    <h3>
+                                        瀨戶內海島波海道・尾道千光寺・漫步宇和島・寒霞溪・廣島四國６天
+                                    </h3>
+                                    <div class="area-list-date">2/25.27</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 台灣/東南亞 -->
+                <section class="area-section">
+                    <h1><img src="images/area_h8.png" alt="" /></h1>
+                    <!-- 台灣 -->
+                    <div class="area-list-tool area-list-tool2">
+                        <div class="area-list-circle-tool">
+                            <div class="area-list-circle">台灣</div>
+                        </div>
+                        <div class="area-list-link-tool">
+                            <div class="area-list-link">
+                                <a
+                                    href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20230103000003"
+                                >
+                                    <h3>
+                                        連休瘋澎湖~打卡新北環島、南寮小旅行、海洋牧場、五星自助餐4天
+                                    </h3>
+                                    <div class="area-list-date">2/25</div>
+                                    <span class="area-list-more"
+                                        >READ MORE+</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_table">
+                <div class="footer_left">
+                    凱旋旅行社(股份)有限公司(交觀綜字第2133號)
+                    <br />
+                    巨匠旅遊 / 新視界假期 / 典藏旅遊 <br />
+                    經營業務範圍：綜合旅行社經營業務範圍 <br />
+                    代表人：項國棟　　聯絡人：劉恪宏 <br />
+                    法律顧問：信和國際法律事務所 梁堯清律師 <br />
+                    E-MAIL：<span style="font-size: 11px; font-family: Verdana"
+                        ><a href="mailto:artisantour@artisan.com.tw"
+                            >ARTISANTOUR@ARTISAN.COM.TW</a
+                        ></span
+                    >
+                </div>
+                <div class="footer_right">
+                    <table
+                        width="100%"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                    >
+                        <tbody>
+                            <tr>
+                                <td>
+                                    台北　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:02-2507-5000<br />　　　FAX:02-2504-6199</span
+                                    >
+                                </td>
+                                <td>
+                                    桃園　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:03-3321-250<br />　　　FAX:03-3321-315</span
+                                    >
+                                </td>
+                                <td>
+                                    新竹　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:03-5283-088<br />　　　FAX:03-5283-389</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    台中　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:04-2255-0229<br />　　　FAX:04-2255-1169</span
+                                    >
+                                </td>
+                                <td>
+                                    員林　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:04‐8365-288<br />　　　FAX:04‐8365-399</span
+                                    >
+                                </td>
+                                <td>
+                                    台南　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:06-222-6627<br />　　　FAX:06-222-6731</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    高雄　<span
+                                        style="
+                                            font-size: 11px;
+                                            font-family: Verdana;
+                                        "
+                                        >TEL:07-2419-872<br />　　　FAX:07-2154-690</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WXV8LX"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>

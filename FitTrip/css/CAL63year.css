@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap);
+
+#wrapper {
+  margin-top: 100px;
+}
+.content {
+  background-image: url(../images/CAL63year-bg.jpg);
+  background-size: 59px;
+}
+.title img {
+  width: 100%;
+}
+.continent {
+  width: 100%;
+}
+.textDress img {
+  width: 100%;
+}
+.area {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 70px);
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.area a {
+  font-family: "cwTeXYen", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #903a0a;
+  box-shadow: inset 0px -20px #facd89;
+  margin: 20px 45px;
+}
+
+.numberStyle {
+  font-family: "Rubik", sans-serif;
+}
+
+.footDress img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .area a {
+    font-size: 1.2rem;
+    box-shadow: inset 0px -10px #facd89;
+  }
+}

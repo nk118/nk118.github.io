@@ -1,0 +1,1223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft JhengHei, '微軟正黑體';
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    background-image: url('../img/bg.png');
+}
+
+/* ---------------------------------------------------------- */
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, -120%);
+        transform: translate(0, -120%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+.banner .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+.doble-snow {
+    position: absolute;
+    top: 4%;
+    left: 14%;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 20%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.title-img {
+    width: 100%;
+    animation: fadeInDown 2s;
+}
+.animation-move {
+    opacity: 1;
+    animation: move 3s ease-in infinite;
+}
+@keyframes move {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: 8px;
+    }
+
+    50% {
+        margin-top: 0;
+    }
+
+    75% {
+        margin-top: 8px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.l-title {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: move 3s ease-in infinite;
+    max-width: 400px;
+}
+
+.ll-title {
+    position: relative;
+}
+
+.s-title {
+    position: absolute;
+}
+
+.s-title-img {
+    max-width: 200px;
+}
+
+/* ---------------------------------------------------------- */
+
+header nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8e7fc;
+    z-index: 99;
+}
+
+header nav ul {
+    margin: 0 1.3rem;
+}
+
+header nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 1.5rem 1.8rem;
+}
+
+header nav ul li .dash-img::before {
+    content: url('../img/dashed.png');
+    display: inline-block;
+    position: absolute;
+    top: -16px;
+    left: -32px;
+}
+
+header nav ul li::after {
+    content: url('../img/dashed.png');
+    position: absolute;
+    top: -16px;
+    right: -35px;
+}
+
+header nav ul li a:hover::after {
+    content: url('../img/游標移至時出現1.png');
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    bottom: 25px;
+}
+
+header nav ul li img {
+    max-width: 150px;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------- */
+
+.circle-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-left {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    max-width: 100%;
+    z-index: -99;
+}
+
+.circle-right {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    max-width: 100%;
+    z-index: -99;
+}
+
+.box-block,
+.box-block2,
+.box-block3,
+.box-block4 {
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box-1 {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 1rem 6rem;
+}
+
+.list-box1,
+.list-box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 0 2rem;
+    border-bottom: 2px dashed #888;
+}
+.list-box2 {
+    border: none;
+}
+.title1 {
+    position: absolute;
+    top: 5px;
+    left: -88px;
+    margin-left: 1rem;
+    max-width: 165px;
+    width: 100%;
+}
+
+.title2 {
+    position: absolute;
+    top: -20px;
+    right: -96px;
+    margin-right: 1rem;
+    max-width: 110px;
+    width: 100%;
+}
+
+.list-box1 ul,
+.list-box2 ul {
+    width: 60%;
+}
+
+.list-box1 ul li,
+.list-box2 ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.list-box1 ul li a,
+.list-box2 ul li a {
+    display: block;
+    font-size: 1.2rem;
+    color: #636363;
+    font-weight: 600;
+    line-height: 2.5rem;
+    transition: all 0.4s;
+}
+
+@media (min-width: 769px) {
+    .list-box1 ul li a:hover,
+    .list-box2 ul li a:hover {
+        transform: scale(1.15);
+        margin-left: 30px;
+    }
+}
+.title3 {
+    position: absolute;
+    top: 7px;
+    left: -88px;
+    margin-left: 1rem;
+    max-width: 165px;
+    width: 100%;
+}
+.list-box1 ul li::before,
+.list-box2 ul li::before {
+    content: '';
+    margin-right: 15px;
+}
+
+.list-box1 ul li::before {
+    content: url('../img/blue-adorn.png');
+}
+
+.list-box2 ul li::before {
+    content: url('../img/pink-adorn.png');
+}
+
+/* ---------------------------------------------------------- */
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1.5rem 6rem;
+    padding: 1rem 3.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.view-img {
+    width: 100%;
+}
+
+.title4 {
+    position: absolute;
+    top: -25px;
+    right: 24px;
+    margin-right: 1rem;
+    max-width: 100px;
+    width: 100%;
+}
+
+.img-block {
+    padding: 1.5rem;
+}
+
+.caption {
+    position: absolute;
+    left: 143px;
+    bottom: 16px;
+}
+
+.caption img {
+    max-width: 320px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 99px;
+}
+
+.caption .text-box {
+    background-color: #ffffff55;
+    padding: 1.1rem 2.5rem 1rem 2.6rem;
+    border-radius: 7px;
+}
+
+.caption .text-box p {
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.box-2 .btn-img {
+    position: absolute;
+    right: 16px;
+    bottom: 25px;
+    max-width: 50px;
+    /* width: 100%; */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.box-2 .btn-img:hover {
+    transform: scale(1.2);
+}
+
+/* 按鈕位置 */
+.box-block2 .slick-arrow {
+    position: relative;
+    right: -23px;
+    top: 25px;
+}
+
+/* ---------------------------------------------------------- */
+
+.box-block3 {
+    padding: 0 3rem;
+    background-color: #ffffff;
+    max-width: unset;
+}
+
+.box-3 {
+    position: relative;
+    margin: 0 0.5rem;
+    background-color: #e7e9ea;
+}
+
+.top-block {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.trans-block {
+    padding-left: 2rem;
+    width: 50%;
+    max-width: 800px;
+}
+
+.trans-img {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.title-block {
+    margin-left: auto;
+    margin-right: 2rem;
+    width: 40%;
+    text-align: right;
+}
+
+.trans-title {
+    max-width: 320px;
+    width: 100%;
+}
+
+.transbg-block {
+    position: relative;
+    background-image: url('../img/4.交通工具/底11.png');
+    height: 33vw;
+    background-size: 100%;
+    max-width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title5 {
+    position: absolute;
+    bottom: 0;
+    left: -49px;
+    max-width: 95px;
+    width: 100%;
+    z-index: 2;
+}
+
+/* simpleTab */
+.tabContent {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+.traffic-tab {
+    display: flex;
+    margin-bottom: 10px;
+}
+.traffic-tab li {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.traffic-tab li:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.traffic-tab li:nth-of-type(1) {
+    width: 14.8%;
+}
+.traffic-tab li:nth-of-type(2) {
+    width: 8.7%;
+}
+.traffic-tab li:nth-of-type(3) {
+    width: 22.3%;
+}
+.traffic-tab li:nth-of-type(4) {
+    width: 8.6%;
+}
+.traffic-tab li:nth-of-type(5) {
+    width: 4.6%;
+}
+.traffic-tab li:nth-of-type(6) {
+    width: 4.8%;
+}
+.traffic-tab li:nth-of-type(7) {
+    width: 6.5%;
+}
+.traffic-tab li:nth-of-type(8) {
+    width: 12.2%;
+}
+.traffic-tab li:nth-of-type(9) {
+    width: 17.5%;
+}
+.traffic-tab li a {
+    display: block;
+    text-align: center;
+}
+.trans-btn {
+    width: 7vw;
+    height: 100%;
+    max-width: 130px;
+    pointer-events: none;
+    object-fit: cover;
+}
+.box-block4 {
+    position: relative;
+    background-image: url('../img/5.必遊景點/底.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1663px;
+}
+
+/* ---------------------------------------------------------- */
+
+.box-4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 6rem;
+}
+
+.box-block4 .btn2-img {
+    position: absolute;
+    right: -12px;
+    bottom: 36px;
+    max-width: 58px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.box-4 .btn2-img:hover {
+    transform: scale(1.2);
+}
+
+.view-img2 {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+}
+
+.title-img2 {
+    position: absolute;
+    top: -54px;
+    left: 0px;
+    max-height: 60px;
+}
+
+.text-box2 {
+    position: absolute;
+    bottom: 40px;
+    left: 52px;
+    padding: 0.8rem;
+    max-width: 755px;
+    width: 100%;
+    background-color: #ffffff55;
+    border-radius: 7px;
+}
+
+.text-box2 p {
+    display: inline-block;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+
+.title6 {
+    position: absolute;
+    top: -26px;
+    right: 39px;
+    margin-right: 1rem;
+    max-width: 100px;
+    width: 100%;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    z-index: 99;
+    display: none;
+}
+
+.top-btn img {
+    max-width: 62px;
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    color: #fff;
+    background: #8b8c8c;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    margin: 0 auto;
+    word-break: break-all;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #ece7a1;
+}
+
+.footer-link {
+    background: #1f4165;
+    padding: 10px;
+}
+
+ul#bottom-menu {
+    width: 1080px;
+    overflow: hidden;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+ul#bottom-menu li {
+    float: left;
+    list-style: none;
+}
+
+ul#bottom-menu li:after {
+    content: '｜';
+    margin: 6px;
+    color: #fff;
+}
+
+ul#bottom-menu li:last-of-type:after {
+    display: none;
+}
+
+ul#bottom-menu a {
+    color: #fff;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+ul#bottom-menu a:hover {
+    color: #ee7b1a;
+}
+
+.footer-line {
+    width: 1px;
+    height: 210px;
+    background: #fffbcc;
+    margin: 1%;
+}
+
+.contact-box-warp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 33%;
+}
+
+.contact-box p span {
+    letter-spacing: 0.2rem;
+}
+
+.foot-wrap {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.footer-left {
+    width: 30%;
+}
+
+.footer-left h4 {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.footer-left p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.footer-left .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6.5px 0 6.5px 6px;
+    border-color: transparent transparent transparent #fffbcc;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-right {
+    display: flex;
+    width: 60%;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.contact-box:last-of-type {
+    padding-right: 0.8%;
+}
+
+@media (max-width: 1200px) {
+    header nav ul li .dash-img::before {
+        content: url('../img/dashed.png');
+        position: absolute;
+        top: -20px;
+        left: -21px;
+    }
+
+    header nav ul li::after {
+        content: url('../img/dashed.png');
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    header nav ul li {
+        position: relative;
+        display: inline-block;
+        margin: 1.5rem 1rem;
+    }
+
+    header nav ul li img {
+        max-width: 100px;
+    }
+
+    .list-box1,
+    .list-box2 {
+        padding: 2rem 0;
+    }
+
+    .list-box1 ul,
+    .list-box2 ul {
+        width: 73%;
+    }
+
+    .title1 {
+        position: absolute;
+        top: 5px;
+        margin-left: 1rem;
+        max-width: 145px;
+        width: 100%;
+    }
+
+    .title2 {
+        position: absolute;
+        top: -20px;
+        right: -81px;
+        margin-right: 1rem;
+        max-width: 100px;
+        width: 100%;
+    }
+
+    .list-box1 ul li,
+    .list-box2 ul li {
+        /* margin: 1.2rem; */
+        padding: 0 0 0 2rem;
+    }
+
+    .list-box1 ul li a,
+    .list-box2 ul li a {
+        font-size: 1.1rem;
+    }
+
+    .title3 {
+        position: absolute;
+        margin-left: 1rem;
+        max-width: 145px;
+        width: 100%;
+    }
+
+    .box-2 {
+        padding: 1rem 1.5rem;
+    }
+
+    .box-2 .btn-img {
+        right: 19px;
+    }
+
+    .caption {
+        left: 116px;
+        bottom: 11px;
+    }
+
+    .caption img {
+        max-width: 260px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 108px;
+    }
+
+    .caption .text-box {
+        padding: 1rem;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .caption .text-box p {
+        font-size: 0.9rem;
+        display: inline;
+    }
+
+    .view-img {
+        height: 56vh;
+        object-fit: cover;
+    }
+
+    .title4 {
+        position: absolute;
+        top: -23px;
+        right: 31px;
+        margin-right: 1rem;
+        max-width: 90px;
+        width: 100%;
+    }
+
+    .text-box2 {
+        position: absolute;
+        bottom: 36px;
+        left: 52px;
+        padding: 0.5rem;
+        max-width: 434px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .text-box2 p {
+        display: inline;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .transbg-block {
+        height: 369px;
+    }
+
+    .title6 {
+        max-width: 90px;
+    }
+
+    .box-block4 .btn2-img {
+        max-width: 46px;
+        bottom: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-right {
+        width: 210px;
+    }
+
+    .circle-left {
+        width: 158px;
+    }
+
+    .title1 {
+        position: absolute;
+        top: -11px;
+        left: -20px;
+        max-width: 78px;
+        width: 100%;
+    }
+
+    .title2 {
+        position: absolute;
+        top: -20px;
+        right: -72px;
+        margin-right: 1rem;
+        max-width: 69px;
+        width: 100%;
+    }
+
+    .title3 {
+        position: absolute;
+        left: -20px;
+        margin-left: 1rem;
+        max-width: 81px;
+        width: 100%;
+    }
+
+    .box-1 {
+        margin: 1rem 2rem;
+    }
+
+    /* .list-box1,
+    .list-box2 {
+        padding: 1rem;
+    } */
+
+    .list-box1 ul li a,
+    .list-box2 ul li a {
+        font-size: 0.9rem;
+        line-height: normal;
+    }
+
+    .list-box1 ul li,
+    .list-box2 ul li {
+        margin-bottom: 1rem;
+    }
+
+    .list-box1 ul li a:hover,
+    .list-box2 ul li a:hover {
+        font-size: 1.1rem;
+    }
+
+    .box-2 {
+        margin: 1.5rem 1rem;
+        padding: 1rem;
+    }
+
+    .title4 {
+        right: -6px;
+        max-width: 69px;
+    }
+
+    .box-block3 {
+        padding: 0 3rem;
+    }
+
+    .title5 {
+        max-width: 75px;
+    }
+
+    .caption {
+        left: 26px;
+    }
+
+    .transbg-block {
+        height: 240px;
+    }
+
+    .box-4 {
+        margin: 1.5rem 2rem;
+    }
+
+    .view-img {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .title6 {
+        right: -12px;
+        max-width: 70px;
+    }
+
+    .text-box2 {
+        bottom: 34px;
+    }
+
+    .top-btn img {
+        max-width: 46px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footer-left {
+        width: 40%;
+    }
+
+    .footer-right {
+        width: 60%;
+    }
+
+    .contact-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-img {
+        height: 30vh;
+    }
+
+    header nav ul li {
+        margin: 1rem 0.5rem;
+    }
+
+    header nav ul li img {
+        max-width: 85px;
+    }
+
+    header nav ul li .dash-img::before {
+        content: '';
+    }
+
+    header nav ul li::after {
+        content: url('../img/dashed2.png');
+        position: absolute;
+        top: -4px;
+        right: -11px;
+    }
+    .circle-bg {
+        padding-bottom: 2rem;
+    }
+    .circle-left {
+        width: 136px;
+    }
+
+    .circle-right {
+        max-width: 162px;
+    }
+
+    .caption img {
+        max-width: 186px;
+        bottom: 301px;
+    }
+
+    /* .list-box1 ul li a:hover,
+    .list-box2 ul li a:hover {
+        font-size: 0.9rem;
+    } */
+    .box-2 {
+        margin-bottom: 0.5rem;
+    }
+    .list-box1 ul,
+    .list-box2 ul {
+        width: 100%;
+    }
+    .list-box1 ul li,
+    .list-box2 ul li {
+        padding: 0 1rem;
+    }
+    .title1 {
+        max-width: 65px;
+        left: -65px;
+    }
+    .title3 {
+        max-width: 65px;
+        left: -65px;
+    }
+
+    .title5 {
+        max-width: 68px;
+        left: -38px;
+        top: 0px;
+    }
+
+    .view-img {
+        height: 48vh;
+    }
+
+    .box-2 .btn-img {
+        right: 20px;
+        max-width: 33px;
+    }
+
+    .transbg-block {
+        height: 210px;
+        justify-content: flex-start;
+    }
+
+    .caption {
+        position: unset;
+    }
+
+    .caption .text-box {
+        display: inline-block;
+        position: unset;
+        bottom: 21px;
+        left: 4px;
+        padding: 0 1.8rem;
+        width: 100%;
+    }
+
+    .caption .text-box p {
+        display: inline;
+        font-size: 11.6px;
+    }
+
+    .caption img {
+        max-width: 186px;
+        top: 10px;
+        left: 17px;
+    }
+    .box-block3 {
+        padding: 0 2rem;
+    }
+    .top-block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding-top: 1rem;
+        align-content: center;
+    }
+    .trans-block {
+        padding: 0;
+        margin-top: 2rem;
+        width: 90%;
+    }
+    .title-block {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .traffic-tab {
+        filter: drop-shadow(0px 0px 5px #444);
+    }
+
+    .trans-btn {
+        width: 2.5vw;
+        height: auto;
+        object-fit: unset;
+    }
+    .traffic-tab li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .traffic-tab li:nth-of-type(1) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/富山地方鐵道.png);
+    }
+    .traffic-tab li:nth-of-type(2) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/斜面電車--會用到2次.png);
+    }
+    .traffic-tab li:nth-of-type(3) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/立山高原巴士.png);
+    }
+    .traffic-tab li:nth-of-type(4) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/立山隧道無軌電車.png);
+    }
+    .traffic-tab li:nth-of-type(5) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/索道.png);
+    }
+    .traffic-tab li:nth-of-type(6) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/斜面電車--會用到2次.png);
+    }
+    .traffic-tab li:nth-of-type(7) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/步行.png);
+    }
+    .traffic-tab li:nth-of-type(8) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/關電隧道電氣巴士.png);
+    }
+    .traffic-tab li:nth-of-type(9) .trans-btn {
+        content: url(../img/4.交通工具/手機-純字/特快巴士.png);
+    }
+
+    .box-block4 {
+        background-position: bottom;
+    }
+
+    .box-4 {
+        margin: 1.5rem 2rem;
+    }
+
+    .view-img2 {
+        padding: 0;
+        height: 48vh;
+        object-fit: cover;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .title-img2 {
+        top: 0;
+        left: -1px;
+        /* max-height: 30px; */
+    }
+
+    .text-box2 {
+        position: unset;
+    }
+
+    .box-block4 .btn2-img {
+        bottom: 124px;
+        right: -21px;
+        max-width: 30px;
+    }
+
+    .trans-title {
+        margin: 0;
+    }
+
+    .title5 {
+        max-width: 68px;
+        left: -39px;
+    }
+
+    .title6 {
+        top: -24px;
+        right: -6px;
+        max-width: 69px;
+    }
+
+    .top-btn img {
+        max-width: 38px;
+    }
+
+    .foot-wrap {
+        width: 80%;
+        flex-direction: column;
+        padding: 10% 0 5%;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-right {
+        margin: 10px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-box-warp {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .contact-box p span {
+        letter-spacing: 0.15rem;
+    }
+
+    .contact-box p:nth-of-type(2):before {
+        content: '　　 ';
+        margin-right: 6px;
+    }
+}

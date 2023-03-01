@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <style type="text/css">
+            .tab-hidden {
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+            }
+            .tab-hidden .tab-items {
+                position: relative;
+                display: flex;
+                padding: 1px;
+                z-index: 11;
+            }
+            .tab-hidden .tab-items .tab-item {
+                width: 50%;
+                background-color: #222222;
+            }
+            .tab-hidden .tab-items .tab-item:first-of-type {
+                margin-right: 0.5px;
+            }
+            .tab-hidden .tab-items .tab-item:last-of-type {
+                margin-left: 0.5px;
+            }
+            .tab-hidden .tab-items .tab-item.selected {
+                position: relative;
+            }
+            .tab-hidden .tab-items .tab-item.selected.left {
+                background-color: #006075;
+            }
+            .tab-hidden .tab-items .tab-item.selected.left::before {
+                background-color: #b5bb1c;
+            }
+            .tab-hidden .tab-items .tab-item.selected.left::after {
+                border-color: transparent transparent #b6bb1c transparent;
+            }
+            .tab-hidden .tab-items .tab-item.selected.right {
+                background-color: #240f00;
+            }
+            .tab-hidden .tab-items .tab-item.selected.right::before {
+                background-color: #bc2649;
+            }
+            .tab-hidden .tab-items .tab-item.selected.right::after {
+                border-color: transparent transparent #bc2649 transparent;
+            }
+            .tab-hidden .tab-items .tab-item.selected::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -6px;
+                height: 5px;
+                width: 100%;
+            }
+            .tab-hidden .tab-items .tab-item.selected::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: -10px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-style: solid;
+                border-width: 0 13px 13px 13px;
+            }
+            .tab-hidden .tab-items .tab-item .tab-tag {
+                padding: 8px 0;
+                text-align: center;
+                color: #fff;
+            }
+            .tab-hidden .tab-items .tab-item .tab-tag h2 {
+                font-weight: normal;
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+
+            .Brand-area .tabContentd {
+                height: 100%;
+            }
+            .Brand-area #Bcontent1 {
+                display: block;
+            }
+            .Brand-area #Bcontent2 {
+                display: none;
+            }
+            .Brand-area .mult-link {
+                right: 1px;
+                width: 65%;
+                height: calc(100% - 36px);
+            }
+            .Brand-area .mult-link .mult-link-content {
+                width: 65%;
+            }
+            .Brand-area:hover .mult-link {
+                opacity: 1;
+            }
+            .Brand-area:hover .mult-link.aos-animate.aos-init.hide {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- banner -->
+        <div class="plaid-bg">
+            <div class="banner-block">
+                <div class="banner">
+                    <div>
+                        <img src="./img/地圖大標/標題.png" class="img-title" />
+                    </div>
+                    <div class="tab-hidden">
+                        <ul class="tab Brand-tab" data-tab-name="tabExample">
+                            <li
+                                class="Brand-treasure tablinksd selected"
+                                onmouseover="AutoOpenTab(event, 'Bcontent1','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">西歐</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent2','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">東歐</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent3','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">南歐</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent4','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">北歐</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent5','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">紐西蘭</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent6','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">南美</a>
+                            </li>
+                            <li
+                                class="Brand-vision tablinksd"
+                                onmouseover="AutoOpenTab(event, 'Bcontent7','tabContentd','tablinksd','selected')"
+                            >
+                                <a href="javascript: void(0)">中東</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Brand-area">
+                        <div class="tabContentd" id="Bcontent1">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <img
+                                        src="./img/地圖大標/西歐.png"
+                                        class="img-map"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent2">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/東歐.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent3">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/南歐.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent4">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/北歐.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent5">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/紐西蘭.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent6">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/南美.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContentd" id="Bcontent7">
+                            <div class="Brand-hidden">
+                                <div class="Brand-tool">
+                                    <div class="map-block">
+                                        <img
+                                            src="./img/地圖大標/中東.png"
+                                            class="img-map"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /banner -->
+
+        <script>
+            // banner
+            function AutoOpenTab(
+                evt,
+                asiaName,
+                strtabContentd,
+                strtablinksd,
+                strCurrentTarget
+            ) {
+                tabContentd = document.getElementsByClassName(strtabContentd);
+                for (i = 0; i < tabContentd.length; i++) {
+                    tabContentd[i].style.display = 'none';
+                }
+
+                tablinksd = document.getElementsByClassName(strtablinksd);
+                for (i = 0; i < tablinksd.length; i++) {
+                    tablinksd[i].className = tablinksd[i].className.replace(
+                        ' ' + strCurrentTarget,
+                        ''
+                    );
+                }
+
+                document.getElementById(asiaName).style.display = 'block';
+                evt.currentTarget.className += ' ' + strCurrentTarget;
+            }
+        </script>
+    </body>
+</html>

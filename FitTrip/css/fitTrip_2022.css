@@ -111,6 +111,10 @@
   height: 40px;
 }
 
+.eq {
+  display: none;
+}
+
 .tablinkai a {
   display: block;
   width: 100%;
@@ -276,6 +280,7 @@
 }
 
 .globalTravel_price {
+  display: none;
   font-size: 0.5rem;
   padding: 5px 0 0;
 }
@@ -429,6 +434,7 @@
   padding-top: 20px;
   border-top: #c1c1c1 1px solid;
   overflow: auto;
+  width: 100%;
 }
 
 .packages-hidden {
@@ -452,7 +458,7 @@
 }
 
 figure.packages-box {
-  width: calc((100% - 40px) / 3);
+  width: calc((100% - 40px) / 4);
   margin: 10px;
   line-height: 0;
   overflow: hidden;
@@ -520,6 +526,8 @@ figure.packages-box a {
   right: 0;
   z-index: 1;
 }
+
+
 
 /*============== /packages ==============*/
 

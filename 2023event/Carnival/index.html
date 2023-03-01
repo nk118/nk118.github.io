@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:description" content="狂歡嘉年華" />
+    <meta property="og:title" content="巨匠旅遊-狂歡嘉年華" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.artisan.com.tw/2019_events/Carnival/"
+    />
+    <meta property="og:site_name" content="巨匠旅遊-狂歡嘉年華" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="shortcut icon"
+      href="https://www.artisan.com.tw/images/artisan.ico"
+    />
+
+    <title>巨匠旅遊-狂歡嘉年華</title>
+    <script
+      type="text/javascript"
+      src="https://www.artisan.com.tw/js/jquery-1.12.4.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      $(window).load(function () {
+        var $win = $(window),
+          $ad = $("#abgne_float_ad").css("opacity", 0).show(),
+          _width = $ad.width(),
+          _height = $ad.height(),
+          _diffY = 300,
+          _diffX = 20, //距離右及下方邊距
+          _moveSpeed = 800, // 移動的速度
+          currentNavNo = 0
+
+        $ad.css({
+          top: $(document).height(),
+          left: $win.width() - _width - _diffX,
+          opacity: 1,
+        })
+
+        $win
+          .bind("scroll resize", function () {
+            var $this = $(this)
+
+            $ad.stop().animate(
+              {
+                top: $this.scrollTop() + $this.height() - _height - _diffY,
+                left: $this.scrollLeft() + $this.width() - _width - _diffX,
+              },
+              _moveSpeed
+            )
+          })
+          .scroll()
+
+        //整頁捲動-------?被點
+        $("#menu li").click(function () {
+          //?被捲動
+          indexNo = $(this).index()
+          targetTop = $("section").eq(indexNo).position().top
+          $("html,body").animate(
+            {
+              scrollTop: targetTop,
+            },
+            500
+          )
+        })
+
+        // 網頁go top
+        $(".gotop").click(function () {
+          $("html,body").animate(
+            {
+              scrollTop: 0,
+            },
+            500
+          )
+        })
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $(".gotop").fadeIn("fast")
+          } else {
+            $(".gotop").stop().fadeOut("fast")
+          }
+        })
+
+        $(window).resize(function () {})
+      })
+    </script>
+  </head>
+
+  <body>
+    <!-- SCROLLTOP -->
+    <div id="top-bar" style="bottom: 0px">
+      <div>
+        <div
+          id="abgne_float_ad"
+          style="
+            position: absolute;
+            opacity: 1;
+            top: 2768px;
+            left: 1512px;
+            z-index: 999;
+          "
+        >
+          <a href="#top" class="gotop">
+            <img src="images/top.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <header>
+        <img src="images/header.jpg" alt="" />
+        <div class="main-pic"><img src="./images/main-pic.png" alt="" /></div>
+      </header>
+
+      <!-- 威尼斯嘉年華 -->
+      <section>
+        <div class="carnival-tool">
+          <div class="carnival-txt">
+            <figure>
+              <img src="images/section02_titile.jpg" alt="" />
+              <figcaption>2023/02/04-02/21</figcaption>
+            </figure>
+            <p>
+              世界上最華麗詭譎的藝術舞台，就在每年的威尼斯面具節！有關威尼斯嘉年華的由來，是在西元1162年，為了慶祝威尼斯國對抗Ulrico的戰役勝利，在『聖馬可廣場』舉行慶典。到了15世紀，則漸漸演變為一種全民參與的狂歡大會。而400多年來，嘉年華會依然每年在威尼斯的水巷間熱鬧上演，不但當地居民熱情投入，更成為全球觀光客注目的焦點。最熱鬧的地點，就是聖馬可廣場，穿著華麗古裝、戴上面具的表演者，讓人有走入中世紀的錯覺。而嘉年華的主要重點之一，就在一副副精緻絕倫的面具，街頭上會有彩繪師，隨時準備在遊客的臉上大作文章，附近的店家，則會擺出戲服、面具...等，提供遊客變裝。
+            </p>
+          </div>
+          <div class="carnival-pic">
+            <img src="images/section02_pic.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- 推薦行程 -->
+        <div class="recommendation">
+          <h3><img src="images/recommendation.jpg" alt="" /></h3>
+          <div class="list-tool">
+            <div class="list">
+              <a
+                href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20220808000001"
+              >
+                <h4>義大利 卡不里島 阿瑪菲海岸11天(333專案)</h4>
+                <div class="date">2/9</div>
+              </a>
+            </div>
+
+            <div class="list">
+              <a
+                href="https://www.artisan.com.tw/ClassifyProduct.aspx?TripNo=T20221027000003"
+              >
+                <h4>義大利 五地漁村 熱拿亞 11天</h4>
+                <div class="date">2/16</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <img src="images/line.jpg" alt="" style="max-width: 100%" />
+      </section>
+
+      <footer>
+        <div class="footer_table">
+          <div class="footer_left">
+            凱旋旅行社(股份)有限公司(交觀綜字第2133號)
+            <br />
+            巨匠旅遊 / 新視界假期 / 典藏旅遊 <br />
+            <br />
+            經營業務範圍：綜合旅行社經營業務範圍 <br />
+            代表人：項國棟｜聯絡人：劉恪宏 <br />
+            法律顧問：信和國際法律事務所 梁堯清律師 <br />
+            E-MAIL：<span style="font-size: 11px; font-family: Verdana"
+              ><a href="mailto:artisantour@artisan.com.tw"
+                >ARTISANTOUR@ARTISAN.COM.TW</a
+              ></span
+            >
+          </div>
+          <div class="footer_right">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>
+                    台北　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:02-2507-5000<br />　　　FAX:02-2504-6199</span
+                    >
+                  </td>
+                  <td>
+                    桃園　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:03-3321-250<br />　　　FAX:03-3321-315</span
+                    >
+                  </td>
+                  <td>
+                    新竹　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:03-5283-088<br />　　　FAX:03-5283-389</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    台中　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:04-2255-0229<br />　　　FAX:04-2255-1169</span
+                    >
+                  </td>
+                  <td>
+                    員林　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:04‐8365-288<br />　　　FAX:04‐8365-399</span
+                    >
+                  </td>
+                  <td>
+                    台南　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:06-222-6627<br />　　　FAX:06-222-6731</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    高雄　<span style="font-size: 11px; font-family: Verdana"
+                      >TEL:07-2419-872<br />　　　FAX:07-2154-690</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
