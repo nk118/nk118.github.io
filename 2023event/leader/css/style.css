@@ -18,56 +18,12 @@ body {
     object-fit: contain;
 }
 
+/* banner */
 .plaid-bg {
     background-image: url(../img/一排格子.png);
     background-repeat: repeat-y;
     background-position: right;
     background-size: 100%;
-    height: 100vh;
-}
-
-.tab-hidden {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-}
-.Brand-tab {
-}
-.tablinks {
-    display: block;
-    width: fit-content;
-    height: fit-content;
-}
-.tablinks a {
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-.Brand-area {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-}
-.Brand-area .tabContentd {
-    display: flex;
-    position: absolute;
-    /* left: 40%;
-    transform: translate(-50%, 0); */
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 0.3s all ease-in-out;
-}
-.Brand-area #Bcontent0 {
-    opacity: 1;
-    transition: 0.3s all ease-in-out;
-}
-.img-map {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .img-title {
@@ -78,6 +34,78 @@ body {
     margin-left: 2%;
     z-index: 1;
 }
+.tab-hidden {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.Brand-tab {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tablinks {
+    display: block;
+    position: absolute;
+    width: 3.3%;
+    height: 5.5%;
+    /* border: 1px solid #000; */
+}
+.tablinks a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.Brand-area {
+    position: relative;
+    width: 100%;
+    height: 1470px;
+}
+.tabContentd {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+.Brand-area #Bcontent0 {
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+}
+.img-map {
+    width: 100%;
+    object-fit: contain;
+}
+
+.Western_Europe {
+    top: 39%;
+    left: 48.8%;
+}
+.Eastern_Europe {
+    top: 37.4%;
+    left: 55.6%;
+}
+.Southern_Europe {
+    top: 43.2%;
+    left: 52.3%;
+}
+.Northern_Europe {
+    top: 32%;
+    left: 50.8%;
+}
+.NewZealand {
+    bottom: 17%;
+    right: 2.3%;
+}
+.South_America {
+    bottom: 27.2%;
+    left: 29.7%;
+}
+.Middle_East {
+    top: 49%;
+    left: 56%;
+}
+
+/* banner end */
 
 /* 地區 */
 .area-pos {
@@ -323,8 +351,8 @@ section {
 }
 
 .layout-box {
-    display: inline-grid;
-    max-height: 340px;
+    display: flex;
+    min-height: 350px;
 }
 
 /* .mobile-img {
@@ -486,6 +514,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
 }
 
 .shot {
@@ -493,8 +522,7 @@ section {
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: 378px;
-    left: 50px;
+    left: -33px;
 }
 
 .shot2 {
@@ -502,12 +530,12 @@ section {
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: 359px;
-    left: -38px;
+    right: -38px;
 }
 
 .s-title {
-    margin-bottom: 15px;
+    position: absolute;
+    top: -45px;
     max-height: 34px;
 }
 
@@ -519,18 +547,15 @@ section {
 .view {
     position: relative;
     left: 49px;
-    bottom: 292px;
 }
 
 .view2 {
     position: relative;
-    bottom: 293px;
     left: -45px;
 }
 
 .view3 {
     position: relative;
-    bottom: 268px;
     left: -45px;
 }
 
