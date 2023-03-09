@@ -24,6 +24,7 @@ body {
     background-repeat: repeat-y;
     background-position: right;
     background-size: 100%;
+    height: 1045px;
 }
 
 .img-title {
@@ -34,74 +35,88 @@ body {
     margin-left: 2%;
     z-index: 1;
 }
+
 .tab-hidden {
     height: 100%;
     position: absolute;
     z-index: 2;
 }
+
 .Brand-tab {
     display: block;
-    width: 100%;
+    width: 1761px;
     height: 100%;
 }
+
 .tablinks {
     display: block;
     position: absolute;
     width: 3.3%;
-    height: 5.5%;
+    height: 7.5%;
     /* border: 1px solid #000; */
 }
+
 .tablinks a {
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .Brand-area {
     position: relative;
     width: 100%;
-    height: 1470px;
+    height: 1045px;
 }
+
 .tabContentd {
     display: block;
     position: absolute;
     opacity: 0;
     transition: 0.3s all ease-in-out;
 }
+
 .Brand-area #Bcontent0 {
     opacity: 1;
     transition: 0.3s all ease-in-out;
 }
+
 .img-map {
     width: 100%;
     object-fit: contain;
 }
 
 .Western_Europe {
-    top: 39%;
+    top: 33%;
     left: 48.8%;
 }
+
 .Eastern_Europe {
-    top: 37.4%;
+    top: 31.4%;
     left: 55.6%;
 }
+
 .Southern_Europe {
-    top: 43.2%;
+    top: 39%;
     left: 52.3%;
 }
+
 .Northern_Europe {
-    top: 32%;
+    top: 24%;
     left: 50.8%;
 }
+
 .NewZealand {
-    bottom: 17%;
+    bottom: 9%;
     right: 2.3%;
 }
+
 .South_America {
-    bottom: 27.2%;
-    left: 29.7%;
+    bottom: 25.8%;
+    left: 31%;
 }
+
 .Middle_East {
-    top: 49%;
+    top: 47%;
     left: 56%;
 }
 
@@ -149,9 +164,9 @@ nav ul li img {
 }
 
 /* 人介紹-1 */
-section {
+section.container {
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1750px;
     width: 100%;
 }
 
@@ -334,15 +349,13 @@ section {
 .subtitle {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 2rem 6rem 2rem 2rem;
+    margin: 2rem auto;
 }
 
 .subtitle2 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 2rem 0 2rem 6rem;
+    margin: 2rem auto;
 }
 
 .web-img {
@@ -353,6 +366,7 @@ section {
 .layout-box {
     display: flex;
     min-height: 350px;
+    margin-bottom: 20px;
 }
 
 /* .mobile-img {
@@ -369,7 +383,7 @@ section {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin: 1rem auto 2rem;
+    flex-grow: 1;
 }
 
 .name2 {
@@ -378,18 +392,20 @@ section {
     flex-direction: column;
     margin: 1.5rem auto 2rem;
     position: relative;
-    left: 86px;
+    flex-grow: 1;
 }
 
 .leader {
     display: flex;
     align-items: center;
     cursor: default;
+    width: 100%;
 }
 
 .leader p {
     font-size: 1.5rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .name-box {
@@ -398,6 +414,7 @@ section {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 0.3rem;
+    width: 100%;
     /* border-bottom: 3px solid #EE9CF4; */
 }
 
@@ -407,6 +424,7 @@ section {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 0.3rem;
+    width: 100%;
 }
 
 .name-box h1,
@@ -447,17 +465,15 @@ section {
 }
 
 .list h3 {
-    background: linear-gradient(
-        to left,
-        transparent 0%,
-        transparent 50%,
-        #ccc 50%,
-        #ccc 100%
-    );
+    background: linear-gradient(to left,
+            transparent 0%,
+            transparent 50%,
+            #ccc 50%,
+            #ccc 100%);
     background-size: 21px 1.5px;
     background-repeat: repeat-x;
     background-position: bottom;
-    padding: 8px 0 5px;
+    padding: 1rem 0;
     /* max-width: 573px; */
 }
 
@@ -476,7 +492,9 @@ section {
 .list h3 a,
 .layout-list a {
     color: black;
+    font-size: 1.4rem;
     transition: all 0.2s;
+    /* white-space: nowrap; */
 }
 
 .text1:hover {
@@ -486,7 +504,7 @@ section {
 .list ul {
     position: relative;
     left: 20px;
-    margin-top: 7px;
+    margin-top: 0.9rem;
     width: 660px;
     max-width: 100%;
 }
@@ -494,7 +512,7 @@ section {
 .list ul li {
     position: relative;
     padding-bottom: 0.3rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 26px;
     cursor: default;
 }
@@ -503,7 +521,7 @@ section {
     content: '';
     position: absolute;
     left: -15px;
-    bottom: 14px;
+    top: 11px;
     width: 5px;
     height: 5px;
     /* background-color: #EE9CF4; */
@@ -513,30 +531,41 @@ section {
 .persona {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 
-.shot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.shot,
+.shot2 {
     position: relative;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+}
+
+/* .shot {
     left: -33px;
 }
 
 .shot2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    right: -38px;
-}
+    text-align: right;
+    right: -33px;
+} */
 
 .s-title {
     position: absolute;
     top: -45px;
+    left: 50%;
+    transform: translate(-50%, 0);
     max-height: 34px;
+}
+
+.s-title2 {
+    max-height: 34px;
+}
+
+.mobile-img2 {
+    display: none;
 }
 
 .shot-img {
@@ -544,19 +573,26 @@ section {
     width: 100%;
 }
 
-.view {
+.view,
+.view2,
+.view3 {
     position: relative;
-    left: 49px;
+    width: 100%;
+    max-width: 440px;
+    top: -20px;
+}
+
+.view {
+    text-align: right;
+    right: -66px;
 }
 
 .view2 {
-    position: relative;
-    left: -45px;
+    left: -66px;
 }
 
 .view3 {
-    position: relative;
-    left: -45px;
+    left: -66px;
 }
 
 .view-img {
@@ -586,12 +622,18 @@ section {
     opacity: 0;
 }
 
-.area-btn {
+.area-btn,
+.area-btn2 {
     cursor: pointer;
 }
 
-.area-btn ul {
+.area-btn ul,
+.area-btn2 ul {
     display: flex;
+    top: -45px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
 }
 
 .area-btn ul li {
@@ -758,10 +800,17 @@ ul#bottom-menu a:hover {
 
 /* RWD */
 @media (max-width: 1500px) {
+    .Brand-area,
+    .plaid-bg {
+        height: 890px;
+    }
     .web-img {
+        padding-left: 1rem;
+        padding-right: 1rem;
         max-width: 825px;
     }
 
+    /* 
     .shot {
         bottom: 329px;
         left: 11px;
@@ -770,13 +819,14 @@ ul#bottom-menu a:hover {
     .shot2 {
         bottom: 329px;
         left: 11px;
-    }
+    } */
 
     .shot-img {
         max-width: 211px;
         width: 100%;
     }
 
+    /* 
     .view {
         left: 49px;
         bottom: 254px;
@@ -785,7 +835,7 @@ ul#bottom-menu a:hover {
     .view2 {
         left: -14px;
         bottom: 254px;
-    }
+    } */
 
     .view-img {
         max-width: 356px;
@@ -793,6 +843,10 @@ ul#bottom-menu a:hover {
 }
 
 @media (max-width: 1300px) {
+    .Brand-area,
+    .plaid-bg {
+        height: 771px;
+    }
     nav ul li img {
         max-height: 42px;
     }
@@ -806,9 +860,14 @@ ul#bottom-menu a:hover {
         max-height: 336px;
     }
 
-    .name2 {
-        left: 19px;
+    .name-box,
+    .name-box2 {
+        flex-wrap: nowrap;
     }
+
+    /* .name2 {
+        left: 19px;
+    } */
 
     .name-box h1::before,
     .name-box2 h1::before {
@@ -822,7 +881,7 @@ ul#bottom-menu a:hover {
 
     .name-box .exp h4,
     .name-box2 .exp h4 {
-        margin: 0 0.8rem 0 4rem;
+        margin: 0 0.8rem 0 0;
     }
 
     .name-box .exp span,
@@ -848,7 +907,7 @@ ul#bottom-menu a:hover {
         line-height: 23px;
     }
 
-    .shot {
+    /* .shot {
         left: 9px;
         bottom: 277px;
     }
@@ -856,7 +915,7 @@ ul#bottom-menu a:hover {
     .shot2 {
         left: -8px;
         bottom: 286px;
-    }
+    } */
 
     .s-title {
         margin-bottom: 8px;
@@ -867,7 +926,7 @@ ul#bottom-menu a:hover {
         max-width: 185px;
     }
 
-    .view {
+    /* .view {
         left: 40px;
         bottom: 220px;
     }
@@ -880,7 +939,7 @@ ul#bottom-menu a:hover {
     .view3 {
         left: -15px;
         bottom: 205px;
-    }
+    } */
 
     .view-img {
         max-width: 255px;
@@ -888,6 +947,10 @@ ul#bottom-menu a:hover {
 }
 
 @media (max-width: 1000px) {
+    .Brand-area,
+    .plaid-bg {
+        height: 593px;
+    }
     nav ul li img {
         max-height: 42px;
     }
@@ -900,16 +963,16 @@ ul#bottom-menu a:hover {
         height: 45px;
     }
 
-    .subtitle,
+    /* .subtitle,
     .subtitle2 {
         display: block;
         margin: 0 1rem;
-    }
+    } */
 
     .layout-box {
         display: flex;
         flex-direction: column;
-        margin-top: none;
+        justify-content: flex-end;
     }
 
     .list {
@@ -918,31 +981,47 @@ ul#bottom-menu a:hover {
 
     .persona {
         justify-content: center;
+        position: relative;
     }
 
-    .shot {
-        bottom: 4px;
-        left: -17px;
+    .name,
+    .name2 {
+        position: absolute;
+        top: -125px;
     }
 
+    .name-box .exp h4,
+    .name-box2 .exp h4 {
+        margin: 0 0.8rem 0 4rem;
+    }
+
+    .shot,
     .shot2 {
-        bottom: 0px;
-        left: 6px;
+        position: relative;
+        top: unset;
+        bottom: unset;
+        right: unset;
+        left: unset;
     }
 
     .s-title {
         max-height: 27px;
     }
 
-    .view {
-        bottom: -38px;
-        left: 28px;
+    .s-title2 {
+        margin: 0 4px;
+        max-height: 27px;
     }
 
+    .view,
     .view2,
     .view3 {
-        bottom: -45px;
-        left: -18px;
+        position: relative;
+        top: unset;
+        bottom: unset;
+        right: unset;
+        left: unset;
+        text-align: center;
     }
 
     .view-img {
@@ -954,21 +1033,20 @@ ul#bottom-menu a:hover {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 1.5rem auto;
+        margin: 0 auto 1.5rem;
     }
 
     .layout-list {
         margin: 1.5rem;
+        margin-top: 0;
     }
 
     .list2 h3 {
-        background: linear-gradient(
-            to left,
-            transparent 0%,
-            transparent 50%,
-            #ccc 50%,
-            #ccc 100%
-        );
+        background: linear-gradient(to left,
+                transparent 0%,
+                transparent 50%,
+                #ccc 50%,
+                #ccc 100%);
         background-size: 21px 1.5px;
         background-repeat: repeat-x;
         background-position: bottom;
@@ -999,12 +1077,21 @@ ul#bottom-menu a:hover {
 }
 
 @media (max-width: 620px) {
+    .Brand-area,
+    .plaid-bg {
+        height: 368px;
+    }
     nav ul li {
         margin: 0.4rem;
     }
 
     nav ul li img {
         max-height: 30px;
+    }
+
+    .subtitle,
+    .subtitle2 {
+        margin: 0 auto 1rem;
     }
 
     .persona-box {
@@ -1015,10 +1102,6 @@ ul#bottom-menu a:hover {
     .name,
     .name2 {
         margin: 0 auto;
-    }
-
-    .name2 {
-        left: 0;
     }
 
     .leader p {
@@ -1082,33 +1165,17 @@ ul#bottom-menu a:hover {
         font-size: 0.7rem;
     }
 
-    .shot {
-        top: 20px;
-        left: 5px;
+    .name,
+    .name2 {
+        top: -150px;
     }
 
-    .shot2 {
-        top: 20px;
-        left: -5px;
-    }
-
-    .s-title {
+    /* .s-title {
         max-height: 23px;
-    }
+    } */
 
     .shot-img {
         max-width: 142px;
-    }
-
-    .view {
-        top: 61px;
-        left: 10px;
-    }
-
-    .view2,
-    .view3 {
-        top: 61px;
-        left: -10px;
     }
 
     .view-img {
@@ -1124,7 +1191,20 @@ ul#bottom-menu a:hover {
     }
 }
 
+.col-1 {
+    flex-grow: 1;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.col-3 {
+    flex-grow: 3;
+}
+
 @media (max-width: 768) {
+
     /* ============== footer ============== */
     footer {
         font-size: 12px;
@@ -1144,8 +1224,21 @@ ul#bottom-menu a:hover {
 }
 
 @media (max-width: 560px) {
+    .Brand-area,
+    .plaid-bg {
+        height: 332px;
+    }
     .gotop img {
         width: 50px;
+    }
+
+    .web-img2 {
+        display: none;
+    }
+
+    .mobile-img2 {
+        display: block;
+        margin-top: 20px;
     }
 
     /*============== footer ==============*/

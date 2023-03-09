@@ -1,4 +1,4 @@
-// banner
+﻿// banner
 function AutoOpenTab(
     evt,
     asiaName,
@@ -48,26 +48,62 @@ function AutoCloseTab(
 
 $(document).ready(function () {
     // BannerHeight
-    const BannerHeight = $('.img-map').height();
-    $('.Brand-area').height(BannerHeight);
+    //const BannerHeight = $('#Bcontent0 .img-map').height();
+    //$('.Brand-area').height(BannerHeight);
+
+    // tabContentdWidth
+    //const BrandTabWidth = $('.img-map').width();
+    // console.log(BrandTabWidth);
+    //$('.Brand-tab').width(BrandTabWidth);
+
+    // resize
+    $(window).resize(function () {
+        // BannerHeight
+        const BannerHeight = $('.img-map').height();
+        $('.Brand-area, .plaid-bg').height(BannerHeight);
+
+        const BrandTabWidth = $('.img-map').width();
+        // console.log(BrandTabWidth);
+        $('.Brand-tab').width(BrandTabWidth);
+    });
+
+    // 地區變換按鈕
+    $(function () {
+        // 李宜珊
+        $('#btn1 li').click(function () {
+            var index = $(this).index();
+            console.log(index);
+            $('#list1 #item').eq(index).show().siblings().hide();
+            $('#list2 #item').eq(index).show().siblings().hide();
+            $('#area-view .img1').eq(index).show().siblings().hide();
+        });
+        // 薛宇航 
+        $('#btn2 li').click(function () {
+            var index = $(this).index();
+            $('#list3 #item2').eq(index).show().siblings().hide();
+            $('#list4 #item2').eq(index).show().siblings().hide();
+            $('#area-view2 .img2').eq(index).show().siblings().hide();
+        });
+        // 謝哲彰
+        $('#btn3 li').click(function () {
+            var index = $(this).index();
+            $('#list5 #item3').eq(index).show().siblings().hide();
+            $('#list6 #item3').eq(index).show().siblings().hide();
+            $('#area-view3 .img3').eq(index).show().siblings().hide();
+        });
+    });
+});
+
+$(window).load(function () {
+    // BannerHeight
+    const BannerHeight = $('#Bcontent0 .img-map').height();
+    $('.Brand-area, .plaid-bg').height(BannerHeight);
 
     // tabContentdWidth
     const BrandTabWidth = $('.img-map').width();
     // console.log(BrandTabWidth);
     $('.Brand-tab').width(BrandTabWidth);
 
-    $(window).resize(function () {
-        // BannerHeight
-        const BannerHeight = $('.img-map').height();
-        $('.Brand-area').height(BannerHeight);
-
-        const BrandTabWidth = $('.img-map').width();
-        // console.log(BrandTabWidth);
-        $('.Brand-tab').width(BrandTabWidth);
-    });
-});
-
-$(window).load(function () {
     var $win = $(window),
         $ad = $('#abgne_float_ad').css('opacity', 0).show(),
         _width = $ad.width(),
@@ -107,12 +143,23 @@ $(window).load(function () {
             500
         );
     });
+    $('#map_menu li').click(function () {
+        //?被捲動
+        indexNo = $(this).index();
+        targetTop = $('section').eq(indexNo).position().top;
+        $('html,body').animate(
+            {
+                scrollTop: targetTop,
+            },
+            500
+        );
+    });
 
     // 網頁go top
     $('.gotop').click(function () {
         $('html,body').animate(
             {
-                scrollTop: 865,
+                scrollTop: 0,
             },
             500
         );

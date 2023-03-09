@@ -740,15 +740,7 @@ ul#bottom-menu a:hover {
         width: 50%;
     }
 }
-/*============== go top ==============*/
-#abgne_float_ad {
-    display: flex;
-    flex-direction: column;
-}
-.gotop img,
-.line-link img {
-    width: 90px;
-}
+
 @media (max-width: 500px) {
     #menu {
         padding: 10px 0;
@@ -806,8 +798,7 @@ ul#bottom-menu a:hover {
         margin-right: 6px;
     }
     /*============== go top ==============*/
-    .gotop img,
-    .line-link img {
+    .gotop img {
         width: 70px;
     }
 }
