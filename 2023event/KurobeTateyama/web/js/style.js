@@ -39,9 +39,9 @@ $(document).ready(function () {
             scrollTimeout = window.setTimeout(function () {
                 // gotop
                 if (w_scrollTop > 300) {
-                    $('.top-btn').stop().fadeIn('fast');
+                    $('.top-bar').stop().fadeIn('fast');
                 } else {
-                    $('.top-btn').stop().fadeOut('fast');
+                    $('.top-bar').stop().fadeOut('fast');
                 }
             }, 200);
         })

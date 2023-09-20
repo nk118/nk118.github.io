@@ -548,17 +548,24 @@ header nav ul li img {
     width: 100%;
 }
 
-.top-btn {
+.top-bar {
     position: fixed;
     right: 40px;
     bottom: 50px;
     z-index: 99;
     display: none;
 }
+.abgne_float_ad {
+    display: flex;
+    flex-direction: column;
+}
 
-.top-btn img {
+.abgne_float_ad img {
     max-width: 62px;
     width: 100%;
+}
+.line-link {
+    margin-top: 10px;
 }
 
 /* footer */
@@ -938,7 +945,7 @@ ul#bottom-menu a:hover {
         bottom: 34px;
     }
 
-    .top-btn img {
+    .abgne_float_ad img {
         max-width: 46px;
     }
 
@@ -1175,7 +1182,7 @@ ul#bottom-menu a:hover {
         max-width: 69px;
     }
 
-    .top-btn img {
+    .abgne_float_ad img {
         max-width: 38px;
     }
 
