@@ -82,9 +82,9 @@
   overflow: hidden;
 }
 
-.img-scale {
+/* .img-scale {
   animation: img-scale 20s .5s infinite ease-in-out forwards alternate;
-}
+} */
 
 @keyframes img-scale {
   from {
