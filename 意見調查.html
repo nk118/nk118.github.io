@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>意見調查</title>
+
+  
+<!-- style -->
+<link rel="stylesheet" href="css/layout_2022.css" />
+<link rel="stylesheet" type="text/css" href="css/memberArea.css" />
+
+
+  <style type="text/css">
+            #container {
+                background-color: #FFFFFF;
+                overflow: hidden;
+                height: auto;
+                width: auto;
+                margin-top: 150px;
+                border: 20px solid #f2f2f2;
+            }
+
+            #main {
+                width: 1120px;
+                margin: 20px auto;
+            }
+
+            .style1 {
+                color: #660099;
+                font-size: 16px;
+                width: 840px;
+                padding-left: 145px;
+                padding-bottom: 5px;
+                text-align: left;
+            }
+
+            .question_con{
+              margin-left: 130px;
+            }
+
+            .test{
+              margin-left: 35px;
+            }
+
+            .question_Data2{
+              width: 400px;
+              float: left;
+              text-align: left;
+              padding-left: 110px;
+              line-height: 36px;
+              font-family: "微軟正黑體";
+              font-size: 15px;
+              color: #1678b1;
+              height: auto;
+              font-weight: bold;
+              overflow: hidden;
+            }
+
+            .buttom{
+              padding-left: 450px;
+              float: left;
+              width: 850px;
+            }
+
+            #question .question_buttom {
+              width: 70px;
+              height: 40px;
+              line-height: 34px;
+              color: #333333;
+              background-color: #CCCCCC;
+              text-align: center;
+              margin-bottom: 80px;
+              margin-right: 5px;
+              float: left;
+              font-family: "微軟正黑體";
+              font-size: 14px;
+              background-image: url(img/buttom_bg.jpg);
+              text-indent: 0px;
+            }
+
+            #container #main #question .question_title {
+                color: #B21B20;
+                line-height: 20px;
+                text-align: left;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-image: url(img/question_title.jpg);
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                width: 850px;
+                height: 100px;
+                vertical-align: baseline;
+            }
+
+            .test {
+                width: 1040px;
+            }
+
+              #container #main #question .question_con {
+                height: 140px;
+                text-align: left;
+                letter-spacing: 1px;
+                line-height: 28px;
+                width: 850px;
+                font-family: "微軟正黑體";
+                font-size: 15px;
+                color: #666666;
+                padding-left: 20px;
+            }
+
+              #container #main #question .question_Data {
+                width: 250px;
+                float: left;
+                text-align: left;
+                padding-left: 110px;
+                line-height: 36px;
+                font-family: "微軟正黑體";
+                font-size: 15px;
+                color: #1678b1;
+                height: auto;
+                font-weight: bold;
+                overflow: hidden;
+            }
+
+              #container #main #question .question_Data2 {
+                width: 400px;
+                float: left;
+                text-align: left;
+                padding-left: 110px;
+                line-height: 36px;
+                font-family: "微軟正黑體";
+                font-size: 15px;
+                font-weight: bold;
+                color: #1678b1;
+                height: auto;
+                overflow: hidden;
+            }
+
+            #question .question_list {
+                width: 875px;
+                /*height: 40px;*/
+                padding-left: 150px;
+                text-align: left;
+                font-size: 15px;
+                font-family: "微軟正黑體";
+                color: #666666;
+                float: left;
+                margin-right: auto;
+                margin-left: -5px;
+                line-height: 40px;
+            }
+
+            #question input {
+                margin: 3px 3px 0px 5px;
+            }
+
+            #question input[type="text" ] {
+                height: 30px;
+            }
+
+              #container #main #question .buttom {
+                padding-left: 450px;
+                float: left;
+                width: 850px;
+            }
+
+              #container #main #question .question_buttom {
+                width: 70px;
+                height: 40px;
+                line-height: 34px;
+                color: #333333;
+                background-color: #CCCCCC;
+                text-align: center;
+                margin-bottom: 80px;
+                margin-right: 5px;
+                float: left;
+                font-family: "微軟正黑體";
+                font-size: 14px;
+                background-image: url(img/buttom_bg.jpg);
+                text-indent: 0px;
+            }
+
+            .question_buttom a {
+                color: #333333;
+                text-decoration: none;
+            }
+
+            #question .question_bottom {
+                line-height: 24px;
+                width: 800px;
+                height: 30px;
+                padding-left: 180px;
+                text-align: left;
+                letter-spacing: 1px;
+                font-size: 15px;
+                font-family: "微軟正黑體";
+                color: #FF0000;
+                float: left;
+                margin-right: auto;
+                margin-left: auto;
+                padding-bottom: 50px;
+            }
+
+            #hd123 {
+                position: absolute;
+                width: 224px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+            }
+
+            #key1 {
+                top: -937px;
+                left: 1px;
+                height: auto;
+                padding: 10px 5px 10px 5px;
+                width: 213px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+                display: none;
+                font: 12px Arial, Helvetica, sans-serif, "新細明體";
+                color: #696969;
+                letter-spacing: 1px;
+            }
+
+            #key1 a {
+                color: #696969;
+            }
+
+            #key2 a {
+                color: #696969;
+            }
+
+            #key3 a {
+                color: #696969;
+            }
+
+            #key4 a {
+                color: #696969;
+            }
+
+            #key2 {
+                top: -937px;
+                left: 1px;
+                height: auto;
+                padding: 10px 5px 10px 5px;
+                width: 213px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+                display: none;
+                font: 12px Arial, Helvetica, sans-serif, "新細明體";
+                color: #696969;
+                letter-spacing: 1px;
+            }
+
+            #key3 {
+                top: -937px;
+                left: 1px;
+                height: auto;
+                padding: 10px 5px 10px 5px;
+                width: 213px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+                display: none;
+                font: 12px Arial, Helvetica, sans-serif, "新細明體";
+                color: #696969;
+                letter-spacing: 1px;
+            }
+
+            #key4 {
+                top: -937px;
+                left: 1px;
+                height: auto;
+                padding: 10px 5px 10px 5px;
+                width: 213px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+                display: none;
+                font: 12px Arial, Helvetica, sans-serif, "新細明體";
+                color: #696969;
+                letter-spacing: 1px;
+            }
+
+            #route_hotkey_tool {
+                background: #eaeaea;
+                margin: 0 0 3px 0;
+                padding: 0;
+                border: 1px #dfdfdf solid;
+            }
+
+            #route_hotkey_text {
+                margin: 0 5px 0 5px;
+                padding: 15px 0 10px 0px;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+                height: 15px;
+                width: auto;
+            }
+
+            #hotkey_center {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                height: 15px;
+                width: 200px;
+                font: 12px Arial, Helvetica, sans-serif, "新細明體";
+                color: #696969;
+                letter-spacing: 1px;
+            }
+
+            #menu {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            #menu li {
+                margin: 0;
+                padding: 0 5px 0 5px;
+                float: left;
+                z-index: 1000;
+            }
+
+            #menu li ul {
+                width: 201px;
+                display: none;
+                float: left;
+                position: absolute;
+                left: 129px;
+                height: auto;
+                padding: 10px 11px;
+                z-index: 1000;
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index_search_bg.jpg) repeat-x;
+            }
+
+            #menu li a {
+                padding: 0;
+                display: block;
+                color: #666;
+                text-decoration: none;
+            }
+
+            #menu li ul li {
+                border-right: 1px solid #fff;
+                list-style-type: none;
+                float: left;
+                padding: 5px
+            }
+
+            #menu li ul li a {
+                display: inline;
+            }
+
+            #menu li ul li a:hover {
+                text-decoration: underline;
+            }
+
+            div#abgne_marquee {
+                position: relative;
+                overflow: hidden;
+                /* 超出範圍的部份要隱藏 */
+                width: 550;
+                height: 25px;
+                left: -10px;
+                top: -7px;
+            }
+
+            div#abgne_marquee ul, div#abgne_marquee li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            div#abgne_marquee ul {
+                position: absolute;
+                left: 30px;
+                /* 往後推個 30px */
+            }
+
+            div#abgne_marquee ul li a {
+                display: block;
+                overflow: hidden;
+                /* 超出範圍的部份要隱藏 */
+                font-size: 12px;
+                height: 25px;
+                line-height: 25px;
+                text-decoration: none;
+            }
+
+            div#abgne_marquee div.marquee_btn {
+                position: absolute;
+                cursor: pointer;
+            }
+
+            div#abgne_marquee div#marquee_next_btn {
+                left: 5px;
+            }
+
+            div#abgne_marquee div#marquee_prev_btn {
+                right: 5px;
+            }
+
+            .showBox {
+                width: 654.1px;
+                width: 645px \9;
+                *width: 645.5px;
+                _width: 645.5px;
+                height: 130px;
+                position: relative;
+                overflow: hidden;
+                font-family: Arial;
+                letter-spacing: 1px;
+                /*
+		width: 666.5px;
+		width: 660px \9;
+		*width: 645.5px;
+		_width: 645.5px;
+		*/
+            }
+
+            .showBox .btn {
+                position: absolute;
+                top: 110px;
+                left: 2px;
+                height: auto;
+                width: 645px;
+                /*width:655px;*/
+            }
+
+            .showBox * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .showBox a {
+                color: blue;
+                text-decoration: none;
+            }
+
+            .showBox h2.title {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                font-size: 16px;
+            }
+
+            .showBox .roll {
+                position: absolute;
+                top: 16px;
+                right: 80px;
+            }
+
+            .showBox .roll a {
+                float: left;
+                width: 7px;
+                height: 7px;
+                margin-right: 3px;
+                text-indent: -9999px;
+                background: url(images/dot.gif) no-repeat 0 0;
+            }
+
+            .showBox .roll a.on {
+                background-position: 0 -27px;
+            }
+
+            .showBox .btn a {
+                width: 58px;
+                height: 21px;
+                float: left;
+                text-indent: -9999px;
+            }
+
+            .showBox .btn a.prev {
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/img/index10.jpg) no-repeat 0 0;
+                width: 326px;
+            }
+
+            .showBox .btn a.next {
+                background: url(http://www.artisan.com.tw/http://www.artisan.com.tw/http://www.artisan.com.tw/img/index11.jpg) no-repeat 0 0;
+                background-position : right;
+                width: 312px;
+                *width: 312px;
+                _width: 312px;
+                /*width: 326px;
+		*width:320px;
+		*/
+            }
+
+            .showBox ul.itemList, .showBox ul.itemList li {
+                list-style: none;
+            }
+
+            .showBox ul.itemList {
+                position: absolute;
+                top: 2px;
+                left: 1px;
+                white-space: nowrap;
+            }
+
+            .showBox ul.itemList li {
+                display: inline;
+            }
+
+            .showBox ul.itemList li .adContent {
+                display: inline-block;
+                width: 215px;
+                margin: 0 2px;
+                margin: 0 0 0 0 \9;
+            }
+
+            .showBox ul.itemList li .adContent h3 {
+                text-align: center;
+                font-weight: normal;
+                font-size: 12px;
+            }
+
+            .showBox ul.itemList li .adContent img {
+                border: 1px solid #ccc;
+                padding: 5px;
+                padding: 5px \9;
+            }
+
+            #textfield {
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #666666;
+                padding-top: 12px;
+                border-top-width: 0px;
+                border-right-width: 0px;
+                border-left-width: 0px;
+            }
+
+            
+              
+            @media (max-width:1080px) {
+              #container{
+                margin-left: -15%;
+                border: 10px solid #f2f2f2;
+              }
+              }
+            @media (max-width:768px) {
+              #container {
+                margin-top: 15%;
+                margin-left: -15%;
+                border: 0;
+              }
+              .question_con{
+                width: 55% !important;
+              }
+              .question_Data {
+                width: inherit !important;
+              }
+              .question_Data2 {
+                width: inherit !important;
+              }
+              #Q2{
+                width: auto !important;
+              }
+              .buttom{
+                margin-left: -3%;
+              }
+            }
+            @media (max-width:390px) {
+              #container {
+                margin-top: 20%;
+                margin-left: -30%;
+              }
+              .question_con{
+                width: 30% !important;
+                height: 300px !important;
+              }
+              .question_Data2 {
+                width: 400px !important;
+              }
+              .question_list{
+                width: 75%  !important;
+              }
+              #Q1{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q2{
+                line-height: 1rem;
+                width: 40% !important;
+                display: flex;
+                margin-left: 1% !important;
+              }
+              #Q3{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q4{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q5{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q6{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q6_REMARK{
+                width: 40% !important;
+              }
+
+              #Q7{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q7_REMARK{
+                width: 40% !important;
+              }
+
+              #Q8{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q8_REMARK{
+                width: 40% !important;
+              }
+
+              #Q9{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q9_REMARK{
+                width: 40% !important;
+              }
+
+              #Q10{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q10_REMARK{
+                width: 40% !important;
+              }
+
+              #Q11{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+              #Q11_REMARK{
+                width: 40% !important;
+              }
+
+              #Q13{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+
+              #Q14{
+                line-height: 1rem;
+                width: 50% !important;
+                display: flex;
+              }
+
+              #Q15_2{
+                line-height: 1rem;
+                width: 40% !important;
+                display: flex;
+              }
+
+              #Q16_1{
+                line-height: 1rem;
+                width: 40% !important;
+                display: flex;
+              }
+              #Q16_2{
+                line-height: 1rem;
+                width: 40% !important;
+                display: flex;
+              }
+
+              #Q17{
+                line-height: 1rem;
+                width: 35% !important;
+                display: flex;
+                margin-left: 1%;
+              }
+              .question_bottom{
+                width: 44% !important;
+                margin-left: -3% !important;
+              }
+
+              #textarea{
+                width: 50%;
+                margin-top: 5%;
+              }
+
+              .buttom{
+                margin-left: -19%;
+              }
+
+              #satisfied{
+                width: 350px !important;
+              }
+            }
+            
+        </style>
+</style>
+</head>
+<body>
+  <div id="wrapper-main">
+  <!-- Header -->
+  <header id="header">
+    <div class="header-link">
+      <div class="container">
+        <div id="logo-m">
+          <a href="https://www.artisan.com.tw/"
+            ><img src="images/logo_m.png" alt="logo"
+          /></a>
+        </div>
+        <div id="top-menu">
+          <a class="js-startbtn"
+            ><img src="images/20_link_icon01_white.png" alt="" /> 會員登入
+          </a>
+          <!-- 登入後出現(會員專區) -->
+          <a href="myOrder.html"
+            ><img src="images/20_link_icon02_White.png" alt="" /> 訂單查詢
+          </a>
+          <a href="http://b2b.artisan.com.tw/" target="_blank"
+            ><img src="images/20_link_icon03_white.png" alt="" />
+            同業專區
+          </a>
+          <a
+            href="https://www.artisan.com.tw/DMShow.aspx?no=7"
+            target="_blank"
+            ><img src="images/20_link_icon04_white.png" alt="" /> 小心詐騙
+          </a>
+          <a href="firm.html" target="_blank"
+            ><img src="images/20_link_icon02_White.png" alt="" /> 企業專區
+          </a>
+        </div>
+        <!-- Pushy Button -->
+        <button class="menu-btn" title="選單">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Pushy Menu -->
+    <div class="pushy pushy-right" data-focus="#first-link">
+      <div class="pushy-content">
+        <span class="pushy-close"
+          ><img src="images/20_pushy_close.svg" alt=""
+        /></span>
+        <ul>
+          <li class="pushy-title"><a href="javascript:;">國外旅遊</a></li>
+          <li class="pushy-submenu">
+            <button>西歐</button>
+            <ul>
+              <li class="pushy-link">
+                <a href="" class="exh-title">西歐全覽</a>
+              </li>
+              <li class="pushy-link"><a href="">英‧愛</a></li>
+              <li class="pushy-link"><a href="">法國</a></li>
+              <li class="pushy-link"><a href="">瑞士</a></li>
+              <li class="pushy-link"><a href="">德‧瑞</a></li>
+              <li class="pushy-link"><a href="">法‧瑞‧義</a></li>
+              <li class="pushy-link"><a href="">瑞‧義</a></li>
+              <li class="pushy-link"><a href="">荷‧比‧盧</a></li>
+              <li class="pushy-link">
+                <a href="">荷‧比‧多國(法國、英國…)</a>
+              </li>
+              <li class="pushy-link"><a href="">德國</a></li>
+              <li class="pushy-link"><a href="">瑞‧義</a></li>
+            </ul>
+          </li>
+          <li class="pushy-submenu">
+            <button>東歐</button>
+            <ul>
+              <li class="pushy-link">
+                <a href="" class="exh-title">西歐全覽</a>
+              </li>
+              <li class="pushy-link"><a href="">克斯蒙(巴爾幹)</a></li>
+              <li class="pushy-link"><a href="">奧‧捷‧匈</a></li>
+              <li class="pushy-link"><a href="">奧‧捷</a></li>
+              <li class="pushy-link"><a href="">奧地利</a></li>
+              <li class="pushy-link"><a href="">捷克(單國)</a></li>
+              <li class="pushy-link"><a href="">俄羅斯</a></li>
+              <li class="pushy-link"><a href="">俄羅斯(三小國)</a></li>
+              <li class="pushy-link"><a href="">波蘭‧波羅的海</a></li>
+              <li class="pushy-link"><a href="">德‧捷</a></li>
+              <li class="pushy-link">
+                <a href="">遠東．西伯利亞貝加爾湖</a>
+              </li>
+              <li class="pushy-link"><a href="">白俄羅斯．烏克蘭</a></li>
+              <li class="pushy-link"><a href="">匈斯波</a></li>
+            </ul>
+          </li>
+          <li class="pushy-submenu">
+            <button>南歐</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>北歐</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>遊輪</button>
+          </li>
+
+          <li class="pushy-submenu">
+            <button>紐澳</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>南亞</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>古文明</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>美洲</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>大非洲</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>海島</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>東南亞</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>日本</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>中國</button>
+          </li>
+          <li class="pushy-submenu">
+            <button>河輪</button>
+          </li>
+          <li class="pushy-title pushy-mobileShow">
+            <a class="js-startbtn">會員登入</a>
+          </li>
+          <!-- 登入後出現(會員專區) -->
+          <li class="pushy-title pushy-mobileShow">
+            <a href="myOrder.html">訂單查詢</a>
+          </li>
+          <li class="pushy-title pushy-mobileShow">
+            <a href="http://b2b.artisan.com.tw/" target="_blank"
+              >同業專區</a
+            >
+          </li>
+          <li class="pushy-title pushy-mobileShow">
+            <a href="firm.html" target="_blank">企業專區</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal is-hide">
+      <div id="loginWindow">
+        <div class="login-page">
+          <div class="form">
+            <h5 class="AD_close js-modal-close">X</h5>
+            <h1>會員登入</h1>
+            <form class="login-form">
+              <input type="text" placeholder="身分證字號" />
+              <input type="password" placeholder="密碼" />
+              <button>
+                <span>登 入</span><img src="images/loginArrow.png" />
+              </button>
+              <div class="message">
+                <a href="#" class="forget_btn">忘記密碼</a>
+              </div>
+              <div class="clean"></div>
+            </form>
+            <div class="noticeTxt">
+              <p>
+                還不是會員嗎?<br /><a href="memberSignUp.html">立即註冊</a
+                >享紅利點數優惠
+              </p>
+            </div>
+            <div class="couponTxt">
+              <h3>巨匠旅遊 加入會員好康一把抓</h3>
+              <p>
+                1. 加入會員即可得到見面紅利<br />
+                2. 會員報名國內、外旅遊可累積紅利<br />
+                3. 會員生日可享生日紅利<br />
+                4. 不定期提供會員專屬優惠旅遊團<br />
+                5. 不定期推出旅遊講座(會員專屬VIP座位)、好康活動...等 <br />
+                6.
+                紅利可折抵團費，或於電商平台購物，電商產品享優惠會員資格<br />
+                7. LINE@不定時贈點活動
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_B is-hide">
+      <div class="forget">
+        <div class="forget_page">
+          <h5 class="AD_close js-modal-close">X</h5>
+          <h1>忘記密碼</h1>
+          <div id="forget-nav-tab">
+            <ul id="menu">
+              <button><a href="#mail">電子信箱</a></button>
+              <button><a href="#phone">手機號碼</a></button>
+            </ul>
+
+            <div id="mail" class="content">
+              <input type="text" placeholder="請輸入E-MAIL(電子信箱)" />
+            </div>
+
+            <div id="phone" class="content">
+              <input type="text" placeholder="請輸入手機號碼" />
+            </div>
+            <!-- 送出按鈕後按鈕不見 -->
+            <button id="enter">
+              送出<i class="fas fa-chevron-circle-right"></i>
+            </button>
+            <!-- 送出按鈕後出現下列文字 -->
+            <p style="display: none">
+              已經寄信到您的電子郵件信箱，經由信件重設您的密碼!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- /Pushy Menu -->
+
+    <nav id="nav">
+      <div class="container">
+        <div id="logo">
+          <a href="https://www.artisan.com.tw/"
+            ><img src="images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <!-- <div class="banner-news"><span>Final Call＞</span>11/17【巨匠旅遊】獵捕北極光 極地之都摩曼斯克 五星雙城俄羅斯10天超過寬度會自動點點點
+      </div> -->
+        <div class="header-social">
+          <a
+            href="https://www.facebook.com/artisantour/"
+            target="_blank"
+            class="icon-fb"
+          ></a>
+          <a
+            href="http://line.me/ti/p/%40rgm1660e"
+            target="_blank"
+            class="icon-line"
+          ></a>
+          <a
+            href="https://www.instagram.com/artisan_tour/"
+            target="_blank"
+            class="icon-ig"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC0RvsJSeoq2gM_z5gyd6mWA/featured"
+            target="_blank"
+            class="icon-yt"
+          ></a>
+          <a
+            href="http://artisan.com.tw/blog"
+            target="_blank"
+            class="icon-blog"
+          ></a>
+          <a
+            href="https://artisantour.firstory.io/"
+            target="_blank"
+            class="icon-podcast"
+          ></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /Header -->
+
+  <div id="container">
+        
+
+
+    <!-----修改地區----->
+    <div id="main">
+      <div id="question">
+        <!--<div class="question_title"></div>-->
+        <div class="style1"> <strong>親愛的貴賓，您好!</strong></div>
+        <div class="question_con">非常感謝您參加「巨匠旅遊」，希望我們為您所做的一切安排，能使您感到滿意。您的讚賞與鼓勵是我們努力的目標，而您的批評與指教亦是我們未來提升的最佳方針，因此請您就此次的旅程提供寶貴的意見，使「巨匠旅遊」今後更能符合您的需要。為了儘速採納您的意見，請在旅途結束後填妥此份調查表交由該團領隊人員帶回公司，反應給相關人員，再次感謝您的配合，敬祝旅途愉快！</div>
+        <div class="test">
+            <div class="question_Data">團　　號：<span id="Grop_numb">AACAE0431102XMN1</span></div>
+            
+            <div class="question_Data2">團　　名：<span id="TextBox1">金廈員工旅遊土樓長桌宴、浪漫鼓浪嶼五星朗豪4天</span></div>
+            <div class="question_Data">領隊姓名：<span id="TextBox2"></span></div>
+            <div class="question_Data">旅客姓名：<span id="TextBox3">潘錦銘</span></div>
+            
+        </div>
+
+        <div class="question_list">(1)台端本次旅遊係：
+            <span id="Q1"><input id="Q1_0" type="checkbox" name="Q1$0" value="1" /><label for="Q1_0">親友介紹</label><input id="Q1_1" type="checkbox" name="Q1$1" value="2" /><label for="Q1_1">報紙廣告</label><input id="Q1_2" type="checkbox" name="Q1$2" value="3" /><label for="Q1_2">網站</label><input id="Q1_3" type="checkbox" name="Q1$3" value="4" /><label for="Q1_3">同業介紹</label><input id="Q1_4" type="checkbox" name="Q1$4" value="5" /><label for="Q1_4">本公司業務員拜訪</label></span>
+        </div>
+        
+        <div class="question_list">(2)台端出國手續承辦旅行社及承辦人姓名：<input name="Q2" type="text" id="Q2" style="width:300px;" /></div>
+        
+        <div class="question_list">(3)台端對本公司承辦人員之服務及專業：
+            <span id="Q3"><input id="Q3_0" type="radio" name="Q3" value="1" /><label for="Q3_0">非常滿意</label><input id="Q3_1" type="radio" name="Q3" value="2" /><label for="Q3_1">滿意</label><input id="Q3_2" type="radio" name="Q3" value="3" /><label for="Q3_2">尚可</label><input id="Q3_3" type="radio" name="Q3" value="4" /><label for="Q3_3">待改進</label><input id="Q3_4" type="radio" name="Q3" value="5" /><label for="Q3_4">非常不滿意</label></span>
+        </div>
+        
+        <div class="question_list">(4)台端是否參加出國行程之說明會：
+            <span id="Q4"><input id="Q4_0" type="radio" name="Q4" value="1" /><label for="Q4_0">有參加</label><input id="Q4_1" type="radio" name="Q4" value="2" /><label for="Q4_1">未參加</label></span>
+        </div>
+        
+        <div class="question_list">(5)台端對本公司出國前行程說明內容：
+            <span id="Q5"><input id="Q5_0" type="radio" name="Q5" value="1" /><label for="Q5_0">解說清楚</label><input id="Q5_1" type="radio" name="Q5" value="2" /><label for="Q5_1">不夠清楚</label></span>
+        </div>
+        
+        <div class="question_list">(6)領隊於旅程之服務態度：
+            <span id="Q6"><input id="Q6_0" type="radio" name="Q6" value="1" /><label for="Q6_0">非常滿意</label><input id="Q6_1" type="radio" name="Q6" value="2" /><label for="Q6_1">滿意</label><input id="Q6_2" type="radio" name="Q6" value="3" /><label for="Q6_2">尚可</label><input id="Q6_3" type="radio" name="Q6" value="4" /><label for="Q6_3">待改進</label><input id="Q6_4" type="radio" name="Q6" value="5" /><label for="Q6_4">非常不滿意</label></span>
+        </div>
+        <div class="question_list"><input name="Q6_REMARK" type="text" id="Q6_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list">(7)領隊之專業知識：
+            <span id="Q7"><input id="Q7_0" type="radio" name="Q7" value="1" /><label for="Q7_0">非常滿意</label><input id="Q7_1" type="radio" name="Q7" value="2" /><label for="Q7_1">滿意</label><input id="Q7_2" type="radio" name="Q7" value="3" /><label for="Q7_2">尚可</label><input id="Q7_3" type="radio" name="Q7" value="4" /><label for="Q7_3">待改進</label><input id="Q7_4" type="radio" name="Q7" value="5" /><label for="Q7_4">非常不滿意</label></span>
+        </div>
+        <div class="question_list"><input name="Q7_REMARK" type="text" id="Q7_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list">(8)台端對此旅行各地導遊之服務態度：
+            <span id="Q8"><input id="Q8_0" type="radio" name="Q8" value="1" /><label for="Q8_0">非常滿意</label><input id="Q8_1" type="radio" name="Q8" value="2" /><label for="Q8_1">滿意</label><input id="Q8_2" type="radio" name="Q8" value="3" /><label for="Q8_2">尚可</label><input id="Q8_3" type="radio" name="Q8" value="4" /><label for="Q8_3">待改進</label><input id="Q8_4" type="radio" name="Q8" value="5" /><label for="Q8_4">非常不滿意(請註明城市)</label></span>
+        </div>
+        <div class="question_list"><input name="Q8_REMARK" type="text" id="Q8_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list">(9)餐食之安排：
+          <span id="Q9"><input id="Q9_0" type="radio" name="Q9" value="1" /><label for="Q9_0">非常滿意</label><input id="Q9_1" type="radio" name="Q9" value="2" /><label for="Q9_1">滿意</label><input id="Q9_2" type="radio" name="Q9" value="3" /><label for="Q9_2">尚可</label><input id="Q9_3" type="radio" name="Q9" value="4" /><label for="Q9_3">待改進</label><input id="Q9_4" type="radio" name="Q9" value="5" /><label for="Q9_4">非常不滿意(請註明城市)</label></span>
+        </div>
+        <div class="question_list"><input name="Q9_REMARK" type="text" id="Q9_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list">(10)旅館之安排：
+            <span id="Q10"><input id="Q10_0" type="radio" name="Q10" value="1" /><label for="Q10_0">非常滿意</label><input id="Q10_1" type="radio" name="Q10" value="2" /><label for="Q10_1">滿意</label><input id="Q10_2" type="radio" name="Q10" value="3" /><label for="Q10_2">尚可</label><input id="Q10_3" type="radio" name="Q10" value="4" /><label for="Q10_3">待改進</label><input id="Q10_4" type="radio" name="Q10" value="5" /><label for="Q10_4">非常不滿意(請註明城市)</label></span>
+        </div>
+        <div class="question_list"><input name="Q10_REMARK" type="text" id="Q10_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list">(11)遊覽車車況及司機服務：
+            <span id="Q11"><input id="Q11_0" type="radio" name="Q11" value="1" /><label for="Q11_0">非常滿意</label><input id="Q11_1" type="radio" name="Q11" value="2" /><label for="Q11_1">滿意</label><input id="Q11_2" type="radio" name="Q11" value="3" /><label for="Q11_2">尚可</label><input id="Q11_3" type="radio" name="Q11" value="4" /><label for="Q11_3">待改進</label><input id="Q11_4" type="radio" name="Q11" value="5" /><label for="Q11_4">非常不滿意</label></span>
+        </div>
+        <div class="question_list"><input name="Q11_REMARK" type="text" id="Q11_REMARK" style="width:700px;" /></div>
+        
+        <div class="question_list" id="satisfied"  >
+            (12)最滿意景點安排：<input name="Q12_1" type="text" id="Q12_1" style="width:180px;" />
+            ， 最不滿意景點安排：<input name="Q12_2" type="text" id="Q12_2" style="width:180px;" />
+        </div>
+        
+        <div class="question_list">(13)此趟行程是：
+            <span id="Q13"><input id="Q13_0" type="radio" name="Q13" value="1" /><label for="Q13_0">第一次</label><input id="Q13_1" type="radio" name="Q13" value="2" /><label for="Q13_1">第二~五次</label><input id="Q13_2" type="radio" name="Q13" value="3" /><label for="Q13_2">第六次以上</label></span>
+          　參加巨匠旅遊團體
+        </div>
+        
+        <div class="question_list">(14)對於本次旅遊的整體評價：
+            <span id="Q14"><input id="Q14_0" type="radio" name="Q14" value="1" /><label for="Q14_0">非常滿意</label><input id="Q14_1" type="radio" name="Q14" value="2" /><label for="Q14_1">滿意</label><input id="Q14_2" type="radio" name="Q14" value="3" /><label for="Q14_2">尚可</label><input id="Q14_3" type="radio" name="Q14" value="4" /><label for="Q14_3">待改進</label><input id="Q14_4" type="radio" name="Q14" value="5" /><label for="Q14_4">非常不滿意</label></span>
+        </div>
+        
+        <div class="question_list">(15)其他旅遊安排：</div>
+        
+        <div class="question_list">1.預計下次出國旅遊時間：
+            <input name="Q15_1_1" type="text" id="Q15_1_1" onkeyup="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;)" style="width:50px;" />年
+            <input name="Q15_1_2" type="text" id="Q15_1_2" onkeyup="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;)" style="width:50px;" />月
+        </div>
+        
+        <div class="question_list">2.預計下次出國旅遊地點：<input name="Q15_2" type="text" id="Q15_2" style="width:520px;" /></div>
+        
+        <div class="question_list">(16)開放問題：</div>
+        <div class="question_list">1.請說明旅遊安排中最值得肯定的部分：</div>
+        <div class="question_list"><input name="Q16_1" type="text" id="Q16_1" style="width:700px;" /></div>
+        <div class="question_list">2.請說明旅遊安排中需要改善的部分及建議事項：</div>
+        <div class="question_list"><input name="Q16_2" type="text" id="Q16_2" style="width:700px;" /></div>
+        <div class="question_list">(17)其他改進之意見：</div>
+        <div class="question_list"><textarea name="Q17" rows="2" cols="20" id="Q17" style="height:200px;width:700px;">
+</textarea></div>
+        <div class="question_bottom">本調查經過特別設計及考量，將不直接給領隊過目，您的回應是我們改善的重要基礎，<br />再次感謝您完成這項問卷！</div>
+        
+        <div style="float:left; padding-left: 150px;">
+            <textarea name="textarea" id="textarea" cols="85" rows="8">填寫須知：
+            
+1‧我們非常重視您寶貴的意見與問題，請留下正確資料，以便我們儘速為您後續處理。
+2‧於上述意見調查表之內容，為表尊重客人意見均由公司專人落實處理。
+3‧請再詳細檢查，於意見調查表之陳述內容，如經送出，則不可再修改，如已送出須修改內容，則請電洽客服人員或承辦業務單位人員，謝謝配合。
+            
+            </textarea>
+            <br/><br/>
+            <div style="float:left; font-size:15px; font-family: 微軟正黑體;"><input id="CheckBox1" type="checkbox" name="CheckBox1" /><span style="color:Red;">我已閱讀須知並同意</span></div>
+            <br/><br/>
+        </div>
+        
+        <div class="buttom">
+          <div class="question_buttom"><a id="LinkButton1" href="javascript:__doPostBack(&#39;LinkButton1&#39;,&#39;&#39;)">送出</a></div>
+          <div class="question_buttom"><a id="LinkButton2" href="javascript:__doPostBack(&#39;LinkButton2&#39;,&#39;&#39;)">取消</a></div>
+        </div>
+      </div>
+    </div>
+    <!-----修改地區 end----->
+</div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer-link">
+      <div class="container">
+        <ul id="bottom-menu">
+          <li>
+            <a href="https://www.artisan.com.tw/" target="_blank">回首頁</a>
+          </li>
+          <li>
+            <a href="https://www.artisan.com.tw/About.aspx" target="_blank"
+              >關於巨匠</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.artisan.com.tw/About_Artisan.aspx"
+              target="_blank"
+              >連絡我們</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://rate.bot.com.tw/Pages/Static/UIP003.zh-tw.htm"
+              target="_blank"
+              >匯率查詢</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://www.cwb.gov.tw/V7/forecast/world/world_aa.htm"
+              target="_blank"
+              >天氣查詢</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.artisan.com.tw/tour_escort.aspx"
+              target="_blank"
+              >專業領隊</a
+            >
+          </li>
+          <li>
+            <a href="https://www.artisan.com.tw/Notes.aspx" target="_blank"
+              >報名.機票退票.行李托運規定</a
+            >
+          </li>
+          <li>
+            <a href="https://www.artisan.com.tw/Credit_card.doc"
+              >刷卡授權書</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.artisan.com.tw/Travel_Contract.doc"
+              target="_blank"
+              >旅遊合約書</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.artisan.com.tw/Passenger.doc"
+              target="_blank"
+              >旅客保險基本資料表</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-wrap container">
+      <div class="footer-left">
+        <h4>凱旋旅行社(股份)有限公司<span>(交觀綜字第2133號)</span></h4>
+        <p>
+          <span class="triangle"></span><span class="triangle"></span
+          ><span class="triangle"></span>典藏旅遊 / 巨匠旅遊 / 新視界假期
+        </p>
+        <p>經營業務範圍：綜合旅行社經營業務範圍</p>
+        <p>代表人：項國棟｜聯絡人：劉恪宏</p>
+        <p>法律顧問：信和國際法律事務所 梁堯清律師</p>
+        <p>
+          E-MAIL：<span style="font-size: 11px; font-family: Verdana"
+            ><a href="mailto:artisantour@artisan.com.tw"
+              >ARTISANTOUR@ARTISAN.COM.TW</a
+            ></span
+          >
+        </p>
+        <ul class="footer-social">
+          <li>
+            <a href="http://line.me/ti/p/%40rgm1660e" target="_blank"
+              ><img src="images/20_ficon_line.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/artisantour/" target="_blank"
+              ><img src="images/20_ficon_fb.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/artisan_tour/"
+              target="_blank"
+              ><img src="images/20_ficon_ig.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC0RvsJSeoq2gM_z5gyd6mWA/featured"
+              target="_blank"
+              ><img src="images/20_ficon_yt.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-right">
+        <div class="contact-box-warp">
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">台北</span
+              ><span>TEL</span>:02-2507-5000
+            </p>
+            <p>FAX:02-2504-6199</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">桃園</span
+              ><span>TEL</span>:03-3561-755
+            </p>
+            <p>FAX:03-3561-970</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">新竹</span
+              ><span>TEL</span>:03-5283-088
+            </p>
+            <p>FAX:03-5283-389</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">台中</span
+              ><span>TEL</span>:04-2255-0229
+            </p>
+            <p>FAX:04-2255-1169</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">員林</span
+              ><span>TEL</span>:04‐8365-288
+            </p>
+            <p>FAX:04‐8365-399</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title">台南</span
+              ><span>TEL</span>:06-222-6627
+            </p>
+            <p>FAX:06-222-6731</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <span class="contact-box-title contact-box-titleK">高雄</span
+              ><span>TEL</span>:07-2419-872
+            </p>
+            <p>FAX:07-2154-690</p>
+          </div>
+          <div class="contact-box">
+            <p>
+              <a href="http://line.me/ti/p/%40rgm1660e" target="_blank"
+                ><img
+                  src="images/20_QRcode.png"
+                  alt="line QR code"
+                  class="QR-code" /></a
+              ><span class="QR-txt"
+                >→點我加入LINE@好友，<br />不定期享好康優惠!</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+</div>
+</body>
+</html>
