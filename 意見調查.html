@@ -17,34 +17,49 @@
                 overflow: hidden;
                 height: auto;
                 width: auto;
-                margin-top: 150px;
-                border: 20px solid #f2f2f2;
+                margin-top: 100px;
             }
 
-            #main {
-                width: 1120px;
-                margin: 20px auto;
-            }
 
             .style1 {
-                color: #660099;
-                font-size: 16px;
-                width: 840px;
-                padding-left: 145px;
-                padding-bottom: 5px;
-                text-align: left;
+              margin-top: 2%;
+              margin-left: 20%;
+              color: #660099;
+              font-size: 16px;
+              width: 55%;
             }
 
             .question_con{
-              margin-left: 130px;
+              line-height: 30px;
+              letter-spacing: 2px;
+              margin-left: 20%;
+              padding: 2px;
+              width: 55%;
+              color: gray;
             }
 
             .test{
-              margin-left: 35px;
+              width: 80%;
+              margin-top: 2%;
+              margin-left: 15%;
+              height: 150px;
             }
 
+            .question_Data{
+              width: 25%;
+              float: left;
+              text-align: left;
+              padding-left: 110px;
+              line-height: 36px;
+              font-family: "微軟正黑體";
+              font-size: 15px;
+              color: #1678b1;
+              height: auto;
+              font-weight: bold;
+              overflow: hidden;
+            }
             .question_Data2{
-              width: 400px;
+              width: 26%;
               float: left;
               text-align: left;
               padding-left: 110px;
@@ -57,114 +72,85 @@
               overflow: hidden;
             }
 
-            .buttom{
-              padding-left: 450px;
-              float: left;
-              width: 850px;
-            }
+            .question_list {
+              width: -webkit-fill-available;
+              height: auto;
+              padding-left: 20%;
+              text-align: left;
+              font-size: 15px;
+              color: #666666;
+              line-height: 40px
+            } 
 
-            #question .question_buttom {
-              width: 70px;
-              height: 40px;
-              line-height: 34px;
-              color: #333333;
-              background-color: #CCCCCC;
-              text-align: center;
-              margin-bottom: 80px;
-              margin-right: 5px;
-              float: left;
-              font-family: "微軟正黑體";
-              font-size: 14px;
-              background-image: url(img/buttom_bg.jpg);
-              text-indent: 0px;
-            }
-
-            #container #main #question .question_title {
-                color: #B21B20;
-                line-height: 20px;
-                text-align: left;
-                font-weight: bold;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                background-image: url(img/question_title.jpg);
-                background-repeat: no-repeat;
-                background-position: left bottom;
-                width: 850px;
-                height: 100px;
-                vertical-align: baseline;
-            }
-
-            .test {
-                width: 1040px;
-            }
-
-              #container #main #question .question_con {
-                height: 140px;
-                text-align: left;
+            .question_bottom {
+                line-height: 24px;
+                width: 80%;
+                /* height: 30px; */
+                padding-left: 20%;
+                /* text-align: left; */
                 letter-spacing: 1px;
-                line-height: 28px;
-                width: 850px;
-                font-family: "微軟正黑體";
-                font-size: 15px;
-                color: #666666;
-                padding-left: 20px;
-            }
-
-              #container #main #question .question_Data {
-                width: 250px;
-                float: left;
-                text-align: left;
-                padding-left: 110px;
-                line-height: 36px;
-                font-family: "微軟正黑體";
-                font-size: 15px;
-                color: #1678b1;
-                height: auto;
-                font-weight: bold;
-                overflow: hidden;
-            }
-
-              #container #main #question .question_Data2 {
-                width: 400px;
-                float: left;
-                text-align: left;
-                padding-left: 110px;
-                line-height: 36px;
-                font-family: "微軟正黑體";
-                font-size: 15px;
-                font-weight: bold;
-                color: #1678b1;
-                height: auto;
-                overflow: hidden;
-            }
-
-            #question .question_list {
-                width: 875px;
-                /*height: 40px;*/
-                padding-left: 150px;
-                text-align: left;
                 font-size: 15px;
                 font-family: "微軟正黑體";
-                color: #666666;
+                color: #FF0000;
                 float: left;
                 margin-right: auto;
-                margin-left: -5px;
-                line-height: 40px;
-            }
+                margin-left: auto;
+                padding-bottom: 50px;
+            } 
 
-            #question input {
-                margin: 3px 3px 0px 5px;
-            }
+            #textarea{
+                margin-left: 20%;
+                height: 120px;
+                width: 50%;
+              }
+              
+            #Q17{
+              width: 60%;
+              height: 200px;
+              }
 
-            #question input[type="text" ] {
-                height: 30px;
-            }
+              .agree{
+                margin-left: 20%;
+              }
 
-              #container #main #question .buttom {
-                padding-left: 450px;
-                float: left;
-                width: 850px;
-            }
+              .buttom{
+                margin-left: 40%;
+              }
+
+              #question input[type="text" ] {
+                  height: 30px;
+              }
+              @media (max-width:1280) {
+                
+              }
+            
+              @media (max-width:1080px) {
+              .question_con{
+                width: 70%;
+              }
+              .test{
+                display: grid;
+                margin-left: 10%;
+                height: 250px;
+                width: 300%;
+              }
+              }
+
+              @media (max-width:768px) {
+                #question{
+                  margin-left: -15%;
+                }
+                .question_list{
+                  width: 90%;
+                }
+              }
+
+              @media (max-width:490px) {
+                
+                .test{
+                  margin-left: 0%;
+                }
+              }
 
               #container #main #question .question_buttom {
                 width: 70px;
@@ -187,21 +173,6 @@
                 text-decoration: none;
             }
 
-            #question .question_bottom {
-                line-height: 24px;
-                width: 800px;
-                height: 30px;
-                padding-left: 180px;
-                text-align: left;
-                letter-spacing: 1px;
-                font-size: 15px;
-                font-family: "微軟正黑體";
-                color: #FF0000;
-                float: left;
-                margin-right: auto;
-                margin-left: auto;
-                padding-bottom: 50px;
-            }
 
             #hd123 {
                 position: absolute;
@@ -532,182 +503,9 @@
 
             
               
-            @media (max-width:1080px) {
-              #container{
-                margin-left: -15%;
-                border: 10px solid #f2f2f2;
-              }
-              }
-            @media (max-width:768px) {
-              #container {
-                margin-top: 15%;
-                margin-left: -15%;
-                border: 0;
-              }
-              .question_con{
-                width: 55% !important;
-              }
-              .question_Data {
-                width: inherit !important;
-              }
-              .question_Data2 {
-                width: inherit !important;
-              }
-              #Q2{
-                width: auto !important;
-              }
-              .buttom{
-                margin-left: -3%;
-              }
-            }
-            @media (max-width:390px) {
-              #container {
-                margin-top: 20%;
-                margin-left: -30%;
-              }
-              .question_con{
-                width: 30% !important;
-                height: 300px !important;
-              }
-              .question_Data2 {
-                width: 400px !important;
-              }
-              .question_list{
-                width: 75%  !important;
-              }
-              #Q1{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q2{
-                line-height: 1rem;
-                width: 40% !important;
-                display: flex;
-                margin-left: 1% !important;
-              }
-              #Q3{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q4{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q5{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q6{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q6_REMARK{
-                width: 40% !important;
-              }
 
-              #Q7{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q7_REMARK{
-                width: 40% !important;
-              }
-
-              #Q8{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q8_REMARK{
-                width: 40% !important;
-              }
-
-              #Q9{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q9_REMARK{
-                width: 40% !important;
-              }
-
-              #Q10{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q10_REMARK{
-                width: 40% !important;
-              }
-
-              #Q11{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-              #Q11_REMARK{
-                width: 40% !important;
-              }
-
-              #Q13{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-
-              #Q14{
-                line-height: 1rem;
-                width: 50% !important;
-                display: flex;
-              }
-
-              #Q15_2{
-                line-height: 1rem;
-                width: 40% !important;
-                display: flex;
-              }
-
-              #Q16_1{
-                line-height: 1rem;
-                width: 40% !important;
-                display: flex;
-              }
-              #Q16_2{
-                line-height: 1rem;
-                width: 40% !important;
-                display: flex;
-              }
-
-              #Q17{
-                line-height: 1rem;
-                width: 35% !important;
-                display: flex;
-                margin-left: 1%;
-              }
-              .question_bottom{
-                width: 44% !important;
-                margin-left: -3% !important;
-              }
-
-              #textarea{
-                width: 50%;
-                margin-top: 5%;
-              }
-
-              .buttom{
-                margin-left: -19%;
-              }
-
-              #satisfied{
-                width: 350px !important;
-              }
-            }
+              
+            
             
         </style>
 </style>
@@ -1004,7 +802,7 @@
             <span id="Q1"><input id="Q1_0" type="checkbox" name="Q1$0" value="1" /><label for="Q1_0">親友介紹</label><input id="Q1_1" type="checkbox" name="Q1$1" value="2" /><label for="Q1_1">報紙廣告</label><input id="Q1_2" type="checkbox" name="Q1$2" value="3" /><label for="Q1_2">網站</label><input id="Q1_3" type="checkbox" name="Q1$3" value="4" /><label for="Q1_3">同業介紹</label><input id="Q1_4" type="checkbox" name="Q1$4" value="5" /><label for="Q1_4">本公司業務員拜訪</label></span>
         </div>
         
-        <div class="question_list">(2)台端出國手續承辦旅行社及承辦人姓名：<input name="Q2" type="text" id="Q2" style="width:300px;" /></div>
+        <div class="question_list">(2)台端出國手續承辦旅行社及承辦人姓名：<input name="Q2" type="text" id="Q2" /></div>
         
         <div class="question_list">(3)台端對本公司承辦人員之服務及專業：
             <span id="Q3"><input id="Q3_0" type="radio" name="Q3" value="1" /><label for="Q3_0">非常滿意</label><input id="Q3_1" type="radio" name="Q3" value="2" /><label for="Q3_1">滿意</label><input id="Q3_2" type="radio" name="Q3" value="3" /><label for="Q3_2">尚可</label><input id="Q3_3" type="radio" name="Q3" value="4" /><label for="Q3_3">待改進</label><input id="Q3_4" type="radio" name="Q3" value="5" /><label for="Q3_4">非常不滿意</label></span>
@@ -1021,32 +819,32 @@
         <div class="question_list">(6)領隊於旅程之服務態度：
             <span id="Q6"><input id="Q6_0" type="radio" name="Q6" value="1" /><label for="Q6_0">非常滿意</label><input id="Q6_1" type="radio" name="Q6" value="2" /><label for="Q6_1">滿意</label><input id="Q6_2" type="radio" name="Q6" value="3" /><label for="Q6_2">尚可</label><input id="Q6_3" type="radio" name="Q6" value="4" /><label for="Q6_3">待改進</label><input id="Q6_4" type="radio" name="Q6" value="5" /><label for="Q6_4">非常不滿意</label></span>
         </div>
-        <div class="question_list"><input name="Q6_REMARK" type="text" id="Q6_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q6_REMARK" type="text" id="Q6_REMARK" /></div>
         
         <div class="question_list">(7)領隊之專業知識：
             <span id="Q7"><input id="Q7_0" type="radio" name="Q7" value="1" /><label for="Q7_0">非常滿意</label><input id="Q7_1" type="radio" name="Q7" value="2" /><label for="Q7_1">滿意</label><input id="Q7_2" type="radio" name="Q7" value="3" /><label for="Q7_2">尚可</label><input id="Q7_3" type="radio" name="Q7" value="4" /><label for="Q7_3">待改進</label><input id="Q7_4" type="radio" name="Q7" value="5" /><label for="Q7_4">非常不滿意</label></span>
         </div>
-        <div class="question_list"><input name="Q7_REMARK" type="text" id="Q7_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q7_REMARK" type="text" id="Q7_REMARK" ></div>
         
         <div class="question_list">(8)台端對此旅行各地導遊之服務態度：
             <span id="Q8"><input id="Q8_0" type="radio" name="Q8" value="1" /><label for="Q8_0">非常滿意</label><input id="Q8_1" type="radio" name="Q8" value="2" /><label for="Q8_1">滿意</label><input id="Q8_2" type="radio" name="Q8" value="3" /><label for="Q8_2">尚可</label><input id="Q8_3" type="radio" name="Q8" value="4" /><label for="Q8_3">待改進</label><input id="Q8_4" type="radio" name="Q8" value="5" /><label for="Q8_4">非常不滿意(請註明城市)</label></span>
         </div>
-        <div class="question_list"><input name="Q8_REMARK" type="text" id="Q8_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q8_REMARK" type="text" id="Q8_REMARK" ; /></div>
         
         <div class="question_list">(9)餐食之安排：
           <span id="Q9"><input id="Q9_0" type="radio" name="Q9" value="1" /><label for="Q9_0">非常滿意</label><input id="Q9_1" type="radio" name="Q9" value="2" /><label for="Q9_1">滿意</label><input id="Q9_2" type="radio" name="Q9" value="3" /><label for="Q9_2">尚可</label><input id="Q9_3" type="radio" name="Q9" value="4" /><label for="Q9_3">待改進</label><input id="Q9_4" type="radio" name="Q9" value="5" /><label for="Q9_4">非常不滿意(請註明城市)</label></span>
         </div>
-        <div class="question_list"><input name="Q9_REMARK" type="text" id="Q9_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q9_REMARK" type="text" id="Q9_REMARK"  /></div>
         
         <div class="question_list">(10)旅館之安排：
             <span id="Q10"><input id="Q10_0" type="radio" name="Q10" value="1" /><label for="Q10_0">非常滿意</label><input id="Q10_1" type="radio" name="Q10" value="2" /><label for="Q10_1">滿意</label><input id="Q10_2" type="radio" name="Q10" value="3" /><label for="Q10_2">尚可</label><input id="Q10_3" type="radio" name="Q10" value="4" /><label for="Q10_3">待改進</label><input id="Q10_4" type="radio" name="Q10" value="5" /><label for="Q10_4">非常不滿意(請註明城市)</label></span>
         </div>
-        <div class="question_list"><input name="Q10_REMARK" type="text" id="Q10_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q10_REMARK" type="text" id="Q10_REMARK" /></div>
         
         <div class="question_list">(11)遊覽車車況及司機服務：
             <span id="Q11"><input id="Q11_0" type="radio" name="Q11" value="1" /><label for="Q11_0">非常滿意</label><input id="Q11_1" type="radio" name="Q11" value="2" /><label for="Q11_1">滿意</label><input id="Q11_2" type="radio" name="Q11" value="3" /><label for="Q11_2">尚可</label><input id="Q11_3" type="radio" name="Q11" value="4" /><label for="Q11_3">待改進</label><input id="Q11_4" type="radio" name="Q11" value="5" /><label for="Q11_4">非常不滿意</label></span>
         </div>
-        <div class="question_list"><input name="Q11_REMARK" type="text" id="Q11_REMARK" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q11_REMARK" type="text" id="Q11_REMARK" /></div>
         
         <div class="question_list" id="satisfied"  >
             (12)最滿意景點安排：<input name="Q12_1" type="text" id="Q12_1" style="width:180px;" />
@@ -1069,20 +867,20 @@
             <input name="Q15_1_2" type="text" id="Q15_1_2" onkeyup="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;)" style="width:50px;" />月
         </div>
         
-        <div class="question_list">2.預計下次出國旅遊地點：<input name="Q15_2" type="text" id="Q15_2" style="width:520px;" /></div>
+        <div class="question_list">2.預計下次出國旅遊地點：<input name="Q15_2" type="text" id="Q15_2"  /></div>
         
         <div class="question_list">(16)開放問題：</div>
         <div class="question_list">1.請說明旅遊安排中最值得肯定的部分：</div>
-        <div class="question_list"><input name="Q16_1" type="text" id="Q16_1" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q16_1" type="text" id="Q16_1"  /></div>
         <div class="question_list">2.請說明旅遊安排中需要改善的部分及建議事項：</div>
-        <div class="question_list"><input name="Q16_2" type="text" id="Q16_2" style="width:700px;" /></div>
+        <div class="question_list"><input name="Q16_2" type="text" id="Q16_2" /></div>
         <div class="question_list">(17)其他改進之意見：</div>
-        <div class="question_list"><textarea name="Q17" rows="2" cols="20" id="Q17" style="height:200px;width:700px;">
+        <div class="question_list"><textarea name="Q17" rows="2" cols="20" id="Q17" >
 </textarea></div>
         <div class="question_bottom">本調查經過特別設計及考量，將不直接給領隊過目，您的回應是我們改善的重要基礎，<br />再次感謝您完成這項問卷！</div>
         
-        <div style="float:left; padding-left: 150px;">
-            <textarea name="textarea" id="textarea" cols="85" rows="8">填寫須知：
+        <div >
+            <textarea name="textarea" id="textarea" >填寫須知：
             
 1‧我們非常重視您寶貴的意見與問題，請留下正確資料，以便我們儘速為您後續處理。
 2‧於上述意見調查表之內容，為表尊重客人意見均由公司專人落實處理。
@@ -1090,7 +888,7 @@
             
             </textarea>
             <br/><br/>
-            <div style="float:left; font-size:15px; font-family: 微軟正黑體;"><input id="CheckBox1" type="checkbox" name="CheckBox1" /><span style="color:Red;">我已閱讀須知並同意</span></div>
+            <div style="float:left; font-size:15px; font-family: 微軟正黑體;" class="agree"><input id="CheckBox1" type="checkbox" name="CheckBox1" /><span style="color:Red;">我已閱讀須知並同意</span></div>
             <br/><br/>
         </div>
         
