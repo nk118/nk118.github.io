@@ -188,7 +188,8 @@ img {
 	overflow: hidden;
 	height: auto;
 	width: auto;
-        /*padding-bottom:80px;*/
+	margin-top: 100px;
+	letter-spacing: 1px;
 }
 
 #content_japan {
@@ -1932,20 +1933,21 @@ color: #dd6207;
 	margin-top: 50px;
 }
 .member_login_banner {
-	float: left;
-	width: 1030px;
-	margin-right: 45px;
-	margin-left: 50px;
+	margin: auto;
+	max-width: max-content;
 }
-.member_login_title {
-	float: left;
-	height: 59px;
-	width: 775px;
-	margin-right: 170px;
-	margin-left: 170px;
-	margin-top: 20px;
+/* .member_login_title img{
+	width: -webkit-fill-available;
+} */
+.form-imfo{
+	/* text-align: center; */
+	width: auto;
+  height: auto;
+  text-align: -webkit-center;
 }
-#contact_member_login {
+
+
+/* #contact_member_login {
 	float: left;
 	width: 774px;
 	margin-right: 170px;
@@ -1960,7 +1962,7 @@ color: #dd6207;
 	height: 250px;
 	padding: 10px;
 	letter-spacing: 2px;
-}
+} */
 
 #contact_member_login a{
 	color: #d12e33;
@@ -1975,7 +1977,7 @@ color: #dd6207;
 	border: 1px solid #CCCCCC;
 	height: 20px;
 }
-.epaper_title {
+/* .epaper_title {
 	float: left;
 	height: 59px;
 	width: 775px;
@@ -1983,7 +1985,7 @@ color: #dd6207;
 	margin-left: 170px;
 	margin-top: 20px;
 	margin-bottom: 50px;
-}
+} */
 .escort_banner  {
 	float: left;
 	width: 1033px;
@@ -2807,15 +2809,15 @@ height:214px;
 	        bordeR: 1px solid #ccc;
         }
         
-		#content {			
+		/* #content {			
 			margin-top: 100px;
 			padding: 10px;
 			box-sizing: border-box;
 			line-height: 0;
-		}
+		} */
 		
 		#content_member {
-			width: 1130px;
+			/* width: 1130px; */
 			margin: 0 auto;
 		}
         </style>
@@ -3040,94 +3042,77 @@ return true;
 
 
 <style>
+
+	#content_member{
+		padding: 15px;
+	}
+
+	input {
+		font-family: auto;
+	}
+
+	#panel1{
+		text-align: -webkit-center;
+	}
+	
   @media (max-width:960px) {
-    table tr{
+    /* table tr{
       display: table-row;
-    }
+    } */
     .member_login_banner img{
-      width: 70%;
-    }
-    .member_login_title img{
-      width: 102.5%;
-      margin-left: -100px;
-    }
-    #contact_member_login {
-      margin-left: 70px;
-      width: 795px;
-      padding: 0px;
-    }
-    .epaper_title {
-      margin-left: 20px;
-    }
-    .epaper_title table{
-      width: 80%;
-    }
-    #contact_member_login table{
-      width: 90%;
-    }
-  }
-  @media (max-width:768px) {
-    table tr{
-      display: table-row;
-    }
-    .member_login_banner img{
-      width: 60%;
-    }
-    .member_login_title img{
-      
-      margin-left: -150px;
-    }
-    #contact_member_login {
-      margin-left: 20px;
-      width: 795px;
-      padding: 0px;
-    }
-    .epaper_title {
-      margin-left: 20px;
-    }
-    .epaper_title table{
-      width: 80%;
-    }
-    #contact_member_login table{
-      width: 90%;
+      width: -webkit-fill-available;
     }
   }
 
-  @media (max-width:490px) {
-    table tr{
-      display: table-row;
-    }
-    .member_login_banner img{
-      display: none;
-      width: 60%;
-    }
-    .member_login_title img{
-      margin-left: -170px;
-    }
-    #contact_member_login {
-      margin-left: 0px;
-      width: 795px;
-			height: 450px;
-    }
-    .epaper_title {
-      margin-left: 20px;
-    }
-    .epaper_title table{
-      width: 80%;
-    }
-    #contact_member_login table{
-      width: 90%;
-    }
-		.direction{
-			transform: translate(-365px , 200px);
+  @media (max-width:768px) {
+		#content{
+			margin-top: 70px;
+		}
+		table{
+			width: -webkit-fill-available;
+		}
+		table tr {
+			display: revert-layer;
+		}
+		.member_login_title img{
+			width: -webkit-fill-available;
+		}
+	}
+
+	@media (max-width:490px) {
+		#content_member{
+			height: 750px;
 		}
 		.apart{
 			display: none;
 		}
-		.send{
-			transform: translate(-360px, 45px);
+
+		#btmLogin{
+			width: 190px !important;
 		}
-  }
+
+		.direction {
+			transform: translate(1px, 100px);
+			display: block;
+			width: 100%;
+		}
+		.trmessage {
+			display: block;
+      height: 50px;
+			border: none;
+		}
+		.trpassword{
+			display: block;
+      height: 250px;
+			border: none;
+		}
+		.password{
+			height: auto;
+		}
+		.send{
+			transform: translate(-120% ,100%);
+		}
+	}
 
 </style>
     <div id="wrapper-main">
@@ -3194,27 +3179,25 @@ return true;
 			<div id="content_member">
             <!-----修改地區----->
 <div class="member_login_banner"><img src="./images/member_banner.jpg" /></div>
-<div class="member_login_title"><img src="./images/login_title.jpg" /></div>
+<div class="form-imfo"><div class="member_login_title"><img src="./images/login_title.jpg" /></div>
 <div id="Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btmLogin&#39;)">
 	
 <div id="contact_member_login">
 
   <table width="778" border="0" cellpadding="0" cellspacing="0">
-    <tr>
+    <tr class="trmessage">
       <td width="354" valign="top">登入帳號　
         <input name="txbSN" type="text" id="txbSN" class="password" style="width:250px;" /></td>
-      <td width="18" rowspan="4" style="padding-right:10px;border-right:solid 1px #b4b4b4" class="apart">
+      <td width="18" rowspan="4" style="border-right:solid 1px #b4b4b4;transform: translate(-10px, 0px);" class="apart">
           &nbsp;</td>
-      <td width="406" rowspan="5" valign="top" style="padding-left:30px;" class="direction">* 帳號預設為<span class="style_member_strong">身分證字號</span><br />
-          * 密碼預設為<span class="style_member_strong">西元出生年月日</span>，ex：出生日為1950年<br />
-          1月2日，請輸入：19500102<br />
+      <td width="406" rowspan="5" valign="top"  class="direction">* 帳號預設為<span class="style_member_strong">身分證字號</span><br />
+          * 密碼預設為<span class="style_member_strong">西元出生年月日</span>，ex：出生日為1950年1月2日，請輸入：19500102<br />
           ---------------------------------------------------------<br />
-          ※巨匠旅遊嚴格保護每一位客人的個人資料，未經客<br />
-          人同意絕不對外揭露!並遵守法律上權利責任規範<br />
+          ※巨匠旅遊嚴格保護每一位客人的個人資料，未經客人同意絕不對外揭露!並遵守法律上權利責任規範<br />
 <a href="http://www.artisan.com.tw/Notes.aspx">個人資料保護說明</a>        </td>
   
     </tr>
-    <tr>
+    <tr class="trpassword">
       <td height="37" valign="top">登入密碼　
         <input name="txbPW" type="password" id="txbPW" class="password" style="width:250px;" /></td>
       </tr>
@@ -3249,7 +3232,8 @@ return true;
   </table>
   </div>
  
-</div>
+</div></div>
+
             <!-----修改地區 end----->
 </div>
 </div>
