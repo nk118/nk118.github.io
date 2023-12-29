@@ -41,18 +41,27 @@
             integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
             crossorigin="anonymous"
         />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- AOS -->
+        <link rel="stylesheet" href="aos.css">
+        <script src="aos.js"></script>
         <!-- style -->
         <link
             rel="stylesheet"
             href="https://www.artisan.com.tw/pic_css/fade_pic.css"
         />
-        <link rel="stylesheet" href="css/layout_2020.css" />
+        <link rel="stylesheet" href="css/layout_2022.css" />
         <link rel="stylesheet" href="css/webTrip_2020.css" />
         <link rel="stylesheet" type="text/css" href="css/memberArea.css" />
         <link rel="stylesheet" href="./css/memberLogin_style.css" />
+        <link rel="stylesheet" href="css/group.css">
+        
     </head>
 
     <body>
+        <script>
+            AOS.init();
+        </script>
         <div id="wrapper-main">
             <!-- Header -->
             <header id="header">
@@ -402,845 +411,317 @@
                     <span>聯營團體</span>
                     <p>巨匠旅遊-玫瑰盛宴 巴爾幹五國 阿．馬．保．羅．塞13天</p>
                 </h1>
-
-                <div class="TripMain-tool">
-                    <!-- 月曆 -->
-                    <!-- 行程上方資料 -->
-                    <div class="TripMain-info">
-                        <ul class="TripMain-infoDetail">
-                            <li>機位數：<span class="seat">10</span>/位</li>
-                            <li>班機：<span class="plant">QR</span></li>
-                            <li>簽證：<span class="visa">含</span></li>
-                            <li>稅金：<span class="tax">含</span></li>
-                        </ul>
-                        <hr class="TripMain-hr" />
-
-                        <!-- 行程優惠(無資料隱藏) -->
-                        <div class="TripMain-discount">
-                            <h4>行程優惠</h4>
-                            <p>
-                                貼心安排兩人一台WIFI機，限時送領隊、導遊及司機小費，價值：120歐元三七三八三九四十約80字兩行為限，有就放沒有就拉掉
-                            </p>
-                        </div>
-
-                        <div class="TripMain-flexOrder">
-                            <div class="TripMain-list TripMain-point TPO1">
-                                航班資訊
-                            </div>
-                            <div class="TripMain-list TPO2">
-                                <a href="" target="_blank">列印及下載</a>
-                            </div>
-                            <div class="TripMain-list TPO3">
-                                <a
-                                    href="https://www.artisan.com.tw/Notes.aspx"
-                                    target="_blank"
-                                    >旅客報名須知</a
-                                >
-                            </div>
-                            <div
-                                class="TripMain-list TripMain-noline TPO4 TripMain-shareBtn"
-                            >
-                                <a href="javascript:;">行程分享</a>
-                                <div class="TripMain-share">
-                                    <div id="shareBlock"></div>
-                                </div>
-                            </div>
-                            <div class="TripMain-list map-hide-pc TPO6">
-                                <a
-                                    href="images/test_TripMap.jpg"
-                                    target="_blank"
-                                    >行程地圖</a
-                                >
-                            </div>
-                            <div class="TripMain-plant TPO5">
-                                <div class="plant-tool">
-                                    <div class="plant-go">去程</div>
-                                    <div class="plant-list-tool">
-                                        <div class="plant-list">
-                                            <span
-                                                >台北 21：55 → 伊斯坦堡
-                                                05：10</span
-                                            >
-                                            <span>土耳其航空025</span>
-                                        </div>
-                                        <div class="plant-list">
-                                            <span
-                                                >伊斯坦堡 07：40 → 貝爾格勒
-                                                08：20</span
-                                            >
-                                            <span>土耳其航空1081</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="plant-tool">
-                                    <div class="plant-back">回程</div>
-                                    <div class="plant-list-tool">
-                                        <div class="plant-list">
-                                            <span
-                                                >伊斯坦堡 07：40 → 貝爾格勒
-                                                08：20</span
-                                            >
-                                            <span>土耳其航空1081</span>
-                                        </div>
-                                        <div class="plant-list">
-                                            <span
-                                                >台北 21：55 → 伊斯坦堡
-                                                05：10</span
-                                            >
-                                            <span>土耳其航空025</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="plant-note">
-                                    因應航空公司開票及保險的需求，及為了提供您在旅途中更完善的服務，請務必在繳交訂金的時候填妥客戶基本資料表。<a
-                                        href="http://www.grp.com.tw/data/"
-                                        target="_blank"
-                                        >旅客資料表下載</a
-                                    ><span class="hidden-pc"
-                                        ><br /><br />
-                                        上為參考航班，實際航班時間以航空公司為最終確認。若因航空公司或不可抗力因素，變動航班時間或轉機點，造成團體行程變更、增加餐食，本公司將不另行加價。若行程變更、減少餐食，則酌於退費。<br /><br />特別說明：幾乎所有外籍航空公司之團體機票(含燃油附加稅)一經開票後，均無退票價值，此點基於航空公司之規定，敬請見諒。</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 日期價錢報名 -->
-                        <div class="TripMain-orderTool">
-                            <div class="TripMain-date">2020/05/05出發</div>
-                            <div class="TripMain-price">
-                                NT.<span class="price-client">109,900</span
-                                >起/人
-                            </div>
-                            <div class="TripMain-btn">
-                                <a href="">點我報名</a>
-                            </div>
-                        </div>
-
-                        <!-- 手機價錢報名 -->
-                        <div class="orderTool-m">
-                            <div class="orderTool-price">
-                                NT.<span class="price-client">109,900</span>起
-                            </div>
-                            <div class="orderTool-btn"><a href="">報名</a></div>
-                        </div>
+                <div class="item" data-aos="fade-up" data-aos-offset="50">
+                    <div class="titletext">
+                        <img src="images/date img/標題圖.png" alt="">
+                        <h2>團體資訊</h2>
+                        <img src="images/date img/TOURS INFORMATION.png" alt="">
                     </div>
+                    <img src="images/date img/hr.png" alt="">
                 </div>
+               
+
+   
+                <div class="containerTrip ">
+                    <div class="item" data-aos="fade-up" data-aos-delay="500">
+                         <div class="tripgo" >
+                        <div class="goout ">
+                        <h2>出發日期</h2>
+                        <h3>2024/02/06(二)</h3>
+                        <br>
+                        <hr>
+                        <br>
+                        <h2>出團狀態</h2>
+                        <h3 class="state seat">可報名</h3>
+                        <br>
+                        <hr class="goouthr">
+                        </div>
+                        <!-- -------------------------------- -->
+                        <div class="plane">
+                            <h2>班機</h2>
+                            <h3 style="max-width: 221px; flex-wrap: wrap;">國泰航空CX</h3>
+                            <br>
+                            <hr>
+                            <br>
+                             <div class="seatsTitle ">
+                            <h2 style="font-size: 23px;">機位席次</h2> 
+                            <h2 class="seatborderh2">可售席次</h2>
+                        </div>
+                            <div class="seat">
+                             <h2 ><span class="state">26</span>席</h2>
+                            <h2><span class="state seatborderh3">10</span>席</h2>
+                            </div>
+                        </div>
+                        <div class="visa">
+                            <h2>簽證</h2>
+                            <h3>免簽</h3>
+                            <br>
+                            <hr>
+                            <br>
+                             <div class="seatsTitle ">
+                            <h2>稅金</h2> 
+                            <h2 class="seatborderh2">小費</h2>
+                        </div>
+                            <div class="seat ">
+                             <h3 style="font-weight: 500;">包含</h3>
+                            <h3 class="seatborderh3" style="font-weight: 500;">不包含</h3>
+                            </div>
+                            <div class="money">
+                                <span>NT.</span><h2>139,900</h2><span style="color: black;">起/人</span>
+                            </div>
+                            
+                            
+                           
+                            </div>
+                        </div></div>
+                        <div class="item" data-aos="fade-up" data-aos-delay="1000" style="width: 100%;">
+                            <div class="tripdate">
+                                <div class="headerDate">
+                                <img src="images/date img/arrow-left.png"id="leftArrow" alt="左箭頭">
+                                    <span id="dateContent">2024年2月</span>
+                            <img src="images/date img/arrow-right.png" id="rightArrow"
+                                    alt="右箭頭">
+                                </div>
+                                <div class="titledate">
+                                    <span>出發日期</span>
+                                    <span>機位席次 | 可售席次</span>
+                                    <span>出團狀態</span>
+                                    <span>售價</span>
+                                </div>
+                                <div class="datemain-container" id="mon">
+                                    <div class="datemain">
+                                        <span>2024/02/01(四)</span>
+                                        <span>30 | 12</span>
+                                        <span class="pink">即將成團</span>
+                                        <span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/02(五)</span>
+                                        <span>30 | 12</span>
+                                        <span class="orange">已成團</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/03(六)</span>
+                                        <span>30 | 12</span>
+                                        <span class="blue">可報名</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/04(日)</span>
+                                        <span>30 | 12</span>
+                                        <span class="yellow">滿團</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/05(一)</span>
+                                        <span>30 | 12</span>
+                                        <span class="yellow">滿團</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/01(四)</span>
+                                        <span>30 | 12</span>
+                                        <span class="pink">即將成團</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    <div class="datemain">
+                                        <span>2024/02/01(四)</span>
+                                        <span>30 | 12</span>
+                                        <span class="pink">即將成團</span>
+                                        <span>
+                                            <span  class="pay payred">NT</span>
+                                                    <span class="payred">139,900 </span>
+                                                    <span class="pay ">起</span>
+                                                </span>
+                                    </div>
+                                    </div>
+                                    <div class="datemain-container" id="thu">
+                                        <div class="datemain">
+                                            <span>2024/02/01(四)</span>
+                                            <span>30 | 12</span>
+                                            <span class="pink">即將成團</span>
+                                            <span>
+                                                <span>
+                                                    <span  class="pay payred">NT</span>
+                                                            <span class="payred">139,900 </span>
+                                                            <span class="pay ">起</span>
+                                                        </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/02(五)</span>
+                                            <span>30 | 12</span>
+                                            <span class="orange">已成團</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/03(六)</span>
+                                            <span>30 | 12</span>
+                                            <span class="blue">可報名</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/04(日)</span>
+                                            <span>30 | 12</span>
+                                            <span class="yellow">滿團</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/05(一)</span>
+                                            <span>30 | 12</span>
+                                            <span class="yellow">滿團</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/01(四)</span>
+                                            <span>30 | 12</span>
+                                            <span class="pink">即將成團</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        <div class="datemain">
+                                            <span>2024/02/01(四)</span>
+                                            <span>30 | 12</span>
+                                            <span class="pink">即將成團</span>
+                                            <span>
+                                                <span  class="pay payred">NT</span>
+                                                        <span class="payred">139,900 </span>
+                                                        <span class="pay ">起</span>
+                                                    </span>
+                                        </div>
+                                        </div>
+                            </div>
+                        </div>
+                
+             
+                   </div>
+                  
+          
             </div>
             <!-- /行程資料 -->
-
+                  
             <!-- 查看行程 -->
-            <div id="TripContent">
-                <nav id="TripNav">
-                    <ul class="TripNav-list container">
-                        <li data-target="#sectionfeature" class="active">
-                            <a href="javascript:;">特色介紹</a>
-                        </li>
-                        <li data-target="#section-day">
-                            <a href="javascript:;">行程內容</a>
-                        </li>
-                        <li data-target="#section-remind" class="hidden-m">
-                            <a href="javascript:;">貼心提醒</a>
-                        </li>
-                        <li data-target="#section-detail">
-                            <a href="javascript:;" class="TripNav-noline"
-                                >團費資訊</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+           
 
                 <!-- 行程地圖 -->
-                <section id="section-map">
-                    <h3 class="main-title">行程地圖</h3>
-                    <div class="container">
-                        <div class="section-map-pic">
-                            <a href="images/test_TripMap.jpg" target="_blank">
-                                <img src="images/test_TripMap.jpg" alt="" />
-                            </a>
-                        </div>
+              <div class="tripmap">
+                <div class="item" data-aos="fade-up">
+                    <div class="titlemap">
+                        <img src="images/date.img/mapicon.png" alt="" width="30x">
+                        <h1 style="font-size: 30px;">行程地圖</h1>
+                        <h2 >MAP</h2>
                     </div>
-                </section>
+                </div>
+            
+                <hr>
+                <div class="item" data-aos="fade-up" data-aos-delay="500">
+                    <a href="images/test_TripMap.jpg" target="_blank"><img src="images/test_TripMap.jpg" alt="" class="map" ></a>
+                </div>
+               
+              </div>
+                    
+                
 
                 <!-- 行程特色 -->
-                <section class="section-target" id="sectionfeature">
-                    <h3 class="main-title">行程特色</h3>
-
-                    <!-- 舊特色(無資料隱藏) -->
-                    <section id="section-featureOld" style="display: none">
-                        <div class="container">
-                            <div class="trip_feature">
-                                <div class="tour_characteristic_tool_Intro">
-                                    <img
-                                        src="http://www.artisan.com.tw/zupload/000001/000057/000263/002246/003091/00035200.jpg"
-                                        alt=""
-                                    />
-                                    <table
-                                        cellspacing="0"
-                                        cellpadding="0"
-                                        align="center"
-                                        border="0"
-                                        style="width: 100%"
-                                    >
-                                        <tbody>
-                                            <tr>
-                                                <td height="860">
-                                                    <div
-                                                        id="fade_pic20"
-                                                        style="height: 860px"
-                                                    >
-                                                        <a
-                                                            class="ad"
-                                                            style="
-                                                                opacity: 0;
-                                                                z-index: 9;
-                                                            "
-                                                            ><img
-                                                                src="http://www.artisan.com.tw/zupload/000001/000057/000263/002246/003091/00035201.jpg"
-                                                                alt=""
-                                                        /></a>
-                                                        <a
-                                                            class="ad"
-                                                            style="
-                                                                opacity: 1;
-                                                                z-index: 10;
-                                                            "
-                                                            ><img
-                                                                src="http://www.artisan.com.tw/zupload/000001/000057/000263/002246/003091/00035202.jpg"
-                                                                alt=""
-                                                        /></a>
-                                                        <a
-                                                            class="ad"
-                                                            style="
-                                                                opacity: 0;
-                                                                z-index: 9;
-                                                            "
-                                                            ><img
-                                                                src="http://www.artisan.com.tw/zupload/000001/000057/000263/002246/003091/00035203.jpg"
-                                                                alt=""
-                                                        /></a>
-                                                        <div
-                                                            class="control"
-                                                            style="z-index: 11"
-                                                        >
-                                                            <a href="#" class=""
-                                                                >1</a
-                                                            ><a
-                                                                href="#"
-                                                                class="on"
-                                                                >2</a
-                                                            ><a
-                                                                href="#"
-                                                                class=""
-                                                                >3</a
-                                                            >
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <img
-                                        src="http://www.artisan.com.tw//zupload/000001/000057/000263/002246/003091/00035204.jpg"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="https://www.artisan.com.tw/zupload/000011/000071/000139/003335/00041177.jpg"
-                                        width="1200"
-                                        height="714"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
+                
+                 <div class=" feature container">
+                    <div class="featuretitle">
+                        <img src="images/date.img/特色icon.png" alt="" width="30px">
+                        <h1 style="font-size: 30px;">行程特色</h1>
+                        <h2 >SCENERY</h2>
+                    </div>
+                    <div class="row" >
+                        <div class="col-12 custom-background">
+                            <img src="images/date.img/橢圓 1.png" alt=""  class="bg">
+                           
+                            <img src="images/date.img/．獨家首創．獨家首創．.png" alt="" class="img1">
+                            <img src="images/date.img/矩形 3.png" alt="" class="img2">
+                            <h1>深度瑞士</h1>
+                            <h4>四大名風、二大觀景列車12天</h4>
+                            <img src="images/date.img/橢圓 1bg.png" alt="" class="bg1" >
                         </div>
-                    </section>
-
-                    <!-- 行程大圖 -->
-                    <section id="section-tripBanner">
-                        <div class="container">
-                            <div
-                                class="owl-carousel owl-theme"
-                                id="TripBanner-owl-carousel"
-                            >
-                                <!-- 影片(無資料隱藏) -->
-                                <figure class="tripBanner-video">
-                                    <div class="video_container">
-                                        <iframe
-                                            width="100%"
-                                            height="600"
-                                            src="https://www.youtube.com/embed/5G800ugZgqE"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                        ></iframe>
-                                    </div>
-                                    <figcaption class="tripBanner-flex">
-                                        <h2>
-                                            標題自訂<span>SPECIAL PLAN</span>
-                                        </h2>
-                                        <p>
-                                            <span>玫瑰谷-薰衣草田</span>
-                                            玫瑰谷的玫瑰花於每年約五月中至六月初，一望無際的玫瑰谷飄出玫瑰盛開的香氣含羞綻放，百里飄香；而玫瑰季節過後便是薰衣草的花季，每年約6月中至7月底，我們特別安排帶您前往參觀。
-                                        </p>
-                                    </figcaption>
-                                </figure>
-
-                                <!-- 大圖 -->
-                                <figure class="tripBanner-box">
-                                    <div
-                                        class="box_container"
-                                        style="
-                                            background-image: url(images/test_TripBanner.jpg);
-                                        "
-                                    ></div>
-                                    <figcaption class="tripBanner-flex">
-                                        <h2>
-                                            特別企劃<span>SPECIAL PLAN</span>
-                                        </h2>
-                                        <p>
-                                            <span>玫瑰谷-薰衣草田</span>
-                                            玫瑰谷的玫瑰花於每年約五月中至六月初，一望無際的玫瑰谷飄出玫瑰盛開的香氣含羞綻放，百里飄香；而玫瑰季節過後便是薰衣草的花季，每年約6月中至7月底，我們特別安排帶您前往參觀。
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 行程重點(無資料隱藏) -->
-                    <section id="section-highlights">
-                        <div class="container">
-                            <div class="highlights_tool">
-                                <div class="highlights_pic">
-                                    <div class="img_tool">
-                                        <img
-                                            src="images/test_TripHighlights.jpg"
-                                            alt=""
-                                        />
-                                        <div class="PIC_description">
-                                            佩雷修城堡 ｜ Peles Castle
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="highlights_content">
-                                    <h2>行程重點<span>HIGHLIGHTS</span></h2>
-                                    <div class="highlights_list">
-                                        <p>
-                                            全新獨家：挪威最美峽灣海港城市【奧勒松小鎮】感謝同業效仿
-                                        </p>
-                                        <p>
-                                            全台首創：兩段飛機深入挪威峽灣區．輕鬆暢遊挪威不走回頭路
-                                        </p>
-                                        <p>
-                                            挪威入住【經典雙峽灣】安排面峽灣房型飯店及峽灣百年貴族旅館
-                                        </p>
-                                        <p>
-                                            六大精選特色餐．峽灣山頂景觀餐廳．諾貝爾餐廳．冰島私房景觀餐廳
-                                        </p>
-                                        <p>
-                                            冰島秘境》千年冰川健行．金環之旅．藍色溫泉池．秘境冰河湖遊船
-                                        </p>
-                                        <p>
-                                            北歐經典》北角大廳．瓦薩號博物館．岩石教堂．維京船博物館．聖誕老人村
-                                        </p>
-                                        <p>
-                                            雙峽灣遊船．挪威縮影景觀列車．佛洛伊恩電車．峽灣山頂纜車．新港運河遊船
-                                        </p>
-                                        <p>
-                                            夏季期間限定行程【加贈2人1台網路分享器．歐規轉接頭】含行李搬運服務
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 景點介紹 -->
-                    <section class="section-spec" id="spec-attraction">
-                        <h4 class="spec-title"><span>景點介紹</span></h4>
-                        <div class="spec-content">
-                            <figure class="spec-photo">
-                                <div
-                                    class="spec-photo-pic"
-                                    style="
-                                        background-image: url(images/test_TripPhoto.jpg);
-                                    "
-                                ></div>
-                                <figcaption>
-                                    <h5>奧赫裏德古城｜Ohrid Old Town</h5>
-                                    <p>
-                                        龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                    </p>
-                                </figcaption>
-                            </figure>
-                            <div class="spec-card">
-                                <div
-                                    class="owl-carousel owl-theme Spec-owl-carousel"
-                                >
-                                    <figure class="spec-box">
-                                        <img src="images/test_TripCard01.jpg" />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img src="images/test_TripCard02.jpg" />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img src="images/test_TripCard03.jpg" />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 餐食介紹(可編輯標題無資料隱藏) -->
-                    <section class="section-spec" id="spec-food">
-                        <h4 class="spec-title"><span>餐食介紹</span></h4>
-                        <div class="spec-content">
-                            <div class="spec-photo">
-                                <div
-                                    class="spec-photo-pic"
-                                    style="
-                                        background-image: url(https://api.fnkr.net/testimg/1300x600/00CED1/FFF/?text=img+placeholder);
-                                    "
-                                ></div>
-                                <figcaption>
-                                    <h5>奧赫裏德古城｜Ohrid Old Town</h5>
-                                    <p>
-                                        龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                    </p>
-                                </figcaption>
-                            </div>
-                            <div class="spec-card">
-                                <div
-                                    class="owl-carousel owl-theme Spec-owl-carousel"
-                                >
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 飯店介紹(可編輯標題無資料隱藏) -->
-                    <section class="section-spec" id="spec-hotel">
-                        <h4 class="spec-title"><span>飯店介紹</span></h4>
-                        <div class="spec-content">
-                            <div class="spec-photo">
-                                <div
-                                    class="spec-photo-pic"
-                                    style="
-                                        background-image: url(https://api.fnkr.net/testimg/1300x600/00CED1/FFF/?text=img+placeholder);
-                                    "
-                                ></div>
-                                <figcaption>
-                                    <h5>奧赫裏德古城｜Ohrid Old Town</h5>
-                                    <p>
-                                        龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                    </p>
-                                </figcaption>
-                            </div>
-                            <div class="spec-card">
-                                <div
-                                    class="owl-carousel owl-theme Spec-owl-carousel"
-                                >
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-
-                                    <figure class="spec-box">
-                                        <img
-                                            src="https://api.fnkr.net/testimg/400x270/00CED1/FFF/?text=img+placeholder"
-                                        />
-                                        <figcaption>
-                                            <h5>
-                                                奧赫裏德古城｜Ohrid Old Town
-                                            </h5>
-                                            <p>
-                                                龍巖的查雷威茲城堡，蹙顰俯瞰遼闊彎曲的揚特拉河、紅色的屋頂、層層相疊的街道、堅固的城牆，形成一幅最美麗的景緻，古都驚艷，莫過于此。
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+                      
+                    </div>
+                 </div>
 
                 <!-- 行程內容 -->
-                <section class="section-target" id="section-day">
-                    <h3 class="main-title">行程內容</h3>
-                    <div class="container">
-                        <div class="trip_day_tool">
-                            <div id="trip_day_slider">
-                                <a
-                                    href="javascript:;"
-                                    class="godays bt_active"
-                                    data-target="#day01"
-                                    >01</a
-                                >
-                                <a
-                                    href="javascript:;"
-                                    class="godays"
-                                    data-target="#day02"
-                                    >02</a
-                                >
-                                <a
-                                    href="javascript:;"
-                                    class="godays"
-                                    data-target="#day03"
-                                    >03</a
-                                >
-                                <a
-                                    href="javascript:;"
-                                    class="godays"
-                                    data-target="#day04"
-                                    >04</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="trip_day" id="day01">
-                            <div class="trip_day_title trip_day_title_close">
-                                <div class="trip_day_number">
-                                    DAY<span>01</span>
-                                </div>
-                                <h4>台北/ 伊斯坦堡</h4>
-                            </div>
-                            <div class="trip_day_content">
-                                <!-- 內容編輯器 -->
-                                今日準備好行李及裝滿希望的行囊，集合於桃園中正機場，由專人協辦出境手續後，搭乘豪華客機飛往一個富多樣民族、語言、文化、信仰的巴爾幹半島，感受那多變的國度。<br /><br /><span
-                                    style="color: #e800d5"
-                                    >■【貼心提醒1】</span
-                                >下機前請務必再次檢查您座位周遭及置物袋內是否有您個人的物品，一旦下機後才發覺您有遺漏物品時，需到LOST
-                                and
-                                FOUND填寫找尋，並且需配合其營業時間，部分更需本人親自領取喔!!
-                                另外護照請務必收好，因巴爾幹地區每進出其國家間皆需出示護照，若因護照遺失則無法進出關，而目前我國在巴爾幹地區並無辦事處，若需新辦護照，則皆需請當地助理在其他國家協辦並以最快速的交通工具送專件給您，實際產生之額外費用另計。
-                                <br /><span style="color: #e800d5"
-                                    >■【貼心提醒2】</span
-                                >巴爾幹地區由於大多路段皆無高速公路，行程內所述之行車時間，皆為以正常時速無路況考量之參考時間，敬請諒察!
-                                <!-- /內容編輯器 -->
-
-                                <!-- 餐食住宿 -->
-                                <div class="trip_day_info">
-                                    <div class="trip_day_info_food">
-                                        <div class="trip_day_info_food_title">
-                                            <img
-                                                src="images/20_tripDay_food.png"
-                                            />
-                                            <h5>餐食</h5>
-                                        </div>
-                                        <div class="trip_day_info_food_content">
-                                            早餐 X<br />
-                                            午餐 X<br />
-                                            晚餐 X
-                                        </div>
-                                    </div>
-                                    <div class="trip_day_info_hotel">
-                                        <div class="trip_day_info_hotel_title">
-                                            <img
-                                                src="images/20_tripDay_hotel.png"
-                                            />
-                                            <h5>住宿</h5>
-                                        </div>
-                                        <div
-                                            class="trip_day_info_hotel_content"
-                                        >
-                                            機上或同等級
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trip_day" id="day02">
-                            <div class="trip_day_title trip_day_title_close">
-                                <div class="trip_day_number">
-                                    DAY<span>02</span>
-                                </div>
-                                <h4>伊斯坦堡 / 貝爾格勒BELGRADE【塞爾維亞】</h4>
-                            </div>
-                            <div class="trip_day_content">
-                                <!-- 內容編輯器 -->
-                                今日飛抵<span style="color: #00a8ff"
-                                    >貝爾格勒</span
-                                >—塞爾維亞首都，也是前南斯拉夫聯邦時期的總首都；貝爾格勒位於薩瓦河和多瑙河交匯處，此處也是潘諾尼亞平原和巴爾幹半島的相遇處，也因為位於交通要衝，始終擺脫不了戰火肆虐，不斷地重複著破壞與興建，浴火重生後，如今則帶著神祕色彩，朝向新的道路邁進；貝爾格勒意為白色的城市，這名稱來自於羅馬帝國時期，這裡曾是國家的石材產區，所蘊含的礦石以白灰色為主；薩瓦河貫穿貝爾格勒，以東為舊城區，以西則為「新貝爾格勒」，橋樑的兩端彷彿為不同的世界，舊城區已有兩千多年的歷史，而新貝爾格勒的一切則均發生於1945年之後，新貝爾格勒的街廓為標準的棋盤方格狀，住宅區和商業區涇渭分明，城市的規劃以由北方丘陵上的城堡為起點，現今的共和廣場實為古城牆的疆界所及之處。由於城市發展的脈絡良久，在早先缺乏統合規劃下的結果，導致城市樣貌因應常民生活而呈現零亂。無論是街道系統或建築上，均毫無規則系統，其執政者曾想整理市容，無奈其舊城經千年以來已難以重新規劃，只好在最紊亂中理出一些規則來。1公里長的
-                                <span style="color: #00a8ff"
-                                    >米哈伊洛大公街</span
-                                >是貝爾格勒主要的步行商業街，也是最古老和最有價值的標誌之一，沿街有許多當時最有影響力和最富有的家庭在此建造住宅。<br /><br /><span
-                                    style="color: #2ac800"
-                                    >■【下車參觀】</span
-                                >花之家、聖薩瓦教堂、貝爾格勒城堡、共和廣場、米哈伊洛大街。<br /><span
-                                    style="color: #2ac800"
-                                    >■【參考行車時間距離】</span
-                                >機場20KM/20MIN貝爾格勒
-                                <!-- /內容編輯器 -->
-
-                                <div class="trip_day_content_pic col_3">
-                                    <img
-                                        src="https://api.fnkr.net/testimg/420x310/00CED1/FFF/?text=img+placeholder"
-                                    />
-                                    <img
-                                        src="https://api.fnkr.net/testimg/420x310/00CED1/FFF/?text=img+placeholder"
-                                    />
-                                    <img
-                                        src="https://api.fnkr.net/testimg/420x310/00CED1/FFF/?text=img+placeholder"
-                                    />
-                                </div>
-
-                                <!-- 餐食住宿 -->
-                                <div class="trip_day_info">
-                                    <div class="trip_day_info_food">
-                                        <div class="trip_day_info_food_title">
-                                            <img
-                                                src="images/20_tripDay_food.png"
-                                            />
-                                            <h5>餐食</h5>
-                                        </div>
-                                        <div class="trip_day_info_food_content">
-                                            早餐 飯店內用<br />
-                                            午餐 中華料理七菜一湯<br />
-                                            晚餐 塞爾維亞料理
-                                        </div>
-                                    </div>
-                                    <div class="trip_day_info_hotel">
-                                        <div class="trip_day_info_hotel_title">
-                                            <img
-                                                src="images/20_tripDay_hotel.png"
-                                            />
-                                            <h5>住宿</h5>
-                                        </div>
-                                        <div
-                                            class="trip_day_info_hotel_content"
-                                        >
-                                            METROPOL PALACE(5★) 或<br />
-                                            HYATT REGENCY(5★) 或<br />
-                                            同等級
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trip_day" id="day03">
-                            <div class="trip_day_title trip_day_title_close">
-                                <div class="trip_day_number">
-                                    DAY<span>03</span>
-                                </div>
-                                <h4>
-                                    飯店 - 科文城堡CORVIN CASTLE -錫比烏SIBIU
-                                </h4>
-                            </div>
-                            <div class="trip_day_content">
-                                <!-- 內容編輯器 -->
-                                今日前往歐洲規模最大的城堡之一<span
-                                    style="color: #00a8ff"
-                                    >科文城堡</span
-                                >這座古堡不僅在「世界上最美的城堡」榜上有名，還被評選為羅馬尼亞七大奇蹟之一。傳匈牙利攝政王匈雅提•亞諾什承諾三位來自土耳其囚犯，只要他們鑿井取得水源的話，那麼便了放他們，15年過後，他們終於在28公尺深處發現了水源，可惜匈雅提•亞諾什已逝，而城堡的統治者已為亞諾什的寡婦，而她卻不願意承認這諾言，反將囚犯處以死刑，囚犯死前便在這井上刻：你有水，但卻沒有了仁慈之心。這座城堡的結構非常大，尖塔廊橋護城河，有高塔、堡壘、内部庭院，以及多彩的屋頂和無數窗口和陽台裝飾石雕刻，非常之壯觀。接續探訪舊稱外西凡尼亞地區，SIEBENBURGEN(德語)『七座城市』中最美麗的薩克森要塞城－
-                                <span style="color: #00a8ff">錫比烏</span
-                                >，它有個德文名字HERMANNSTADT赫爾曼城，近幾個世紀以來，一直都是外西凡尼亞的政治中心。也是羅馬尼亞境內最具德國味，你會發現這兒的一切像極了德國，城市裡的建築物融合了巴洛克、文藝復興風格及充滿歷史特色的景觀，也讓錫比烏在2007年獲選為歐洲文化之都。<br /><br /><span
-                                    style="color: #2ac800"
-                                    >■【下車參觀】</span
-                                >聖三一大教堂、騙子橋。<br />
-                                <span style="color: #2ac800">■【含入場卷】</span
-                                >科文城堡。<br />
-                                <span style="color: #2ac800"
-                                    >■【參考行車時間距離】</span
-                                >飯店173KM:3H科文城堡130KM:1.5H錫比烏
-                                <!-- /內容編輯器 -->
-
-                                <div class="trip_day_content_pic col_2">
-                                    <img
-                                        src="https://api.fnkr.net/testimg/625x350/00CED1/FFF/?text=img+placeholder"
-                                    />
-                                    <img
-                                        src="https://api.fnkr.net/testimg/625x350/00CED1/FFF/?text=img+placeholder"
-                                    />
-                                </div>
-
-                                <!-- 餐食住宿 -->
-                                <div class="trip_day_info">
-                                    <div class="trip_day_info_food">
-                                        <div class="trip_day_info_food_title">
-                                            <img
-                                                src="images/20_tripDay_food.png"
-                                            />
-                                            <h5>餐食</h5>
-                                        </div>
-                                        <div class="trip_day_info_food_content">
-                                            早餐 飯店內用<br />
-                                            午餐 鄉村料理<br />
-                                            晚餐 羅馬尼亞料理
-                                        </div>
-                                    </div>
-                                    <div class="trip_day_info_hotel">
-                                        <div class="trip_day_info_hotel_title">
-                                            <img
-                                                src="images/20_tripDay_hotel.png"
-                                            />
-                                            <h5>住宿</h5>
-                                        </div>
-                                        <div
-                                            class="trip_day_info_hotel_content"
-                                        >
-                                            HILTON(5★)
-                                            或當地僅此一家五星飯店，<br />
-                                            如遇滿則改為D8.D9住宿順序調整或改為四星飯店則每人退費20歐元
-                                            <br />
-                                            或同等級
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trip_day" id="day04">
-                            <div class="trip_day_title trip_day_title_close">
-                                <div class="trip_day_number">
-                                    DAY<span>04</span>
-                                </div>
-                                <h4>
-                                    飯店 - 科文城堡CORVIN CASTLE -錫比烏SIBIU
-                                </h4>
-                            </div>
-                            <div class="trip_day_content">
-                                <!-- 內容編輯器 -->
-                                巴爾幹半島素有歐洲火藥庫之稱，塞爾維亞堪稱火藥庫的中心，疆土因歷年戰火而有多次變化，甚至還掀起第一次世界大戰，二戰也難逃風暴，今日我們將前往多瑙河<span
-                                    style="color: #00a8ff"
-                                    >鐵門國家公園</span
-                                >中的Djerdap峽谷，是多瑙河在羅馬尼亞與塞爾維亞兩國邊境處切斷喀爾巴阡山脈與巴爾幹山脈，形成一系列雄偉險峻的大峽谷，為歐洲最壯麗自然奇觀之一。鐵門峽谷將歐洲兩個重要的文化和經濟地區連接到一起，具有非常重要的戰略地位，它目睹了自史前時代以來當地的緊張形勢。<br /><br />
-                                <span style="color: #2ac800">■【下車參觀】</span
-                                >聖三一大教堂、騙子橋。<br /><span
-                                    style="color: #2ac800"
-                                    >■【含入場卷】</span
-                                >科文城堡。<br /><span style="color: #2ac800"
-                                    >■【參考行車時間距離】</span
-                                >飯店173KM:3H科文城堡130KM:1.5H錫比烏
-                                <!-- /內容編輯器 -->
-
-                                <!-- 餐食住宿 -->
-                                <div class="trip_day_info">
-                                    <div class="trip_day_info_food">
-                                        <div class="trip_day_info_food_title">
-                                            <img
-                                                src="images/20_tripDay_food.png"
-                                            />
-                                            <h5>餐食</h5>
-                                        </div>
-                                        <div class="trip_day_info_food_content">
-                                            早餐 飯店內用<br />
-                                            午餐 鄉村料理<br />
-                                            晚餐 羅馬尼亞料理
-                                        </div>
-                                    </div>
-                                    <div class="trip_day_info_hotel">
-                                        <div class="trip_day_info_hotel_title">
-                                            <img
-                                                src="images/20_tripDay_hotel.png"
-                                            />
-                                            <h5>住宿</h5>
-                                        </div>
-                                        <div
-                                            class="trip_day_info_hotel_content"
-                                        >
-                                            HILTON(5★)
-                                            或當地僅此一家五星飯店，<br />
-                                            如遇滿則改為D8.D9住宿順序調整或改為四星飯店則每人退費20歐元
-                                            <br />
-                                            或同等級
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="content container">
+                    <div class="content-title">
+                        <h1>行程</h1>
+                        <img src="images/date.img/群組 7.png" 
+                        alt="" class="content-img">
+                        <h1>焦點</h1>
                     </div>
-                </section>
+                    <!-- ----------- -->
+                    <img src="images/date.img/群組 8.png" alt="" class="content-hr">
+       
+                               <div class="row">
+                                <div class="col-md-8">
+                                    <div class="content-text">
+                                        <h5>山峰欣賞，超越顛峰</h5>
+                                        <p>※早鳥: 60 天前報名繳訂每人可優惠NT5000元，30 天前報名繳訂每人可優惠NT3000元/ <br>
+                                            ※瑞士山王【馬特洪峰】歐洲屋脊【少女峰】歐洲第一高峰【白朗峰】<br>
+                                            ※交通體驗【2段觀景列車】【2段纜車】</p>
+                                            <h5>山峰欣賞，超越顛峰</h5>
+                                        <p>※早鳥: 60 天前報名繳訂每人可優惠NT5000元，30 天前報名繳訂每人可優惠NT3000元/ <br>
+                                            ※瑞士山王【馬特洪峰】歐洲屋脊【少女峰】歐洲第一高峰【白朗峰】<br>
+                                            ※交通體驗【2段觀景列車】【2段纜車】</p>
+                                            <h5>山峰欣賞，超越顛峰</h5>
+                                        <p>※早鳥: 60 天前報名繳訂每人可優惠NT5000元，30 天前報名繳訂每人可優惠NT3000元/ <br>
+                                            ※瑞士山王【馬特洪峰】歐洲屋脊【少女峰】歐洲第一高峰【白朗峰】<br>
+                                            ※交通體驗【2段觀景列車】【2段纜車】</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 slide">
+                                    <img src="images/date.img/矩形 2 拷貝 3.png" alt="" class="slide-bg">
+                                </div>
+                               </div>
+                        
+                  </div>
 
                 <!-- 解除天數選單 -->
                 <div id="unstick-day"></div>
@@ -1681,6 +1162,8 @@
 
         <!-- JQ -->
         <script src="https://www.artisan.com.tw/js/jquery-1.12.4.min.js"></script>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- owl -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- flatpickr -->
@@ -1696,7 +1179,10 @@
         <script src="js/index_2020.js"></script>
         <!-- 彈跳視窗 -->
         <script src="js/Popup.js"></script>
-
+         <!-- 切換日期 -->
+         <script src="js/headerdate.js"></script>
+         <!-- 淡入淡出 -->
+         <script src="group.js"></script>
         <!-- TripIntroduction js -->
         <script
             type="text/javascript"
@@ -1744,5 +1230,11 @@
                 });
             });
         </script>
+        
+        
+        
+          
+         
+        
     </body>
 </html>
