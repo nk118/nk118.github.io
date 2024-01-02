@@ -347,8 +347,8 @@ hr{
 } 
 .carousel{
     position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
 }
 .carousel-item img{
   width: 400px;
