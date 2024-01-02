@@ -17,204 +17,204 @@
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  left: 8em;
-  margin-right: 10px;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
+  justify-content: right;
+ 
   color: #F22478;
   
 }
 /* 中西歐 */
 .Cwe{
-  
+  justify-content: right;
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #F22478;
+  justify-content: right;
 }
 /* 中亞蒙古國 */
 .Mca{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #A68944;
+  justify-content: right;
 }
 /* 中東 */
 .MiddleEast{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #EEBE00;
+  justify-content: right;
 }
 /* 中國 */
 .China{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #FF3E2A;
+  justify-content: right;
 }
 /* 北歐 */
 .Nordic{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #008D53;
+  justify-content: right;
 }
 /* 東南亞 */
 .SoutheastAsia{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #7244BD;
+  justify-content: right;
 }
 /* 東歐 */
 .EasternEurope{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #EE7B1A;
+  justify-content: right;
 }
 /* 河輪 */
 .RiverBoat{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #0093AD;
+  justify-content: right;
 }
 /* 非洲 */
 .Africa{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #A84503;
+  justify-content: right;
 }
 /* 南亞 */
 .SouthAsia{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #08C19C;
+  justify-content: right;
 }
 /* 南歐 */
 .SouthernEurope{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #0090EC;
+  justify-content: right;
 }
 /* 美洲 */
 .America{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #CB1F1F;
+  justify-content: right;
 }
 /* 海島 */
 .Island{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #00C3ED;
+  justify-content: right;
 }
 .NewZealandAndAustralia{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #79B118;
+  justify-content: right;
 }
 .CruiseShip{
   margin-left: auto;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #0C5BD2;
+  justify-content: right;
 }
 .SouthKorea{
   margin-left: auto;
-  margin-right: 1em;
   width: 50%;
   max-width: 50%;
-  margin-right: 10px;
-  left: 8em;
+  margin-right: 1em;
   align-items: center;
   position: relative;
   display: flex;
   color: #1C34AD;
+    justify-content: right;
 }
 /* 日期結果 */
 .result{
@@ -232,78 +232,94 @@ left: 8em;
 .Cwe{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 中亞蒙古國 */
 .Mca{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 中東 */
 .MiddleEast{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 中國 */
 .China{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 北歐 */
 .Nordic{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 /* 東南亞 */
 }
 .SoutheastAsia{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 東歐 */
 .EasternEurope{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 河輪 */
 .RiverBoat{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 非洲 */
 .Africa{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 南亞 */
 .SouthAsia{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 南歐 */
 .SouthernEurope{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 美洲 */
 .America{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 /* 海島 */
 .Island{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 .NewZealandAndAustralia{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 .CruiseShip{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 .SouthKorea{
   margin-left: 0;
   width: 100%;
+  max-width: 100%;
 }
 }
 @media only screen and (max-width: 768px){
@@ -401,80 +417,96 @@ left: 8em;
 .Cwe{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 中亞蒙古國 */
 .Mca{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 中東 */
 .MiddleEast{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 中國 */
 .China{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 北歐 */
 .Nordic{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 /* 東南亞 */
 }
 .SoutheastAsia{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 東歐 */
 .EasternEurope{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 河輪 */
 .RiverBoat{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 非洲 */
 .Africa{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 南亞 */
 .SouthAsia{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 南歐 */
 .SouthernEurope{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 美洲 */
 .America{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 海島 */
 .Island{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 紐澳 */
 .NewZealandAndAustralia{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 遊輪 */
 .CruiseShip{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 /* 韓國 */
 .SouthKorea{
   margin-left: 50px;
   width: 100%;
+  max-width: 100%;
 }
 }
