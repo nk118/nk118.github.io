@@ -7,8 +7,12 @@
 .stroke_content h5{
   margin: 0 5px;
 }
+
 #price_project{
-   width: 100px;
+  display: flex;
+  justify-content: left;
+   width: 150px;
+   max-width: 150px;
   flex-wrap: nowrap;
 }
 
@@ -22,7 +26,6 @@
   position: relative;
   display: flex;
   justify-content: right;
- 
   color: #F22478;
   
 }
@@ -220,103 +223,152 @@
 .result{
   padding-left: 5px;
   width: 70%;
-}
+  color:#676767 ;}
 /* 手機版 */
 @media only screen and (max-width: 600px) {
-  
+
+#price{
+  display: flex;
+}
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   white-space: nowrap;
+   
+}
+
+  #content{
+    line-height: 2;
+  }
   .Japan{
+    font-size: 16px;
+    white-space: nowrap;
+    right: 4.5em;
     margin-left: 0;
     width: 100%;
   }
   /* 中西歐 */
 .Cwe{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 中亞蒙古國 */
 .Mca{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 中東 */
 .MiddleEast{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 中國 */
 .China{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 北歐 */
 .Nordic{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 /* 東南亞 */
 }
 .SoutheastAsia{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 東歐 */
 .EasternEurope{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 河輪 */
 .RiverBoat{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 非洲 */
 .Africa{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 南亞 */
 .SouthAsia{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 南歐 */
 .SouthernEurope{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 美洲 */
 .America{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 /* 海島 */
 .Island{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 .NewZealandAndAustralia{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 .CruiseShip{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;
 }
 .SouthKorea{
+  white-space: nowrap;
+    right: 4.5em;
   margin-left: 0;
   width: 100%;
   max-width: 100%;

@@ -360,6 +360,11 @@ hr{
   position: relative;
   margin-top: 10em;
 }
+.section-5-1{
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
  .s5-img1{
  position: absolute;
  top: 5%;
@@ -381,6 +386,24 @@ hr{
   border-bottom-right-radius: 20px; /* 右下角圆角半径 */
   
  }
+ .slick-next {
+  right: 10px;
+  background: rgb(243, 243, 243) !important;
+  border-radius: 7px;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 2;
+  background: rgb(243, 243, 243) !important;
+  border-radius: 7px;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+}
 
  .section-5-2{
   width: 100%;
@@ -411,12 +434,168 @@ hr{
  .slide-item{
   padding: 0 2em;
  }
- .slider{
+ .slider-5{
   position: relative;
   top: -7em;
  }
+.section-5-3{
+  width: 100%;
+  background-color: #F7E8E8;
+  
+}
+.section5-3-text{
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  top: 30%;
+}
+.section5-3-text h1{
+  letter-spacing: 8px;
+  font-weight: 550;
+}
+.section5-3-text h3{
+  background-color: white;
+  padding: 5px 0;
+  border-top-left-radius: 15px; /* 左上角圆角半径 */
+  border-bottom-right-radius: 15px; /* 右下角圆角半径 */
+}
+.section5-3-text p{
+  text-align: left;
+  padding-top: 30px;
+  font-size: 14px;
+  letter-spacing: 6px;
+  line-height: 1.8;
+  font-weight: 550;
+}
+#section-5-3-img{
+  width: 900px;
+  position: relative;
+ top: 20%;
+ z-index: 2;
+ background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 10) 100%);
+}
+#section-5-3-img img{
+width: 200px;
+height: 175px;
+padding: 0 1em;
+border-radius: 50%;
+border: 5px  solid #E5B9BE;
+padding: 0;
+}
+.textimg{
+ position: relative;
+ left: 20%;
+  width: 350px;
+  height: 200px;
+}
 
+#slide-item{
+position: relative;
+}
+#slide-item h5{
+  position: absolute;
+  top: 80%;
+font-size: 12px;
+background-color: #DCBFBF;
+padding: 5px;
+}
+.section-6{
+  
+width: 100%;
+max-width: 100%;
+position: relative;
+background-repeat: no-repeat;
+overflow: hidden;
+background-size: cover;
+margin-bottom: 0;
+}
 
+.section-6-img1{
+  width: 100%;
+  bottom: 50em;
+  left: 70em;
+  position: relative;
+}
+.section-6-text{
+  position: absolute;
+  top: 25%;
+  left: 69%;
+}
+.s6-text1{
+  text-align: center;
+  font-size: 14px;
+  color: #d68f8c;
+}
+.s6-text2{
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+.s6-text3{
+  text-align: center;
+  background-color: #acdeff;
+  border-top-left-radius: 15px; /* 左上角圆角半径 */
+  border-bottom-right-radius: 15px; /* 右下角圆角半径 */
+}
+.s6-text4{
+  margin-top: 20px;
+}
+.s6-title{
+  position: absolute;
+  top: 16%;
+  left: 9.9%;
+  background-color: #F0E5E9;
+  font-weight: 900;
+  padding: 5px;
+}
+.section-7{
+width: 100%;
+max-width: 100%;
+position: relative;
+background-repeat: no-repeat;
+overflow: hidden;
+background-size: cover;
+bottom: 20em;
+margin: 0;
+}
+.s7-title{
+  position: absolute;
+  top: 8%;
+  left: 89.5%;
+  background-color: #F0E5E9;
+  font-weight: 900;
+  padding: 5px;
+  z-index: 1;
+}
+.section-7-img1{
+  width: 100%;
+  bottom: 60em;
+  left: 5em;
+  position: relative;
+}
+.s7-title-bg{
+  position: absolute;
+  top: 5em;
+  left: 20em;
+}
+.section-7-text{
+  position: absolute;
+  top: 15%;
+  left:8%;
+}
+.section-8 img{
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  bottom: 40em;
+  
+}
+.section-9{
+  position: relative;
+  bottom: 20em;
+  left: 10em;
+}
 
 
 
