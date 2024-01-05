@@ -2,6 +2,24 @@
   padding: 0;
   margin: 0;
 }
+.banner ul{
+  
+  display: flex;
+  color: #fafafa;
+}
+.banner ul li{
+  font-size: 18px;
+  padding: 10px 1em;
+}
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8C001A;
+}
+
+
+
 #phone{
   display: none;
 }
@@ -18,11 +36,13 @@
 }
 .containerTrip {
   width: 100%;
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-  align-items: flex-start; 
   margin-bottom: 20px;
+}
+.section-1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #tripgo-mb{
   display: flex;
@@ -37,25 +57,31 @@
   max-width: 100%;
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: end;
+  margin-left: 20em;
+  margin-top: 10em;
 }
 .titletext h2{
   font-size: 30px;
   font-weight: 400;
 }
-.titletext img{
-  margin:  0 10px;
+.titletext h3{
+  color: #f5dcdc;
+}
+.title-head hr{
+  width: 30%;
+  margin-left: 23em;
 }
 /* tripgo */
 .tripgo{
-  flex: 0 0 50%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 70% */
   width: 100%;
   display: flex;
-  margin-top: 30px;
+  margin-left: 20em;
 }
+
 .tripgo h2{
   
-  font-size: 25px;
+  font-size: 22px;
 }
 .goouthr{
   border: 1px solid rgb(179, 177, 177);
@@ -91,27 +117,33 @@ hr{
   margin-top: 10px;
   display: flex;
 }
+
  .seat h2{
   padding: 0 9px;
 } 
 .seatborderh2{
   border-left: 1px solid black;
-  padding-left: 10px;
+  
 }
 .seatborderh3{
-  margin-left: 20px;
+  margin-left: 10px;
   border-left: 1px solid black;
   padding-left: 10px;
 }
 
 
 /* tripdate */
+#wrapper{
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .tripdate{
 display: block;
-  flex: 0 0 50%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 30% */
   border: 1px solid black;
-  width: 500px;
-  height: 350px;
+  width: 80%;
+  height: 450px;
 }
 .tripdate {
   
@@ -155,6 +187,14 @@ display: block;
   color: white;
   font-family: 900;
 }
+.titledate span{
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  justify-content: center;
+  font-size: 21px;
+  
+}
 .titledate span:nth-child(1),
 .titledate span:nth-child(2),
 .titledate span:nth-child(4) {
@@ -185,7 +225,9 @@ display: block;
 .datemain span:nth-child(3) {
   flex: 1; /* 設置第三个 span 元素占用較小的寬度 */
 }
-
+.datemain span{
+  font-size: 22px;
+}
 
 
 .datemain-container {
@@ -270,17 +312,24 @@ display: block;
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-left: 15em;
+  position: relative;
 }
 .featuretitle img{
   margin: 0 10px;
 }
 .featuretitle h2{
-  font-size: 18px;
+  font-size: 20px;
  font-weight: 900;
   color:#f5dcdc ;
   margin: 0 10px;
+  font-weight: 900;
 }
+.section-3 hr{
+  width: 80%;
+  margin-left: 16em;
 
+}
 
 
 
@@ -496,7 +545,7 @@ margin-bottom: 0;
 .section-6-text{
   position: absolute;
   top: 25%;
-  left: 69%;
+  left: 55%;
 }
 .s6-text1{
   text-align: center;
@@ -520,7 +569,7 @@ margin-bottom: 0;
 .s6-title{
   position: absolute;
   top: 16%;
-  left: 9.9%;
+  left: 7.9%;
   background-color: #F0E5E9;
   font-weight: 900;
   padding: 5px;
@@ -538,7 +587,7 @@ margin: 0;
 .s7-title{
   position: absolute;
   top: 8%;
-  left: 89.5%;
+  left: 74.5%;
   background-color: #F0E5E9;
   font-weight: 900;
   padding: 5px;
@@ -558,7 +607,7 @@ margin: 0;
 .section-7-text{
   position: absolute;
   top: 15%;
-  left:8%;
+  left:7%;
 }
 .section-8 img{
   width: 100%;
@@ -570,7 +619,7 @@ margin: 0;
 .section-9{
   position: relative;
   bottom: 20em;
-  left: 10em;
+  left: 17em;
 }
 .section-9 hr{
   position: relative;
@@ -703,11 +752,22 @@ td:nth-child(6){
   color: #A1394E;
   display: none;
 }
-/* pc */
 #custom-phone{
   display: none;
 }
 
+#overlay {
+ 
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+}
 @media only screen and (max-width: 768px) {
 #phone{
   display: block;
@@ -715,16 +775,82 @@ td:nth-child(6){
 #pc{
   display: none;
 }
-.fiv.show{
+
+.money-phone{
+  width: 100%;
+position: fixed;
+z-index: 999;
+}
+
+.join{
+  width: 40%;
+  font-size: 20px;
+  background-color: #8C001B;
+text-align: center;
+padding: 25px 0;
+}
+.join span{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+
+}
+.gold{
+  width: 40%;
+background-color: #E8E8E8;
+}
+.gold a{
+  display: flex;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  justify-content: center;
+  align-items: end;
+  padding: 15px 10px;
+}
+
+.closeButton{
+ 
+ background-color: #F5DCDC;
+}
+.cancel{
+  font-size: 30px;
+  position: relative;
+  left: 11em;
+  color: darkgray;
+  
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
-  background-color: #99999999;
+
+  z-index: 500;
+}
+ .overlay{
+  left: 0;
+  top: 0;
  }
+ .phone-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* 其他样式可以根据需要进行调整 */
+}
   .tripdate{
+    z-index: 600;
     background-color: white;
     width: 100%;
-    top: ;
+    max-width: 100%;
+  
     left: 0;
     position: absolute;
     display: none;
@@ -786,6 +912,7 @@ display: flex;
   font-weight: 900;
 }
 .seatborderh2{
+
   font-size: 18px;
 }
 .money{
@@ -882,11 +1009,45 @@ display: flex;
   top: 7em;
   z-index: 0;
 }
-
+#section-6-text{
+  padding: 10px;
 }
-
-@media only screen and (max-width :1366px){
-#tripdate{
-  width: 100%;
+#section-6-text h5{
+  padding: 10px;
+  margin: 0 10px;
 }
+#section-6-text p{
+  font-weight: 900;
+  padding-left: 10px;
+}
+.section-9-phone h6{
+  font-weight: 900;
+}
+.section-9-phone span{
+  color: #A94959;
+  font-weight: 900;
+}
+.section-9-text{
+  margin-left: 20px;
+}
+.explain-phone h5{
+  color: #BC8C36;
+}
+.explain-phone p{
+font-weight: 900;
+}
+.explain-phone a{
+  text-decoration: underline;
+}
+#section-day{
+  display: none;
+}
+}
+@media only screen and (min-width: 768px){
+  .tripdate{
+   
+  }
+  .tripgo{
+    display: flex;
+  }
 }

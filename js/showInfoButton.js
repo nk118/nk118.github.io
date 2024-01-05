@@ -1,45 +1,40 @@
-// function showdate(){
-//    let date = document.getElementById("tripdate");
-//    let fix = $('.fix');
-//    if (date.style.display === 'block') {
-//         // 如果已经显示，则隐藏
-//             date.style.display = 'none';
-           
-//             fix.removeClass('show');
-           
-//         } else {
-//              // 如果隐藏，则显示
-//              date.style.display = 'block';
-//              fix.addClass('show');
-//          }
-      
-//         }
+let date = $("#tripdate");
+let overlay = $("#overlay");
+
 function showdate() {
-    let date = $("#tripdate");
-    let fix = $('.fix');
-    
     if (date.css('display') === 'block') {
         // 如果已经显示，则隐藏
-        date.css('display', 'none');
-        fix.removeClass('show');
+        hideDateWithOverlay(date, overlay);
     } else {
         // 如果隐藏，则显示
-        date.css('display', 'block');
-        fix.addClass('show');
+        showDateWithOverlay(date, overlay);
+
+        // 在这里设置你想要的背景颜色
+        $("#overlay").css("background-color", "#99999999");
+
+     
     }
 }
-// }
-// function showDate() {
-//     let date = document.getElementById("tripdate");
-//     let overlay = document.getElementById("overlay");
 
-//     if (date.style.display === 'block') {
-//         // 如果已经显示，则隐藏
-//         date.style.display = 'none';
-//         overlay.style.display = 'none';
-//     } else {
-//         // 如果隐藏，则显示
-//         date.style.display = 'block';
-//         overlay.style.display = 'block';
-//     }
-// }
+function hideDateWithOverlay(date, overlay) {
+    date.fadeOut();
+    overlay.fadeOut();
+    date.removeClass('show');
+    overlay.removeClass('show');
+    // 在这里重置背景颜色为原始颜色
+    $("#overlay").css("background-color", "");
+}
+
+function showDateWithOverlay(date, overlay) {
+    date.fadeIn();
+    overlay.fadeIn();
+    date.addClass('show');
+    overlay.addClass('show');
+}
+
+$(document).ready(function () {
+    $("#overlay").addClass('show');
+});
+$(".closeButton").on("click", function () {
+     hideDateWithOverlay(date, overlay);
+ });
