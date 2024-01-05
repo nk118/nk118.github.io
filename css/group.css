@@ -1,3 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#phone{
+  display: none;
+}
 .item {
   opacity: 0;
   transform: translateY(20px); /* 将元素向上平移一些距离 */
@@ -17,7 +24,13 @@
   align-items: flex-start; 
   margin-bottom: 20px;
 }
-
+#tripgo-mb{
+  display: flex;
+  white-space: nowrap;
+}
+#title-mb{
+  display: flex;
+}
 /* title */
 .titletext{
   width: 100%;
@@ -82,7 +95,6 @@ hr{
   padding: 0 9px;
 } 
 .seatborderh2{
-  margin-left: 10px;
   border-left: 1px solid black;
   padding-left: 10px;
 }
@@ -95,11 +107,18 @@ hr{
 
 /* tripdate */
 .tripdate{
-
+display: block;
   flex: 0 0 50%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 30% */
   border: 1px solid black;
-  width: 100%;
+  width: 500px;
   height: 350px;
+}
+.tripdate {
+  
+  padding: 0;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
 }
 .headerDate{
   
@@ -167,14 +186,7 @@ hr{
   flex: 1; /* 設置第三个 span 元素占用較小的寬度 */
 }
 
-.tripdate {
-  width: 100%;
-  padding: 0;
-  height: 325px; 
-  overflow: hidden; 
-  display: flex;
-  flex-direction: column;
-}
+
 
 .datemain-container {
   flex: 1; 
@@ -268,55 +280,10 @@ hr{
   color:#f5dcdc ;
   margin: 0 10px;
 }
-.custom-background {
- position: relative;
-  background-image: url('../images/date.img/特色banner.png');
-  background-size: cover;
-  height: 100vh;
- 
-}
-.custom-background img{
-  position: relative;
-}
-.bg{
-  top: 30%;
-  left: 35%;
-  z-index: 1;
-}
-.bg1{
-  top: -40%;
-  left: 34%;
-  
-}
-.img1{
-  top: 17%;
-  left: 10%;
-  z-index: 1;
-}
-.img2{
-  top: 40%;
-  left: -15%;
-  z-index: 1;
-}
 
-.custom-background h1{
-  position: relative;
-  text-align: center;
-  letter-spacing: 20px;
-  font-size: 60px;
-  font-weight: 600;
-  top: -3%;
-  z-index: 1;
-}
-.custom-background h4{
-  font-size: 20px;
-  position: relative;
-  text-align: center;
- letter-spacing: 5px;
- font-weight: 900;
-  color: white;
-  z-index: 1;
-}
+
+
+
 .content-title{
   display: flex;
   justify-content: left;
@@ -344,13 +311,17 @@ hr{
   width: 400px;
   height: 350px;
    position: relative;
+   top: 10em;
+   right: 10em;
 } 
-.carousel{
+.carousel-pc{
+  width: 100%;
     position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 35%;
+  left: -20%;
+  
 }
-.carousel-item img{
+.carousel-item-pc img{
   width: 400px;
   height: 350px;
   border-top-left-radius: 50px; /* 左上角圆角半径 */
@@ -359,6 +330,8 @@ hr{
 .section-5{
   position: relative;
   margin-top: 10em;
+  background-size: cover;
+  overflow: hidden;
 }
 .section-5-1{
   background-size: cover;
@@ -433,11 +406,8 @@ hr{
  }
  .slide-item{
   padding: 0 2em;
- }
- .slider-5{
-  position: relative;
-  top: -7em;
- }
+ } 
+
 .section-5-3{
   width: 100%;
   background-color: #F7E8E8;
@@ -467,6 +437,10 @@ hr{
   letter-spacing: 6px;
   line-height: 1.8;
   font-weight: 550;
+}
+.slide-phone{
+  width: 100%;
+  height: auto;
 }
 #section-5-3-img{
   width: 900px;
@@ -510,7 +484,9 @@ overflow: hidden;
 background-size: cover;
 margin-bottom: 0;
 }
-
+.section-6-title{
+  width: 100%;
+}
 .section-6-img1{
   width: 100%;
   bottom: 50em;
@@ -596,47 +572,321 @@ margin: 0;
   bottom: 20em;
   left: 10em;
 }
+.section-9 hr{
+  position: relative;
+  width: 100%;
+  top: -1em;
+  left: 0;
+  color: #c9c9c9;
+}
+.s9title{
+  
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.s9title img{
+  width: 40px;
+  margin: 0 10px;
+  
+}
+.s9title h2{
+  font-size:30px;
+ font-weight: 900;
+  color:#f5dcdc ;
+  margin: 0 10px;
+}
+.table {
+  width: 100%;
+  height: 400px;
+  border-collapse: collapse;
+  
+  margin: 0 auto;
+}
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
 
+table {
+  width: 80%;
+  border: 3px solid #B84F60 /* 对整个表格添加边框 */
+}
+.table td{
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 900;
+}
+.table th{
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom:
+  3px solid #DA9EAC;
+}
+th, td {
+  border: 1px solid #FAB9C1; /* 对表格单元格添加边框 */
+  
+  letter-spacing: 5px;
+  text-align: center; /* 在单元格中居中对齐文本 */
+  vertical-align: middle;
+}
+.table h6 {
+  margin: 0; /* 重置margin，确保没有额外的间距 */
+  line-height: 1; /* 设置行高为1，有助于垂直居中 */
+  vertical-align: middle;
+text-align: left;
+font-weight: 900;
+}
+.table td h6 {
+  margin-left: 18px; /* 为了避免与单元格内容太靠近，添加一些右边距 */
+}
+td:first-child, th:first-child { /* 选择每行中第一个单元格，包括th和td */
+  background-color: #C06173;
+  color: white;
+  
+}
+th:not(:first-child){
+  background-color: #FFEFEE;
+  color: black;
+}
+td:nth-child(2){
+  background-color: #FFEFEE; /* 将日期列的背景颜色设为深红色 */
+  color: #BE6177;
+}
+td:nth-child(4){
+  background-color: #FFEFEE; /* 将日期列的背景颜色设为深红色 */
+  color: black;
+}
+td:nth-child(6){
+  background-color: #FFEFEE; /* 将日期列的背景颜色设为深红色 */
+  color: black;
+}
+.explain{
+  margin-top: 10px;
+  width: 80%;
+  background-color: #F4F3F3;
+  padding: 2em;
+}
+.explain h5{
+  color: #C89F62;
+}
+.everydaytitle{
+  display: flex;
+  align-items: center;
+  letter-spacing: 8px;
+  margin-bottom: 5em;
+}
+.everydaytitle h4{
+  color:#f5dcdc ;
+}
+.everydaytitle img{
+  margin: 0 5px;
+}
+.trip-text{
+  padding: 2em;
+  font-weight: 900;
+  background-color: #F3F3F3;
+}
+.trip-text span{
+  font-size: 20px;
+}
+.trip-text p{
+  font-size: 15px;
+}
 
+.button{
+  padding: 1em;
+  border: none;
+  background-color: #F5DFDC;
+  color: #A1394E;
+  display: none;
+}
+/* pc */
+#custom-phone{
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
-  .tripdate{
-    display: none;
-  }
-.containerTrip{
-  position: relative;
-}
-.goout{
-  width: 50%;
-}
-.goout h2, .goout h3{
-  font-weight: 900;
-  font-size: 15px;
-}
-.goouthr{
+#phone{
   display: block;
 }
+#pc{
+  display: none;
+}
+.fiv.show{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #99999999;
+ }
+  .tripdate{
+    background-color: white;
+    width: 100%;
+    top: ;
+    left: 0;
+    position: absolute;
+    display: none;
+  }
+  .button{
+    display: block;
+  }
+.titletext{
+  display: block;
+}
+#title-mb{
+display: flex;
+}
+#hr-mb{
+  width: 100%;
+}
+.tripgo{
+  width: 100%;
+  display: block;
+}
+#tripgo-mb{
+  width: 100%;
+  display: flex;
+   
+}
+#tripgo-mb h2{
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 900;
+}
+#tripgo-mb h3{
+  font-size: 18px;
+}
+
 .goout hr{
-  margin-top: 0;
-  width: 130px;
+  width: 100%;
 }
 .plane{
-  width: 50%;
+  margin-left: 2.3em;
 }
-.plane h2, .plane h3{
+.plane hr{
+  width: 100%;
+}
+.seatsTitle{
+  width: 100%;
+  white-space: nowrap;
+}
+.visa{
+  position: relative;
+  right: 3.5em;
+}
+#visatitle h2{
+  font-size: 20px;
+  font-weight: 900;
+}
+.seatsTitle h2{
+  font-size: 23px;
+  padding: 0 2px;
+  font-weight: 900;
+}
+.seatborderh2{
+  font-size: 18px;
+}
+.money{
+  left: 5em;
+  top: 2em;
+}
+.money h2{
+  font-weight: 900;
+}
+.button{
+  position: relative;
+  bottom: 3em;
   font-weight: 900;
   font-size: 15px;
 }
-.plane hr{
-  margin-top: 0;
-  width: 130px;
+.map{
+  position: relative;
+  right:12em;
+  width: 100%;
 }
-.custom-background img {
-  width: 100%; /* 图片宽度占据整个父容器宽度 */
-  height: auto; /* 高度自动调整，保持纵横比 */
-  position: static; /* 恢复正常文档流布局 */
-  top: top;
-  left: auto;
+.custom-background{
+  background-image: none;
+  width: 100%;
+}
+
+#custom-pc{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.section-4-img{
+  width: 100%;
+}
+.content-text{
+  width: 100%;
+  padding: 2em;
+}
+.content-text p{
+ line-height:2;
+}
+.slide-bg{
+  width: 400px;
+  height: 350px;
+   position: relative;
+   top: 0;
+   right: 0;
+   padding: 3em;
+} 
+.carousel-pc{
+ width: 100%;
+    position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 3.5em;
+}
+.carousel-pc-img{
+  width: 400px;
+  height: 200px;
+}
+.section-5-1 img{
+  width: 100%;
+}
+.section-5-2-phone{
+  background-color: #F7E8E8;
+}
+.slide-phone{
+  top: -6em;
+  position: relative;
+  padding: 1em 0;
+}
+.section-5-3-phone{
+  background-color: #F7E8E8;
+  position: relative;
+}
+#carousel-bg{
+  margin-top: 1em;
+  
+}
+#item-phone{
+  z-index: 2;
+}
+#item-phone img{
+  width: 200px;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+}
+.phone-text h5{
+  position: relative;
+  width: 100%;
+}
+#item-img{
+  position: relative;
+  top: 7em;
+  z-index: 0;
+}
+
+}
+
+@media only screen and (max-width :1366px){
+#tripdate{
+  width: 100%;
 }
 }

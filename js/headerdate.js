@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 設定月份
   const months = [
-    { month: "2023年12月", containerId: "mon" },
+    { month: "2023年12月", containerId: "thu" },
     { month: "2024年1月", containerId: "mon" },
     { month: "2024年2月", containerId: "thu" },
     { month: "2024年3月", containerId: "thu" },
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   // 初始索引
-  let currentIndex = 2; // 初始为2024年2月
+  let currentIndex = 1; // 初始为2024年2月
 
   // 更新显示的日期内容和相应的 datemain-container
   function updateContent() {
