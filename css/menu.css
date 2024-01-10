@@ -100,15 +100,20 @@
 .sub_menu_box:hover>.sub_sub_menu_wrap {
   height: max-content;
   min-height: 400px;
+  
 }
 
 .sub_sub_menu_wrap{
-  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   height: 0;
   overflow: hidden;
+  position: absolute;
+  transform: translate(50%,0);
+  left: 25%;
+  top: 50%;
+  
 }
 .sub_menu_title.sub_menu_title_open {
   position: relative;
