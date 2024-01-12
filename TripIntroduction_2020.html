@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="css/memberArea.css" />
     <link rel="stylesheet" href="./css/memberLogin_style.css" />
     <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="css/menu.css">
 
 </head>
 
@@ -44,295 +45,644 @@
 
     <div id="wrapper-main">
         <!-- Header -->
-        <header id="header">
-            <div class="header-link">
-                <div class="container">
-                    <div id="logo-m">
-                        <a href="https://www.artisan.com.tw/"><img src="images/logo_m.png" alt="logo" /></a>
-                    </div>
-                    <div id="top-menu">
-                        <a class="js-startbtn"><img src="images/20_link_icon01.png" alt="" />
-                            會員登入</a>
-                        <!-- 登入後出現(會員專區) -->
-                        <a href="myOrder.html"><img src="images/20_link_icon02.png" alt="" />
-                            訂單查詢</a>
-                        <a href="http://b2b.artisan.com.tw/" target="_blank"><img src="images/20_link_icon03.png"
-                                alt="" />
-                            同業專區</a>
-                        <a href="https://www.artisan.com.tw/DMShow.aspx?no=7" target="_blank"><img
-                                src="images/20_link_icon04.png" alt="" />
-                            小心詐騙</a>
-                        <a href="firm.html" target="_blank"><img src="images/20_link_icon02.png" alt="" />
-                            企業專區</a>
-                    </div>
-                    <!-- Pushy Button -->
-                    <button class="menu-btn" title="選單">&#9776;</button>
-                </div>
+       <!-- Header -->
+    <header id="header">
+        <div class="header-link">
+          <div class="container">
+            <div id="logo-m">
+              <a href="https://www.artisan.com.tw/"><img src="images/logo_m.png" alt="logo" /></a>
             </div>
-
-            <!-- Pushy Menu -->
-            <div class="pushy pushy-right" data-focus="#first-link">
-                <div class="pushy-content">
-                    <span class="pushy-close"><img src="images/20_pushy_close.svg" alt="" /></span>
-                    <ul>
-                        <li class="pushy-title">
-                            <a href="javascript:;">國外旅遊</a>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>西歐</button>
-                            <ul>
-                                <li class="pushy-link">
-                                    <a href="" class="exh-title">西歐全覽</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">英‧愛</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">法國</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">瑞士</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">德‧瑞</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">法‧瑞‧義</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">瑞‧義</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">荷‧比‧盧</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">荷‧比‧多國(法國、英國…)</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">德國</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">瑞‧義</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>東歐</button>
-                            <ul>
-                                <li class="pushy-link">
-                                    <a href="" class="exh-title">西歐全覽</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">克斯蒙(巴爾幹)</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">奧‧捷‧匈</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">奧‧捷</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">奧地利</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">捷克(單國)</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">俄羅斯</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">俄羅斯(三小國)</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">波蘭‧波羅的海</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">德‧捷</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">遠東．西伯利亞貝加爾湖</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">白俄羅斯．烏克蘭</a>
-                                </li>
-                                <li class="pushy-link">
-                                    <a href="">匈斯波</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>南歐</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>北歐</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>遊輪</button>
-                        </li>
-
-                        <li class="pushy-submenu">
-                            <button>紐澳</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>南亞</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>古文明</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>美洲</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>大非洲</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>海島</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>東南亞</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>日本</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>中國</button>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>河輪</button>
-                        </li>
-                        <li class="pushy-title pushy-mobileShow">
-                            <a class="js-startbtn">會員登入</a>
-                        </li>
-                        <!-- 登入後出現(會員專區) -->
-                        <li class="pushy-title pushy-mobileShow">
-                            <a href="myOrder.html">訂單查詢</a>
-                        </li>
-                        <li class="pushy-title pushy-mobileShow">
-                            <a href="http://b2b.artisan.com.tw/" target="_blank">同業專區</a>
-                        </li>
-                        <li class="pushy-title pushy-mobileShow">
-                            <a href="firm.html" target="_blank">企業專區</a>
-                        </li>
-                    </ul>
-                </div>
+            <div id="top-menu">
+              <a class="js-startbtn"><img src="images/20_link_icon01_white.png" alt="" /> 會員登入
+              </a>
+              <!-- 登入後出現(會員專區) -->
+              <a href="myOrder.html"><img src="images/20_link_icon02_White.png" alt="" /> 訂單查詢
+              </a>
+              <a href="http://b2b.artisan.com.tw/" target="_blank"><img src="images/20_link_icon03_white.png" alt="" />
+                同業專區
+              </a>
+              <a href="https://www.artisan.com.tw/DMShow.aspx?no=7" target="_blank"><img
+                  src="images/20_link_icon04_white.png" alt="" /> 小心詐騙
+              </a>
+              <a href="firm.html" target="_blank"><img src="images/20_link_icon02_White.png" alt="" /> 企業專區
+              </a>
             </div>
-
-            <div class="modal is-hide">
-                <div id="loginWindow">
-                    <div class="login-page">
-                        <div class="form">
-                            <h5 class="AD_close js-modal-close">X</h5>
-                            <h1>會員登入</h1>
-                            <form class="login-form">
-                                <input type="text" placeholder="身分證字號" />
-                                <input type="password" placeholder="密碼" />
-                                <button>
-                                    <span>登 入</span><img src="images/loginArrow.png" />
-                                </button>
-                                <div class="message">
-                                    <a href="#" class="forget_btn">忘記密碼</a>
-                                </div>
-                                <div class="clean"></div>
-                            </form>
-                            <div class="noticeTxt">
-                                <p>
-                                    還不是會員嗎?<br /><a href="memberSignUp.html">立即註冊</a>享紅利點數優惠
-                                </p>
-                            </div>
-                            <div class="couponTxt">
-                                <h3>巨匠旅遊 加入會員好康一把抓</h3>
-                                <p>
-                                    1. 加入會員即可得到見面紅利<br />
-                                    2. 會員報名國內、外旅遊可累積紅利<br />
-                                    3. 會員生日可享生日紅利<br />
-                                    4. 不定期提供會員專屬優惠旅遊團<br />
-                                    5.
-                                    不定期推出旅遊講座(會員專屬VIP座位)、好康活動...等
-                                    <br />
-                                    6.
-                                    紅利可折抵團費，或於電商平台購物，電商產品享優惠會員資格<br />
-                                    7. LINE@不定時贈點活動
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Pushy Button -->
+            <button class="menu-btn" title="選單" id="phone">&#9776;</button>
+          </div>
+        </div>
+  
+        <!-- Pushy Menu -->
+        <div class="pushy pushy-right" data-focus="#first-link" id="phone">
+          <div class="pushy-content">
+            <span class="pushy-close"><img src="images/20_pushy_close.svg" alt="" /></span>
+            <ul>
+              <li class="pushy-title"><a href="javascript:;">國外旅遊</a></li>
+              <li class="pushy-submenu">
+                <button>西歐</button>
+                <ul>
+                  <li class="pushy-link">
+                    <a href="" class="exh-title">西歐全覽</a>
+                  </li>
+                  <li class="pushy-link"><a href="">英‧愛</a></li>
+                  <li class="pushy-link"><a href="">法國</a></li>
+                  <li class="pushy-link"><a href="">瑞士</a></li>
+                  <li class="pushy-link"><a href="">德‧瑞</a></li>
+                  <li class="pushy-link"><a href="">法‧瑞‧義</a></li>
+                  <li class="pushy-link"><a href="">瑞‧義</a></li>
+                  <li class="pushy-link"><a href="">荷‧比‧盧</a></li>
+                  <li class="pushy-link">
+                    <a href="">荷‧比‧多國(法國、英國…)</a>
+                  </li>
+                  <li class="pushy-link"><a href="">德國</a></li>
+                  <li class="pushy-link"><a href="">瑞‧義</a></li>
+                </ul>
+              </li>
+              <li class="pushy-submenu">
+                <button>東歐</button>
+                <ul>
+                  <li class="pushy-link">
+                    <a href="" class="exh-title">西歐全覽</a>
+                  </li>
+                  <li class="pushy-link"><a href="">克斯蒙(巴爾幹)</a></li>
+                  <li class="pushy-link"><a href="">奧‧捷‧匈</a></li>
+                  <li class="pushy-link"><a href="">奧‧捷</a></li>
+                  <li class="pushy-link"><a href="">奧地利</a></li>
+                  <li class="pushy-link"><a href="">捷克(單國)</a></li>
+                  <li class="pushy-link"><a href="">俄羅斯</a></li>
+                  <li class="pushy-link"><a href="">俄羅斯(三小國)</a></li>
+                  <li class="pushy-link"><a href="">波蘭‧波羅的海</a></li>
+                  <li class="pushy-link"><a href="">德‧捷</a></li>
+                  <li class="pushy-link">
+                    <a href="">遠東．西伯利亞貝加爾湖</a>
+                  </li>
+                  <li class="pushy-link"><a href="">白俄羅斯．烏克蘭</a></li>
+                  <li class="pushy-link"><a href="">匈斯波</a></li>
+                </ul>
+              </li>
+              <li class="pushy-submenu">
+                <button>南歐</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>北歐</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>遊輪</button>
+              </li>
+  
+              <li class="pushy-submenu">
+                <button>紐澳</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>南亞</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>古文明</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>美洲</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>大非洲</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>海島</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>東南亞</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>日本</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>中國</button>
+              </li>
+              <li class="pushy-submenu">
+                <button>河輪</button>
+              </li>
+              <li class="pushy-title pushy-mobileShow">
+                <a class="js-startbtn">會員登入</a>
+              </li>
+              <!-- 登入後出現(會員專區) -->
+              <!-- <li class="pushy-title pushy-mobileShow">
+                <a href="myOrder.html">訂單查詢</a>
+              </li>
+              <li class="pushy-title pushy-mobileShow">
+                <a href="http://b2b.artisan.com.tw/" target="_blank">同業專區</a>
+              </li>
+              <li class="pushy-title pushy-mobileShow">
+                <a href="firm.html" target="_blank">企業專區</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+  
+        <div class="modal is-hide">
+          <div id="loginWindow">
+            <div class="login-page">
+              <div class="form">
+                <h5 class="AD_close js-modal-close">X</h5>
+                <h1>會員登入</h1>
+                <form class="login-form">
+                  <input type="text" placeholder="身分證字號" />
+                  <input type="password" placeholder="密碼" />
+                  <button>
+                    <span>登 入</span><img src="images/loginArrow.png" />
+                  </button>
+                  <div class="message">
+                    <a href="#" class="forget_btn">忘記密碼</a>
+                  </div>
+                  <div class="clean"></div>
+                </form>
+                <div class="noticeTxt">
+                  <p>
+                    還不是會員嗎?<br /><a href="memberSignUp.html">立即註冊</a>享紅利點數優惠
+                  </p>
                 </div>
+                <div class="couponTxt">
+                  <h3>巨匠旅遊 加入會員好康一把抓</h3>
+                  <p>
+                    1. 加入會員即可得到見面紅利<br />
+                    2. 會員報名國內、外旅遊可累積紅利<br />
+                    3. 會員生日可享生日紅利<br />
+                    4. 不定期提供會員專屬優惠旅遊團<br />
+                    5. 不定期推出旅遊講座(會員專屬VIP座位)、好康活動...等 <br />
+                    6.
+                    紅利可折抵團費，或於電商平台購物，電商產品享優惠會員資格<br />
+                    7. LINE@不定時贈點活動
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <div class="modal_B is-hide">
-                <div class="forget">
-                    <div class="forget_page">
-                        <h5 class="AD_close js-modal-close">X</h5>
-                        <h1>忘記密碼</h1>
-                        <div id="forget-nav-tab">
-                            <ul id="menu">
-                                <button>
-                                    <a href="#mail">電子信箱</a>
-                                </button>
-                                <button>
-                                    <a href="#phone">手機號碼</a>
-                                </button>
-                            </ul>
-
-                            <div id="mail" class="content">
-                                <input type="text" placeholder="請輸入E-MAIL(電子信箱)" />
-                            </div>
-
-                            <div id="phone" class="content">
-                                <input type="text" placeholder="請輸入手機號碼" />
-                            </div>
-                            <!-- 送出按鈕後按鈕不見 -->
-                            <button id="enter">
-                                送出<i class="fas fa-chevron-circle-right"></i>
-                            </button>
-                            <!-- 送出按鈕後出現下列文字 -->
-                            <p style="display: none">
-                                已經寄信到您的電子郵件信箱，經由信件重設您的密碼!
-                            </p>
-                        </div>
-                    </div>
+          </div>
+        </div>
+  
+        <div class="modal_B is-hide">
+          <div class="forget">
+            <div class="forget_page">
+              <h5 class="AD_close js-modal-close">X</h5>
+              <h1>忘記密碼</h1>
+              <div id="forget-nav-tab">
+                <ul id="menu">
+                  <button><a href="#mail">電子信箱</a></button>
+                  <button><a href="#phone">手機號碼</a></button>
+                </ul>
+  
+                <div id="mail" class="content">
+                  <input type="text" placeholder="請輸入E-MAIL(電子信箱)" />
                 </div>
+  
+                <div id="phone" class="content">
+                  <input type="text" placeholder="請輸入手機號碼" />
+                </div>
+                <!-- 送出按鈕後按鈕不見 -->
+                <button id="enter">
+                  送出<i class="fas fa-chevron-circle-right"></i>
+                </button>
+                <!-- 送出按鈕後出現下列文字 -->
+                <p style="display: none">
+                  已經寄信到您的電子郵件信箱，經由信件重設您的密碼!
+                </p>
+              </div>
             </div>
-
-            <!-- Site Overlay -->
-            <div class="site-overlay"></div>
-
-            <!-- /Pushy Menu -->
-
-            <nav id="nav">
-                <div class="container">
-                    <div id="logo">
-                        <a href="https://www.artisan.com.tw/"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+        </div>
+  
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+  
+        <!-- /Pushy Menu -->
+  
+        <nav id="nav">
+          <div class="container">
+            <div id="logo">
+              <a href="https://www.artisan.com.tw/"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+  
+  
+  
+            <!-- <div class="banner-news"><span>Final Call＞</span>11/17【巨匠旅遊】獵捕北極光 極地之都摩曼斯克 五星雙城俄羅斯10天超過寬度會自動點點點
+            </div> -->
+            <div class="header-social">
+              <a href="https://www.facebook.com/artisantour/" target="_blank" class="icon-fb"></a>
+              <a href="http://line.me/ti/p/%40rgm1660e" target="_blank" class="icon-line"></a>
+              <a href="https://www.instagram.com/artisan_tour/" target="_blank" class="icon-ig"></a>
+              <a href="https://www.youtube.com/channel/UC0RvsJSeoq2gM_z5gyd6mWA/featured" target="_blank"
+                class="icon-yt"></a>
+              <a href="http://artisan.com.tw/blog" target="_blank" class="icon-blog"></a>
+              <a href="https://artisantour.firstory.io/" target="_blank" class="icon-podcast"></a>
+            </div>
+          </div>
+          <div class="menu-pc">
+            <ul class="nav_wrap">
+              <li class="nav_box">
+                <span class="nav-title">國內旅遊</span>
+                <span class="under_line"></span>
+                <div class="sub_menu">
+                  <div class="sub_menu_wrap">
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>台灣</span></div>
+                      <ul class="sub_menu_list">
+                        <li>離島(金門、馬祖、澎湖)</li>
+                      </ul>
                     </div>
-                    <div class="banner-news">
-                        <span>Final Call＞</span>11/17【巨匠旅遊】獵捕北極光
-                        極地之都摩曼斯克
-                        五星雙城俄羅斯10天超過寬度會自動點點點
-                    </div>
-                    <div class="header-social">
-                        <a href="https://www.facebook.com/artisantour/" target="_blank" class="icon-fb"></a>
-                        <a href="http://line.me/ti/p/%40rgm1660e" target="_blank" class="icon-line"></a>
-                        <a href="https://www.instagram.com/artisan_tour/" target="_blank" class="icon-ig"></a>
-                        <a href="https://www.youtube.com/channel/UC0RvsJSeoq2gM_z5gyd6mWA/featured" target="_blank"
-                            class="icon-yt"></a>
-                    </div>
+                  </div>
                 </div>
-            </nav>
-        </header>
+              </li>
+              <li class="nav_box">
+                <span class="nav-title">國外旅遊</span>
+                <span class="under_line"></span>
+               
+                <div class="sub_menu">
+                  <div class="sub_menu_wrap">
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">中西歐</div>
+                          <li>法國</li>
+                          <li>瑞士</li>
+                          <li>德國</li>
+                          <li>英國</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="sub_menu_box">
+                      <div class="sub_menu_title sub_menu_title_open"><span>歐洲</span></div>
+                      <div class="sub_sub_menu_wrap">
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                        <ul class="sub_menu_list">
+                          <div class="lane">西歐</div>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                          <li>離島(金門、馬祖、澎湖)</li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                
+              </li>
+              <li class="nav_box"><a href="https://www.artisan.com.tw/MiniTour.aspx" class="nav_boxtitle">客製MINI TOUR</a></li>
+              <li class="nav_box"><a href="https://www.luxetravel.com.tw/euro-backpack" class="nav_boxtitle">自由行</a></li>
+              <li class="nav_box"><a href="https://www.artisan.com.tw/fittrip/fittrip.aspx" class="nav_boxtitle">國際機票(機+酒)</a></li>
+            </ul>
+          </div>
+    </div>
+  
+    </div>
+  
+  
+    </nav>
+  
+    </header>
+    <!-- /Header -->
         <!-- /Header -->
-
-        <!-- 行程資料 -->
-        <div id="TripMain" class="container section-1">
-            <div class="TripMain-navigate">
-                <a href="/">首頁</a><a href="/exh/Exhibition.aspx?area_no=2">東歐</a><a
-                    href="/exh/ExhMini.aspx?area_no=2&no=28">克斯蒙(巴爾幹)</a><a href="">其他出發日</a>
-            </div>
-
 
         </div>
 
         <div class="banner">
-            <img src="./images/date.img/banner.png" alt="" class="w-100">
+            <div id="banner">
+                <div class="image-container">   <img src="./images/date.img/banner.png" alt="" class="w-100"></div>
+                <span class="bannertext">四大名峰、二大觀景列車12天</span>
+            </div>
+          
             <div class="menu" id="pc">
                 <ul>
                     <a href="" style="text-decoration: none;">
@@ -355,7 +705,7 @@
                     </a>
                 </ul>
 
-                <div class="menuimg" style="display: flex; justify-content: center; align-items: center;">
+                <div class="menuimg" style="display: flex; justify-content: center; align-items: center; position: relative; left: 4%;">
 
                     <img src="./images/date.img/menu.png" alt="" width="13px">
                     <a href="" style="text-decoration: none;"> 行程下載</a>
@@ -386,7 +736,7 @@
         <div class="title-head">
             <div class="item" data-aos="fade-up" data-aos-offset="50">
                 <div class="titletext">
-                    <div id="title-mb"> <img src="images/date.img/形狀 126.png" alt="">
+                    <div id="title-mb"> <img src="images/date.img/形狀 126.png" alt="" width="37px" height="38px">
                         <h2>團體資訊</h2>
                     </div>
                     <h3>TOURS INFORMATION</h3>
@@ -732,15 +1082,15 @@
                     <div id="carouselExampleIndicators" class="carousel slide carousel-pc" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
+                                aria-label="Slide 2" class="rounded-circle"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                                aria-label="Slide 3" class="rounded-circle"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
+                                aria-label="Slide 4" class="rounded-circle"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
+                                aria-label="Slide 5" class="rounded-circle"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active carousel-item-pc">
@@ -914,11 +1264,15 @@
     <div class="section-5-3 container-fluid" id="pc">
         <div class="row">
             <div class="col-md-4">
-                <img src="./images/date.img/3大鐵道之旅.png" alt="" class="textimg">
+                <div class="textimg">
+                    <h1>3大鐵道之旅</h1>
+                    <span>四大名峰、二大觀景列車</span>
+                    <p>奧地利、捷克深度之旅，絕對是一場視覺、味覺與聽覺的盛宴!無論是想一窺耀眼的古典情趣，或是親臨風格獨特的中世紀季筑，我們要帶您深入神聖羅馬帝國的精隨，讓您天天都有耳目一新的驚喜!</p>
+                </div>
                 <div class="container" id="section-5-3-img">
-                    <div class="slider responsive1">
-                        <div class="slide-item" id="slide-item">
-                            <img src="./images/date.img/特色banner.png" alt="" class="">
+                    <div class="slider responsive1" style="width: 700px; left: 10em;">
+                        <div class="slide-item" id="slide-item" >
+                            <img src="./images/date.img/特色banner.png" alt="">
                             <h5>奧地利</h5>
                         </div>
                         <div class="slide-item" id="slide-item">
@@ -1010,7 +1364,7 @@
 
             <div class="section-6-text">
                 <div class="item" data-aos="fade-left">
-                    <p class="s6-text1">jungfraujoch</p>
+                    <p class="s6-text1" style="margin-bottom: 0;">jungfraujoch</p>
                     <h1 class="s6-text2">鐵道之旅</h1>
                     <h5 class="s6-text3">四大名峰、二大觀景列車</h5>
                     <p class="s6-text4">奧地利、捷克深度之旅，絕對是一場視覺、味覺與聽<br>覺的饗宴！無論是想一窺耀眼的古典情趣，或是親臨<br>風格獨特的中世紀建築，我們要帶您深入神聖羅馬帝
@@ -1026,7 +1380,7 @@
     <div class="section-6    container-fluid" id="phone">
         <div id="section-6-text">
             <img src="./images/date.img/奧地利phone.png" alt="" class="w-100">
-            <p class="s6-text1">jungfraujoch</p>
+            <p class="s6-text1" >jungfraujoch</p>
             <h1 class="s6-text2">鐵道之旅</h1>
             <h5 class="s6-text3">四大名峰、二大觀景列車</h5>
             <p class="s6-text4">奧地利、捷克深度之旅，絕對是一場視覺、味覺與聽<br>覺的饗宴！無論是想一窺耀眼的古典情趣，或是親臨<br>風格獨特的中世紀建築，我們要帶您深入神聖羅馬帝
@@ -1054,7 +1408,7 @@
 
             <div class="section-7-text">
                 <div class="item" data-aos="fade-right">
-                    <p class="s6-text1">jungfraujoch</p>
+                    <p class="s6-text1 " style="margin-bottom: 0;">jungfraujoch</p>
                     <h1 class="s6-text2">鐵道之旅</h1>
                     <h5 class="s6-text3">四大名峰、二大觀景列車</h5>
                     <p class="s6-text4">奧地利、捷克深度之旅，絕對是一場視覺、味覺與聽<br>覺的饗宴！無論是想一窺耀眼的古典情趣，或是親臨<br>風格獨特的中世紀建築，我們要帶您深入神聖羅馬帝
@@ -1146,7 +1500,7 @@
                         </td>
                         <td>阿聯酋航空 EK158</td>
                         <td>15:25</td>
-                        <td>05:00:05+1</td>
+                        <td>00:05+1</td>
                     </tr>
                     <tr>
                         <td>第13天</td>

@@ -5,10 +5,15 @@
 body{
   overflow-x: hidden;
 }
+.banner{
+  position: relative;
+}
 .banner ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 2em;
 }
 .banner ul li{
   font-size: 18px;
@@ -28,7 +33,18 @@ body{
 .menuimg a:first-of-type li {
   border-left: none; 
 }
-
+.image-container {
+  position: relative;
+  text-align: center;
+}
+.bannertext {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* 设置文本颜色，根据实际需要调整 */
+  font-size: 32px; /* 设置文本大小，根据实际需要调整 */
+}
 
 
 .menu{
@@ -108,11 +124,12 @@ body{
   justify-content: left;
   align-items: end;
   margin-top: 10em;
-  margin-left: 20em;
+  margin-left: 23em;
 }
 .titletext h2{
   font-size: 30px;
   font-weight: 400;
+  padding: 0 10px;
 }
 .titletext h3{
   color: #f5dcdc;
@@ -120,13 +137,13 @@ body{
 }
 .title-head hr{
   width: 30%;
-  margin-left: 20em;
+  margin-left: 23em;
 }
 /* tripgo */
 .tripgo{
   width: 100%;
   display: flex;
-  margin-left: 20em;
+  margin-left: 23em;
 }
 
 .tripgo h2{
@@ -139,7 +156,7 @@ body{
 }
 hr{
   border: 1px solid rgb(179, 177, 177);
-  width: 220px;
+  width: 150px;
 
 }
 .state{
@@ -192,8 +209,8 @@ hr{
 #wrapper{
   width: 100%;
   max-width: 100%;
-  display: flex;
-  justify-content: space-around;
+position: relative;
+right: 1%;
 }
 .tripdate{
 display: block;
@@ -301,8 +318,8 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-   top: 10%;
-   left: -30%;
+   top: 5em;
+   left: -35%;
 }
 .money span{
   color: red;
@@ -342,8 +359,8 @@ display: block;
 }
 .tripmap hr{
   position: relative;
-  width: 82%;
-  left: 10%;
+  width: 74%;
+  left: 17%;
   color: #c9c9c9;
 }
 .titlemap{
@@ -351,7 +368,7 @@ display: block;
   display: flex;
   justify-content: left;
   align-items: center;
-  left: 8%;
+  left: 16.4%;
 }
 .titlemap h2{
   
@@ -373,7 +390,7 @@ display: block;
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-left: 15em;
+  margin-left: 22.5em;
   position: relative;
 }
 .featuretitle img{
@@ -387,8 +404,8 @@ display: block;
   font-weight: 900;
 }
 .section-3 hr{
-  width: 80%;
-  margin-left: 16em;
+  width: 74%;
+  margin-left: 23em;
 
 }
 
@@ -421,6 +438,16 @@ display: block;
   font-size: 19px;
   line-height: 2;
 }
+.carousel-indicators .rounded-circle {
+  width: 10px; /* 設定按鈕寬度 */
+  height: 10px; /* 設定按鈕高度 */
+
+}
+
+/* 活動（active）狀態的按鈕樣式 */
+.carousel-indicators .active {
+  background-color: #fff; /* 設定活動按鈕背景顏色 */
+}
 
 .slide-bg{
   width: 500px;
@@ -433,8 +460,8 @@ display: block;
 .carousel-pc{
   width: 500px;
     position: absolute;
-  top: 30%;
-  left: 15%;
+  top: 24%;
+  left: 11%;
 }
 
 .carousel-item-pc img{
@@ -569,8 +596,28 @@ display: block;
   position: relative;
  top: 40%;
  z-index: 2;
- background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 10) 100%);
+ /* background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 10) 100%); */
 }
+#section-5-3-img::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* 设置伪元素的顶部位置为页面高度的一半 */
+  left: 0;
+  width: 100%;
+  height: 50%; /* 设置伪元素的高度为页面高度的一半 */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* 将伪元素置于body的底层 */
+}
+.responsive1 .slick-prev {
+
+  left: -20px; /* 根据需要调整左侧位置 */
+}
+
+/* 样式化右箭头 */
+.responsive1 .slick-next {
+  right: -20px; /* 根据需要调整右侧位置 */
+}
+
 #section-5-3-img img{
 width: 200px;
 height: 175px;
@@ -585,8 +632,25 @@ padding: 0;
   width: 350px;        
   height: 200px;
 }
-
+.textimg h1{
+  letter-spacing: 20px;
+  font-weight: 900;
+  color: #423a3a;
+}
+.textimg span{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;
+  background-color: white;
+  border-top-left-radius: 15px; /* 左上角圆角半径 */
+  border-bottom-right-radius: 15px; /* 右下角圆角半径 */
+}
+.textimg p{
+  margin-top: 30px;
+}
 #slide-item{
+  
 position: relative;
 }
 
@@ -622,8 +686,8 @@ margin-bottom: 0;
 }
 .section-6-text{
   position: absolute;
-  top: 25%;
-  left: 55%;
+  top: 26%;
+  left: 54.5%;
 }
 .s6-text1{
   text-align: center;
@@ -665,7 +729,7 @@ margin: 0;
 .s7-title{
   position: absolute;
   top: 8%;
-  left: 74.5%;
+  left: 89.1%;
   background-color: #F0E5E9;
   font-weight: 900;
   padding: 5px;
@@ -674,18 +738,18 @@ margin: 0;
 .section-7-img1{
   width: 100%;
   bottom: 60em;
-  left: 5em;
+  left: 18em;
   position: relative;
 }
 .s7-title-bg{
   position: absolute;
   top: 5em;
-  left: 20em;
+  left: 40em;
 }
 .section-7-text{
   position: absolute;
   top: 15%;
-  left:7%;
+  left:16%;
 }
 .section-8 img{
   width: 100%;
@@ -704,9 +768,9 @@ margin: 0;
 }
 .section-9 hr{
   position: relative;
-  width: 87%;
+  width: 80%;
   top: -1em;
-  left: 0;
+  left: 1em;
   color: #c9c9c9;
 }
 .s9title{
@@ -735,7 +799,8 @@ margin: 0;
 }
 
 .table {
-  width: 100%;
+  left: 2.3%;
+  width: 97%;
   border-collapse: collapse;
   margin: 0 auto;
 }
@@ -747,7 +812,7 @@ table {
 .table td{
   vertical-align: middle;
   text-align: center;
-  font-weight: 900;
+
 }
 .table th{
   font-size: 20px;
@@ -767,10 +832,9 @@ th, td {
   line-height: 1; /* 设置行高为1，有助于垂直居中 */
   vertical-align: middle;
 text-align: left;
-font-weight: 900;
 }
 .table td h6 {
-  margin-left: 18px; /* 为了避免与单元格内容太靠近，添加一些右边距 */
+  margin-left: 43px; /* 为了避免与单元格内容太靠近，添加一些右边距 */
 }
 td:first-child, th:first-child { /* 选择每行中第一个单元格，包括th和td */
   background-color: #C06173;
@@ -861,7 +925,10 @@ td:nth-child(6){
 #pc{
   display: none;
 }
-
+.bannertext{
+  text-wrap: nowrap;
+  font-size: 20px;
+}
 .money-phone{
   width: 100%;
 position: fixed;

@@ -84,8 +84,9 @@ header#header {
 }
 
 #top-menu {
+  position: relative;
+  left: 10%;
   float: right;
-  margin-right: 150px;
 }
 
 #top-menu a {
@@ -148,6 +149,8 @@ nav#nav {
 
 .header-social {
   float: right;
+  position: relative;
+  left: 9.6%;
   /* width: 165px; */
   margin-top: 20px;
 }
