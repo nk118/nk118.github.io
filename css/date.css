@@ -17,7 +17,7 @@
 }
 #price_project p{
   position: relative;
-  top: 1em;
+  top: 0.2em;
 }
 
 /* 日本 */
@@ -531,6 +531,8 @@
   align-items: center;
 }
 #price_project{
+  position: relative;
+  bottom: 1em;
   display: flex;
   justify-content: right;
 }

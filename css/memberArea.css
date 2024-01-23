@@ -3012,6 +3012,7 @@
             border: none;
         }
         .all_stroke_form .stroke_content {
+            margin-top: 10px;
             flex-wrap: wrap;
         }
         .all_stroke_form .stroke_content #price {
