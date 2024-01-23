@@ -3,8 +3,6 @@
 *.mp4
 *.xlsx
 *.rar
-*.jpg
-*.png
 *.pdf
 
 .vs/
