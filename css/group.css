@@ -733,6 +733,9 @@ background-size: cover;
 bottom: 20em;
 margin: 0;
 }
+.section-7-title{
+  position: absolute;
+}
 .s7-title{
   position: absolute;
   top: 8%;
@@ -754,16 +757,33 @@ margin: 0;
   left: 40em;
 }
 .section-7-text{
-  position: absolute;
-  top: 15%;
-  left:16%;
-}
-.section-8 img{
-  width: 100%;
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 58%;
+  bottom: 80em;
   position: relative;
-  bottom: 40em;
+}
+.section-8{
+  padding: 30px;
+  background-color: gray;
+  bottom: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+  position: relative;
+}
+.s8-title{
+  left: 30%;
+  bottom: 12em;
+  position: relative;
+text-align: center;
   
+}
+.responsive2 img{
+  padding-right: 30px; /* 調整內邊距的值，增加適當的距離 */
+  border-right: 1px solid #B84F60;
 }
 .section-9{
   width: 97%;
