@@ -1,7 +1,7 @@
 AOS.init({
   duration: 1200,
 })
-  
+
 
 $(".responsive").slick({
   dots: true,

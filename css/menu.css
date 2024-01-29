@@ -59,7 +59,7 @@
   left: 0;
   background: rgba(255, 255, 255, .8);
   overflow: hidden;
-  top: 100px;
+  top: 88px;
   display: block;
 }
 .sub_menu_wrap {
@@ -127,7 +127,7 @@
   content: "";
   position: absolute;
   top: 50%; /* 居中横线 */
-  right:0; /* 位于父元素右侧 */
+
   width: 80%; /* 宽度包括一些额外空间，可以根据需要调整 */
   border-top: 2px solid black; /* 可以根据需要调整横线的样式 */
   transform: translateY(-50%); /* 使横线垂直居中 */

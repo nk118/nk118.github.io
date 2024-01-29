@@ -1,4 +1,5 @@
 *{
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -45,7 +46,13 @@ body{
   color: white; /* 设置文本颜色，根据实际需要调整 */
   font-size: 32px; /* 设置文本大小，根据实际需要调整 */
 }
+.datemain-container {
+  display: none;
+}
 
+.active {
+  display: block !important;
+}
 
 .menu{
   display: flex;
@@ -156,7 +163,7 @@ body{
 }
 hr{
   border: 1px solid rgb(179, 177, 177);
-  width: 150px;
+  width: 250px;
 
 }
 .state{
@@ -872,6 +879,7 @@ td:nth-child(6){
 
 }
 .everydaytitle{
+  position: relative;
   display: flex;
   align-items: center;
   letter-spacing: 8px;
@@ -885,16 +893,25 @@ td:nth-child(6){
 }
 .trip-text{
   padding: 2em;
-  font-weight: 900;
   background-color: #F3F3F3;
 }
 .trip-text span{
+  margin-right: 10px;
+  text-wrap: nowrap;
   font-size: 20px;
+  font-weight: 900;
 }
 .trip-text p{
   font-size: 15px;
 }
-
+.trip-text1,
+.trip-text2{
+  display: flex;
+justify-content: left;
+}
+.trip-text2 ul{
+  padding-left: 0;
+}
 .button{
   padding: 1em;
   border: none;
