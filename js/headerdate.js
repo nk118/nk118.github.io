@@ -5,13 +5,21 @@ $(document).ready(function () {
   var currentYear = currentDate.getFullYear();
   
   // 判断当前月份是否有数据，如果没有则向前寻找最近的有数据的月份
+  var maxIterations = 24; // 设置最大迭代次数，防止无限循环
+var iterations = 0;
   while (!$(".datemain-container[trip-date='" + currentYear + "-" + currentMonth + "']").find('.datemain').length > 0) {
       currentMonth--;
       if (currentMonth < 1) {
           currentMonth = 12;
           currentYear--;
       }
+      iterations++;
   }
+  if (iterations >= maxIterations) {
+    alert("发生错误：无法找到具有数据的月份。请检查您的数据或联系管理员。");
+    // 处理超出最大迭代次数的情况，例如显示一个错误消息
+    return;
+}
 
   displayMonth(currentYear, currentMonth);
 
