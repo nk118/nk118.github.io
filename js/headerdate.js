@@ -21,7 +21,7 @@ $(document).ready(function () {
         console.log("Displaying Month: ", year, month);
 
         // 更新日期内容
-        $("#dateContent").text(year + "年" + month + "月");
+        $("#dateContent").text(year + " 年 " + month + " 月");
 
         // 隐藏所有日期内容
         $(".datemain-container").removeClass("active");

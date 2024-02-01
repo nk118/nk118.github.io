@@ -9,25 +9,25 @@ body{
 .banner{
   position: relative;
 }
-.banner ul{
+.menu ul{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 2em;
+  left: 1.8em;
 }
-.banner ul li{
+.menu ul li{
   font-size: 18px;
   padding:0 1em;
   color: #fafafa;
   border-left: 1px solid white ;
   margin: 1em auto;
 }
-.banner ul li a{
+.menu ul li a{
   text-decoration: none;
   
 }
-.banner ul a:first-child li {
+.menu ul a:first-child li {
   border-left: none; /* 取消第一个 li 的左边框 */
   
 }
@@ -39,8 +39,9 @@ body{
   text-align: center;
 }
 .bannertext {
+  max-width: 800px;
   position: absolute;
-  top: 30%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; /* 设置文本颜色，根据实际需要调整 */
@@ -55,6 +56,10 @@ body{
 }
 
 .menu{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -108,7 +113,6 @@ body{
 }
 .containerTrip {
   width: 100%;
-  margin-bottom: 20px;
 }
 .section-1{
   width: 100%;
@@ -130,10 +134,11 @@ body{
   display: flex;
   justify-content: left;
   align-items: end;
-  margin-top: 10em;
+ padding-top: 10em;
   margin-left: 23em;
 }
 .titletext h2{
+  color: #5e4949;
   font-size: 30px;
   font-weight: 400;
   padding: 0 10px;
@@ -143,7 +148,7 @@ body{
   
 }
 .title-head hr{
-  width: 30%;
+  width: 33%;
   margin-left: 23em;
 }
 /* tripgo */
@@ -155,7 +160,7 @@ body{
 
 .tripgo h2{
   
-  font-size: 20px;
+  font-size: 16px;
 }
 .goouthr{
   border: 1px solid rgb(179, 177, 177);
@@ -163,12 +168,12 @@ body{
 }
 hr{
   border: 1px solid rgb(179, 177, 177);
-  width: 150px;
+  width: 170px;
 
 }
 .state{
   font-family: 900;
-  color: blue;
+  color: #0060ff;
 }
 .tripgo h3{
   padding-top: 10px;
@@ -196,10 +201,10 @@ hr{
 }
 
  .seat h2{
-  padding: 0 16px;
+  padding: 0 13.5px;
 } 
 .seat h3{
-  padding: 0 7px;
+  padding: 0 3px;
 }
 .seatborderh2{
   border-left: 1px solid black;
@@ -246,8 +251,8 @@ display: block;
  font-family: 900;
 }
 .headerDate img{
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 17px;
   margin: 0 20px;
 }
 
@@ -312,7 +317,7 @@ display: block;
 .datemain-container {
   flex: 1; 
   overflow-y: auto; 
-  padding-left: 13px;
+  
 }
 
 .datemain {
@@ -360,8 +365,9 @@ display: block;
 
 /* 行程地圖 */
 .tripmap{
+  padding-top: 10em;
+  background-color: #fafafa;
   position: relative;
-  margin-top: 10em;
   width: 100%;
 }
 .tripmap hr{
@@ -464,7 +470,7 @@ display: block;
   width: 500px;
     position: absolute;
   top: 24%;
-  left: 70%;
+  left: 15%;
 }
 
 .carousel-item-pc img{
@@ -534,16 +540,15 @@ display: block;
   padding: 2em;
  }
  .section-5-2-text h5{
-  font-size: 19px;
+  font-size: 15px;
   text-align: center;
   color: #cf7676;
-  margin: 1.2em;
  }
  .section-5-2-text h3{
   text-align: center;
   font-size: 24px;
   font-weight: 900;
-  margin: 1.2em;
+  margin-bottom: 1.2em;
  }
  .section-5-2-text p{
   text-align: left;
@@ -551,11 +556,14 @@ display: block;
   font-weight: 500;
  }
  .slide-item{
-  padding: 0 2em;
+  display: flex;
+  max-width: 330px;
+  max-height: 300px;
  } 
-.slide-item img{
-  max-height: 200px;
-}
+ .slider-item img{
+  max-height: 150px;
+ } 
+
 #slider-mb{
   top: -10em;
 }
@@ -601,19 +609,10 @@ display: block;
  z-index: 2;
  /* background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 10) 100%); */
 }
-#section-5-3-img::after {
-  content: "";
-  position: absolute;
-  top: 50%; /* 设置伪元素的顶部位置为页面高度的一半 */
-  left: 0;
-  width: 100%;
-  height: 50%; /* 设置伪元素的高度为页面高度的一半 */
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1; /* 将伪元素置于body的底层 */
-}
+
 .responsive1 .slick-prev {
 
-  left: -20px; /* 根据需要调整左侧位置 */
+  left: -40px; /* 根据需要调整左侧位置 */
 }
 
 /* 样式化右箭头 */
@@ -622,11 +621,14 @@ display: block;
 }
 
 #section-5-3-img img{
-width: 200px;
-height: 175px;
+width: 280px;
+height: 280px;
 border-radius: 50%;
 border: 5px  solid #E5B9BE;
 padding: 0;
+}
+.slick-dots{
+  display: none;
 }
 .textimg{
  position: relative;
@@ -683,9 +685,11 @@ margin-bottom: 0;
   align-items: center;
   position: absolute;
   align-items: center;
-
-
-  
+}
+.s6-title-bg{
+  position: absolute;
+  top: 5em;
+  left: 12em;
 }
 .section-6-img1{
 right: 25%;
@@ -706,18 +710,24 @@ position: absolute;
   font-weight: 900;
 }
 .s6-text3{
+  margin: 0 50px;
   text-align: center;
   background-color: #acdeff;
   border-top-left-radius: 15px; /* 左上角圆角半径 */
   border-bottom-right-radius: 15px; /* 右下角圆角半径 */
 }
 .s6-text4{
+  margin: 0 50px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 .s6-title{
   position: absolute;
   top: 16%;
-  left: 7.9%;
+  left: 6%;
   background-color: #F0E5E9;
   font-weight: 900;
   padding: 5px;
@@ -749,18 +759,14 @@ margin: 0;
   padding: 5px;
   z-index: 1;
 }
-.section-7-img1{
- 
-  position: absolute;
-}
+
 .s7-title-bg{
   position: absolute;
   top: 5em;
   left: 40em;
 }
 .section-7-text{
-  max-width: 60%;
-z-index: 1;
+position: absolute;
   
 }
 .section-8{
@@ -831,7 +837,7 @@ text-align: center;
 
 table {
   width: 80%;
-  border: 3px solid #B84F60 /* 对整个表格添加边框 */
+  border: 3px solid #C06173 /* 对整个表格添加边框 */
 }
 .table td{
   vertical-align: middle;
@@ -847,7 +853,7 @@ table {
 th, td {
   border: 1px solid #FAB9C1; /* 对表格单元格添加边框 */
   
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-align: center; /* 在单元格中居中对齐文本 */
   vertical-align: middle;
 }
@@ -953,7 +959,7 @@ justify-content: left;
 
 }
 .section-target{
-  margin-top: 20em;
+  margin-top: 30em;
 }
 @media only screen and (max-width: 768px) {
 #phone{
