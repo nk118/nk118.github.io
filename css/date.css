@@ -19,6 +19,9 @@
   position: relative;
   top: 0.2em;
 }
+#content{
+  max-width: 40%;
+}
 
 /* 日本 */
 .Japan  {

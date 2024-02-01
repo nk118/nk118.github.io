@@ -163,7 +163,7 @@ body{
 }
 hr{
   border: 1px solid rgb(179, 177, 177);
-  width: 250px;
+  width: 150px;
 
 }
 .state{
@@ -384,10 +384,6 @@ display: block;
 }
 .titlemap img{
   margin: 0 10px;
-}
-.map{
-
- margin-left: 20em;
 }
 
 
@@ -680,21 +676,24 @@ background-size: cover;
 margin-bottom: 0;
 }
 .section-6-title{
-  width: 100%;
+  top: 25%;
+  left: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-items: center;
+
 
   
 }
 .section-6-img1{
-  width: 30%;
-  bottom: 50em;
-  left: 70em;
-  position: relative;
-  overflow: hidden;
+right: 25%;
+top: 20%;
 }
 .section-6-text{
-  position: absolute;
-  top: 26%;
-  left: 54.5%;
+
+position: absolute;
 }
 .s6-text1{
   text-align: center;
@@ -730,11 +729,16 @@ position: relative;
 background-repeat: no-repeat;
 overflow: hidden;
 background-size: cover;
-bottom: 20em;
 margin: 0;
 }
 .section-7-title{
   position: absolute;
+  display: flex;
+  top: 20%;
+  left: 20%;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
 }
 .s7-title{
   position: absolute;
@@ -746,10 +750,8 @@ margin: 0;
   z-index: 1;
 }
 .section-7-img1{
-  width: 100%;
-  bottom: 60em;
-  left: 18em;
-  position: relative;
+ 
+  position: absolute;
 }
 .s7-title-bg{
   position: absolute;
@@ -757,12 +759,9 @@ margin: 0;
   left: 40em;
 }
 .section-7-text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 58%;
-  bottom: 80em;
-  position: relative;
+  max-width: 60%;
+z-index: 1;
+  
 }
 .section-8{
   padding: 30px;
@@ -786,10 +785,8 @@ text-align: center;
   border-right: 1px solid #E7D9C5;
 }
 .section-9{
+  margin: 30px auto;
   width: 97%;
-  position: relative;
-  bottom: 20em;
-  left: 17em;
   background-size: cover;
 
 }
@@ -954,6 +951,9 @@ justify-content: left;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 
+}
+.section-target{
+  margin-top: 20em;
 }
 @media only screen and (max-width: 768px) {
 #phone{
@@ -1259,6 +1259,7 @@ align-items: center;
     text-decoration: underline;
   }
 }
+
 
 
 

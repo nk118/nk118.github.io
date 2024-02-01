@@ -1,86 +1,66 @@
 $(document).ready(function () {
-  // 初始化当前日期
-  var currentDate = new Date();
-  var currentMonth = currentDate.getMonth() + 1; // 月份是从0开始的，所以要加1
-  var currentYear = currentDate.getFullYear();
-  
-  // 判断当前月份是否有数据，如果没有则向前寻找最近的有数据的月份
-  var maxIterations = 24; // 设置最大迭代次数，防止无限循环
-var iterations = 0;
-  while (!$(".datemain-container[trip-date='" + currentYear + "-" + currentMonth + "']").find('.datemain').length > 0) {
-      currentMonth--;
-      if (currentMonth < 1) {
-          currentMonth = 12;
-          currentYear--;
-      }
-      iterations++;
-  }
-  if (iterations >= maxIterations) {
-    alert("发生错误：无法找到具有数据的月份。请检查您的数据或联系管理员。");
-    // 处理超出最大迭代次数的情况，例如显示一个错误消息
-    return;
-}
+    // 定义 currentMonth 和 currentYear 变量
+    var currentMonth = new Date().getMonth() ; 
+    var currentYear = new Date().getFullYear();
 
-  displayMonth(currentYear, currentMonth);
+    // 初始显示第一筆資料的年月
+    displayMonth(2024, 1); // 假设第一筆資料的年月是2024年1月
 
-  // 点击右箭头切换下一个月
-  $("#rightArrow").on("click", function () {
-      var nextMonth = currentMonth + 1;
-      var nextYear = currentYear;
+    // 点击右箭头切换下一个月
+    $("#rightArrow").on("click", function () {
+        getNextMonth();
+    });
 
-      while (!$(".datemain-container[trip-date='" + nextYear + "-" + nextMonth + "']").find('.datemain').length > 0) {
-          nextMonth++;
-          if (nextMonth > 12) {
-              nextMonth = 1;
-              nextYear++;
-          }
+    // 点击左箭头切换上一个月
+    $("#leftArrow").on("click", function () {
+        getPrevMonth();
+    });
 
-          // 如果超过当前年份之后仍然没有找到有数据的月份，不执行切换操作
-          if (nextYear > currentYear + 1) {
-              return;
-          }
-      }
+    // 显示特定年月的内容
+    function displayMonth(year, month) {
+        console.log("Displaying Month: ", year, month);
 
-      currentMonth = nextMonth;
-      currentYear = nextYear;
-      displayMonth(currentYear, currentMonth);
-  });
+        // 更新日期内容
+        $("#dateContent").text(year + "年" + month + "月");
 
-  // 点击左箭头切换上一个月
-  $("#leftArrow").on("click", function () {
-      var prevMonth = currentMonth - 1;
-      var prevYear = currentYear;
+        // 隐藏所有日期内容
+        $(".datemain-container").removeClass("active");
 
-      while (!$(".datemain-container[trip-date='" + prevYear + "-" + prevMonth + "']").find('.datemain').length > 0) {
-          prevMonth--;
-          if (prevMonth < 1) {
-              prevMonth = 12;
-              prevYear--;
-          }
+        // 显示对应年月的内容
+        var targetContainer = $(".datemain-container[trip-date='" + year + "-" + month + "']");
+        console.log("Target Container: ", targetContainer);
+        if (targetContainer.length > 0) {
+            targetContainer.addClass("active");
+        }
+    }
 
-          // 如果超过当前年份之前仍然没有找到有数据的月份，不执行切换操作
-          if (prevYear < currentYear - 1) {
-              return;
-          }
-      }
+    // 获取下一个月
+    function getNextMonth() {
+        var nextMonth = currentMonth + 1;
+        var nextYear = currentYear;
 
-      currentMonth = prevMonth;
-      currentYear = prevYear;
-      displayMonth(currentYear, currentMonth);
-  });
+        if (nextMonth > 12) {
+            nextMonth = 1;
+            nextYear++;
+        }
 
-  // 显示特定年月的内容
-  function displayMonth(year, month) {
-      // 更新日期内容
-      $("#dateContent").text(year + "年" + month + "月");
+        currentMonth = nextMonth;
+        currentYear = nextYear;
+        displayMonth(currentYear, currentMonth);
+    }
 
-      // 隐藏所有日期内容
-      $(".datemain-container").removeClass("active");
+    // 获取上一个月
+    function getPrevMonth() {
+        var prevMonth = currentMonth - 1;
+        var prevYear = currentYear;
 
-      // 显示对应年月的内容（仅当有数据时）
-      var targetContainer = $(".datemain-container[trip-date='" + year + "-" + month + "']");
-      if (targetContainer.find('.datemain').length > 0) {
-          targetContainer.addClass("active");
-      }
-  }
+        if (prevMonth < 1) {
+            prevMonth = 12;
+            prevYear--;
+        }
+
+        currentMonth = prevMonth;
+        currentYear = prevYear;
+        displayMonth(currentYear, currentMonth);
+    }
 });
