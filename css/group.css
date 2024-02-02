@@ -6,30 +6,36 @@
 body{
   overflow-x: hidden;
 }
+
 .banner{
   position: relative;
 }
-.menu ul{
+.menu2{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 1.8em;
+
 }
-.menu ul li{
+.menu2 li{
   font-size: 18px;
   padding:0 1em;
   color: #fafafa;
   border-left: 1px solid white ;
   margin: 1em auto;
 }
-.menu ul li a{
+.menu2  li a{
   text-decoration: none;
   
 }
-.menu ul a:first-child li {
+.menu2 a:first-child li {
   border-left: none; /* 取消第一个 li 的左边框 */
   
+}
+.menubg{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
 .menuimg a:first-of-type li {
   border-left: none; 
@@ -114,8 +120,8 @@ body{
 .containerTrip {
   width: 100%;
 }
-.section-1{
-  width: 100%;
+
+.section-1bg{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +141,7 @@ body{
   justify-content: left;
   align-items: end;
  padding-top: 10em;
-  margin-left: 23em;
+
 }
 .titletext h2{
   color: #5e4949;
@@ -144,18 +150,23 @@ body{
   padding: 0 10px;
 }
 .titletext h3{
+  font-size: 30px;
   color: #f5dcdc;
+  margin: 10px;
+  font-weight: 900;
   
 }
 .title-head hr{
-  width: 33%;
-  margin-left: 23em;
+  position: relative;
+  left: 1em;
+  width: 44%;
+
 }
 /* tripgo */
 .tripgo{
   width: 100%;
   display: flex;
-  margin-left: 23em;
+
 }
 
 .tripgo h2{
@@ -168,7 +179,7 @@ body{
 }
 hr{
   border: 1px solid rgb(179, 177, 177);
-  width: 170px;
+  width: 150px;
 
 }
 .state{
@@ -193,6 +204,7 @@ hr{
   display: flex;
 }
 .seatsTitle h2{
+  font-weight: 900;
  padding: 0 5px;
 }
 .seat{
@@ -201,6 +213,7 @@ hr{
 }
 
  .seat h2{
+
   padding: 0 13.5px;
 } 
 .seat h3{
@@ -225,13 +238,14 @@ position: relative;
 right: 1%;
 }
 .tripdate{
-display: block;
-  border: 1px solid black;
-  width: 80%;
+margin-left: 0.3em;
+  border: 1px solid #c9c9c9;
+  width: 100%;
   height: 450px;
 }
 .tripdate {
-  
+  position: relative;
+  top: -1.4em;
   padding: 0;
   overflow: hidden; 
   display: flex;
@@ -372,8 +386,8 @@ display: block;
 }
 .tripmap hr{
   position: relative;
-  width: 74%;
-  left: 17%;
+  width: 100%;
+ left: 1em;
   color: #c9c9c9;
 }
 .titlemap{
@@ -381,12 +395,12 @@ display: block;
   display: flex;
   justify-content: left;
   align-items: center;
-  left: 16.4%;
 }
 .titlemap h2{
-  
-  color:#f5dcdc ;
-  margin: 0 10px;
+  font-size: 30px;
+  color: #f5dcdc;
+  margin: 10px;
+  font-weight: 900;
 }
 .titlemap img{
   margin: 0 10px;
@@ -398,23 +412,23 @@ display: block;
 .featuretitle{
   display: flex;
   justify-content: left;
-  align-items: center;
-  margin-left: 22.5em;
+  align-items: end;
+
   position: relative;
 }
 .featuretitle img{
   margin: 0 10px;
 }
 .featuretitle h2{
-  font-size: 20px;
- font-weight: 900;
-  color:#f5dcdc ;
-  margin: 0 10px;
+  font-size: 30px;
+  color: #f5dcdc;
+  margin: 10px;
   font-weight: 900;
 }
 .section-3 hr{
-  width: 74%;
-  margin-left: 23em;
+  width: 100%;
+ position: relative;
+ left: 1em;
 
 }
 
@@ -485,6 +499,15 @@ display: block;
   background-size: cover;
   overflow: hidden;
 }
+.s5slider .slide-item{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.section-5-bg img{
+  max-height: 900px;
+}
+
 .section-5-1{
   background-size: cover;
   background-repeat: no-repeat;
@@ -535,10 +558,15 @@ display: block;
   height: 100vh;
  background-color: #F7E8E8;
  }
+
  .section-5-2-text{
+
+
   background-color: white;
   padding: 2em;
  }
+
+ 
  .section-5-2-text h5{
   font-size: 15px;
   text-align: center;
@@ -556,12 +584,12 @@ display: block;
   font-weight: 500;
  }
  .slide-item{
-  display: flex;
+
   max-width: 330px;
   max-height: 300px;
  } 
  .slider-item img{
-  max-height: 150px;
+  max-height: 300px;
  } 
 
 #slider-mb{
@@ -960,6 +988,21 @@ justify-content: left;
 }
 .section-target{
   margin-top: 30em;
+}
+.everydaytitle{
+  text-wrap: nowrap;
+}
+.everydaytitle h3{
+  color: #5e4949;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+.everydaytitle h4{
+  font-size: 30px;
+  font-weight: 900;
+  color: #f5dcdc;
+  margin: 0 10px;
 }
 @media only screen and (max-width: 768px) {
 #phone{
