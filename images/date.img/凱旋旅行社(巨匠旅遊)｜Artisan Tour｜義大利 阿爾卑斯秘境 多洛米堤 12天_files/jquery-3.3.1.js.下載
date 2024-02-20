@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>您所查找的頁面不存在</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        body {
+            text-align: center;
+            padding-top: 100px;
+            font-family: 'Microsoft JhengHei';
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        h1 {
+            color: #616568;
+            font-size: 48px;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei';
+            margin-bottom: 50px;
+        }
+        
+        h1 span {
+            color: #f88832;
+        }
+        
+        .btn {
+            color: #fff;
+            font-size: 24px;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei';
+            background: #ff4b55;
+            background: linear-gradient(#ff4b55, #ec303b);
+            padding: 10px 100px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        
+        .btn:hover {
+            background: #ec303b;
+        }
+        
+        .btn img {
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 500px) {
+            body {
+                padding-top: 30px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .btn {
+                font-size: 21px;
+                padding: 10px 20%;
+            }
+            .btn img {
+                width: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="/images/oops.jpg" alt="">
+    <h1>您所查找的頁面<span>不存在</span>，請返回首頁！</h1>
+    <a href="https://www.artisan.com.tw/" target="_top" class="btn"><img src="/images/oops_back.png" alt="">返回首頁</a>
+</body>
+
+</html>

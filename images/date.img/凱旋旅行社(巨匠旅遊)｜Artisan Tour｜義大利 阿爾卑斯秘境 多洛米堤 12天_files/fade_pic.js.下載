@@ -1,0 +1,1005 @@
+﻿// JavaScript Document
+$(function(){
+		var $block = $('#fade_pic1'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 3900;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#fade_pic1').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		/*
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+*/
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+	
+	
+	
+// 第二組 fade_pic2
+$(function(){
+		var $block2 = $('#fade_pic2'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic2').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第三組 fade_pic3
+$(function(){
+		var $block3 = $('#fade_pic3'), 
+			$ad3 = $block3.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad3.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad3.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control3 = $('#fade_pic3').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control3.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad3.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control3.length;
+			$control3.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+	
+// 第四組 fade_pic4
+$(function(){
+		var $block4 = $('#fade_pic4'), 
+			$ad4 = $block4.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad4.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad4.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control4 = $('#fade_pic4').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control4.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad4.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control4.length;
+			$control4.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+	
+// 第5組 fade_pic5
+$(function(){
+		var $block5 = $('#fade_pic5'), 
+			$ad5 = $block5.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad5.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad5.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control5 = $('#fade_pic5').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control5.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad5.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control5.length;
+			$control5.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+	
+// 第6組 fade_pic6
+$(function(){
+		var $block6 = $('#fade_pic6'), 
+			$ad6 = $block6.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad6.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad6.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control6 = $('#fade_pic6').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control6.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad6.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control6.length;
+			$control6.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第7組 fade_pic7
+$(function(){
+		var $block7 = $('#fade_pic7'), 
+			$ad7 = $block7.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad7.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad7.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control7 = $('#fade_pic7').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control7.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad7.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control7.length;
+			$control7.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第8組 fade_pic8
+$(function(){
+		var $block8 = $('#fade_pic8'), 
+			$ad8 = $block8.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad8.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad8.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control8 = $('#fade_pic8').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control8.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad8.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control8.length;
+			$control8.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第8組 fade_pic9
+$(function(){
+		var $block9 = $('#fade_pic9'), 
+			$ad9 = $block9.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 4500;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad9.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad9.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control9 = $('#fade_pic9').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control9.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad9.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control9.length;
+			$control9.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+// 第0組 fade_pic0 快速切換
+$(function(){
+		var $block0 = $('#fade_pic0'), 
+			$ad0 = $block0.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 400,	// 淡出的速度
+			fadeInSpeed = 100,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 410;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad0.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad0.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control0 = $('#fade_pic0').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control0.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad0.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control0.length;
+			$control0.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+// 第10組 fade_pic10 偏快切換
+$(function(){
+		var $block10 = $('#fade_pic10'), 
+			$ad10 = $block10.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3000,	// 淡出的速度
+			fadeInSpeed = 800,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 500;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad10.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad10.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control10 = $('#fade_pic10').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control10.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad10.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control10.length;
+			$control10.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第11組 fade_pic11 偏快切換
+$(function(){
+		var $block11 = $('#fade_pic11'), 
+			$ad11 = $block11.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 3500,	// 淡出的速度
+			fadeInSpeed = 1000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 1000;	// 計時器及輪播切換的速度
+		// 先把其它圖片的變成透明
+		$ad11.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad11.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control11 = $('#fade_pic11').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control11.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad11.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control11.length;
+			$control11.eq(showIndex).click();
+		}
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+
+
+// 第十九組 fade_pic19
+$(function(){
+		var $block2 = $('#fade_pic19'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 0,	// 淡出的速度
+			fadeInSpeed = 0,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic19').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+// 第二十組 fade_pic20
+$(function(){
+		var $block2 = $('#fade_pic20'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 0,	// 淡出的速度
+			fadeInSpeed = 0,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic20').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+// 第二十一組快速 fade_pic21
+$(function(){
+		var $block2 = $('#fade_pic21'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 0,	// 淡出的速度
+			fadeInSpeed = 0,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic21').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+
+
+// 第二十二組快速 fade_pic22
+$(function(){
+		var $block2 = $('#fade_pic22'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 0,	// 淡出的速度
+			fadeInSpeed = 0,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic22').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});
+
+// 第二十三組快速 fade_pic23
+$(function(){
+		var $block2 = $('#fade_pic23'), 
+			$ad2 = $block2.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 0,	// 淡出的速度
+			fadeInSpeed = 0,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 500;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad2.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad2.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $control2 = $('#fade_pic23').append($('<div class="control">' + str + '</div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$control2.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad2.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed + fadeInSpeed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $control2.length;
+			$control2.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);	
+	});

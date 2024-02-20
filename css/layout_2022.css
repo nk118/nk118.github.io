@@ -30,6 +30,7 @@ body {
 }
 
 .container {
+  padding-left: 0;
   width: 86vw;
   max-width: 1300px;
   margin: 0 auto;
@@ -85,7 +86,7 @@ header#header {
 
 #top-menu {
   position: relative;
-  right: 1%;
+ left: 1.5%;
   float: right;
 }
 
@@ -109,6 +110,8 @@ nav#nav {
 }
 
 #logo {
+  position: relative;
+  z-index: 102;
   width: 216px;
   height: 56px;
   float: left;
@@ -148,9 +151,10 @@ nav#nav {
 }
 
 .header-social {
+  left: 1%;
   float: right;
   position: relative;
-  right: 1.2%;
+
   /* width: 165px; */
   margin-top: 20px;
 }

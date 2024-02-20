@@ -11,6 +11,7 @@ body{
   position: relative;
 }
 .menu2{
+right: 2.3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +48,7 @@ body{
 .bannertext {
   max-width: 800px;
   position: absolute;
-  top: 43%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; /* 设置文本颜色，根据实际需要调整 */
@@ -91,7 +92,7 @@ body{
 }
 .menu-phone ul{
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: center;
   vertical-align: middle;
   padding: 0;
@@ -135,6 +136,7 @@ body{
 }
 /* title */
 .titletext{
+  right: 1%;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -158,7 +160,7 @@ body{
 }
 .title-head hr{
   position: relative;
-  left: 1em;
+margin-top: 0;
   width: 44%;
 
 }
@@ -166,7 +168,8 @@ body{
 .tripgo{
   width: 100%;
   display: flex;
-
+flex-wrap: wrap;
+justify-content: left;
 }
 
 .tripgo h2{
@@ -238,18 +241,20 @@ position: relative;
 right: 1%;
 }
 .tripdate{
-margin-left: 0.3em;
-  border: 1px solid #c9c9c9;
+left: 2em;
   width: 100%;
   height: 450px;
-}
-.tripdate {
   position: relative;
   top: -1.4em;
   padding: 0;
   overflow: hidden; 
   display: flex;
   flex-direction: column;
+}
+.tripdatee{
+  border: 1px solid #c9c9c9;
+  background-color: #fff;
+  height: 450px;
 }
 .headerDate{
   
@@ -335,6 +340,7 @@ margin-left: 0.3em;
 }
 
 .datemain {
+  background-color: #fff;
   width: 100%;
   border-bottom: 1px solid #ccc; 
   box-sizing: border-box;
@@ -378,6 +384,12 @@ margin-left: 0.3em;
 }
 
 /* 行程地圖 */
+.map{
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 820px;
+}
 .tripmap{
   padding-top: 10em;
   background-color: #fafafa;
@@ -385,21 +397,23 @@ margin-left: 0.3em;
   width: 100%;
 }
 .tripmap hr{
+  margin-top: 5px;
   position: relative;
   width: 100%;
- left: 1em;
+
   color: #c9c9c9;
 }
 .titlemap{
+  right: 1.5%;
   position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
 }
 .titlemap h2{
+  margin-bottom: 0;
   font-size: 30px;
   color: #f5dcdc;
-  margin: 10px;
   font-weight: 900;
 }
 .titlemap img{
@@ -417,7 +431,8 @@ margin-left: 0.3em;
   position: relative;
 }
 .featuretitle img{
-  margin: 0 10px;
+ margin-right: 10px;
+ margin-bottom: 8px;
 }
 .featuretitle h2{
   font-size: 30px;
@@ -425,10 +440,13 @@ margin-left: 0.3em;
   margin: 10px;
   font-weight: 900;
 }
+.section-3{
+  background-color: #fafafa;
+}
 .section-3 hr{
   width: 100%;
  position: relative;
- left: 1em;
+ margin-top: 0;
 
 }
 
@@ -455,10 +473,10 @@ margin-left: 0.3em;
 
 }
 .content-text h5{
-  font-size: 24px;
+  font-size: 20px;
 }
 .content-text p{
-  font-size: 19px;
+  font-size: 15px;
   line-height: 2;
 }
 .carousel-indicators .rounded-circle {
@@ -473,29 +491,44 @@ margin-left: 0.3em;
 }
 
 .slide-bg{
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 500px;
+  max-height: 100%;
    position: relative;
-   top: 10em;
-   z-index: 1;
-   
+   top: 11.5em;
 } 
-.carousel-pc{
-  width: 500px;
-    position: absolute;
-  top: 24%;
-  left: 15%;
+.slide-bg1{
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  max-height: 500px;
+  position: absolute;
+  z-index: 1;
+}
+.carousel-pc
+{
+  max-width: 500px;
+ top: 5%;
+ left: 10%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
 }
 
 .carousel-item-pc img{
+  max-width: 500px;
+  position: relative;
   width: 100%;
  height: 500px;
+
   border-top-left-radius: 50px; /* 左上角圆角半径 */
   border-bottom-right-radius: 50px; /* 右下角圆角半径 */
 }
 .section-5{
+  margin-top: 3em;
   position: relative;
-  margin-top: 10em;
   background-size: cover;
   overflow: hidden;
 }
@@ -504,7 +537,12 @@ margin-left: 0.3em;
  justify-content: space-between;
  align-items: center;
 }
+.section-5-bg{
+  padding-right: 0;
+  height: 900px;
+}
 .section-5-bg img{
+  height: 900px;
   max-height: 900px;
 }
 
@@ -534,28 +572,32 @@ margin-left: 0.3em;
   border-bottom-right-radius: 20px; /* 右下角圆角半径 */
   
  }
+.slick-slide{
+  margin-right: 30px;
+}
+ .slick-dots li button::before{
+  font-size: 0px;
+ }
  .slick-next {
-  right: 10px;
-  background: rgb(243, 243, 243) !important;
   border-radius: 7px;
 }
-
+.slick-next,
+.slick-prev{
+opacity: 0.6;
+}
 .slick-prev {
-  left: 10px;
+
+ 
   z-index: 2;
-  background: rgb(243, 243, 243) !important;
+ 
   border-radius: 7px;
 }
 
 
-.slick-prev:before,
-.slick-next:before {
-  color: rgb(0, 0, 0);
-}
+
 
  .section-5-2{
   width: 100%;
-  height: 100vh;
  background-color: #F7E8E8;
  }
 
@@ -637,15 +679,23 @@ margin-left: 0.3em;
  z-index: 2;
  /* background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 10) 100%); */
 }
-
+.responsive .slick-prev{
+  position: absolute;
+  left: -10%;
+}
+.responsive .slick-next{
+  position: absolute;
+  right: -6.5%;
+}
 .responsive1 .slick-prev {
 
   left: -40px; /* 根据需要调整左侧位置 */
 }
-
 /* 样式化右箭头 */
-.responsive1 .slick-next {
-  right: -20px; /* 根据需要调整右侧位置 */
+.responsive1 .slick-next,
+.responsive1 .slick-prev  {
+ position: absolute;
+ top: 90%;
 }
 
 #section-5-3-img img{
@@ -714,14 +764,23 @@ margin-bottom: 0;
   position: absolute;
   align-items: center;
 }
+.section-6-bg img{
+  max-width: 100%;
+
+}
 .s6-title-bg{
+  width: 1135px;
   position: absolute;
   top: 5em;
   left: 12em;
 }
 .section-6-img1{
+  max-width: 100%;
 right: 25%;
 top: 20%;
+}
+.section-6-img1 img{
+  max-width: 100%;
 }
 .section-6-text{
 
@@ -815,12 +874,22 @@ text-align: center;
   
 }
 .responsive2 img{
+  height: 113px;
   padding-right: 30px; /* 調整內邊距的值，增加適當的距離 */
   border-right: 1px solid #E7D9C5;
 }
+.gift-layout img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-title span{
+  position: relative;
+  left: -1.3em;
+}
+
 .section-9{
   margin: 30px auto;
-  width: 97%;
+  width: 100%;
   background-size: cover;
 
 }
@@ -857,14 +926,14 @@ text-align: center;
 }
 
 .table {
-  left: 2.3%;
-  width: 97%;
+
+  width: 100%;
   border-collapse: collapse;
   margin: 0 auto;
 }
 
 table {
-  width: 80%;
+  width: 100%;
   border: 3px solid #C06173 /* 对整个表格添加边框 */
 }
 .table td{
@@ -917,7 +986,7 @@ td:nth-child(6){
 }
 .explain{
   margin-top: 10px;
-  width: 80%;
+  width: 100%;
   background-color: #F4F3F3;
   padding: 2em;
 }
@@ -987,11 +1056,12 @@ justify-content: left;
 
 }
 .section-target{
+  margin-bottom: 40px;
+}
+.section-target1{
   margin-top: 30em;
 }
-.everydaytitle{
-  text-wrap: nowrap;
-}
+
 .everydaytitle h3{
   color: #5e4949;
   font-size: 30px;
@@ -1004,6 +1074,92 @@ justify-content: left;
   color: #f5dcdc;
   margin: 0 10px;
 }
+.menu-btn, .pushy{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px){
+  header#header{
+    position: static;
+    background-color: #8c001a;
+    height: 70px;
+  }
+#top-menu{
+  display:none
+}
+#logo-m{
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+}
+#nav{
+  display: none;
+}
+.menu-btn, .pushy{
+  display: block;
+}
+.menu-btn{
+  font-size: 1.5rem;
+    margin-top: 10px;
+    background-color: #8c001a;
+    color: #fff;
+    margin-right: 0;
+    margin-left: auto;
+}
+.bannertext{
+  font-size: 25px;
+}
+.menu{
+  text-wrap: nowrap;
+}
+.menu2 li{
+  font-size: 15px;
+}
+.menuimg a{
+  font-size: 15px;
+}
+.responsive2 img{
+  padding-right: 0;
+  border-right: none;
+}
+.slide-bg {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+
+
+}
+@media only screen and (max-width: 1024px){
+  .carousel-pc
+  {
+   top: 8%;
+   left: 8%;
+    position: absolute;
+
+  }
+  .visa{
+    margin-left: 0;
+  }
+  .section-4-img{
+    width: 100%;
+  }
+  .slide-bg{
+    max-width: 100%;
+  }
+
+.datemain span:nth-child(1),
+  .datemain span:nth-child(2),
+  .datemain span:nth-child(4) {
+    flex: 2; /* 設置第一、第二、和第四个 span 元素佔用較大的寬度 */
+  }
+  .datemain span:nth-child(3) {
+    flex: 1; /* 設置第三个 span 元素占用較小的寬度 */
+  }
+}
 @media only screen and (max-width: 768px) {
 #phone{
   display: block;
@@ -1012,17 +1168,17 @@ justify-content: left;
   display: none;
 }
 .bannertext{
-  text-wrap: nowrap;
-  font-size: 20px;
+
+  font-size: 14px;
 }
 .money-phone{
-  width: 50%;
+  width: 100%;
 position: fixed;
 z-index: 999;
 }
 
 .join{
-  width: 30%;
+  width: 100%;
   font-size: 20px;
   background-color: #8C001B;
 text-align: center;
@@ -1039,7 +1195,7 @@ padding: 25px 0;
 
 }
 .gold{
-  width: 15%;
+  width: 100%;
 background-color: #E8E8E8;
 }
 .gold a{
@@ -1051,17 +1207,28 @@ background-color: #E8E8E8;
   align-items: end;
   padding: 15px 10px;
 }
-
+.money-phone .row .col-6{
+  margin: 0;
+  padding: 0;
+}
 .closeButton{
- 
- background-color: #F5DCDC;
+border: none;
+
 }
 .cancel{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
   font-size: 30px;
+
+  color: white;
+}
+.cancel a{
+ 
   position: relative;
-  left: 11em;
-  color: darkgray;
-  
+  color: #fff;
+  text-decoration: none;
 }
 #overlay {
   display: none;
@@ -1088,15 +1255,17 @@ background-color: #E8E8E8;
   /* 其他样式可以根据需要进行调整 */
 }
   .tripdate{
-    z-index: 600;
-    background-color: white;
-    width: 100%;
-    max-width: 100%;
-     right: 0;
     left: 0;
-    position: absolute;
+    z-index: 600;
+    width: 80%;
+    max-width: 100%;
+    position: fixed; /* 或者fixed，如果你想要元素在滾動時也保持在畫面中央 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 這將確保元素的中心正好在畫面的中央 */ /* 或者你想要的任何寬度 */
     display: none;
   }
+
   .button{
     display: block;
   }
@@ -1155,10 +1324,7 @@ align-items: center;
     width: 100%;
     white-space: nowrap;
   }
-  .visa{
-    position: relative;
-    right: 3.5em;
-  }
+ 
   #visatitle h2{
     font-size: 20px;
     font-weight: 900;
@@ -1176,15 +1342,17 @@ align-items: center;
     font-size: 18px;
   }
   .money{
-    left: 5em;
+    left: 7em;
     top: 2em;
   }
   .money h2{
     font-weight: 900;
   }
+
   .button{
     position: relative;
-    bottom: 3em;
+    bottom: 1.5em;
+    left: 2.5em;
     font-weight: 900;
     font-size: 15px;
   }
@@ -1220,26 +1388,18 @@ align-items: center;
     height: 350px;
      position: relative;
      top: 0;
-     right: 3em;
+     right: 10%;
      padding: 3em;
+     margin-bottom: 5em;
   } 
   .carousel-pc{
-  width: 400px;
-      position: absolute;
-    top: 5%;
-    left: -5%;
-    padding: 3.5em;
+     width: 100%;
+     max-width: 500px;
+    top: 20%;
+    left: 20%;
   }
-  .carousel-pc-img{
-    width: 400px;
-    height: 200px;
-  }
-  .carousel-item-pc img{
-    width: 100%;
-    height: 250px;
-    border-top-left-radius: 50px; /* 左上角圆角半径 */
-    border-bottom-right-radius: 50px; /* 右下角圆角半径 */
-  }
+
+
   .section-5-1 img{
     width: 100%;
   }
@@ -1307,7 +1467,57 @@ align-items: center;
   .explain-phone a{
     text-decoration: underline;
   }
+  .section-target1{
+    margin-top: 10px;
+  }
+  .carousel-item-pc img{
+
+    height: 350px;
+  }
+  .slide-bg1{
+    height: 100%;
+    max-height: 500px;
+   }
 }
+@media only screen and (max-width: 600px){
+ .slide-bg1{
+  height: 100%;
+  max-height: 500px;
+ }
+  .titledate span:nth-child(1),
+.titledate span:nth-child(2),
+.titledate span:nth-child(4) {
+  flex: 1; /* 設置第一、第二、和第四个 span 元素佔用較大的寬度 */
+}
+.titledate span:nth-child(3) {
+  flex: 1; /* 設置第三个 span 元素占用較小的寬度 */
+}
+  .datemain span:nth-child(1)
+
+   {
+    flex: 1; /* 設置第一、第二、和第四个 span 元素佔用較大的寬度 */
+  }
+  .datemain span:nth-child(2)
+  {
+   flex: 1; /* 設置第一、第二、和第四个 span 元素佔用較大的寬度 */
+ }
+  .datemain span:nth-child(3),
+  
+  .datemain span:nth-child(4) {
+    flex: 1; /* 設置第三个 span 元素占用較小的寬度 */
+  }
+  .titledate span{
+    font-size: 13px;
+  }
+  .datemain span{
+    font-size: 13px;
+  }
+  .gift-slide{
+   max-width: 200px;
+  }
+}
+
+
 
 
 

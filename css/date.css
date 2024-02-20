@@ -20,7 +20,7 @@
   top: 0.2em;
 }
 #content{
-  max-width: 40%;
+  max-width: 35%;
 }
 
 /* 日本 */
@@ -549,6 +549,7 @@
 }
 
   #content{
+    max-width: 100%;
     line-height: 2;
   }
   .Japan{
@@ -897,7 +898,6 @@
 @media only screen and (max-width: 1024px){
  
   .Japan{
-   
     width: 100%;
      max-width: 100%;
   }

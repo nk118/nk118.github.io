@@ -1,0 +1,46 @@
+﻿#fade_pic0,#fade_pic1,#fade_pic2,#fade_pic3,#fade_pic4,#fade_pic5 ,#fade_pic6 ,#fade_pic7 
+,#fade_pic8 ,#fade_pic9 ,#fade_pic10 ,#fade_pic11 ,#fade_pic19,#fade_pic20,#fade_pic21,#fade_pic22 
+,#fade_pic23 {
+	position: relative;
+	min-width: 980px;
+	width: 100%;
+	overflow:hidden;
+        text-align: center;
+	}
+#fade_pic0 a.ad,#fade_pic1 a.ad,#fade_pic2 a.ad,#fade_pic3 a.ad,#fade_pic4 a.ad,#fade_pic5 a.ad,#fade_pic6 a.ad
+,#fade_pic7 a.ad,#fade_pic8 a.ad,#fade_pic9 a.ad,#fade_pic10 a.ad,#fade_pic11 a.ad,#fade_pic19 a.ad,#fade_pic20 a.ad
+,#fade_pic21 a.ad,#fade_pic22 a.ad,#fade_pic23 a.ad  {
+	position: absolute;
+	top:0;text-align: center;
+	left:0;	/* 讓圖片疊在一起 */
+}
+#fade_pic0 .control,#fade_pic1 .control,#fade_pic2 .control,#fade_pic3 .control,#fade_pic4 .control
+,#fade_pic5 .control,#fade_pic6 .control,#fade_pic7 .control,#fade_pic8 .control,#fade_pic9 .control
+, #fade_pic10 .control, #fade_pic11 .control, #fade_pic19 .control, #fade_pic20 .control , #fade_pic21 .control
+, #fade_pic22 .control, #fade_pic23 .control {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	visibility:hidden;
+}
+#fade_pic0 .control a,#fade_pic1 .control a,#fade_pic2 .control a,#fade_pic3 .control a,#fade_pic4 .control a
+,#fade_pic5 .control a,#fade_pic6 .control a ,#fade_pic7 .control a,#fade_pic8 .control a,#fade_pic9 .control a
+, #fade_pic10 .control a, #fade_pic11 .control a, #fade_pic19 .control a, #fade_pic20 .control a
+, #fade_pic21 .control a, #fade_pic22 .control a, #fade_pic23 .control a {
+	display: inline-block;
+	padding: 3px;
+	margin: 0 3px;
+	width: 16px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+}
+#fade_pic0 .control a.on,#fade_pic1 .control a.on,#fade_pic2 .control a.on,#fade_pic3 .control a.on,#fade_pic4 .control a.on
+,#fade_pic5 .control a.on,#fade_pic6 .control a.on,#fade_pic7 .control a.on,#fade_pic8 .control a.on,#fade_pic9 .control a.on
+, #fade_pic10 .control a.on, #fade_pic11 .control a.on, #fade_pic19 .control a.on, #fade_pic20 .control a.on , #fade_pic21 .control a.on
+, #fade_pic22 .control a.on, #fade_pic23 .control a.on {
+	font-weight: bold;
+	color: #f00;text-align: center;
+}
