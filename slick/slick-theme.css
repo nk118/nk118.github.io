@@ -52,6 +52,7 @@
   font-size: 30px;
   line-height: 1;
   color: black;
+  opacity: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

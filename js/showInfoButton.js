@@ -38,3 +38,6 @@ $(document).ready(function () {
 $(".closeButton").on("click", function () {
      hideDateWithOverlay(date, overlay);
  });
+ $(".overlay").on("click", function () {
+    hideDateWithOverlay(date, overlay);
+});

@@ -89,7 +89,7 @@
   width: 100%;
   transition: .7s;
   left: 0;
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .95);
   overflow: hidden;
   top: 88px;
   display: block;
@@ -101,7 +101,7 @@
 }
 .sub_menu_box {
 
-  padding: 10px 10px;
+  padding: 20px 10px 10px 10px;
 }
 .sub_menu_title span{
   display: block;
@@ -168,7 +168,7 @@
   top: 100%;
   padding-top: 30px;
 
-  background-color: rgba(255, 255, 255, .9); 
+  background: rgba(255, 255, 255, .95);
   width: 100vw;
 
 }
@@ -185,11 +185,14 @@
   border-top: 2px solid black; /* 可以根据需要调整横线的样式 */
   transform: translateY(-50%); /* 使横线垂直居中 */
   margin-left: 10px;
-
 }
-.sub_menu_title:hover span {
+.lane:hover {
   color: #e1294c;
 }
+.lane:hover::after {
+  border-top: 2px solid #e1294c; /* 滑鼠懸停时改变边框颜色 */
+}
+
 .sub_menu_title.sub_menu_title_open + .sub_sub_menu_wrap .sub_menu_list li {
   margin-top: 5px; /* 调整li元素的上边距，使其与横线相隔一定距离 */
 }
@@ -198,9 +201,7 @@
   margin-top: 30%;
   font-size: 15px;
 }
-.lane:hover {
-  color: #e1294c;
-}
+
 .sub_menu_list li:hover {
   color: #e1294c;
 }

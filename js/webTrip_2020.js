@@ -1,14 +1,10 @@
 $(document).ready(function () {
 
     // 分享按鈕
-    $('#shareBlock').cShare({
+    $('#shareBlock').empty().cShare({
         description: 'jQuery plugin - C Share buttons...',
-        showButtons: [
-                'fb',
-                'line'
-            ]
+        showButtons: ['fb', 'line']
     });
-
     // 分享展開
     $('.TripMain-shareBtn').click(function () {
         $('.TripMain-share').slideToggle(500);
