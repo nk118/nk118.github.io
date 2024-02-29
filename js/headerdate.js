@@ -18,8 +18,7 @@ $(document).ready(function () {
 
     // 显示特定年月的内容
     function displayMonth(year, month) {
-        console.log("Displaying Month: ", year, month);
-
+     
         // 更新日期内容
         $("#dateContent").text(year + " 年 " + month + " 月");
 
@@ -28,7 +27,7 @@ $(document).ready(function () {
 
         // 显示对应年月的内容
         var targetContainer = $(".datemain-container[trip-date='" + year + "-" + month + "']");
-        console.log("Target Container: ", targetContainer);
+       
         if (targetContainer.length > 0) {
             targetContainer.addClass("active");
         }

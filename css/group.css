@@ -113,6 +113,9 @@ hr {
 }
 
 .menu-phone {
+  top: 0;
+  z-index: 999;
+  position: sticky;
 padding:  12px 0;
   background-color: #8C001A;
 }
@@ -434,6 +437,7 @@ font-size: 18px;
 }
 
 .money {
+  z-index: 1;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -487,7 +491,7 @@ bottom: -80%;
 }
 
 .tripmap {
-  top: 3em;
+
   padding-top: 5em;
   background-color: #fafafa;
   position: relative;
@@ -695,7 +699,11 @@ height: 37px;
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
+.section-5-1 img {
+  height: 433px;
+  width: 100%;
+  object-fit: cover; /* 防止圖片變形 */
+}
 .s5-img1 {
   position: absolute;
   top: 5%;
@@ -926,8 +934,9 @@ height: 37px;
 }
 
 .textimg p {
+  line-height: 1.7;
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #slide-item {
@@ -1022,6 +1031,7 @@ max-width: 500px;
 }
 
 .s6-text4 {
+  line-height: 1.7;
   margin: 20px 50px;
   font-size: 15px;
   display: flex;
@@ -1119,7 +1129,10 @@ max-width: 500px;
   /* 調整內邊距的值，增加適當的距離 */
   border-right: 1px solid #E7D9C5;
 }
-
+.gift-layout{
+  position: relative;
+  left: 5em;
+}
 .gift-layout img {
   display: inline-block;
   vertical-align: middle;
@@ -1127,7 +1140,7 @@ max-width: 500px;
 
 .main-title span {
   position: relative;
-  left: -2.5em;
+
 }
 
 .section-9 {
@@ -1288,7 +1301,7 @@ td:nth-child(6) {
 .everydaytitle {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-top: 5em;
   margin-bottom: 8px;
 }
@@ -1341,13 +1354,15 @@ td:nth-child(6) {
 }
 
 .button {
-  padding: 1em;
+  padding: 10px;
   border: none;
   background-color: #F5DFDC;
   color: #A1394E;
   display: none;
 }
-
+.hr-phone{
+  display: none;
+}
 #custom-phone {
   display: none;
 }
@@ -1498,14 +1513,14 @@ td:nth-child(6) {
     font-size: 13px;
   }
 
-  .section-5-3 {
-    padding-top: 5em;
-  }
+
 
   .section-5-3-img {
     left: 5em;
   }
-
+.gift-layout{
+  left: 2em;
+}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1560,9 +1575,9 @@ td:nth-child(6) {
     max-width: 100%;
   }
 
-  .section-5 {
+  /* .section-5 {
     margin-top: 10em;
-  }
+  } */
 
   .datemain span:nth-child(1),
   .datemain span:nth-child(2),
@@ -1598,7 +1613,7 @@ td:nth-child(6) {
   .section-5-3-img {
     left: 0;
     padding-left: 4em;
-    padding-top: 3em;
+    padding-top: 4em;
 
     padding-bottom: 2em;
   }
@@ -1616,13 +1631,8 @@ td:nth-child(6) {
     left: -1em;
   }
 
-  .main-title span {
-    left: -1em;
-  }
 
-  h3.main-title:after {
-    left: 46.5%;
-  }
+
 }
 
 @media only screen and (max-width: 996px) {
@@ -1635,7 +1645,9 @@ td:nth-child(6) {
   #phone {
     display: block;
   }
-
+  .hr-phone{
+    display: block;
+  }
   .pc {
     display: none;
   }
@@ -1647,6 +1659,7 @@ td:nth-child(6) {
     font-size: 26px;
   }
   .image-container img{
+    object-fit: cover; /* 防止圖片變形 */
   height: 300px;
     position: relative;
     text-align: center;
@@ -1700,7 +1713,7 @@ td:nth-child(6) {
     font-weight: 900;
     text-align: center;
     justify-content: center;
-    align-items: end;
+    align-items: baseline;
     padding: 15px 10px;
   }
 
@@ -1711,7 +1724,6 @@ td:nth-child(6) {
 
   .closeButton {
     border: none;
-
   }
 .phone-button{
   background-color: #fafafa;
@@ -1829,7 +1841,7 @@ top: 4.5px;
   }
 
   #tripgo-mb h2 {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0;
   }
 
@@ -1855,7 +1867,7 @@ top: 4.5px;
   }
 
   #visatitle h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
   }
 
@@ -1867,7 +1879,9 @@ top: 4.5px;
   .seat h2 {
     padding: 0 15.5px;
   }
-
+.bordertitle{
+  left: 7.4%;
+}
   .seatborderh2 {
 
     font-size: 18px;
@@ -1881,8 +1895,8 @@ top: 4.5px;
 
   .button {
     position: relative;
-    bottom: -1em;
-    left: 2.5em;
+    bottom: -1.3em;
+    left: 2em;
     font-weight: 900;
     font-size: 15px;
   }
@@ -1914,6 +1928,11 @@ top: 4.5px;
     width: 100%;
     max-width: 100%;
   }
+  .feature{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
   .featuretitle img{
     position: relative;
     top: 4.5px;
@@ -1942,11 +1961,11 @@ top: 4.5px;
   }
 
   .slide-bg {
-    width: 400px;
+    width: 310px;
     height: 350px;
     position: relative;
     top: 0;
-    left: 0;
+    left: 2%;
     margin-bottom: 5em;
   }
 
@@ -1956,27 +1975,42 @@ top: 4.5px;
 
     left: 10%;
   }
-
+.textimg{
+  padding: 15px;
+}
 
   .section-5-1 img {
+    height: 433px;
     width: 100%;
+    object-fit: cover; /* 防止圖片變形 */
   }
 
   .section-5-2-phone {
+    padding-bottom: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #F7E8E8;
   }
 
   .section-5-2-text h5 {
     font-size: 15px;
   }
+.section-5-3{
+  overflow: hidden;
 
+  padding: 0;
+}
 
   .slide-phone {
     top: -6em;
     position: relative;
     padding: 1em 0;
   }
-
+.section-5{
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
   .section-5-3-phone {
     background-color: #F7E8E8;
     position: relative;
@@ -2021,7 +2055,7 @@ top: 4.5px;
   }
 
   #section-6-text p {
-
+line-height: 1.7;
     padding-left: 10px;
   }
 
@@ -2049,6 +2083,9 @@ top: 4.5px;
  }
  .s9title h2{
   font-size: 16px;
+ }
+ .explain{
+  padding: 10px;
  }
   .explain-phone h5 {
     color: #BC8C36;
@@ -2079,7 +2116,7 @@ top: 4.5px;
   .section-5-3-img {
     left: 0;
     padding-left: 4em;
-    padding-top: 3em;
+    padding-top: 4em;
     position: relative;
   }
 
@@ -2088,6 +2125,8 @@ top: 4.5px;
   }
 
   .section-5-bg img {
+    object-position: center top;
+    object-fit: cover; /* 防止圖片變形 */
     height: 433px;
     max-height: 900px;
   }
@@ -2103,7 +2142,7 @@ top: 4.5px;
   }
   .everyday-title1 img{
     position: relative;
-    top: 4.5px;
+    top: 1px;
     width: 22px;
     height: 22px;
   }
@@ -2114,17 +2153,18 @@ top: 4.5px;
     font-size: 16px;
   }
 .explain-phone{
+ padding: 10px;
   background-color: #F4F3F3;
 }
 .responsive1 .slick-dots{
   bottom: -10%;
 }
 .s6-phone-text{
-  height: 275px;
+  height: 310px;
   margin: 20px 0;
 }
-.main-title span{
-  left: -0.7em;
+.custom-pc{
+  padding: 0;
 }
 }
 
@@ -2170,7 +2210,9 @@ top: 4.5px;
   .datemain span {
     font-size: 13px;
   }
-
+.gift-layout{
+  left: 1.5em;
+}
   .gift-slide {
     max-width: 200px;
   }

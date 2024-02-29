@@ -698,17 +698,18 @@
         </div>
 
 
-        <div class="menu-phone" id="phone" style="text-decoration: none;">
-            <ul>
-                <li style="border: none;"><a href="#a">團體資訊</a></li>
-                <li><a href="#d">參考航班</a></li>
-                <li><a href="#e">每日行程</a></li>
-                <li><a href="">行程下載</a></li>
-            </ul>
-        </div>
+    
 
 
 
+    </div>
+    <div class="menu-phone" id="phone" style="text-decoration: none;">
+        <ul>
+            <li style="border: none;"><a href="#a">團體資訊</a></li>
+            <li><a href="#d">參考航班</a></li>
+            <li><a href="#e">每日行程</a></li>
+            <li><a href="">行程下載</a></li>
+        </ul>
     </div>
     <div class="menu pc">
         <div class="container menubg">
@@ -728,7 +729,7 @@
                 <a href="#e" style="text-decoration: none;">
                     <li>每日行程</li>
                 </a>
-                <a href="" style="text-decoration: none;">
+                <a href="#section-remind" style="text-decoration: none;">
                     <li>旅遊資訊</li>
                 </a>
             </ul>
@@ -793,7 +794,8 @@
                                     <br>
                                     <h2 style="font-weight: 900;">出團狀態</h2>
                                     <h3 class="state seat">可報名</h3>
-                                    <br>
+                                    <br> 
+                                    <hr class="hr-phone">
                                     <hr class="goouthr">
                                 </div>
                                 <!-- -------------------------------- -->
@@ -810,7 +812,10 @@
                                     <div class="seat">
                                         <h2><span class="state">26</span>席</h2>
                                         <h2><span class="state seatborderh3">10</span>席</h2>
+                                        
                                     </div>
+                               
+                                    <hr class="hr-phone" style="margin-top: 1.95em;">
                                 </div>
                             </div>
                         </div>
@@ -927,8 +932,8 @@
         <div class="overlay" id="overlay"></div>
 
     </div>
-    <div class="phone-button">
-        <button type="button" id="showTripdateButton" onclick="showdate()" class="button">更多出發日期</button>
+    <div class="phone-button" >
+        <button type="button" id="showTripdateButton" onclick="showdate()" class="button"style="z-index: 1;">更多出發日期</button>
     <div class="container  money-phone" id="phone">
         <div class="row">
             <div class="col-6">
@@ -991,8 +996,8 @@
 
 
             <div class="row">
-                <div class="item" data-aos="fade-up">
-                    <div class="custom-background">
+                <div class="item custom-pc" data-aos="fade-up" >
+                    <div class="custom-background container-fluid">
                         <div id="custom-pc">
                             <img src="./images/date.img/01大圖.png" alt="" class="w-100">
                         </div>
@@ -1077,14 +1082,12 @@
 
     </div>
 
-
-
     <div class="section-5 container-fluid">
 
         <div class="item" data-aos="fade-up">
             <div class="section-5-1">
-                <img src="./images/date.img/slide-mb-bg.png" alt="" id="phone">
-                <img src="./images/date.img/s5-bg.png" alt="" class="w-100 pc" >
+        
+                <img src="./images/date.img/s5-bg.png" alt="" class="w-100" >
 
             </div>
         </div>
@@ -1168,7 +1171,7 @@
         </div>
 
     </div>
-    <div class="container-fluid p-5  section-5-2-phone" id="phone">
+    <div class="container-fluid  section-5-2-phone" id="phone">
         <div class="slide-phone">
             <img src="./images/date.img/瑞士_蘭德瓦薩橋_1917593744.png" alt="" class="w-100 ">
             <div class="section-5-2-text">
@@ -1515,15 +1518,15 @@
                 目的地:<span>05:05+1</span>杜拜-台原國際機場(TPE) <br>
                 航班:芬蘭航空 DY1190
             </p>
-            <div class="explain-phone">
-                <h5>特別說明/</h5>
-                <p>因應航空公司開票及保險的需求，及為了提供您在旅途中更 <br>
-                    完善的服務，請務必在繳交訂金的時候填妥客戶基本資料表 <br>(註1)。<br>
-                    上為參考航班，實際航班時間以航空公司為最終確認。若因
-                    <br> 航空公司或不可抗力因素，變動航班時間或轉機點，造成團 <br>
-                    體行程變更、增加餐食，本公司將不另行加價。<br> 若行程變更、減少餐食，則酌於退費。<br>
-                    幾乎所有外籍航空公司之團體機票(含燃油附加稅)一經開票後 <br>， 均無退票價值，此點基於航空公司之規定，敬請見諒。<br> 註1： <a href=""> 旅客資料表下載</a>
-                </p>
+            <div class="item" data-aos="fade-up" data-aos-delay="50">
+                <div class="explain">
+                    <h5 style="font-size: 20px; font-weight: 900;">特別說明/</h5>
+                    <p>因應航空公司開票及保險的需求，及為了提供您在旅途中更完善的服務，請務必在繳交訂金的時候填妥客戶基本資料表(註1)。<br>
+                        上為參考航班，實際航班時間以航空公司為最終確認。若因航空公司或不可抗力因素，變動航班時間或轉機點，造成團體行程變更、增加餐食，本公司將不另行加價。<br>
+                        若行程變更、減少餐食，則酌於退費。<br>
+                        幾乎所有外籍航空公司之團體機票(含燃油附加稅)一經開票後，均無退票價值，此點基於航空公司之規定，敬請見諒。<br> 註1： <a href=""> 旅客資料表下載</a>
+                    </p>
+                </div>
             </div>
 
 
@@ -1809,7 +1812,7 @@
 
     <!-- 貼心提醒 -->
     <section class="section-target" id="section-remind">
-        <h3 class="main-title">貼心提醒</h3>
+        <h3 class="main-title">旅遊資訊</h3>
         <div class="container">
             <div class="trip_remind">
                 <h3>旅客篇</h3>
@@ -1897,7 +1900,7 @@
 
     <!-- 團費詳細資訊 -->
     <section class="section-target" id="section-detail">
-        <h3 class="main-title">團費資訊</h3>
+        <h3 class="main-title">團費說明</h3>
         <div class="container">
             <div class="trip-detail">
                 <div class="TP_top_list_table">
